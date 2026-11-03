@@ -1,0 +1,9 @@
+version: 1
+sequences:
+- protein:
+    id: A
+    sequence: YKCGLCERSFVEKSALSRHQRVHKN
+    msa: empty
+- ligand:
+    id: Z1
+    ccd: ZN

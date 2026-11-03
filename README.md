@@ -1,3 +1,5 @@
+[Ion/no-ion cofolding pilot: 36 structures, protocol and results](ION_PILOT.md)
+
 # Boltz-2 on H200: CASP16 affinity reconstruction and CLI optimization
 
 > **MW-input clarification, 2026-11-03:** the original **0.641022** result below uses RDKit MolWt of the original CSV SMILES with the fixed official correction coefficients. The CLI instead reads `Record.affinity.mw` from preprocessing. Using that exact stored feature on the same predictions gives **0.641163** (L1000 **0.536480**, L3000 **0.655632**). Thus the earlier number is a CSV-MW postprocessing calculation, not an exact reconstruction of the CLI correction input. Both definitions are now explicitly separated. The pinned RDKit also shows an implicit-hydrogen property-cache difference after `AddHs` / `RemoveHs(sanitize=False)`; see [audit and all 140 mass values](reports/casp16-issue636/MW_INPUT_CLARIFICATION.json) and [minimal reproduction](research/casp16/audit_mw_feature.py). No inference or label fitting was used for this clarification.

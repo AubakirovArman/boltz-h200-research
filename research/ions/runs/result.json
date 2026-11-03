@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "jobs": [
+    {
+      "job": "seed0",
+      "returncode": 0,
+      "structures": 12,
+      "elapsed_s": 78.72974611399695,
+      "peak_sampled_mib": 3506.0
+    },
+    {
+      "job": "seed1",
+      "returncode": 0,
+      "structures": 12,
+      "elapsed_s": 78.72873553493991,
+      "peak_sampled_mib": 3506.0
+    },
+    {
+      "job": "seed2",
+      "returncode": 0,
+      "structures": 12,
+      "elapsed_s": 60.71397314593196,
+      "peak_sampled_mib": 3506.0
+    }
+  ],
+  "elapsed_s": 140.44902919558808
+}

@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-11-03T18:26:27.204264+00:00",
+  "question": "In two fixed metal-binding protein constructs, how do explicitly supplied native ions change cofolded protein geometry?",
+  "inputs": {
+    "1znf_noions": {
+      "pdb": "1ZNF",
+      "with_ions": false,
+      "sha256": "fbf6de81aa1fe2ff390dee80e175b91a3e53f25b434aff8b24719d903697f616",
+      "input": "research/ions/inputs/1znf_noions.yaml"
+    },
+    "1znf_ions": {
+      "pdb": "1ZNF",
+      "with_ions": true,
+      "sha256": "743edbc56236d68ab05fc3c2b3a4eb87d900df3ebd19c268776bddc2a9a7d0fa",
+      "input": "research/ions/inputs/1znf_ions.yaml"
+    },
+    "1cll_noions": {
+      "pdb": "1CLL",
+      "with_ions": false,
+      "sha256": "18be75b37c45cd888be76067ff43bcfd57879c84f3f463040d4bd0642431a6ab",
+      "input": "research/ions/inputs/1cll_noions.yaml"
+    },
+    "1cll_ions": {
+      "pdb": "1CLL",
+      "with_ions": true,
+      "sha256": "37ef3497beaa125320c12bf3953326e001d728f8b2e59d6dd5a5acb4ac7577cf",
+      "input": "research/ions/inputs/1cll_ions.yaml"
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "samples_per_input_seed": 3,
+  "predicted_structures": 36,
+  "structure_settings": {
+    "recycles": 3,
+    "diffusion_steps": 200,
+    "samples": 3,
+    "max_parallel_samples": 1
+  },
+  "msa": "empty / single sequence",
+  "templates": false,
+  "use_potentials": false,
+  "all_samples_included": true,
+  "metrics": [
+    "all resolved protein CA RMSD to reference model1, after proper Kabsch alignment",
+    "with ions only: permutation-matched ion position RMSD after protein alignment",
+    "with ions only: mean absolute deviation of reference protein-donor/ion distances"
+  ],
+  "reference_donor_cutoff_A": 3.0,
+  "metal_assignment": "Hungarian matching of identical ions after protein CA alignment",
+  "limitations": [
+    "Two old PDB constructs, potentially in training; no held-out or generalization claim.",
+    "Only single-sequence mode, no MSA/templates/force guidance.",
+    "Same seed does not imply matched noise after changing ion/tensor shapes.",
+    "Global calmodulin RMSD is sensitive to inter-domain motion; missing reference residues are excluded.",
+    "All observations descriptive; no independent-sample p-value from correlated samples."
+  ],
+  "jobs": [
+    {
+      "job": "seed0",
+      "seed": 0,
+      "command": [
+        "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+        "-m",
+        "boltz.main",
+        "predict",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed0/inputs/seed0",
+        "--model",
+        "boltz2",
+        "--accelerator",
+        "gpu",
+        "--devices",
+        "1",
+        "--cache",
+        "/mnt/data/arman-projects/boltz-h200/cache",
+        "--out_dir",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed0/output",
+        "--recycling_steps",
+        "3",
+        "--sampling_steps",
+        "200",
+        "--diffusion_samples",
+        "3",
+        "--max_parallel_samples",
+        "1",
+        "--seed",
+        "0",
+        "--num_workers",
+        "2",
+        "--preprocessing-threads",
+        "1"
+      ],
+      "output": "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed0/output/boltz_results_seed0"
+    },
+    {
+      "job": "seed1",
+      "seed": 1,
+      "command": [
+        "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+        "-m",
+        "boltz.main",
+        "predict",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed1/inputs/seed1",
+        "--model",
+        "boltz2",
+        "--accelerator",
+        "gpu",
+        "--devices",
+        "1",
+        "--cache",
+        "/mnt/data/arman-projects/boltz-h200/cache",
+        "--out_dir",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed1/output",
+        "--recycling_steps",
+        "3",
+        "--sampling_steps",
+        "200",
+        "--diffusion_samples",
+        "3",
+        "--max_parallel_samples",
+        "1",
+        "--seed",
+        "1",
+        "--num_workers",
+        "2",
+        "--preprocessing-threads",
+        "1"
+      ],
+      "output": "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed1/output/boltz_results_seed1"
+    },
+    {
+      "job": "seed2",
+      "seed": 2,
+      "command": [
+        "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+        "-m",
+        "boltz.main",
+        "predict",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed2/inputs/seed2",
+        "--model",
+        "boltz2",
+        "--accelerator",
+        "gpu",
+        "--devices",
+        "1",
+        "--cache",
+        "/mnt/data/arman-projects/boltz-h200/cache",
+        "--out_dir",
+        "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed2/output",
+        "--recycling_steps",
+        "3",
+        "--sampling_steps",
+        "200",
+        "--diffusion_samples",
+        "3",
+        "--max_parallel_samples",
+        "1",
+        "--seed",
+        "2",
+        "--num_workers",
+        "2",
+        "--preprocessing-threads",
+        "1"
+      ],
+      "output": "/mnt/data/arman-projects/boltz-h200/research/ions/runs/seed2/output/boltz_results_seed2"
+    }
+  ],
+  "runner_sha256": "20987212a65a23c517bc75d8456d2d897e0e0964643bcbc356828bb1ceed53e7",
+  "references_sha256": "26afa2f6d11b56fd2881cd059348e8711826e647e8db5b3c35ce1fe9c8a79294",
+  "upstream_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc"
+}

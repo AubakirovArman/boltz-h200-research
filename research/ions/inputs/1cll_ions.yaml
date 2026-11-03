@@ -1,0 +1,18 @@
+version: 1
+sequences:
+- protein:
+    id: A
+    sequence: ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK
+    msa: empty
+- ligand:
+    id: Z1
+    ccd: CA
+- ligand:
+    id: Z2
+    ccd: CA
+- ligand:
+    id: Z3
+    ccd: CA
+- ligand:
+    id: Z4
+    ccd: CA

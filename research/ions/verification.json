@@ -1,0 +1,8 @@
+{
+  "structures_verified": 36,
+  "input_and_reference_hashes_match": true,
+  "protein_sequences_match": true,
+  "independent_rotation_and_exhaustive_ion_assignment": true,
+  "max_metric_difference_A": 9.769962616701378e-15,
+  "aggregate_means_and_medians_match": true
+}

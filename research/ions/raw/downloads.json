@@ -1,0 +1,14 @@
+[
+  {
+    "pdb": "1ZNF",
+    "url": "https://files.rcsb.org/download/1ZNF.cif",
+    "bytes": 1463956,
+    "sha256": "63a617344f5afa5ceffefc9795c3095aadfeea470c017f9dd32702fa23deafed"
+  },
+  {
+    "pdb": "1CLL",
+    "url": "https://files.rcsb.org/download/1CLL.cif",
+    "bytes": 192662,
+    "sha256": "a8be375d00d2d5d47ffacae491f775167d1c0488ab8485cabd269410e596d3aa"
+  }
+]

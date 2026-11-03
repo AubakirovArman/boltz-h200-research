@@ -1,0 +1,23 @@
+{
+  "upstream_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "source_files_sha256": {
+    "upstream/scripts/process/rcsb.py": "dd9187efba52cfb359975e2124025b51a7ae53f51719e8399a40bd43ac9fc173",
+    "upstream/src/boltz/data/filter/static/ligand.py": "2da982f99f488d88f70e67f1c0c1663db28106144c6f2dee5908fbe300d65497",
+    "upstream/src/boltz/data/const.py": "d4cfbcf19e8791f298e8c90db6a723ddbf4ffa85fdc445e5ba1dea33fbbc74d5"
+  },
+  "excluded_by_released_ligand_filter": {
+    "ZN": false,
+    "CA": false,
+    "MG": false,
+    "NA": true,
+    "CL": true
+  },
+  "interpretation": "The released PDB training preprocessing applies ExcludedLigands by NONPOLYMER residue code; ZN/CA/MG are not rejected by this particular filter, unlike NA/CL. Other structure/chain filters still apply.",
+  "training_data_limit": "This source audit does not establish the actual ion examples/counts used to train the released Boltz-2 checkpoint.",
+  "affinity_scope": "The Boltz-2 paper states that its affinity module does not explicitly handle cofactors including ions/water/multimeric binding partners. This pilot tests structure cofolding only.",
+  "references": [
+    "https://github.com/jwohlwend/boltz/blob/b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc/scripts/process/rcsb.py",
+    "https://github.com/jwohlwend/boltz/blob/b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc/src/boltz/data/filter/static/ligand.py",
+    "https://jeremywohlwend.com/assets/boltz2.pdf"
+  ]
+}

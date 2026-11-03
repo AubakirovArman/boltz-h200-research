@@ -1,0 +1,480 @@
+{
+  "structures": 36,
+  "summary": {
+    "1ZNF": {
+      "without_ions": {
+        "samples": 9,
+        "ca_rmsd_mean_A": 1.6214209047902144,
+        "ca_rmsd_median_A": 1.641030445192536
+      },
+      "with_ions": {
+        "samples": 9,
+        "ca_rmsd_mean_A": 1.578316000934169,
+        "ca_rmsd_median_A": 1.5594672862283276,
+        "donor_distance_mae_mean_A": 0.07169050505812616
+      }
+    },
+    "1CLL": {
+      "without_ions": {
+        "samples": 9,
+        "ca_rmsd_mean_A": 16.8640993488759,
+        "ca_rmsd_median_A": 17.645108044774695
+      },
+      "with_ions": {
+        "samples": 9,
+        "ca_rmsd_mean_A": 9.84834442787451,
+        "ca_rmsd_median_A": 14.606826268144712,
+        "donor_distance_mae_mean_A": 0.6065589909146412
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "pdb": "1ZNF",
+      "seed": 0,
+      "without_ions_ca_rmsd_A": 1.5871879331844037,
+      "with_ions_ca_rmsd_A": 1.602880250182162,
+      "delta_with_minus_without_A": 0.015692316997758304
+    },
+    {
+      "pdb": "1ZNF",
+      "seed": 1,
+      "without_ions_ca_rmsd_A": 1.6510057571521068,
+      "with_ions_ca_rmsd_A": 1.5837506937405417,
+      "delta_with_minus_without_A": -0.06725506341156517
+    },
+    {
+      "pdb": "1ZNF",
+      "seed": 2,
+      "without_ions_ca_rmsd_A": 1.6260690240341322,
+      "with_ions_ca_rmsd_A": 1.5483170588798032,
+      "delta_with_minus_without_A": -0.07775196515432903
+    },
+    {
+      "pdb": "1CLL",
+      "seed": 0,
+      "without_ions_ca_rmsd_A": 18.11170708144415,
+      "with_ions_ca_rmsd_A": 11.393907234584697,
+      "delta_with_minus_without_A": -6.717799846859451
+    },
+    {
+      "pdb": "1CLL",
+      "seed": 1,
+      "without_ions_ca_rmsd_A": 15.737164433125528,
+      "with_ions_ca_rmsd_A": 11.368950615874875,
+      "delta_with_minus_without_A": -4.368213817250654
+    },
+    {
+      "pdb": "1CLL",
+      "seed": 2,
+      "without_ions_ca_rmsd_A": 16.743426532058027,
+      "with_ions_ca_rmsd_A": 6.782175433163953,
+      "delta_with_minus_without_A": -9.961251098894074
+    }
+  ],
+  "rows": [
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5382770399493155,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_noions/1znf_noions_model_0.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5685494251737022,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_noions/1znf_noions_model_1.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.6547373344301934,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_noions/1znf_noions_model_2.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5933561827255764,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_ions/1znf_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.7112661691462713,
+      "reference_donor_distance_mae_A": 0.08073967521018177
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.6633336974970596,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_ions/1znf_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.7593573226559303,
+      "reference_donor_distance_mae_A": 0.07476747881080581
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5519508703238505,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1znf_ions/1znf_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.582526225573054,
+      "reference_donor_distance_mae_A": 0.07109404311605194
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 18.49531999086536,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_noions/1cll_noions_model_0.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 18.194693208692385,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_noions/1cll_noions_model_1.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 0,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 17.645108044774695,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_noions/1cll_noions_model_2.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 16.222997385662204,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_ions/1cll_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 15.899032761586618,
+      "reference_donor_distance_mae_A": 0.08938055548149464
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 3.1384811162166986,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_ions/1cll_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 2.696743776655353,
+      "reference_donor_distance_mae_A": 0.07587629136412004
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 0,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 14.820243201875192,
+      "prediction_file": "research/ions/runs/seed0/output/boltz_results_seed0/predictions/1cll_ions/1cll_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 11.06153033978406,
+      "reference_donor_distance_mae_A": 0.0855678564092109
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.6760127721249456,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_noions/1znf_noions_model_0.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.690393441591808,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_noions/1znf_noions_model_1.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5866110577395667,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_noions/1znf_noions_model_2.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5357153563735435,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_ions/1znf_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.6745726696277008,
+      "reference_donor_distance_mae_A": 0.06811007762724142
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.6560694386197539,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_ions/1znf_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.7813668372428159,
+      "reference_donor_distance_mae_A": 0.06601945202830362
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5594672862283276,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1znf_ions/1znf_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.6552892740728214,
+      "reference_donor_distance_mae_A": 0.07504331366983774
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 15.511995486697252,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_noions/1cll_noions_model_0.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 18.204093380974374,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_noions/1cll_noions_model_1.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 1,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 13.495404431704955,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_noions/1cll_noions_model_2.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 2.7724764518192715,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_ions/1cll_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 2.1679312155961665,
+      "reference_donor_distance_mae_A": 0.07828378645598795
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 14.606826268144712,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_ions/1cll_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 10.64846113722854,
+      "reference_donor_distance_mae_A": 0.08381331741863372
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 1,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 16.727549127660645,
+      "prediction_file": "research/ions/runs/seed1/output/boltz_results_seed1/predictions/1cll_ions/1cll_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 16.150354774494705,
+      "reference_donor_distance_mae_A": 4.7858194471870075
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.641030445192536,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_noions/1znf_noions_model_0.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.503357786224948,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_noions/1znf_noions_model_1.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.7338188406849124,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_noions/1znf_noions_model_2.cif"
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 0,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5058994668431318,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_ions/1znf_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.7300384272840795,
+      "reference_donor_distance_mae_A": 0.0629606652039445
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 1,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5876173297552032,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_ions/1znf_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.7027823473195858,
+      "reference_donor_distance_mae_A": 0.0769181734017651
+    },
+    {
+      "pdb": "1ZNF",
+      "case": "1znf_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 2,
+      "ca_count": 25,
+      "ca_rmsd_A": 1.5514343800410746,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1znf_ions/1znf_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 0.6885257532400704,
+      "reference_donor_distance_mae_A": 0.0695616664550035
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 17.550751106384055,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_noions/1cll_noions_model_0.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 14.826895631284929,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_noions/1cll_noions_model_1.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_noions",
+      "with_ions": false,
+      "seed": 2,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 17.852632858505096,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_noions/1cll_noions_model_2.cif"
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 0,
+      "ca_count": 144,
+      "ca_rmsd_A": 2.162170779929748,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_ions/1cll_ions_model_0.cif",
+      "metal_rmsd_after_protein_alignment_A": 1.7269339565374104,
+      "reference_donor_distance_mae_A": 0.08007271272875795
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 1,
+      "ca_count": 144,
+      "ca_rmsd_A": 2.6742314195444687,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_ions/1cll_ions_model_1.cif",
+      "metal_rmsd_after_protein_alignment_A": 2.568266099748366,
+      "reference_donor_distance_mae_A": 0.08997905704318969
+    },
+    {
+      "pdb": "1CLL",
+      "case": "1cll_ions",
+      "with_ions": true,
+      "seed": 2,
+      "rank": 2,
+      "ca_count": 144,
+      "ca_rmsd_A": 15.510124100017643,
+      "prediction_file": "research/ions/runs/seed2/output/boltz_results_seed2/predictions/1cll_ions/1cll_ions_model_2.cif",
+      "metal_rmsd_after_protein_alignment_A": 11.884528593396615,
+      "reference_donor_distance_mae_A": 0.09023789414336762
+    }
+  ],
+  "limitations": [
+    "Two old PDB constructs, potentially in training; no held-out or generalization claim.",
+    "Only single-sequence mode, no MSA/templates/force guidance.",
+    "Same seed does not imply matched noise after changing ion/tensor shapes.",
+    "Global calmodulin RMSD is sensitive to inter-domain motion; missing reference residues are excluded.",
+    "All observations descriptive; no independent-sample p-value from correlated samples."
+  ]
+}
