@@ -1,0 +1,97 @@
+{
+  "pairs": 140,
+  "phase": "Affinity on alternative precomputed pose, matched seed1 control",
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "original_processed": 0.5364802168647806,
+        "original_csv": 0.5350886169343684,
+        "control_processed": 0.5063872546082492,
+        "control_csv": 0.5046730509247084,
+        "pose1_processed": 0.5056805188873443,
+        "pose1_csv": 0.5042302949236599,
+        "matched_ensemble_processed": 0.5063245618291639,
+        "matched_ensemble_csv": 0.5047484187974028,
+        "original_pose1_ensemble_processed": 0.521512817830356,
+        "original_pose1_ensemble_csv": 0.5200871264146896
+      },
+      "rank0_rank1_prediction_correlation": 0.9976128101883629
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "original_processed": 0.6556319062104533,
+        "original_csv": 0.6556634290201839,
+        "control_processed": 0.6568056403603038,
+        "control_csv": 0.6568339257522149,
+        "pose1_processed": 0.6496962695645738,
+        "pose1_csv": 0.6497682853955972,
+        "matched_ensemble_processed": 0.6574068850482689,
+        "matched_ensemble_csv": 0.6574533374936993,
+        "original_pose1_ensemble_processed": 0.6570067786207445,
+        "original_pose1_ensemble_csv": 0.6570545611526677
+      },
+      "rank0_rank1_prediction_correlation": 0.9740302518573918
+    }
+  },
+  "aggregate": {
+    "original_processed": {
+      "weighted": 0.6411634867899073,
+      "uniform": 0.5960560615376169
+    },
+    "original_csv": {
+      "weighted": 0.6410222018383349,
+      "uniform": 0.5953760229772762
+    },
+    "control_processed": {
+      "weighted": 0.6385405506618399,
+      "uniform": 0.5815964474842765
+    },
+    "control_csv": {
+      "weighted": 0.638357248094589,
+      "uniform": 0.5807534883384616
+    },
+    "pose1_processed": {
+      "weighted": 0.6322086426966246,
+      "uniform": 0.5776883942259591
+    },
+    "pose1_csv": {
+      "weighted": 0.6320958151240048,
+      "uniform": 0.5769992901596286
+    },
+    "matched_ensemble_processed": {
+      "weighted": 0.6390611743716633,
+      "uniform": 0.5818657234387163
+    },
+    "matched_ensemble_csv": {
+      "weighted": 0.6389105973662917,
+      "uniform": 0.5811008781455511
+    },
+    "original_pose1_ensemble_processed": {
+      "weighted": 0.6405539405247688,
+      "uniform": 0.5892597982255503
+    },
+    "original_pose1_ensemble_csv": {
+      "weighted": 0.6404228012201989,
+      "uniform": 0.5885708437836786
+    }
+  },
+  "bootstrap": {
+    "resamples": 2500,
+    "seed": 20261103,
+    "pose1_vs_control_delta_ci95": [
+      -0.03354574157611478,
+      0.01926888146493152
+    ],
+    "matched_ensemble_vs_control_delta_ci95": [
+      -0.013595950443636618,
+      0.01375036466724469
+    ],
+    "matched_ensemble_vs_original_delta_ci95": [
+      -0.018124415104133686,
+      0.012193918273480398
+    ]
+  },
+  "no_fitting_or_label_based_pose_selection": true
+}

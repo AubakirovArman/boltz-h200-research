@@ -1,0 +1,131 @@
+{
+  "pairs": 140,
+  "phase": "Affinity context300 on unchanged original structures",
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "original_raw": 0.47328011520242375,
+        "original_processed": 0.5364802168647806,
+        "original_csv": 0.5350886169343684,
+        "control_raw": 0.441972861917057,
+        "control_processed": 0.5063872546082492,
+        "control_csv": 0.5046730509247084,
+        "context300_raw": 0.45010665769586156,
+        "context300_processed": 0.5151942802945062,
+        "context300_csv": 0.5116145363286831,
+        "matched_ensemble_raw": 0.45280465091255695,
+        "matched_ensemble_processed": 0.5187725270836755,
+        "matched_ensemble_csv": 0.5161401910236348,
+        "original_ensemble_raw": 0.4709184294462153,
+        "original_ensemble_processed": 0.5363768019751587,
+        "original_ensemble_csv": 0.5339088982732466
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "original_raw": 0.6001161527524693,
+        "original_processed": 0.6556319062104533,
+        "original_csv": 0.6556634290201839,
+        "control_raw": 0.6019069644525443,
+        "control_processed": 0.6568056403603038,
+        "control_csv": 0.6568339257522149,
+        "context300_raw": 0.6508709059956673,
+        "context300_processed": 0.6923881395300027,
+        "context300_csv": 0.6922629112858647,
+        "matched_ensemble_raw": 0.6396393309191241,
+        "matched_ensemble_processed": 0.6849975043672949,
+        "matched_ensemble_csv": 0.6849296811767173,
+        "original_ensemble_raw": 0.6389592373700856,
+        "original_ensemble_processed": 0.6845799973866444,
+        "original_ensemble_csv": 0.6845134622272405
+      }
+    }
+  },
+  "aggregate": {
+    "original_raw": {
+      "weighted": 0.5847146339071067,
+      "uniform": 0.5366981339774466
+    },
+    "original_processed": {
+      "weighted": 0.6411634867899073,
+      "uniform": 0.5960560615376169
+    },
+    "original_csv": {
+      "weighted": 0.6410222018383349,
+      "uniform": 0.5953760229772762
+    },
+    "control_raw": {
+      "weighted": 0.5824863948589495,
+      "uniform": 0.5219399131848006
+    },
+    "control_processed": {
+      "weighted": 0.6385405506618399,
+      "uniform": 0.5815964474842765
+    },
+    "control_csv": {
+      "weighted": 0.638357248094589,
+      "uniform": 0.5807534883384616
+    },
+    "context300_raw": {
+      "weighted": 0.6264923901306909,
+      "uniform": 0.5504887818457644
+    },
+    "context300_processed": {
+      "weighted": 0.670871742337121,
+      "uniform": 0.6037912099122544
+    },
+    "context300_csv": {
+      "weighted": 0.6703270371839212,
+      "uniform": 0.601938723807274
+    },
+    "matched_ensemble_raw": {
+      "weighted": 0.6169522626326124,
+      "uniform": 0.5462219909158406
+    },
+    "matched_ensemble_processed": {
+      "weighted": 0.6648130428399982,
+      "uniform": 0.6018850157254851
+    },
+    "matched_ensemble_csv": {
+      "weighted": 0.6644338145152715,
+      "uniform": 0.600534936100176
+    },
+    "original_ensemble_raw": {
+      "weighted": 0.6185542821221871,
+      "uniform": 0.5549388334081504
+    },
+    "original_ensemble_processed": {
+      "weighted": 0.6665838950866784,
+      "uniform": 0.6104783996809016
+    },
+    "original_ensemble_csv": {
+      "weighted": 0.6662257651756841,
+      "uniform": 0.6092111802502436
+    }
+  },
+  "bootstrap": {
+    "resamples": 2500,
+    "seed": 20261103,
+    "context300_vs_control_delta_ci95": [
+      -0.009668463303135087,
+      0.07614013202968833
+    ],
+    "context300_vs_original_delta_ci95": [
+      -0.015362580132359601,
+      0.07489508978231418
+    ],
+    "matched_ensemble_vs_control_delta_ci95": [
+      0.004913253035504708,
+      0.04892213008267787
+    ],
+    "original_ensemble_vs_original_delta_ci95": [
+      0.0027934947981026665,
+      0.0485773217143417
+    ]
+  },
+  "no_fitting_or_label_based_selection": true,
+  "context300_exceeds_original": true,
+  "context300_reaches_0_8": false
+}

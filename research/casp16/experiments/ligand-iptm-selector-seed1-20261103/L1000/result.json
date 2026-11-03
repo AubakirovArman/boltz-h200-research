@@ -1,0 +1,8 @@
+{
+  "target": "L1000",
+  "pairs": 3,
+  "returncode": 0,
+  "elapsed_s": 214.80736896023154,
+  "gpu_peak_sampled_mib": 11146.0,
+  "structure_launched": false
+}

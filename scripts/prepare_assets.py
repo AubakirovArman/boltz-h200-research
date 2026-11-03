@@ -28,6 +28,7 @@ def digest(path):
 
 
 def model_assets():
+    (ROOT / "cache").mkdir(parents=True, exist_ok=True)
     api = "https://huggingface.co/api/models/boltz-community/boltz-2"
     revision_file = ROOT / "manifests/model-revision.json"
     revision = (json.loads(revision_file.read_text())["revision"] if revision_file.exists()

@@ -1,0 +1,52 @@
+{
+  "scope": "Secondary diagnostics, not a fitted prediction method or a new primary endpoint.",
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "metrics": {
+        "baseline": {
+          "pearson_r": 0.5364802168647805,
+          "kendall_tau": 0.24999999999999997,
+          "mae_log10_ic50_um": 0.5806952659456638
+        },
+        "repeat": {
+          "pearson_r": 0.5063872546082491,
+          "kendall_tau": 0.19117647058823525,
+          "mae_log10_ic50_um": 0.5954857628232242
+        },
+        "ensemble": {
+          "pearson_r": 0.5219791438879323,
+          "kendall_tau": 0.2352941176470588,
+          "mae_log10_ic50_um": 0.588090514384444
+        }
+      },
+      "baseline_repeat_prediction_correlation": 0.9970016930288849,
+      "shared_standardized_residual_correlation": 0.998490916617121,
+      "mean_absolute_between_run_difference_log10": 0.04544502360827973
+    },
+    "L3000": {
+      "n": 123,
+      "metrics": {
+        "baseline": {
+          "pearson_r": 0.6556319062104534,
+          "kendall_tau": 0.4607895755531399,
+          "mae_log10_ic50_um": 0.8420202982111359
+        },
+        "repeat": {
+          "pearson_r": 0.6568056403603036,
+          "kendall_tau": 0.4712104473690706,
+          "mae_log10_ic50_um": 0.8410964159320494
+        },
+        "ensemble": {
+          "pearson_r": 0.6566045245053053,
+          "kendall_tau": 0.46640081422325647,
+          "mae_log10_ic50_um": 0.8407389722894043
+        }
+      },
+      "baseline_repeat_prediction_correlation": 0.9976537370868349,
+      "shared_standardized_residual_correlation": 0.9982252116125331,
+      "mean_absolute_between_run_difference_log10": 0.05966216200798296
+    }
+  },
+  "explanation": "High shared residual correlation suggests that seed averaging leaves a substantial common error component. It does not identify its physical cause."
+}

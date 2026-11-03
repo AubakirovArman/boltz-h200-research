@@ -1,0 +1,60 @@
+{
+  "pairs": 140,
+  "fresh_pairs": 23,
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "original_processed": 0.5364802168647808,
+        "original_csv": 0.5350886169343684,
+        "control_processed": 0.5063872546082492,
+        "control_csv": 0.5046730509247082,
+        "selected_processed": 0.5007999006482653,
+        "selected_csv": 0.4991187643433422,
+        "ensemble_processed": 0.5036929251982242,
+        "ensemble_csv": 0.5019949880482392
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "original_processed": 0.6556319062104534,
+        "original_csv": 0.6556634290201837,
+        "control_processed": 0.6568056403603036,
+        "control_csv": 0.656833925752215,
+        "selected_processed": 0.6410150819395767,
+        "selected_csv": 0.6409880400424083,
+        "ensemble_processed": 0.6508215589626943,
+        "ensemble_csv": 0.650817404023759
+      }
+    }
+  },
+  "weighted_r": {
+    "original_processed": 0.6411634867899074,
+    "original_csv": 0.6410222018383347,
+    "control_processed": 0.6385405506618399,
+    "control_csv": 0.6383572480945892,
+    "selected_processed": 0.6239889527827747,
+    "selected_csv": 0.6237610565646646,
+    "ensemble_processed": 0.6329559391484373,
+    "ensemble_csv": 0.6327461106553031
+  },
+  "bootstrap": {
+    "replicates": 2500,
+    "seed": 20261103,
+    "selected_vs_control_delta_ci95": [
+      -0.03444311823747685,
+      0.004636836643425629
+    ],
+    "selected_vs_original_delta_ci95": [
+      -0.03788659691779319,
+      0.002561750239230814
+    ],
+    "ensemble_vs_original_delta_ci95": [
+      -0.020611494721294085,
+      0.0037385125571571033
+    ]
+  },
+  "caveat": "Rank0/rank1 values come from the same fixed seed1 shard controls. Fresh ranks2-4 use two smaller seed1 CLI calls; RNG streams differ. This is an exploratory selector test, not exact matched-noise isolation.",
+  "no_label_based_selection": true
+}

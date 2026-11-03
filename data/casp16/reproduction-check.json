@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "byte_identical_input_files": 1828,
+  "cases": 140,
+  "case_order_matches_original": true,
+  "portable_prepare_verified": true,
+  "actual_stock_preprocessing_with_order_adapter_verified": true,
+  "published_score_verified": true,
+  "scope": "CPU packaging and scoring checks; no extra GPU inference was run."
+}

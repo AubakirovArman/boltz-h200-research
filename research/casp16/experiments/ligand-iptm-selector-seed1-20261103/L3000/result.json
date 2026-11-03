@@ -1,0 +1,8 @@
+{
+  "target": "L3000",
+  "pairs": 20,
+  "returncode": 0,
+  "elapsed_s": 895.0291808210313,
+  "gpu_peak_sampled_mib": 21046.0,
+  "structure_launched": false
+}

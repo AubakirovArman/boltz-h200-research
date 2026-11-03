@@ -1,0 +1,10 @@
+# Scientific package versions used in the reported context experiment.
+# Full environment: requirements-locked.txt. CUDA PyTorch wheel: cu128.
+torch==2.11.0+cu128
+numpy==1.26.4
+scipy==1.13.1
+pytorch-lightning==2.5.0
+rdkit==2026.9.1
+gemmi==0.6.5
+biopython==1.84
+triton==3.6.0

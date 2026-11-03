@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "fresh_pairs": 23,
+  "jobs": [
+    {
+      "target": "L1000",
+      "pairs": 3,
+      "returncode": 0,
+      "elapsed_s": 214.80736896023154,
+      "gpu_peak_sampled_mib": 11146.0,
+      "structure_launched": false
+    },
+    {
+      "target": "L3000",
+      "pairs": 20,
+      "returncode": 0,
+      "elapsed_s": 895.0291808210313,
+      "gpu_peak_sampled_mib": 21046.0,
+      "structure_launched": false
+    }
+  ],
+  "elapsed_s": 1309.983637215104,
+  "phase": "exploratory ligand-confidence selector; cached affinity values reused"
+}

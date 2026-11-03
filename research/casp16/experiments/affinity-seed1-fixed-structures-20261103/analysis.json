@@ -1,0 +1,87 @@
+{
+  "phase": "Conditional affinity repeat on fixed source structures; NOT a full independent structure replicate",
+  "pairs": 140,
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "baseline_raw": 0.47328011520242375,
+        "baseline_processed": 0.5364802168647805,
+        "baseline_csv": 0.5350886169343683,
+        "repeat_raw": 0.441972861917057,
+        "repeat_processed": 0.5063872546082491,
+        "repeat_csv": 0.5046730509247082,
+        "ensemble_raw": 0.45812059837042174,
+        "ensemble_processed": 0.5219791438879324,
+        "ensemble_csv": 0.5204244111456496
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "baseline_raw": 0.6001161527524693,
+        "baseline_processed": 0.6556319062104532,
+        "baseline_csv": 0.6556634290201838,
+        "repeat_raw": 0.6019069644525443,
+        "repeat_processed": 0.6568056403603036,
+        "repeat_csv": 0.6568339257522149,
+        "ensemble_raw": 0.6014880143200857,
+        "ensemble_processed": 0.6566045245053054,
+        "ensemble_csv": 0.6566338918184227
+      }
+    }
+  },
+  "aggregate": {
+    "baseline_raw": {
+      "uniform": 0.5366981339774466,
+      "weighted": 0.5847146339071067
+    },
+    "baseline_processed": {
+      "uniform": 0.5960560615376169,
+      "weighted": 0.6411634867899073
+    },
+    "baseline_csv": {
+      "uniform": 0.595376022977276,
+      "weighted": 0.6410222018383348
+    },
+    "repeat_raw": {
+      "uniform": 0.5219399131848006,
+      "weighted": 0.5824863948589495
+    },
+    "repeat_processed": {
+      "uniform": 0.5815964474842763,
+      "weighted": 0.6385405506618399
+    },
+    "repeat_csv": {
+      "uniform": 0.5807534883384615,
+      "weighted": 0.638357248094589
+    },
+    "ensemble_raw": {
+      "uniform": 0.5298043063452538,
+      "weighted": 0.5840791138119122
+    },
+    "ensemble_processed": {
+      "uniform": 0.5892918341966189,
+      "weighted": 0.64025715685891
+    },
+    "ensemble_csv": {
+      "uniform": 0.5885291514820361,
+      "weighted": 0.6400941691653003
+    }
+  },
+  "ensemble_weighted_delta_processed_mw": -0.0009063299309972628,
+  "bootstrap": {
+    "resamples": 2500,
+    "seed": 20261103,
+    "ensemble_r_ci95": [
+      0.53149362309902,
+      0.7310375550110526
+    ],
+    "ensemble_delta_ci95": [
+      -0.00532802826488035,
+      0.0029741312057906485
+    ]
+  },
+  "reach_0_8": false,
+  "note": "All ensemble weights and seeds fixed before prediction; no parameter fitting."
+}

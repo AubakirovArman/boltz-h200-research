@@ -1,0 +1,12 @@
+{
+  "pid": 147001,
+  "started_utc": "2026-11-03T15:53:01.132165+00:00",
+  "children": {
+    "L1000-shard1": 147341,
+    "L3000-shard1": 147342,
+    "L3000-shard2": 147343,
+    "L3000-shard3": 147344
+  },
+  "phase": "affinity_only",
+  "gpu_uuid": "GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11"
+}

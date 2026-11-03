@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "pairs": 140,
+  "new_predictions": 23,
+  "pose_choice_recomputed_from_all_five_confidences": true,
+  "cached_raw_predictions_verified": true,
+  "exact_cli_mw_verified": true,
+  "weighted_r": {
+    "selected": 0.6239889527827746,
+    "ensemble": 0.6329559391484372
+  },
+  "scope": "Scientific source audit, not an official upstream test suite."
+}

@@ -1,0 +1,10 @@
+{
+  "target": "L1000",
+  "pairs": 17,
+  "r_exact_cli_mw": {
+    "original": 0.5364802168647806,
+    "control": 0.5063872546082491,
+    "context300": 0.5151942802945062
+  },
+  "scope": "Interim score for the complete small target only. All 140 remain scheduled; no total score or stopping decision based on this subset."
+}

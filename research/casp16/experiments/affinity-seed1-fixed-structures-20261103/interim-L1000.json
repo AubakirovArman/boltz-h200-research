@@ -1,0 +1,8 @@
+{
+  "scope": "Interim complete L1000 only; not the primary 140-pair result",
+  "n": 17,
+  "baseline_processed_mw_r": 0.5364802168647805,
+  "repeat_r": 0.5063872546082491,
+  "ensemble_r": 0.5219791438879323,
+  "raw_prediction_correlation_between_runs": 0.9970460875935476
+}

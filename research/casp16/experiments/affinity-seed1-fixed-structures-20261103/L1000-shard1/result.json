@@ -1,0 +1,11 @@
+{
+  "job": "L1000-shard1",
+  "returncode": 0,
+  "pairs": 17,
+  "expected": 17,
+  "ids_match": true,
+  "elapsed_s": 729.530448618345,
+  "gpu_peak_sampled_mib": 14968.0,
+  "structure_prediction_launched": false,
+  "phase": "affinity_only_on_fixed_seed0_structures"
+}

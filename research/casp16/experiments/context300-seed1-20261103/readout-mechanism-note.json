@@ -1,0 +1,19 @@
+{
+  "source": "upstream/src/boltz/model/modules/affinity.py:AffinityHeadsTransformer.forward",
+  "formula": "mean over 2*protein*ligand + ligand*(ligand-1) ordered pairs",
+  "observed_input_ratios": {
+    "L1000": {
+      "n": 17,
+      "median_cross_pair_pool_size_ratio": 1.2206572769953052,
+      "min": 1.2146118721461188,
+      "max": 1.25181598062954
+    },
+    "L3000": {
+      "n": 123,
+      "median_cross_pair_pool_size_ratio": 1.468677494199536,
+      "min": 1.4100227790432802,
+      "max": 1.5304136253041363
+    }
+  },
+  "interpretation": "Additional context also changes the frozen head pooling set. This is a mechanistic caveat, not a demonstrated explanation of a quality effect."
+}

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "pairs": 140,
+  "matched_control_input_order": true,
+  "independent_pearson_tolerance": 1e-12,
+  "preserved_source_files": 420,
+  "scope": "Research consistency checks, not official upstream tests.",
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "original_processed": 0.5364802168647806,
+        "original_csv": 0.5350886169343684,
+        "control_processed": 0.5063872546082491,
+        "control_csv": 0.5046730509247084,
+        "pose1_processed": 0.5056805188873443,
+        "pose1_csv": 0.5042302949236599,
+        "matched_ensemble_processed": 0.5063245618291639,
+        "matched_ensemble_csv": 0.5047484187974028,
+        "original_pose1_ensemble_processed": 0.521512817830356,
+        "original_pose1_ensemble_csv": 0.5200871264146896
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "original_processed": 0.6556319062104533,
+        "original_csv": 0.6556634290201838,
+        "control_processed": 0.6568056403603038,
+        "control_csv": 0.6568339257522149,
+        "pose1_processed": 0.6496962695645737,
+        "pose1_csv": 0.6497682853955972,
+        "matched_ensemble_processed": 0.657406885048269,
+        "matched_ensemble_csv": 0.6574533374936993,
+        "original_pose1_ensemble_processed": 0.6570067786207444,
+        "original_pose1_ensemble_csv": 0.6570545611526677
+      }
+    }
+  }
+}

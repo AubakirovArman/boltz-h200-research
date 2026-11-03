@@ -1,0 +1,31 @@
+{
+  "scope": "Post-hoc error diagnostics on the baseline; no predictions/selection/primary scores changed. A leave-one-out influence is not proof that a data row is wrong.",
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "label_range": [
+        -3.0011920356070427,
+        -0.3979047247644644
+      ],
+      "r_corrected_csv_mw": 0.5350886169343684,
+      "confidence_vs_abs_standardized_residual_r": -0.021439391083366458,
+      "corrected_prediction_range_csv_mw": [
+        -2.8305439385475593,
+        -0.3476124297585961
+      ]
+    },
+    "L3000": {
+      "n": 123,
+      "label_range": [
+        -2.9394260456536365,
+        1.0
+      ],
+      "r_corrected_csv_mw": 0.6556634290201837,
+      "confidence_vs_abs_standardized_residual_r": -0.056700440323900356,
+      "corrected_prediction_range_csv_mw": [
+        -3.6644589667666443,
+        1.2564365139200961
+      ]
+    }
+  }
+}

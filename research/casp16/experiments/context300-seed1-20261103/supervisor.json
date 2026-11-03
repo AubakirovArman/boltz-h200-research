@@ -1,0 +1,13 @@
+{
+  "pid": 1863358,
+  "started_utc": "2026-11-03T17:08:39.190532+00:00",
+  "gpu_uuid": "GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11",
+  "children": {
+    "L1000-shard1": 1863399,
+    "L3000-shard1": 1863400,
+    "L3000-shard2": 2042109,
+    "L3000-shard3": 2339134
+  },
+  "phase": "affinity_context300",
+  "max_concurrent_jobs": 2
+}

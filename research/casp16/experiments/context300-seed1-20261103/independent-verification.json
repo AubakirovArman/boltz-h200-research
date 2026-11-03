@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "unique_pairs": 140,
+  "finite_new_predictions": 140,
+  "preserved_reference_files": 420,
+  "byte_identical_structure_inputs": 140,
+  "cli_jobs": 4,
+  "independent_pearson_tolerance": 1e-12,
+  "independent_calculations": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "original_raw": 0.4732801152024238,
+        "original_processed": 0.5364802168647806,
+        "original_csv": 0.5350886169343684,
+        "control_raw": 0.441972861917057,
+        "control_processed": 0.5063872546082491,
+        "control_csv": 0.5046730509247084,
+        "context300_raw": 0.4501066576958616,
+        "context300_processed": 0.5151942802945062,
+        "context300_csv": 0.5116145363286833,
+        "matched_ensemble_raw": 0.4528046509125569,
+        "matched_ensemble_processed": 0.5187725270836754,
+        "matched_ensemble_csv": 0.5161401910236348,
+        "original_ensemble_raw": 0.4709184294462155,
+        "original_ensemble_processed": 0.5363768019751588,
+        "original_ensemble_csv": 0.5339088982732466
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "original_raw": 0.6001161527524692,
+        "original_processed": 0.6556319062104533,
+        "original_csv": 0.6556634290201838,
+        "control_raw": 0.6019069644525443,
+        "control_processed": 0.6568056403603038,
+        "control_csv": 0.6568339257522149,
+        "context300_raw": 0.6508709059956673,
+        "context300_processed": 0.6923881395300028,
+        "context300_csv": 0.6922629112858648,
+        "matched_ensemble_raw": 0.639639330919124,
+        "matched_ensemble_processed": 0.6849975043672949,
+        "matched_ensemble_csv": 0.6849296811767172,
+        "original_ensemble_raw": 0.6389592373700856,
+        "original_ensemble_processed": 0.6845799973866444,
+        "original_ensemble_csv": 0.6845134622272403
+      }
+    }
+  },
+  "scope": "Research input/ID/arithmetic checks, not official upstream tests."
+}

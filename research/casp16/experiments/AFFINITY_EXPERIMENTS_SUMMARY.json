@@ -1,0 +1,85 @@
+{
+  "pairs": 140,
+  "targets": 2,
+  "rows": [
+    {
+      "method": "Исходный исторический расчёт",
+      "r_cli_mw": 0.6411634867899073,
+      "r_csv_mw": 0.6410222018383349
+    },
+    {
+      "method": "Предыдущий контроль: первая поза, seed1",
+      "r_cli_mw": 0.6385405506618399,
+      "r_csv_mw": 0.638357248094589
+    },
+    {
+      "method": "Вторая поза по общей уверенности, seed1",
+      "r_cli_mw": 0.6322086426966246,
+      "r_csv_mw": 0.6320958151240048
+    },
+    {
+      "method": "Среднее первой и второй позы, seed1",
+      "r_cli_mw": 0.6390611743716633,
+      "r_csv_mw": 0.6389105973662917
+    },
+    {
+      "method": "Среднее исторического расчёта и второй позы",
+      "r_cli_mw": 0.6405539405247688,
+      "r_csv_mw": 0.6404228012201989
+    },
+    {
+      "method": "Поза по максимальному ligand_iptm",
+      "r_cli_mw": 0.6239889527827747,
+      "r_csv_mw": 0.6237610565646646
+    },
+    {
+      "method": "Среднее контроля и выбора по ligand_iptm",
+      "r_cli_mw": 0.6329559391484373,
+      "r_csv_mw": 0.6327461106553031
+    },
+    {
+      "method": "Контекст белка до 300 токенов, seed1",
+      "r_cli_mw": 0.670871742337121,
+      "r_csv_mw": 0.6703270371839212
+    },
+    {
+      "method": "Среднее контекстов 200 и 300, seed1",
+      "r_cli_mw": 0.6648130428399982,
+      "r_csv_mw": 0.6644338145152715
+    },
+    {
+      "method": "Среднее исторического расчёта и контекста300",
+      "r_cli_mw": 0.6665838950866784,
+      "r_csv_mw": 0.6662257651756841
+    }
+  ],
+  "highest_observed": {
+    "method": "Контекст белка до 300 токенов, seed1",
+    "r_cli_mw": 0.670871742337121,
+    "r_csv_mw": 0.6703270371839212
+  },
+  "context300_vs_original_delta": 0.02970825554721368,
+  "context300_vs_control_delta": 0.03233119167528109,
+  "bootstrap": {
+    "resamples": 2500,
+    "seed": 20261103,
+    "context300_vs_control_delta_ci95": [
+      -0.009668463303135087,
+      0.07614013202968833
+    ],
+    "context300_vs_original_delta_ci95": [
+      -0.015362580132359601,
+      0.07489508978231418
+    ],
+    "matched_ensemble_vs_control_delta_ci95": [
+      0.004913253035504708,
+      0.04892213008267787
+    ],
+    "original_ensemble_vs_original_delta_ci95": [
+      0.0027934947981026665,
+      0.0485773217143417
+    ]
+  },
+  "reached_0_8": false,
+  "caveat": "Exploratory repeated benchmark use; CIs unadjusted for multiple comparisons. Same CLI seed/order do not fix noise when tensor shapes change. No independent protein validation."
+}

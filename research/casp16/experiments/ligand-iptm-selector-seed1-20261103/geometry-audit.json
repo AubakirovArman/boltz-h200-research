@@ -1,0 +1,163 @@
+[
+  {
+    "id": "L1006",
+    "pose_rank": 2,
+    "atoms": 1957,
+    "source_cif_sha256": "ef77eb2bbeac685952f0c76dfff14bf337bee643c2b7e7c04250f3f52414d6aa",
+    "pocket_ligand_rmsd_A": 0.2045516920710563
+  },
+  {
+    "id": "L1011",
+    "pose_rank": 2,
+    "atoms": 1948,
+    "source_cif_sha256": "714da825c3b664f0d48a202d801d7c127f33bca0a52bf2dd5f31e2bf218e9e34",
+    "pocket_ligand_rmsd_A": 0.711625743202139
+  },
+  {
+    "id": "L1016",
+    "pose_rank": 2,
+    "atoms": 1947,
+    "source_cif_sha256": "c35281b6a2183a1e46de0322190eccd06044634581ec6bc48bb8c35ff59e1d33",
+    "pocket_ligand_rmsd_A": 0.15959631887965947
+  },
+  {
+    "id": "L3035",
+    "pose_rank": 2,
+    "atoms": 6866,
+    "source_cif_sha256": "c4275ab12596c992ee7ff51ece093ef4496395df605cf82dc4f6345216b4f3b4",
+    "pocket_ligand_rmsd_A": 5.847657491272252
+  },
+  {
+    "id": "L3042",
+    "pose_rank": 2,
+    "atoms": 6867,
+    "source_cif_sha256": "1ffb577ef93604e1a329f8a0c08069cfa36ec5099e63c628218d6fb8388d06eb",
+    "pocket_ligand_rmsd_A": 3.3554986625377548
+  },
+  {
+    "id": "L3064",
+    "pose_rank": 3,
+    "atoms": 6855,
+    "source_cif_sha256": "501be518b6c55f1a5fbe03d69cb09200f39b8181c31ca2c55061c3b9e62dd12a",
+    "pocket_ligand_rmsd_A": 1.7472458147875713
+  },
+  {
+    "id": "L3077",
+    "pose_rank": 2,
+    "atoms": 6869,
+    "source_cif_sha256": "69481f21e88e22287b93d37717c131c57e1f38a6cbc59e5103f64f3dc9436fa3",
+    "pocket_ligand_rmsd_A": 3.1721617754102485
+  },
+  {
+    "id": "L3087",
+    "pose_rank": 4,
+    "atoms": 6861,
+    "source_cif_sha256": "1e6a27e17a58a367ec3ba8aa02eeb3e379c2a94008068e05bb68d1f33c844487",
+    "pocket_ligand_rmsd_A": 1.4637824828213013
+  },
+  {
+    "id": "L3095",
+    "pose_rank": 2,
+    "atoms": 6864,
+    "source_cif_sha256": "e3997ede8e5733e52295117309c2c05d0843148985bd75f3e6a88cea7d73132f",
+    "pocket_ligand_rmsd_A": 8.7174998360622
+  },
+  {
+    "id": "L3105",
+    "pose_rank": 2,
+    "atoms": 6858,
+    "source_cif_sha256": "443dc91d63c6c0c6d96e16c5b7abb2fe576e3257b11ea55dc410e1c0fcfbb55e",
+    "pocket_ligand_rmsd_A": 1.8776693581251576
+  },
+  {
+    "id": "L3111",
+    "pose_rank": 2,
+    "atoms": 6871,
+    "source_cif_sha256": "b9ce36880b6c553a4381c5cc93f36d6ec2fda90d237aad06e86a246ad66190d2",
+    "pocket_ligand_rmsd_A": 4.397433643474964
+  },
+  {
+    "id": "L3141",
+    "pose_rank": 2,
+    "atoms": 6868,
+    "source_cif_sha256": "0c40be94bb51022e02c2c5937d8f92a6e11f7cce3a1e8395c4d47294e08a6ef8",
+    "pocket_ligand_rmsd_A": 4.7903491211190214
+  },
+  {
+    "id": "L3143",
+    "pose_rank": 2,
+    "atoms": 6864,
+    "source_cif_sha256": "221c9427aaa61322c33383313620ee2ca9a4a1e09d30748449077afd61e97089",
+    "pocket_ligand_rmsd_A": 4.602944584246619
+  },
+  {
+    "id": "L3149",
+    "pose_rank": 2,
+    "atoms": 6857,
+    "source_cif_sha256": "b3a6320f169109d8c3b840da814d3f03304a6d712cac15f268388a84cde2f6a9",
+    "pocket_ligand_rmsd_A": 2.756117653031787
+  },
+  {
+    "id": "L3156",
+    "pose_rank": 2,
+    "atoms": 6861,
+    "source_cif_sha256": "b769ac595f743ae0c213c6e3d3cbbc11c2d39046687cdb73b6837626294557f7",
+    "pocket_ligand_rmsd_A": 6.602816369931349
+  },
+  {
+    "id": "L3160",
+    "pose_rank": 4,
+    "atoms": 6863,
+    "source_cif_sha256": "18e9dddabb3bed14dc6813007ba8d976fa81d647eef1d062335a2f6d0573d060",
+    "pocket_ligand_rmsd_A": 1.4302974754823807
+  },
+  {
+    "id": "L3162",
+    "pose_rank": 2,
+    "atoms": 6861,
+    "source_cif_sha256": "da852d3973cc331f7365e78f5bd4e5550f5701621a223ae7719fc29b4c8b206b",
+    "pocket_ligand_rmsd_A": 5.137708707217545
+  },
+  {
+    "id": "L3186",
+    "pose_rank": 2,
+    "atoms": 6879,
+    "source_cif_sha256": "89caa3abb115d579c9f86bb3e843ebf23ff619f2fcaf3ee40db01e747c592aa3",
+    "pocket_ligand_rmsd_A": 1.0242952309657622
+  },
+  {
+    "id": "L3202",
+    "pose_rank": 2,
+    "atoms": 6864,
+    "source_cif_sha256": "118ada7ef68d352d7b37b7035fcffcf8ea963601c480256f38e151ae19627879",
+    "pocket_ligand_rmsd_A": 8.585469966288171
+  },
+  {
+    "id": "L3210",
+    "pose_rank": 2,
+    "atoms": 6866,
+    "source_cif_sha256": "59b8a660c245a5182033678b538d52abd9276c80a1b733b0dbe0dc915a660aea",
+    "pocket_ligand_rmsd_A": 10.551310191015721
+  },
+  {
+    "id": "L3221",
+    "pose_rank": 2,
+    "atoms": 6868,
+    "source_cif_sha256": "855d2c1fef5b242df8928c5f1f7d485b4c3016039bb2203e743d2943c9072c07",
+    "pocket_ligand_rmsd_A": 9.992223380190515
+  },
+  {
+    "id": "L3225",
+    "pose_rank": 2,
+    "atoms": 6877,
+    "source_cif_sha256": "629935b1f110232f711b7c16bc02f183965d0e5f204b04fab5a37fa474c3ae6e",
+    "pocket_ligand_rmsd_A": 12.704931964415584
+  },
+  {
+    "id": "L3228",
+    "pose_rank": 4,
+    "atoms": 6877,
+    "source_cif_sha256": "e1e0b210a14f7b6f06fe7c9371ecd5f6289a425bb8dc7e7fe43ac3271da32da9",
+    "pocket_ligand_rmsd_A": 4.169620765548405
+  }
+]

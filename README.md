@@ -2,9 +2,21 @@
 
 > **MW-input clarification, 2026-11-03:** the original **0.641022** result below uses RDKit MolWt of the original CSV SMILES with the fixed official correction coefficients. The CLI instead reads `Record.affinity.mw` from preprocessing. Using that exact stored feature on the same predictions gives **0.641163** (L1000 **0.536480**, L3000 **0.655632**). Thus the earlier number is a CSV-MW postprocessing calculation, not an exact reconstruction of the CLI correction input. Both definitions are now explicitly separated. The pinned RDKit also shows an implicit-hydrogen property-cache difference after `AddHs` / `RemoveHs(sanitize=False)`; see [audit and all 140 mass values](reports/casp16-issue636/MW_INPUT_CLARIFICATION.json) and [minimal reproduction](research/casp16/audit_mw_feature.py). No inference or label fitting was used for this clarification.
 
+## New affinity experiment: observed weighted R = 0.670872
+
+Increasing the affinity protein crop from 200 to 300 tokens gave **weighted R 0.670872**, versus **0.641163** historically and **0.638541** in the matched seed-1 stock-crop control, on all 140 fixed pairs. The corresponding uniform target mean is **0.603791**. This changes inference configuration; uncertainty and the unresolved paper evaluation convention remain explicit.
+
+**[Protocol, results and practical reproduction instructions](CONTEXT300.md)** · [All 140 predictions](research/casp16/experiments/context300-seed1-20261103/all-predictions.csv) · [Frozen structure/input archive](data/casp16/context_inputs.tar.gz)
+
+The 95% interval for the weighted change versus the historical result is [-0.015363, +0.074895]. Earlier negative experiments are retained. Recalculate the published observation without a GPU:
+
+```bash
+python3 scripts/reproduce_context300.py published-score
+```
+
 Research by Arman Aubakirov, prepared with Codex assistance. Boltz and its model weights are the work of the Boltz authors. This repository publishes experimental evidence, not an official Boltz benchmark or a maintainer-approved resolution.
 
-Two separate studies are documented here:
+The original reconstruction and performance studies are retained below; the new context experiment is documented above:
 
 | Study | Measured result | Scope |
 |---|---|---|
@@ -129,7 +141,7 @@ VRAM gains are **0 MiB** in the measured B1-to-optimized comparisons. Quality-st
 - [All original speed measurements](reports/benchmark_results.csv), [speed summary](reports/final-summary.json)
 - [Independent quality verification](reports/casp16-issue636/independent-verification.json) and [checksums](reports/casp16-issue636/output-checksums.json)
 - [Russian CASP16 report](reports/casp16-issue636/REPORT_RU.md), [Russian performance report](reports/OPTIMIZATION_REPORT.md)
-- Research scripts, original configs/results, frozen inputs/MSAs, and all **840 raw quality JSON outputs** are included. Large CIF/NPZ files, weights, the original paper PDF and large profiler trace are omitted; output hashes and source/download information remain available. See [publication manifest](PUBLICATION_MANIFEST.json).
+- Research scripts, original configs/results, frozen inputs/MSAs, and all **840 raw quality JSON outputs** are included. The new context-input archive adds the 140 original pre_affinity NPZ structures and processed inputs. Other large CIF/NPZ outputs, weights, the original paper PDF and large profiler trace are omitted; output hashes and source/download information remain available. See [publication manifest](PUBLICATION_MANIFEST.json).
 
 Recalculate the four headline quality metrics and performance ratio with Python's standard library, without a GPU or dependencies:
 

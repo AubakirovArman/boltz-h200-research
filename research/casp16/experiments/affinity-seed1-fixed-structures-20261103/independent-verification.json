@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "unique_pairs": 140,
+  "new_affinity_json_finite": 140,
+  "cli_jobs": 4,
+  "independent_pearson_agreement_tolerance": 1e-12,
+  "baseline_files_unchanged": 280,
+  "baseline_source_files_byte_identical": true,
+  "structure_stage_was_reused": true,
+  "scope": "Research completeness and arithmetic checks, not official upstream tests.",
+  "independent_calculations": {
+    "L1000": {
+      "n": 17,
+      "r": {
+        "baseline_processed": 0.5364802168647806,
+        "repeat_processed": 0.5063872546082491,
+        "ensemble_processed": 0.5219791438879325,
+        "baseline_csv": 0.5350886169343684,
+        "repeat_csv": 0.5046730509247084,
+        "ensemble_csv": 0.5204244111456496
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "r": {
+        "baseline_processed": 0.6556319062104533,
+        "repeat_processed": 0.6568056403603038,
+        "ensemble_processed": 0.6566045245053054,
+        "baseline_csv": 0.6556634290201838,
+        "repeat_csv": 0.6568339257522149,
+        "ensemble_csv": 0.6566338918184226
+      }
+    }
+  }
+}

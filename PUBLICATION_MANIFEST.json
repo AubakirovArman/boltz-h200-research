@@ -3,6 +3,16 @@
   "local_research_commit": "1b5051c08e49f5644762809e33f48eebeb7220bb",
   "published_utc": "2026-11-03",
   "included": "Research scripts, frozen inputs/MSAs, all 840 quality JSON outputs, per-run configs/results, aggregate and individual results.",
-  "excluded": "Model weights, original paper PDF, upstream source, large CIF/NPZ outputs, 36 MB profiler trace, venv, unrelated host process telemetry. Large output checksums remain in reports.",
-  "preservation": "Original source config/result contents and historical local paths retained; environment manifest narrowed to relevant hardware/software fields. User-edited local README was not copied or changed."
+  "excluded": "Model weights, original paper PDF, upstream source, large CIF/PAE/PDE outputs and profiler trace, venv and unrelated host process telemetry. The context archive explicitly includes the original 140 pre_affinity NPZ inputs and processed chemistry/MSAs.",
+  "preservation": "Original source config/result contents and historical local paths retained; environment manifest narrowed to relevant hardware/software fields. User-edited local README was not copied or changed.",
+  "context_followup": {
+    "source_research_commit": "070f8dd",
+    "upstream_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+    "weighted_r_cli_mw": 0.670871742337121,
+    "uniform_r_cli_mw": 0.6037912099122544,
+    "published_structures": 140,
+    "conditional_input_archive": "data/casp16/context_inputs.tar.gz",
+    "report": "CONTEXT300.md",
+    "raw_followup_outputs": 443
+  }
 }

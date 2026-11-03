@@ -1,0 +1,320 @@
+{
+  "scope": "Unlabelled secondary diagnostic; no change to the preregistered rank1 test",
+  "by_target": {
+    "L1000": {
+      "alternative_ligand_specific_ranking_changes": 6,
+      "pairs": [
+        {
+          "id": "L1006",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9858593940734863
+        },
+        {
+          "id": "L1008",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9824888110160828
+        },
+        {
+          "id": "L1011",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.988459587097168
+        },
+        {
+          "id": "L1013",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9901219010353088
+        },
+        {
+          "id": "L1014",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9908736348152161
+        },
+        {
+          "id": "L1016",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9873923659324646
+        }
+      ]
+    },
+    "L3000": {
+      "alternative_ligand_specific_ranking_changes": 55,
+      "pairs": [
+        {
+          "id": "L3019",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9852951169013977
+        },
+        {
+          "id": "L3026",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9466722011566162
+        },
+        {
+          "id": "L3035",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9393040537834167
+        },
+        {
+          "id": "L3037",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9735088348388672
+        },
+        {
+          "id": "L3042",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9080637097358704
+        },
+        {
+          "id": "L3043",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9415454268455505
+        },
+        {
+          "id": "L3044",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9655080437660217
+        },
+        {
+          "id": "L3045",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.949029803276062
+        },
+        {
+          "id": "L3049",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9270549416542053
+        },
+        {
+          "id": "L3050",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9473505020141602
+        },
+        {
+          "id": "L3056",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9085059762001038
+        },
+        {
+          "id": "L3064",
+          "ligand_iptm_best_rank": 3,
+          "ligand_iptm": 0.9681932926177979
+        },
+        {
+          "id": "L3066",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9612796306610107
+        },
+        {
+          "id": "L3073",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9167705178260803
+        },
+        {
+          "id": "L3075",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9421036243438721
+        },
+        {
+          "id": "L3077",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9317349195480347
+        },
+        {
+          "id": "L3079",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9201480746269226
+        },
+        {
+          "id": "L3087",
+          "ligand_iptm_best_rank": 4,
+          "ligand_iptm": 0.9734617471694946
+        },
+        {
+          "id": "L3095",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9366507530212402
+        },
+        {
+          "id": "L3096",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9645423889160156
+        },
+        {
+          "id": "L3105",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9467228651046753
+        },
+        {
+          "id": "L3109",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9270496964454651
+        },
+        {
+          "id": "L3111",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9681668281555176
+        },
+        {
+          "id": "L3120",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9771339297294617
+        },
+        {
+          "id": "L3127",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.968609094619751
+        },
+        {
+          "id": "L3130",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9722951054573059
+        },
+        {
+          "id": "L3140",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9137822985649109
+        },
+        {
+          "id": "L3141",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9549715518951416
+        },
+        {
+          "id": "L3143",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9558143019676208
+        },
+        {
+          "id": "L3149",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9458667039871216
+        },
+        {
+          "id": "L3150",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9245733618736267
+        },
+        {
+          "id": "L3151",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9675294160842896
+        },
+        {
+          "id": "L3154",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9501706957817078
+        },
+        {
+          "id": "L3156",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9095808267593384
+        },
+        {
+          "id": "L3158",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9771542549133301
+        },
+        {
+          "id": "L3160",
+          "ligand_iptm_best_rank": 4,
+          "ligand_iptm": 0.9759311079978943
+        },
+        {
+          "id": "L3162",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9547812342643738
+        },
+        {
+          "id": "L3170",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9472553133964539
+        },
+        {
+          "id": "L3183",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9840990900993347
+        },
+        {
+          "id": "L3186",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.947267472743988
+        },
+        {
+          "id": "L3189",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9802973866462708
+        },
+        {
+          "id": "L3192",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.907039999961853
+        },
+        {
+          "id": "L3197",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9512826204299927
+        },
+        {
+          "id": "L3202",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9606735706329346
+        },
+        {
+          "id": "L3204",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.945624053478241
+        },
+        {
+          "id": "L3206",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9349625706672668
+        },
+        {
+          "id": "L3209",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.940854549407959
+        },
+        {
+          "id": "L3210",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9507055878639221
+        },
+        {
+          "id": "L3211",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9123244285583496
+        },
+        {
+          "id": "L3221",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9142070412635803
+        },
+        {
+          "id": "L3223",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9884979128837585
+        },
+        {
+          "id": "L3224",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9802931547164917
+        },
+        {
+          "id": "L3225",
+          "ligand_iptm_best_rank": 2,
+          "ligand_iptm": 0.9514628648757935
+        },
+        {
+          "id": "L3228",
+          "ligand_iptm_best_rank": 4,
+          "ligand_iptm": 0.9428603053092957
+        },
+        {
+          "id": "L3230",
+          "ligand_iptm_best_rank": 1,
+          "ligand_iptm": 0.9468763470649719
+        }
+      ]
+    }
+  }
+}

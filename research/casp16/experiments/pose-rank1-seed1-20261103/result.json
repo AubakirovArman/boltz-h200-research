@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "jobs": [
+    {
+      "job": "L1000-shard1",
+      "returncode": 0,
+      "pairs": 17,
+      "expected": 17,
+      "ids_match": true,
+      "elapsed_s": 786.1330534890294,
+      "gpu_peak_sampled_mib": 15106.0,
+      "structure_prediction_launched": false,
+      "phase": "affinity_only_on_fixed_seed0_structures"
+    },
+    {
+      "job": "L3000-shard3",
+      "returncode": 0,
+      "pairs": 41,
+      "expected": 41,
+      "ids_match": true,
+      "elapsed_s": 1671.607062982861,
+      "gpu_peak_sampled_mib": 21506.0,
+      "structure_prediction_launched": false,
+      "phase": "affinity_only_on_fixed_seed0_structures"
+    },
+    {
+      "job": "L3000-shard2",
+      "returncode": 0,
+      "pairs": 41,
+      "expected": 41,
+      "ids_match": true,
+      "elapsed_s": 1674.12038528407,
+      "gpu_peak_sampled_mib": 15278.0,
+      "structure_prediction_launched": false,
+      "phase": "affinity_only_on_fixed_seed0_structures"
+    },
+    {
+      "job": "L3000-shard1",
+      "returncode": 0,
+      "pairs": 41,
+      "expected": 41,
+      "ids_match": true,
+      "elapsed_s": 1676.1325285900384,
+      "gpu_peak_sampled_mib": 26606.0,
+      "structure_prediction_launched": false,
+      "phase": "affinity_only_on_fixed_seed0_structures"
+    }
+  ],
+  "elapsed_s": 1676.7653150116093,
+  "original_baseline_unchanged": true,
+  "phase": "affinity_only"
+}

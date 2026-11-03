@@ -1,0 +1,49 @@
+{
+  "pairs": 140,
+  "rows": [
+    {
+      "method": "Исходный исторический расчёт",
+      "r_cli_mw": 0.6411634867899073,
+      "r_csv_mw": 0.6410222018383349
+    },
+    {
+      "method": "Предыдущий контроль: первая поза, seed1",
+      "r_cli_mw": 0.6385405506618399,
+      "r_csv_mw": 0.638357248094589
+    },
+    {
+      "method": "Вторая поза по общей уверенности, seed1",
+      "r_cli_mw": 0.6322086426966246,
+      "r_csv_mw": 0.6320958151240048
+    },
+    {
+      "method": "Среднее первой и второй позы, seed1",
+      "r_cli_mw": 0.6390611743716633,
+      "r_csv_mw": 0.6389105973662917
+    },
+    {
+      "method": "Среднее исторического расчёта и второй позы",
+      "r_cli_mw": 0.6405539405247688,
+      "r_csv_mw": 0.6404228012201989
+    },
+    {
+      "method": "Поза по максимальному ligand_iptm",
+      "r_cli_mw": 0.6239889527827747,
+      "r_csv_mw": 0.6237610565646646
+    },
+    {
+      "method": "Среднее контроля и выбора по ligand_iptm",
+      "r_cli_mw": 0.6329559391484373,
+      "r_csv_mw": 0.6327461106553031
+    }
+  ],
+  "highest_observed": {
+    "method": "Исходный исторический расчёт",
+    "r_cli_mw": 0.6411634867899073,
+    "r_csv_mw": 0.6410222018383349
+  },
+  "reached_0_8": false,
+  "new_cli_processes_this_round": 6,
+  "new_affinity_calculations_this_round": 163,
+  "note": "All alternatives and negative results retained. The largest observed score is exploratory, not an independent generalization estimate."
+}

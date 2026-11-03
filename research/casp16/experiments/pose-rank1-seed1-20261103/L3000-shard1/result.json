@@ -1,0 +1,11 @@
+{
+  "job": "L3000-shard1",
+  "returncode": 0,
+  "pairs": 41,
+  "expected": 41,
+  "ids_match": true,
+  "elapsed_s": 1676.1325285900384,
+  "gpu_peak_sampled_mib": 26606.0,
+  "structure_prediction_launched": false,
+  "phase": "affinity_only_on_fixed_seed0_structures"
+}

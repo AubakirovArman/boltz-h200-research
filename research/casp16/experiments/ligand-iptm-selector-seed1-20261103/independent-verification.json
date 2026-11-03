@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "pairs": 140,
+  "fresh_pairs": 23,
+  "independent_pearson_tolerance": 1e-12,
+  "scope": "Exploratory research consistency checks, not official tests."
+}
