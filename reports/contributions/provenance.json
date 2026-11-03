@@ -1,0 +1,7 @@
+{
+  "source_fork": "https://github.com/AubakirovArman/boltz",
+  "gradient_commit": "b826960",
+  "known_structure_commit": "6141003a1e73e59d4880fb5652f18d3fcbde3939",
+  "upstream_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "known_structure_runner_portability_change": "Public runner reads the same included source CIF and writes to a fresh BOLTZ_AUDIT_OUT directory; measured runtime model/example hashes are in real-weight-audit.json."
+}

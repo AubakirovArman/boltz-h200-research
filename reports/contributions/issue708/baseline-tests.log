@@ -1,0 +1,56 @@
+.FFF.FFF.....FFF.FFF.....FFF.FFF.....FFF.FFF....FF.                      [100%]
+=================================== FAILURES ===================================
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:47: AssertionError: Tensor-likes are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:75: AssertionError: Scalars are not close!
+/mnt/data/arman-projects/boltz-h200/contributions/boltz/tests/model/potentials/test_contact_potential.py:85: assert tensor(False)
+=========================== short test summary info ============================
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index0-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index0-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index0-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index1-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index1-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-1-union_index1-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index0-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index0-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index0-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index1-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index1-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask0-3-union_index1-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index0-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index0-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index0-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index1-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index1-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-1-union_index1-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index0-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index0-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index0-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index1-0.5]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index1-1.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_autograd[negation_mask1-3-union_index1-3.0]
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_matches_finite_difference
+FAILED contributions/boltz/tests/model/potentials/test_contact_potential.py::test_contact_gradient_step_lowers_computed_energy
+26 failed, 25 passed in 2.95s

@@ -1,0 +1,18 @@
+{
+  "input_sha256": "d2ba73b5c4be05c45275571bbb4dd042347927f91c6c05038c0df5d1ce23c268",
+  "protein_subchains": [
+    "A",
+    "B"
+  ],
+  "ligand_subchain": "C",
+  "ligand_ccd": "MK1",
+  "ligand_mw": 613.803,
+  "omitted_subchains": [],
+  "waters_omitted": true,
+  "assembly_expanded": false,
+  "msa": "single sequence",
+  "tokens": 243,
+  "atoms": 1559,
+  "coordinate_change": "translation to crop centroid only (FP32 rounding)",
+  "elapsed_s": 0.4837471731007099
+}

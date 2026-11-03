@@ -1,0 +1,78 @@
+{
+  "input": {
+    "input_sha256": "d2ba73b5c4be05c45275571bbb4dd042347927f91c6c05038c0df5d1ce23c268",
+    "protein_subchains": [
+      "A",
+      "B"
+    ],
+    "ligand_subchain": "C",
+    "ligand_ccd": "MK1",
+    "ligand_mw": 613.803,
+    "omitted_subchains": [],
+    "waters_omitted": true,
+    "assembly_expanded": false,
+    "msa": "single sequence",
+    "tokens": 243,
+    "atoms": 1559,
+    "coordinate_change": "translation to crop centroid only (FP32 rounding)"
+  },
+  "fixed_predictions": {
+    "affinity_pred_value": -1.823854684829712,
+    "affinity_probability_binary": 0.9270296096801758,
+    "affinity_pred_value1": -1.7084258794784546,
+    "affinity_probability_binary1": 0.9521130323410034,
+    "affinity_pred_value2": -1.9392834901809692,
+    "affinity_probability_binary2": 0.9019462466239929
+  },
+  "default_predictions": {
+    "affinity_pred_value": -1.8261133432388306,
+    "affinity_probability_binary": 0.9416505098342896,
+    "affinity_pred_value1": -1.5946860313415527,
+    "affinity_probability_binary1": 0.9610380530357361,
+    "affinity_pred_value2": -2.0575406551361084,
+    "affinity_probability_binary2": 0.922262966632843
+  },
+  "fixed_coordinates_bit_equal": true,
+  "both_heads_received_same_input_storage": [
+    {
+      "module": "AffinityModule",
+      "bit_equal": true,
+      "data_ptr_equal": true
+    },
+    {
+      "module": "AffinityModule",
+      "bit_equal": true,
+      "data_ptr_equal": true
+    }
+  ],
+  "diffusion_and_confidence_calls_in_fixed_mode": {
+    "diffusion": 0,
+    "confidence": 0
+  },
+  "manual_head_reference_bit_equal": true,
+  "fixed_feature_repeat_across_seeds_bit_equal": true,
+  "rotation_translation_max_affinity_output_difference": 0.0,
+  "new_default_equals_original_upstream_bitwise": true,
+  "default_regression_settings": {
+    "recycling_steps": 1,
+    "num_sampling_steps": 20,
+    "diffusion_samples": 2,
+    "max_parallel_samples": 1,
+    "run_confidence_sequentially": true
+  },
+  "timing_scope": "Resource records for one example, not a benchmark.",
+  "load_checkpoint_s": 25.158582501113415,
+  "fixed_forward_s": 2.3231909535825253,
+  "peak_torch_allocated_mib": 3132.8388671875,
+  "peak_torch_reserved_mib": 3482.0,
+  "gpu": "NVIDIA H200",
+  "source_sha256": {
+    "contributions/boltz/src/boltz/model/models/boltz2.py": "33b6834d0fdf52017fab64ca0b25700623ce6eb41512262db3112582b062e888",
+    "contributions/boltz/examples/affinity_from_structure.py": "b06f64014ad0b2749a1415b500e940ec942fce54d79b1a17ebcae20c4d541189"
+  },
+  "limitations": [
+    "One old experimental complex, no affinity accuracy/generalization claim.",
+    "Single-sequence features; waters omitted; no structure relaxation or atom completion.",
+    "Regression control uses 20 diffusion steps and one recycle, not quality-study settings."
+  ]
+}

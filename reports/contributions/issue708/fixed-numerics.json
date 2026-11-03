@@ -1,0 +1,60 @@
+{
+  "source_path": "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/model/potentials/potentials.py",
+  "source_sha256": "a8da0806726181e1c7462476345e25841daa0c030f5e89de21a0dd5c71eba595",
+  "torch": "2.11.0+cu128",
+  "energy_before": 0.23840583860874176,
+  "energy_after_negative_gradient_step": 0.23824092745780945,
+  "energy_delta": -0.000164911150932312,
+  "manual_vs_autograd_max_abs_error": 2.2351741790771484e-08,
+  "gradient_dot_product": 0.016483556479215622,
+  "gradient_cosine": 1.0,
+  "manual_gradient": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.09078425168991089,
+        0.0,
+        0.0
+      ],
+      [
+        -0.09078425168991089,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "autograd_gradient": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0907842293381691,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0907842293381691,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "scope": "ContactPotentital weighted union energy with one satisfied and one violated alternative. No model inference or benchmark quality claim."
+}

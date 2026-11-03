@@ -6,3 +6,6 @@ __pycache__/
 
 local-context*/
 local-ion-pilot*/
+/contributions/
+local-known-structure*/
+local-known-structure*.json
