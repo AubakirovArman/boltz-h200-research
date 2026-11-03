@@ -1,0 +1,1159 @@
+{
+  "source": "parse/schema.py:1274 -> Record.affinity.mw -> featurizerv2.py:2308 -> Boltz2 MW correction",
+  "prior_published_csv_mw_weighted_r": 0.6410222018383349,
+  "processed_cli_mw_per_target": {
+    "L1000": {
+      "n": 17,
+      "r": 0.5364802168647808
+    },
+    "L3000": {
+      "n": 123,
+      "r": 0.6556319062104534
+    }
+  },
+  "processed_cli_mw_weighted_r": 0.6411634867899074,
+  "preprocessing_finding": "With the pinned RDKit, AddHs followed by RemoveHs(sanitize=False) leaves a molecular-weight property-cache difference; UpdatePropertyCache restores the implicit-hydrogen contribution in the examples. Chemical standardization can additionally change the source molecule.",
+  "minimal_examples": [
+    {
+      "smiles": "CC",
+      "source_MolWt": 30.07,
+      "RemoveHs_sanitize_false_MolWt": 24.022,
+      "after_UpdatePropertyCache_MolWt": 30.07
+    },
+    {
+      "smiles": "c1ccccc1",
+      "source_MolWt": 78.11399999999999,
+      "RemoveHs_sanitize_false_MolWt": 72.06599999999999,
+      "after_UpdatePropertyCache_MolWt": 78.11399999999999
+    },
+    {
+      "smiles": "CC(=O)O",
+      "source_MolWt": 60.05200000000001,
+      "RemoveHs_sanitize_false_MolWt": 56.02,
+      "after_UpdatePropertyCache_MolWt": 60.05200000000001
+    }
+  ],
+  "note": "Same official correction coefficients; different MW inputs. The old CSV-MW calculation remains valid as such, but is not an exact reconstruction of the CLI MW feature. No inference, fitting or source change.",
+  "pairs": [
+    {
+      "id": "L1001",
+      "target": "L1000",
+      "csv_molwt": 434.4670000000001,
+      "processed_manifest_mw": 411.28300000000024,
+      "raw": -1.5098105669021606,
+      "cli_mw_corrected_fp64": -2.38056113878185
+    },
+    {
+      "id": "L1002",
+      "target": "L1000",
+      "csv_molwt": 492.6190000000002,
+      "processed_manifest_mw": 461.3710000000003,
+      "raw": -0.0721995010972023,
+      "cli_mw_corrected_fp64": -1.0203076518098908
+    },
+    {
+      "id": "L1003",
+      "target": "L1000",
+      "csv_molwt": 466.4810000000002,
+      "processed_manifest_mw": 452.3690000000001,
+      "raw": -0.18234489858150482,
+      "cli_mw_corrected_fp64": -1.112067126009931
+    },
+    {
+      "id": "L1004",
+      "target": "L1000",
+      "csv_molwt": 406.50100000000015,
+      "processed_manifest_mw": 380.2930000000001,
+      "raw": -0.17824634909629822,
+      "cli_mw_corrected_fp64": -0.9172558657543437
+    },
+    {
+      "id": "L1005",
+      "target": "L1000",
+      "csv_molwt": 406.41300000000007,
+      "processed_manifest_mw": 387.2610000000002,
+      "raw": -1.957045555114746,
+      "cli_mw_corrected_fp64": -2.778249521015473
+    },
+    {
+      "id": "L1006",
+      "target": "L1000",
+      "csv_molwt": 520.6730000000002,
+      "processed_manifest_mw": 485.39300000000037,
+      "raw": -1.073889970779419,
+      "cli_mw_corrected_fp64": -2.115291464691656
+    },
+    {
+      "id": "L1007",
+      "target": "L1000",
+      "csv_molwt": 390.4820000000001,
+      "processed_manifest_mw": 368.30600000000015,
+      "raw": 0.3994235396385193,
+      "cli_mw_corrected_fp64": -0.2851220695981138
+    },
+    {
+      "id": "L1008",
+      "target": "L1000",
+      "csv_molwt": 424.5650000000001,
+      "processed_manifest_mw": 400.3730000000002,
+      "raw": 0.22869110107421875,
+      "cli_mw_corrected_fp64": -0.5514371663679634
+    },
+    {
+      "id": "L1009",
+      "target": "L1000",
+      "csv_molwt": 427.4750000000002,
+      "processed_manifest_mw": 408.32300000000015,
+      "raw": -0.6320095062255859,
+      "cli_mw_corrected_fp64": -1.4639078526418752
+    },
+    {
+      "id": "L1010",
+      "target": "L1000",
+      "csv_molwt": 319.335,
+      "processed_manifest_mw": 305.223,
+      "raw": -0.6333061456680298,
+      "cli_mw_corrected_fp64": -1.1607291757935512
+    },
+    {
+      "id": "L1011",
+      "target": "L1000",
+      "csv_molwt": 404.4410000000001,
+      "processed_manifest_mw": 383.27300000000014,
+      "raw": -1.4332818984985352,
+      "cli_mw_corrected_fp64": -2.2249024056958406
+    },
+    {
+      "id": "L1012",
+      "target": "L1000",
+      "csv_molwt": 457.5260000000002,
+      "processed_manifest_mw": 441.39800000000025,
+      "raw": -0.16715626418590546,
+      "cli_mw_corrected_fp64": -1.068778920022229
+    },
+    {
+      "id": "L1013",
+      "target": "L1000",
+      "csv_molwt": 359.4250000000001,
+      "processed_manifest_mw": 338.2570000000001,
+      "raw": -1.2881038188934326,
+      "cli_mw_corrected_fp64": -1.9431237810348305
+    },
+    {
+      "id": "L1014",
+      "target": "L1000",
+      "csv_molwt": 315.372,
+      "processed_manifest_mw": 298.23600000000005,
+      "raw": -0.9132998585700989,
+      "cli_mw_corrected_fp64": -1.4274858551334306
+    },
+    {
+      "id": "L1015",
+      "target": "L1000",
+      "csv_molwt": 476.57600000000014,
+      "processed_manifest_mw": 459.44000000000017,
+      "raw": -0.5473122596740723,
+      "cli_mw_corrected_fp64": -1.5074213859098897
+    },
+    {
+      "id": "L1016",
+      "target": "L1000",
+      "csv_molwt": 410.47000000000014,
+      "processed_manifest_mw": 391.31800000000015,
+      "raw": -1.8333556652069092,
+      "cli_mw_corrected_fp64": -2.6614246857200348
+    },
+    {
+      "id": "L1017",
+      "target": "L1000",
+      "csv_molwt": 426.46900000000016,
+      "processed_manifest_mw": 407.31700000000023,
+      "raw": -1.6814136505126953,
+      "cli_mw_corrected_fp64": -2.547618765079947
+    },
+    {
+      "id": "L3001",
+      "target": "L3000",
+      "csv_molwt": 430.31000000000006,
+      "processed_manifest_mw": 412.1660000000002,
+      "raw": -0.5400306582450867,
+      "cli_mw_corrected_fp64": -1.3789367846699019
+    },
+    {
+      "id": "L3003",
+      "target": "L3000",
+      "csv_molwt": 569.585,
+      "processed_manifest_mw": 542.3690000000001,
+      "raw": -1.415057897567749,
+      "cli_mw_corrected_fp64": -2.5983778722497135
+    },
+    {
+      "id": "L3009",
+      "target": "L3000",
+      "csv_molwt": 608.578,
+      "processed_manifest_mw": 584.3860000000001,
+      "raw": -2.0564470291137695,
+      "cli_mw_corrected_fp64": -3.3521671911016027
+    },
+    {
+      "id": "L3019",
+      "target": "L3000",
+      "csv_molwt": 531.0780000000002,
+      "processed_manifest_mw": 500.8380000000003,
+      "raw": -2.19956636428833,
+      "cli_mw_corrected_fp64": -3.3168798506568615
+    },
+    {
+      "id": "L3021",
+      "target": "L3000",
+      "csv_molwt": 619.7169999999999,
+      "processed_manifest_mw": 591.493,
+      "raw": -1.503549337387085,
+      "cli_mw_corrected_fp64": -2.7945105522182496
+    },
+    {
+      "id": "L3024",
+      "target": "L3000",
+      "csv_molwt": 526.3780000000003,
+      "processed_manifest_mw": 501.1780000000003,
+      "raw": -0.14121738076210022,
+      "cli_mw_corrected_fp64": -1.1867432681454648
+    },
+    {
+      "id": "L3026",
+      "target": "L3000",
+      "csv_molwt": 476.32000000000016,
+      "processed_manifest_mw": 458.17600000000016,
+      "raw": -0.43487548828125,
+      "cli_mw_corrected_fp64": -1.387902529951095
+    },
+    {
+      "id": "L3027",
+      "target": "L3000",
+      "csv_molwt": 328.79900000000004,
+      "processed_manifest_mw": 311.66300000000007,
+      "raw": -0.1453576385974884,
+      "cli_mw_corrected_fp64": -0.6765504423925504
+    },
+    {
+      "id": "L3028",
+      "target": "L3000",
+      "csv_molwt": 448.3500000000002,
+      "processed_manifest_mw": 426.17400000000015,
+      "raw": 0.29702508449554443,
+      "cli_mw_corrected_fp64": -0.5491753457087971
+    },
+    {
+      "id": "L3031",
+      "target": "L3000",
+      "csv_molwt": 400.32000000000016,
+      "processed_manifest_mw": 378.1440000000002,
+      "raw": 1.2565295696258545,
+      "cli_mw_corrected_fp64": 0.5741660333308864
+    },
+    {
+      "id": "L3035",
+      "target": "L3000",
+      "csv_molwt": 428.33400000000006,
+      "processed_manifest_mw": 408.17400000000026,
+      "raw": 0.8726919889450073,
+      "cli_mw_corrected_fp64": 0.0942472874950373
+    },
+    {
+      "id": "L3037",
+      "target": "L3000",
+      "csv_molwt": 422.52900000000034,
+      "processed_manifest_mw": 393.29700000000014,
+      "raw": -1.8112585544586182,
+      "cli_mw_corrected_fp64": -2.643995066776246
+    },
+    {
+      "id": "L3038",
+      "target": "L3000",
+      "csv_molwt": 328.80300000000005,
+      "processed_manifest_mw": 311.6670000000001,
+      "raw": -1.6466681957244873,
+      "cli_mw_corrected_fp64": -2.2308092119104987
+    },
+    {
+      "id": "L3039",
+      "target": "L3000",
+      "csv_molwt": 296.37000000000006,
+      "processed_manifest_mw": 277.21799999999996,
+      "raw": -1.125910997390747,
+      "cli_mw_corrected_fp64": -1.575708334726757
+    },
+    {
+      "id": "L3042",
+      "target": "L3000",
+      "csv_molwt": 428.9200000000003,
+      "processed_manifest_mw": 403.7200000000002,
+      "raw": -1.7975668907165527,
+      "cli_mw_corrected_fp64": -2.6581946521215674
+    },
+    {
+      "id": "L3043",
+      "target": "L3000",
+      "csv_molwt": 372.85600000000017,
+      "processed_manifest_mw": 351.68800000000016,
+      "raw": -1.8613413572311401,
+      "cli_mw_corrected_fp64": -2.577022656035237
+    },
+    {
+      "id": "L3044",
+      "target": "L3000",
+      "csv_molwt": 360.84500000000014,
+      "processed_manifest_mw": 339.67700000000013,
+      "raw": -1.403712511062622,
+      "cli_mw_corrected_fp64": -2.0671378685007253
+    },
+    {
+      "id": "L3045",
+      "target": "L3000",
+      "csv_molwt": 402.88200000000023,
+      "processed_manifest_mw": 379.69800000000015,
+      "raw": -0.7731362581253052,
+      "cli_mw_corrected_fp64": -1.531446699125163
+    },
+    {
+      "id": "L3047",
+      "target": "L3000",
+      "csv_molwt": 405.4620000000002,
+      "processed_manifest_mw": 383.28600000000023,
+      "raw": -1.2812098264694214,
+      "cli_mw_corrected_fp64": -2.067504733231237
+    },
+    {
+      "id": "L3049",
+      "target": "L3000",
+      "csv_molwt": 450.94800000000026,
+      "processed_manifest_mw": 427.7640000000002,
+      "raw": -1.355635404586792,
+      "cli_mw_corrected_fp64": -2.2642318171223783
+    },
+    {
+      "id": "L3050",
+      "target": "L3000",
+      "csv_molwt": 299.374,
+      "processed_manifest_mw": 278.20599999999996,
+      "raw": -1.3302394151687622,
+      "cli_mw_corrected_fp64": -1.790704309726789
+    },
+    {
+      "id": "L3053",
+      "target": "L3000",
+      "csv_molwt": 426.9040000000002,
+      "processed_manifest_mw": 403.7200000000002,
+      "raw": -1.6669642925262451,
+      "cli_mw_corrected_fp64": -2.5229870872926803
+    },
+    {
+      "id": "L3054",
+      "target": "L3000",
+      "csv_molwt": 411.8930000000002,
+      "processed_manifest_mw": 389.71700000000016,
+      "raw": -1.1384397745132446,
+      "cli_mw_corrected_fp64": -1.9375860782042595
+    },
+    {
+      "id": "L3056",
+      "target": "L3000",
+      "csv_molwt": 292.32,
+      "processed_manifest_mw": 281.232,
+      "raw": 1.6600234508514404,
+      "cli_mw_corrected_fp64": 1.294440136048435
+    },
+    {
+      "id": "L3057",
+      "target": "L3000",
+      "csv_molwt": 406.8950000000002,
+      "processed_manifest_mw": 387.74300000000017,
+      "raw": -0.12412717938423157,
+      "cli_mw_corrected_fp64": -0.8820416374839515
+    },
+    {
+      "id": "L3058",
+      "target": "L3000",
+      "csv_molwt": 445.5020000000002,
+      "processed_manifest_mw": 421.31000000000023,
+      "raw": -0.9166553020477295,
+      "cli_mw_corrected_fp64": -1.7929656816408528
+    },
+    {
+      "id": "L3060",
+      "target": "L3000",
+      "csv_molwt": 371.2640000000001,
+      "processed_manifest_mw": 351.10400000000004,
+      "raw": -0.364288330078125,
+      "cli_mw_corrected_fp64": -1.0254483675587727
+    },
+    {
+      "id": "L3061",
+      "target": "L3000",
+      "csv_molwt": 443.93800000000005,
+      "processed_manifest_mw": 422.77000000000015,
+      "raw": -0.5127741098403931,
+      "cli_mw_corrected_fp64": -1.3786617940496155
+    },
+    {
+      "id": "L3064",
+      "target": "L3000",
+      "csv_molwt": 265.74399999999997,
+      "processed_manifest_mw": 250.62399999999997,
+      "raw": 0.22067074477672577,
+      "cli_mw_corrected_fp64": -0.08499952567495761
+    },
+    {
+      "id": "L3066",
+      "target": "L3000",
+      "csv_molwt": 295.3419999999999,
+      "processed_manifest_mw": 279.214,
+      "raw": -0.5173012018203735,
+      "cli_mw_corrected_fp64": -0.9526267046587917
+    },
+    {
+      "id": "L3068",
+      "target": "L3000",
+      "csv_molwt": 412.42400000000015,
+      "processed_manifest_mw": 395.2880000000001,
+      "raw": -0.2371654510498047,
+      "cli_mw_corrected_fp64": -1.0198607401535296
+    },
+    {
+      "id": "L3073",
+      "target": "L3000",
+      "csv_molwt": 314.4540000000001,
+      "processed_manifest_mw": 292.278,
+      "raw": 0.06382988393306732,
+      "cli_mw_corrected_fp64": -0.3958958153840535
+    },
+    {
+      "id": "L3075",
+      "target": "L3000",
+      "csv_molwt": 498.5280000000003,
+      "processed_manifest_mw": 468.28800000000035,
+      "raw": -0.10700976103544235,
+      "cli_mw_corrected_fp64": -1.0732511302662222
+    },
+    {
+      "id": "L3076",
+      "target": "L3000",
+      "csv_molwt": 505.45700000000033,
+      "processed_manifest_mw": 484.28900000000027,
+      "raw": -1.1848264932632446,
+      "cli_mw_corrected_fp64": -2.2275197338431525
+    },
+    {
+      "id": "L3077",
+      "target": "L3000",
+      "csv_molwt": 493.4160000000003,
+      "processed_manifest_mw": 475.2720000000002,
+      "raw": 0.2880735695362091,
+      "cli_mw_corrected_fp64": -0.6811305635245639
+    },
+    {
+      "id": "L3079",
+      "target": "L3000",
+      "csv_molwt": 428.9010000000002,
+      "processed_manifest_mw": 411.7650000000001,
+      "raw": 0.3275635242462158,
+      "cli_mw_corrected_fp64": -0.4796852680346744
+    },
+    {
+      "id": "L3080",
+      "target": "L3000",
+      "csv_molwt": 350.34000000000003,
+      "processed_manifest_mw": 333.20400000000006,
+      "raw": -0.22673606872558594,
+      "cli_mw_corrected_fp64": -0.8288239919627998
+    },
+    {
+      "id": "L3081",
+      "target": "L3000",
+      "csv_molwt": 322.36800000000005,
+      "processed_manifest_mw": 305.23199999999997,
+      "raw": 0.6725095510482788,
+      "cli_mw_corrected_fp64": 0.19109924536420175
+    },
+    {
+      "id": "L3083",
+      "target": "L3000",
+      "csv_molwt": 292.41900000000004,
+      "processed_manifest_mw": 264.19499999999994,
+      "raw": 0.9806407690048218,
+      "cli_mw_corrected_fp64": 0.6515954197952136
+    },
+    {
+      "id": "L3087",
+      "target": "L3000",
+      "csv_molwt": 342.83000000000015,
+      "processed_manifest_mw": 323.67800000000005,
+      "raw": 0.4279515743255615,
+      "cli_mw_corrected_fp64": -0.12136124620656163
+    },
+    {
+      "id": "L3090",
+      "target": "L3000",
+      "csv_molwt": 405.54600000000016,
+      "processed_manifest_mw": 374.2980000000002,
+      "raw": -1.0566442012786865,
+      "cli_mw_corrected_fp64": -1.8096689498973015
+    },
+    {
+      "id": "L3095",
+      "target": "L3000",
+      "csv_molwt": 439.75100000000015,
+      "processed_manifest_mw": 427.6550000000002,
+      "raw": -0.7424448132514954,
+      "cli_mw_corrected_fp64": -1.6291381205927555
+    },
+    {
+      "id": "L3096",
+      "target": "L3000",
+      "csv_molwt": 350.4430000000002,
+      "processed_manifest_mw": 332.2990000000001,
+      "raw": 0.5484189987182617,
+      "cli_mw_corrected_fp64": -0.023542421665559754
+    },
+    {
+      "id": "L3099",
+      "target": "L3000",
+      "csv_molwt": 459.90500000000037,
+      "processed_manifest_mw": 437.7290000000002,
+      "raw": 0.1533682942390442,
+      "cli_mw_corrected_fp64": -0.7276277618588032
+    },
+    {
+      "id": "L3101",
+      "target": "L3000",
+      "csv_molwt": 290.40700000000004,
+      "processed_manifest_mw": 267.22299999999996,
+      "raw": 1.058641791343689,
+      "cli_mw_corrected_fp64": 0.7213997425006173
+    },
+    {
+      "id": "L3105",
+      "target": "L3000",
+      "csv_molwt": 323.8450000000001,
+      "processed_manifest_mw": 305.70099999999996,
+      "raw": 1.0515388250350952,
+      "cli_mw_corrected_fp64": 0.5819549925878649
+    },
+    {
+      "id": "L3106",
+      "target": "L3000",
+      "csv_molwt": 254.264,
+      "processed_manifest_mw": 243.17599999999996,
+      "raw": 0.06944826245307922,
+      "cli_mw_corrected_fp64": -0.21320656609162025
+    },
+    {
+      "id": "L3109",
+      "target": "L3000",
+      "csv_molwt": 486.69300000000044,
+      "processed_manifest_mw": 447.3810000000003,
+      "raw": 1.076111078262329,
+      "cli_mw_corrected_fp64": 0.2032346134091192
+    },
+    {
+      "id": "L3111",
+      "target": "L3000",
+      "csv_molwt": 465.55400000000037,
+      "processed_manifest_mw": 434.30600000000027,
+      "raw": -0.6999611854553223,
+      "cli_mw_corrected_fp64": -1.6022957754210996
+    },
+    {
+      "id": "L3114",
+      "target": "L3000",
+      "csv_molwt": 415.2900000000002,
+      "processed_manifest_mw": 400.1700000000001,
+      "raw": 0.6072182655334473,
+      "cli_mw_corrected_fp64": -0.15901247569932853
+    },
+    {
+      "id": "L3115",
+      "target": "L3000",
+      "csv_molwt": 444.3220000000001,
+      "processed_manifest_mw": 425.17000000000024,
+      "raw": 0.016802072525024414,
+      "cli_mw_corrected_fp64": -0.8366690858821313
+    },
+    {
+      "id": "L3120",
+      "target": "L3000",
+      "csv_molwt": 579.0190000000003,
+      "processed_manifest_mw": 551.8030000000003,
+      "raw": -0.6307563185691833,
+      "cli_mw_corrected_fp64": -1.806994607985498
+    },
+    {
+      "id": "L3121",
+      "target": "L3000",
+      "csv_molwt": 564.6300000000003,
+      "processed_manifest_mw": 534.3900000000003,
+      "raw": -0.14858879148960114,
+      "cli_mw_corrected_fp64": -1.2696579795052143
+    },
+    {
+      "id": "L3126",
+      "target": "L3000",
+      "csv_molwt": 511.43200000000024,
+      "processed_manifest_mw": 491.27200000000016,
+      "raw": -1.482508659362793,
+      "cli_mw_corrected_fp64": -2.552198936372
+    },
+    {
+      "id": "L3127",
+      "target": "L3000",
+      "csv_molwt": 493.4420000000003,
+      "processed_manifest_mw": 472.27400000000017,
+      "raw": -1.14711332321167,
+      "cli_mw_corrected_fp64": -2.1596910145948334
+    },
+    {
+      "id": "L3130",
+      "target": "L3000",
+      "csv_molwt": 378.86700000000013,
+      "processed_manifest_mw": 359.71500000000015,
+      "raw": -0.24042558670043945,
+      "cli_mw_corrected_fp64": -0.9226148929790399
+    },
+    {
+      "id": "L3131",
+      "target": "L3000",
+      "csv_molwt": 389.8680000000001,
+      "processed_manifest_mw": 374.74800000000016,
+      "raw": -0.5732282996177673,
+      "cli_mw_corrected_fp64": -1.310487476137891
+    },
+    {
+      "id": "L3132",
+      "target": "L3000",
+      "csv_molwt": 431.9050000000002,
+      "processed_manifest_mw": 414.7690000000002,
+      "raw": -0.6888462901115417,
+      "cli_mw_corrected_fp64": -1.5399049118713046
+    },
+    {
+      "id": "L3134",
+      "target": "L3000",
+      "csv_molwt": 515.5740000000002,
+      "processed_manifest_mw": 489.36600000000027,
+      "raw": -0.7793569564819336,
+      "cli_mw_corrected_fp64": -1.819767007398922
+    },
+    {
+      "id": "L3137",
+      "target": "L3000",
+      "csv_molwt": 439.94700000000023,
+      "processed_manifest_mw": 413.7390000000002,
+      "raw": -0.372215211391449,
+      "cli_mw_corrected_fp64": -1.2093808270915805
+    },
+    {
+      "id": "L3138",
+      "target": "L3000",
+      "csv_molwt": 347.80600000000015,
+      "processed_manifest_mw": 329.66200000000003,
+      "raw": -0.28991925716400146,
+      "cli_mw_corrected_fp64": -0.8832653112230471
+    },
+    {
+      "id": "L3139",
+      "target": "L3000",
+      "csv_molwt": 467.9970000000002,
+      "processed_manifest_mw": 437.7570000000003,
+      "raw": -0.45092952251434326,
+      "cli_mw_corrected_fp64": -1.3533041163511976
+    },
+    {
+      "id": "L3140",
+      "target": "L3000",
+      "csv_molwt": 321.3400000000001,
+      "processed_manifest_mw": 306.2200000000001,
+      "raw": 0.3308120667934418,
+      "cli_mw_corrected_fp64": -0.1658840358136846
+    },
+    {
+      "id": "L3141",
+      "target": "L3000",
+      "csv_molwt": 449.3550000000003,
+      "processed_manifest_mw": 432.21900000000005,
+      "raw": -0.14463308453559875,
+      "cli_mw_corrected_fp64": -1.0220289771413444
+    },
+    {
+      "id": "L3142",
+      "target": "L3000",
+      "csv_molwt": 348.83000000000015,
+      "processed_manifest_mw": 327.66200000000003,
+      "raw": -0.2634013295173645,
+      "cli_mw_corrected_fp64": -0.8495818379087927
+    },
+    {
+      "id": "L3143",
+      "target": "L3000",
+      "csv_molwt": 364.4490000000001,
+      "processed_manifest_mw": 340.25700000000006,
+      "raw": -1.0226854085922241,
+      "cli_mw_corrected_fp64": -1.6744405687034325
+    },
+    {
+      "id": "L3144",
+      "target": "L3000",
+      "csv_molwt": 403.40400000000017,
+      "processed_manifest_mw": 383.24400000000014,
+      "raw": 0.2170930802822113,
+      "cli_mw_corrected_fp64": -0.5162550999266848
+    },
+    {
+      "id": "L3145",
+      "target": "L3000",
+      "csv_molwt": 471.5650000000003,
+      "processed_manifest_mw": 442.3330000000003,
+      "raw": 0.053173139691352844,
+      "cli_mw_corrected_fp64": -0.8430485461843706
+    },
+    {
+      "id": "L3149",
+      "target": "L3000",
+      "csv_molwt": 290.794,
+      "processed_manifest_mw": 271.64199999999994,
+      "raw": -0.6735318899154663,
+      "cli_mw_corrected_fp64": -1.0876703239950292
+    },
+    {
+      "id": "L3150",
+      "target": "L3000",
+      "csv_molwt": 289.806,
+      "processed_manifest_mw": 269.64599999999996,
+      "raw": -0.2004411220550537,
+      "cli_mw_corrected_fp64": -0.5907750223897281
+    },
+    {
+      "id": "L3151",
+      "target": "L3000",
+      "csv_molwt": 492.4100000000003,
+      "processed_manifest_mw": 476.28200000000027,
+      "raw": -1.042379379272461,
+      "cli_mw_corrected_fp64": -2.0609230730188886
+    },
+    {
+      "id": "L3154",
+      "target": "L3000",
+      "csv_molwt": 316.36100000000016,
+      "processed_manifest_mw": 297.20899999999995,
+      "raw": -0.15126670897006989,
+      "cli_mw_corrected_fp64": -0.6351552476233091
+    },
+    {
+      "id": "L3156",
+      "target": "L3000",
+      "csv_molwt": 329.3600000000001,
+      "processed_manifest_mw": 311.21599999999995,
+      "raw": 0.7124720215797424,
+      "cli_mw_corrected_fp64": 0.2129717505212323
+    },
+    {
+      "id": "L3157",
+      "target": "L3000",
+      "csv_molwt": 448.48200000000014,
+      "processed_manifest_mw": 428.32200000000023,
+      "raw": 0.37194669246673584,
+      "cli_mw_corrected_fp64": -0.4771810626050965
+    },
+    {
+      "id": "L3158",
+      "target": "L3000",
+      "csv_molwt": 386.4110000000001,
+      "processed_manifest_mw": 368.2670000000001,
+      "raw": 0.5466499328613281,
+      "cli_mw_corrected_fp64": -0.13259237504633115
+    },
+    {
+      "id": "L3159",
+      "target": "L3000",
+      "csv_molwt": 370.84000000000026,
+      "processed_manifest_mw": 352.696,
+      "raw": -0.3563796579837799,
+      "cli_mw_corrected_fp64": -1.0219887544679018
+    },
+    {
+      "id": "L3160",
+      "target": "L3000",
+      "csv_molwt": 413.32600000000025,
+      "processed_manifest_mw": 395.182,
+      "raw": 0.33604896068573,
+      "cli_mw_corrected_fp64": -0.42614492412683846
+    },
+    {
+      "id": "L3162",
+      "target": "L3000",
+      "csv_molwt": 329.3560000000001,
+      "processed_manifest_mw": 310.20400000000006,
+      "raw": 0.583575427532196,
+      "cli_mw_corrected_fp64": 0.08280941951321852
+    },
+    {
+      "id": "L3165",
+      "target": "L3000",
+      "csv_molwt": 557.5830000000004,
+      "processed_manifest_mw": 532.3830000000003,
+      "raw": -1.606038212776184,
+      "cli_mw_corrected_fp64": -2.7740412653722046
+    },
+    {
+      "id": "L3170",
+      "target": "L3000",
+      "csv_molwt": 512.4010000000004,
+      "processed_manifest_mw": 489.2170000000003,
+      "raw": -1.45575749874115,
+      "cli_mw_corrected_fp64": -2.519665688907149
+    },
+    {
+      "id": "L3171",
+      "target": "L3000",
+      "csv_molwt": 486.51100000000037,
+      "processed_manifest_mw": 463.3270000000003,
+      "raw": -1.1770710945129395,
+      "cli_mw_corrected_fp64": -2.168934880437133
+    },
+    {
+      "id": "L3177",
+      "target": "L3000",
+      "csv_molwt": 329.83100000000013,
+      "processed_manifest_mw": 309.67100000000005,
+      "raw": -0.6269651651382446,
+      "cli_mw_corrected_fp64": -1.1686840487798618
+    },
+    {
+      "id": "L3183",
+      "target": "L3000",
+      "csv_molwt": 501.4140000000003,
+      "processed_manifest_mw": 475.20600000000024,
+      "raw": -1.5165233612060547,
+      "cli_mw_corrected_fp64": -2.549197635941832
+    },
+    {
+      "id": "L3184",
+      "target": "L3000",
+      "csv_molwt": 445.44500000000016,
+      "processed_manifest_mw": 423.2690000000002,
+      "raw": -0.6473716497421265,
+      "cli_mw_corrected_fp64": -1.5193079300422
+    },
+    {
+      "id": "L3186",
+      "target": "L3000",
+      "csv_molwt": 607.59,
+      "processed_manifest_mw": 584.4060000000002,
+      "raw": -1.5227375030517578,
+      "cli_mw_corrected_fp64": -2.7996810422455214
+    },
+    {
+      "id": "L3188",
+      "target": "L3000",
+      "csv_molwt": 523.0330000000004,
+      "processed_manifest_mw": 491.78500000000037,
+      "raw": -1.1610074043273926,
+      "cli_mw_corrected_fp64": -2.2205674841007133
+    },
+    {
+      "id": "L3189",
+      "target": "L3000",
+      "csv_molwt": 543.4800000000002,
+      "processed_manifest_mw": 519.2880000000004,
+      "raw": -1.2714228630065918,
+      "cli_mw_corrected_fp64": -2.3982684366313407
+    },
+    {
+      "id": "L3190",
+      "target": "L3000",
+      "csv_molwt": 295.1360000000001,
+      "processed_manifest_mw": 285.056,
+      "raw": 1.0753397941589355,
+      "cli_mw_corrected_fp64": 0.6759177073830394
+    },
+    {
+      "id": "L3192",
+      "target": "L3000",
+      "csv_molwt": 318.096,
+      "processed_manifest_mw": 311.03999999999996,
+      "raw": 0.13509920239448547,
+      "cli_mw_corrected_fp64": -0.38418913874392313
+    },
+    {
+      "id": "L3194",
+      "target": "L3000",
+      "csv_molwt": 322.235,
+      "processed_manifest_mw": 305.09900000000005,
+      "raw": -0.28549909591674805,
+      "cli_mw_corrected_fp64": -0.800251780831573
+    },
+    {
+      "id": "L3196",
+      "target": "L3000",
+      "csv_molwt": 555.6570000000003,
+      "processed_manifest_mw": 524.4090000000003,
+      "raw": -0.8002562522888184,
+      "cli_mw_corrected_fp64": -1.9220311610425478
+    },
+    {
+      "id": "L3197",
+      "target": "L3000",
+      "csv_molwt": 572.6590000000001,
+      "processed_manifest_mw": 541.4110000000004,
+      "raw": -1.0525572299957275,
+      "cli_mw_corrected_fp64": -2.2209926169194683
+    },
+    {
+      "id": "L3200",
+      "target": "L3000",
+      "csv_molwt": 526.5410000000002,
+      "processed_manifest_mw": 501.34100000000024,
+      "raw": -0.9646012187004089,
+      "cli_mw_corrected_fp64": -2.0395369978975486
+    },
+    {
+      "id": "L3202",
+      "target": "L3000",
+      "csv_molwt": 385.8550000000002,
+      "processed_manifest_mw": 365.69500000000016,
+      "raw": -1.574150562286377,
+      "cli_mw_corrected_fp64": -2.320753762547649
+    },
+    {
+      "id": "L3203",
+      "target": "L3000",
+      "csv_molwt": 414.8930000000002,
+      "processed_manifest_mw": 391.7090000000001,
+      "raw": -1.7838482856750488,
+      "cli_mw_corrected_fp64": -2.6112493464225164
+    },
+    {
+      "id": "L3204",
+      "target": "L3000",
+      "csv_molwt": 414.93700000000024,
+      "processed_manifest_mw": 387.7210000000002,
+      "raw": -1.763728141784668,
+      "cli_mw_corrected_fp64": -2.5793928654588525
+    },
+    {
+      "id": "L3205",
+      "target": "L3000",
+      "csv_molwt": 428.9200000000003,
+      "processed_manifest_mw": 403.7200000000002,
+      "raw": -1.874023675918579,
+      "cli_mw_corrected_fp64": -2.7373472561666103
+    },
+    {
+      "id": "L3206",
+      "target": "L3000",
+      "csv_molwt": 444.96300000000025,
+      "processed_manifest_mw": 415.73100000000017,
+      "raw": -1.2785873413085938,
+      "cli_mw_corrected_fp64": -2.152984223490792
+    },
+    {
+      "id": "L3207",
+      "target": "L3000",
+      "csv_molwt": 386.8830000000002,
+      "processed_manifest_mw": 363.6990000000001,
+      "raw": -1.7093889713287354,
+      "cli_mw_corrected_fp64": -2.454979258343111
+    },
+    {
+      "id": "L3208",
+      "target": "L3000",
+      "csv_molwt": 374.8720000000002,
+      "processed_manifest_mw": 351.6880000000001,
+      "raw": -1.5576810836791992,
+      "cli_mw_corrected_fp64": -2.2626555095072245
+    },
+    {
+      "id": "L3209",
+      "target": "L3000",
+      "csv_molwt": 333.8190000000001,
+      "processed_manifest_mw": 313.65900000000005,
+      "raw": -0.7643007636070251,
+      "cli_mw_corrected_fp64": -1.3237562803038205
+    },
+    {
+      "id": "L3210",
+      "target": "L3000",
+      "csv_molwt": 428.84200000000016,
+      "processed_manifest_mw": 408.6820000000002,
+      "raw": -1.6840498447418213,
+      "cli_mw_corrected_fp64": -2.554002937733027
+    },
+    {
+      "id": "L3211",
+      "target": "L3000",
+      "csv_molwt": 529.4680000000004,
+      "processed_manifest_mw": 510.31600000000026,
+      "raw": -1.409040927886963,
+      "cli_mw_corrected_fp64": -2.5203229922546706
+    },
+    {
+      "id": "L3212",
+      "target": "L3000",
+      "csv_molwt": 512.4660000000003,
+      "processed_manifest_mw": 493.31400000000025,
+      "raw": -1.3186473846435547,
+      "cli_mw_corrected_fp64": -2.3873542471328175
+    },
+    {
+      "id": "L3213",
+      "target": "L3000",
+      "csv_molwt": 607.5899999999999,
+      "processed_manifest_mw": 582.3900000000001,
+      "raw": -2.1260313987731934,
+      "cli_mw_corrected_fp64": -3.4200439439856876
+    },
+    {
+      "id": "L3214",
+      "target": "L3000",
+      "csv_molwt": 551.5330000000001,
+      "processed_manifest_mw": 528.3490000000002,
+      "raw": -1.4412896633148193,
+      "cli_mw_corrected_fp64": -2.5944939080908167
+    },
+    {
+      "id": "L3215",
+      "target": "L3000",
+      "csv_molwt": 406.41200000000015,
+      "processed_manifest_mw": 385.2440000000001,
+      "raw": -1.3224676847457886,
+      "cli_mw_corrected_fp64": -2.115684848400294
+    },
+    {
+      "id": "L3216",
+      "target": "L3000",
+      "csv_molwt": 561.5650000000003,
+      "processed_manifest_mw": 533.3410000000002,
+      "raw": -1.2313313484191895,
+      "cli_mw_corrected_fp64": -2.3882503868294345
+    },
+    {
+      "id": "L3217",
+      "target": "L3000",
+      "csv_molwt": 631.5800000000006,
+      "processed_manifest_mw": 605.3720000000003,
+      "raw": -2.1521077156066895,
+      "cli_mw_corrected_fp64": -3.4943602702995724
+    },
+    {
+      "id": "L3218",
+      "target": "L3000",
+      "csv_molwt": 631.5800000000005,
+      "processed_manifest_mw": 605.3720000000003,
+      "raw": -2.2657470703125,
+      "cli_mw_corrected_fp64": -3.6120064781959096
+    },
+    {
+      "id": "L3219",
+      "target": "L3000",
+      "csv_molwt": 562.5530000000002,
+      "processed_manifest_mw": 534.3290000000003,
+      "raw": -1.1089290380477905,
+      "cli_mw_corrected_fp64": -2.2637239999716368
+    },
+    {
+      "id": "L3220",
+      "target": "L3000",
+      "csv_molwt": 468.47600000000017,
+      "processed_manifest_mw": 441.2600000000002,
+      "raw": -1.591890811920166,
+      "cli_mw_corrected_fp64": -2.5433989687929124
+    },
+    {
+      "id": "L3221",
+      "target": "L3000",
+      "csv_molwt": 450.9170000000002,
+      "processed_manifest_mw": 425.71700000000016,
+      "raw": -1.5589931011199951,
+      "cli_mw_corrected_fp64": -2.469448206709166
+    },
+    {
+      "id": "L3222",
+      "target": "L3000",
+      "csv_molwt": 598.0280000000002,
+      "processed_manifest_mw": 571.8200000000002,
+      "raw": -1.6859722137451172,
+      "cli_mw_corrected_fp64": -2.942264946457237
+    },
+    {
+      "id": "L3223",
+      "target": "L3000",
+      "csv_molwt": 580.0380000000002,
+      "processed_manifest_mw": 552.8220000000002,
+      "raw": -1.515052318572998,
+      "cli_mw_corrected_fp64": -2.7246776520505813
+    },
+    {
+      "id": "L3224",
+      "target": "L3000",
+      "csv_molwt": 559.6200000000001,
+      "processed_manifest_mw": 529.3800000000002,
+      "raw": -0.890022873878479,
+      "cli_mw_corrected_fp64": -2.0260919624124316
+    },
+    {
+      "id": "L3225",
+      "target": "L3000",
+      "csv_molwt": 570.6030000000001,
+      "processed_manifest_mw": 543.3870000000003,
+      "raw": -1.121340036392212,
+      "cli_mw_corrected_fp64": -2.296535607003875
+    },
+    {
+      "id": "L3226",
+      "target": "L3000",
+      "csv_molwt": 545.5930000000002,
+      "processed_manifest_mw": 517.3690000000003,
+      "raw": -0.8786429166793823,
+      "cli_mw_corrected_fp64": -1.9872934977930194
+    },
+    {
+      "id": "L3227",
+      "target": "L3000",
+      "csv_molwt": 522.0460000000002,
+      "processed_manifest_mw": 492.81400000000025,
+      "raw": -0.9097933173179626,
+      "cli_mw_corrected_fp64": -1.9629116189834317
+    },
+    {
+      "id": "L3228",
+      "target": "L3000",
+      "csv_molwt": 564.6030000000002,
+      "processed_manifest_mw": 539.4030000000002,
+      "raw": -0.9113587141036987,
+      "cli_mw_corrected_fp64": -2.0703990224472246
+    },
+    {
+      "id": "L3229",
+      "target": "L3000",
+      "csv_molwt": 543.6240000000003,
+      "processed_manifest_mw": 511.36800000000045,
+      "raw": -0.3968586325645447,
+      "cli_mw_corrected_fp64": -1.4748585476598626
+    },
+    {
+      "id": "L3230",
+      "target": "L3000",
+      "csv_molwt": 494.55200000000036,
+      "processed_manifest_mw": 465.32000000000033,
+      "raw": -1.1752612590789795,
+      "cli_mw_corrected_fp64": -2.1719359860651677
+    },
+    {
+      "id": "L3231",
+      "target": "L3000",
+      "csv_molwt": 341.36700000000013,
+      "processed_manifest_mw": 322.2150000000001,
+      "raw": -0.4971420168876648,
+      "cli_mw_corrected_fp64": -1.0744591137145818
+    }
+  ]
+}
