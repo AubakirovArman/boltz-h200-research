@@ -1,0 +1,51 @@
+{
+  "environment_ready": true,
+  "gpu_name": "NVIDIA H200",
+  "packages": {
+    "boltz": "2.2.1",
+    "torch": "2.11.0+cu128",
+    "triton": "3.6.0",
+    "pytorch-lightning": "2.5.0",
+    "numpy": "1.26.4",
+    "rdkit": "2026.9.1",
+    "scipy": "1.13.1",
+    "cuequivariance": "0.13.0",
+    "cuequivariance-torch": "0.13.0",
+    "cuequivariance-ops-torch-cu12": "0.13.0",
+    "cuequivariance-ops-cu12": "0.13.0"
+  },
+  "checkpoint_settings": {
+    "boltz2_conf.ckpt": {
+      "compile_pairformer": false,
+      "compile_structure": false,
+      "compile_confidence": false,
+      "compile_affinity": "not_saved_uses_constructor_default",
+      "compile_msa": false,
+      "compile_templates": false,
+      "use_kernels": "not_saved_uses_constructor_default",
+      "affinity_prediction": false,
+      "confidence_prediction": true,
+      "run_trunk_and_structure": "not_saved_uses_constructor_default",
+      "skip_run_structure": false,
+      "affinity_ensemble": "not_saved_uses_constructor_default",
+      "affinity_mw_correction": "not_saved_uses_constructor_default",
+      "state_dict_keys": 5102
+    },
+    "boltz2_aff.ckpt": {
+      "compile_pairformer": false,
+      "compile_structure": false,
+      "compile_confidence": false,
+      "compile_affinity": false,
+      "compile_msa": false,
+      "compile_templates": false,
+      "use_kernels": "not_saved_uses_constructor_default",
+      "affinity_prediction": true,
+      "confidence_prediction": true,
+      "run_trunk_and_structure": true,
+      "skip_run_structure": false,
+      "affinity_ensemble": true,
+      "affinity_mw_correction": false,
+      "state_dict_keys": 5539
+    }
+  }
+}

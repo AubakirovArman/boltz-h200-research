@@ -1,0 +1,14 @@
+{
+  "checkpoint_load_total_s": 51.92225261265412,
+  "discarded_truncated_initialization_s": 36.258025385,
+  "per_checkpoint": [
+    {
+      "checkpoint": "boltz2_conf.ckpt",
+      "load_s": 25.72451156564057
+    },
+    {
+      "checkpoint": "boltz2_aff.ckpt",
+      "load_s": 26.19774104701355
+    }
+  ]
+}

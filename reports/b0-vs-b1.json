@@ -1,0 +1,473 @@
+{
+  "baseline": "b0-l3001-first",
+  "candidate": "b1-l3001-first",
+  "both_complete": true,
+  "speedup": 1.1249051269655128,
+  "end_to_end_s": {
+    "baseline": 126.28143844893202,
+    "candidate": 112.25963454321027
+  },
+  "sampled_peak_mib": {
+    "baseline": 20704.0,
+    "candidate": 20484.0
+  },
+  "same_json_metric_keys": true,
+  "all_json_metrics_equal": false,
+  "all_prediction_arrays_equal": false,
+  "json_metrics": {
+    "/affinity_L3001.json/affinity_pred_value": {
+      "baseline": -0.16481629014015198,
+      "candidate": -0.29546448588371277,
+      "abs_difference": 0.1306481957435608
+    },
+    "/affinity_L3001.json/affinity_pred_value1": {
+      "baseline": -0.2832964062690735,
+      "candidate": -0.4104130268096924,
+      "abs_difference": 0.1271166205406189
+    },
+    "/affinity_L3001.json/affinity_pred_value2": {
+      "baseline": -0.04633616283535957,
+      "candidate": -0.18051595985889435,
+      "abs_difference": 0.13417979702353477
+    },
+    "/affinity_L3001.json/affinity_probability_binary": {
+      "baseline": 0.44930797815322876,
+      "candidate": 0.4894337058067322,
+      "abs_difference": 0.04012572765350342
+    },
+    "/affinity_L3001.json/affinity_probability_binary1": {
+      "baseline": 0.6020298600196838,
+      "candidate": 0.6818256378173828,
+      "abs_difference": 0.07979577779769897
+    },
+    "/affinity_L3001.json/affinity_probability_binary2": {
+      "baseline": 0.29658612608909607,
+      "candidate": 0.29704180359840393,
+      "abs_difference": 0.00045567750930786133
+    },
+    "/confidence_L3001_model_0.json/chains_ptm/0": {
+      "baseline": 0.9410632848739624,
+      "candidate": 0.9435817003250122,
+      "abs_difference": 0.0025184154510498047
+    },
+    "/confidence_L3001_model_0.json/chains_ptm/1": {
+      "baseline": 0.8894354701042175,
+      "candidate": 0.892163097858429,
+      "abs_difference": 0.0027276277542114258
+    },
+    "/confidence_L3001_model_0.json/complex_ipde": {
+      "baseline": 2.445645332336426,
+      "candidate": 2.380107879638672,
+      "abs_difference": 0.0655374526977539
+    },
+    "/confidence_L3001_model_0.json/complex_iplddt": {
+      "baseline": 0.7919560670852661,
+      "candidate": 0.7889720797538757,
+      "abs_difference": 0.002983987331390381
+    },
+    "/confidence_L3001_model_0.json/complex_pde": {
+      "baseline": 0.6277970671653748,
+      "candidate": 0.6089252829551697,
+      "abs_difference": 0.018871784210205078
+    },
+    "/confidence_L3001_model_0.json/complex_plddt": {
+      "baseline": 0.9101471900939941,
+      "candidate": 0.9102879166603088,
+      "abs_difference": 0.00014072656631469727
+    },
+    "/confidence_L3001_model_0.json/confidence_score": {
+      "baseline": 0.9060452580451965,
+      "candidate": 0.906649112701416,
+      "abs_difference": 0.0006038546562194824
+    },
+    "/confidence_L3001_model_0.json/iptm": {
+      "baseline": 0.8896374106407166,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0024563074111938477
+    },
+    "/confidence_L3001_model_0.json/ligand_iptm": {
+      "baseline": 0.8896374106407166,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0024563074111938477
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/0/0": {
+      "baseline": 0.9410632848739624,
+      "candidate": 0.9435817003250122,
+      "abs_difference": 0.0025184154510498047
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/0/1": {
+      "baseline": 0.3331655263900757,
+      "candidate": 0.338031530380249,
+      "abs_difference": 0.00486600399017334
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/1/0": {
+      "baseline": 0.8896374106407166,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0024563074111938477
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/1/1": {
+      "baseline": 0.8894354701042175,
+      "candidate": 0.892163097858429,
+      "abs_difference": 0.0027276277542114258
+    },
+    "/confidence_L3001_model_0.json/protein_iptm": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/ptm": {
+      "baseline": 0.9385561943054199,
+      "candidate": 0.9411309957504272,
+      "abs_difference": 0.0025748014450073242
+    }
+  },
+  "array_comparisons": {
+    "L3001/pae_L3001_model_0.npz/pae": {
+      "equal": false,
+      "shape": [
+        875,
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 4.032253265380859,
+      "mean_abs_difference": 0.18913581801834886
+    },
+    "L3001/pde_L3001_model_0.npz/pde": {
+      "equal": false,
+      "shape": [
+        875,
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 3.0451889038085938,
+      "mean_abs_difference": 0.05075627112404181
+    },
+    "L3001/plddt_L3001_model_0.npz/plddt": {
+      "equal": false,
+      "shape": [
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.04930371046066284,
+      "mean_abs_difference": 0.002263712508337838
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/name": {
+      "equal": true,
+      "shape": [
+        6866
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/coords": {
+      "equal": false,
+      "shape": [
+        6866,
+        3
+      ],
+      "all_finite": true,
+      "max_abs_difference": 6.308495044708252,
+      "mean_abs_difference": 0.4233009074203915
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/is_present": {
+      "equal": true,
+      "shape": [
+        6866
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/bfactor": {
+      "equal": true,
+      "shape": [
+        6866
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/plddt": {
+      "equal": true,
+      "shape": [
+        6866
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/chain_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/chain_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/res_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/res_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/atom_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/atom_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/type": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/name": {
+      "equal": true,
+      "shape": [
+        2
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/chains/mol_type": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/entity_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/sym_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/asym_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/atom_idx": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/atom_num": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/res_idx": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/res_num": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/cyclic_period": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/coords/coords": {
+      "equal": false,
+      "shape": [
+        6866,
+        3
+      ],
+      "all_finite": true,
+      "max_abs_difference": 6.308495044708252,
+      "mean_abs_difference": 0.4233009074203915
+    },
+    "L3001/pre_affinity_L3001.npz/ensemble/atom_coord_idx": {
+      "equal": true,
+      "shape": [
+        1
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/ensemble/atom_num": {
+      "equal": true,
+      "shape": [
+        1
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/interfaces/chain_1": {
+      "equal": true,
+      "shape": [
+        0
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0
+    },
+    "L3001/pre_affinity_L3001.npz/interfaces/chain_2": {
+      "equal": true,
+      "shape": [
+        0
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0
+    },
+    "L3001/pre_affinity_L3001.npz/mask": {
+      "equal": true,
+      "shape": [
+        2
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/pocket": {
+      "equal": true,
+      "shape": []
+    },
+    "L3001/pre_affinity_L3001.npz/residues/name": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/residues/res_type": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/res_idx": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_idx": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_num": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_center": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_disto": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/is_standard": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/residues/is_present": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    }
+  }
+}

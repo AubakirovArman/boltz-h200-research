@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "run": "combined-l3001-first",
+      "input": "L3001",
+      "optimized": true,
+      "end_to_end_s": 67.69587437575683,
+      "gpu_memory_sampled_peak_mib": 20484.0,
+      "validated": true,
+      "exact_match_to_reference": "b1-l3001-first"
+    },
+    {
+      "run": "combined-l3001-repeat1",
+      "input": "L3001",
+      "optimized": true,
+      "end_to_end_s": 65.51332002878189,
+      "gpu_memory_sampled_peak_mib": 20484.0,
+      "validated": true,
+      "exact_match_to_reference": "b1-l3001-first"
+    },
+    {
+      "run": "combined-l3001-repeat2",
+      "input": "L3001",
+      "optimized": true,
+      "end_to_end_s": 65.82433038763702,
+      "gpu_memory_sampled_peak_mib": 20484.0,
+      "validated": true,
+      "exact_match_to_reference": "b1-l3001-first"
+    },
+    {
+      "run": "b1-l3001-final-control",
+      "input": "L3001",
+      "optimized": false,
+      "end_to_end_s": 92.47892959881574,
+      "gpu_memory_sampled_peak_mib": 20484.0,
+      "validated": true,
+      "exact_match_to_reference": "b1-l3001-first"
+    },
+    {
+      "run": "b1-fixed-set",
+      "input": "fixed_set",
+      "optimized": false,
+      "end_to_end_s": 204.36006088322029,
+      "gpu_memory_sampled_peak_mib": 29730.0,
+      "validated": true,
+      "exact_match_to_reference": null
+    },
+    {
+      "run": "combined-fixed-set",
+      "input": "fixed_set",
+      "optimized": true,
+      "end_to_end_s": 175.9226959538646,
+      "gpu_memory_sampled_peak_mib": 29730.0,
+      "validated": true,
+      "exact_match_to_reference": "b1-fixed-set"
+    }
+  ]
+}

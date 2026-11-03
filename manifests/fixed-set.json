@@ -1,0 +1,32 @@
+{
+  "mode": "stock Boltz CLI directory input, one process for entire set",
+  "inputs": [
+    {
+      "name": "official_affinity.yaml",
+      "sha256": "553c802f93d5c2cffea0f33154994dcf4f7caf0716c8ffd3d3671c9e775fc5a0"
+    },
+    {
+      "name": "L3021.yaml",
+      "sha256": "962c6355961370c902f43727d08a2a63e1863e7be6a0e11a6ee7ce5559b2251e"
+    },
+    {
+      "name": "L3009.yaml",
+      "sha256": "6ea6531452c8de88045f4545b0d5558e3d979af244a5e4d8b80fd33c5c566dbb"
+    },
+    {
+      "name": "L3003.yaml",
+      "sha256": "0560577e3c40c3e52d1a550ea2ab300a96ec2bae30550dd542c3594bc410d638"
+    },
+    {
+      "name": "L3001.yaml",
+      "sha256": "3e371f8e871b22e0aa3396fb1883ed5445eb090f2805cc693dc394bf5921ff9c"
+    }
+  ],
+  "historical_replication": false,
+  "heldout_cases": [
+    "L3003",
+    "L3009",
+    "L3021",
+    "official_affinity"
+  ]
+}

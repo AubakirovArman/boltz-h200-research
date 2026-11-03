@@ -1,0 +1,134 @@
+{
+  "coverage": {
+    "expected": 140,
+    "available": 140,
+    "missing": [],
+    "complete": true
+  },
+  "per_target": {
+    "L1000": {
+      "n": 17,
+      "metrics": {
+        "raw": {
+          "pearson_r": 0.47328011520242375,
+          "kendall_tau": 0.19117647058823525
+        },
+        "mw_corrected": {
+          "pearson_r": 0.5350886169343684,
+          "kendall_tau": 0.24999999999999997
+        },
+        "mw_only": {
+          "pearson_r": 0.2935562058255903,
+          "kendall_tau": 0.39705882352941174
+        },
+        "model1": {
+          "pearson_r": 0.44120435184316986,
+          "kendall_tau": 0.24999999999999997
+        },
+        "model2": {
+          "pearson_r": 0.4769798394472186,
+          "kendall_tau": 0.2352941176470588
+        },
+        "probability_binary": {
+          "pearson_r": -0.4219518491118489,
+          "kendall_tau": -0.13235294117647056
+        }
+      }
+    },
+    "L3000": {
+      "n": 123,
+      "metrics": {
+        "raw": {
+          "pearson_r": 0.6001161527524693,
+          "kendall_tau": 0.40948682199778885
+        },
+        "mw_corrected": {
+          "pearson_r": 0.6556634290201839,
+          "kendall_tau": 0.4578503552973646
+        },
+        "mw_only": {
+          "pearson_r": 0.5963703263560004,
+          "kendall_tau": 0.42023090777239974
+        },
+        "model1": {
+          "pearson_r": 0.5305151285741024,
+          "kendall_tau": 0.36272649974681787
+        },
+        "model2": {
+          "pearson_r": 0.5854219492359234,
+          "kendall_tau": 0.4078836109491842
+        },
+        "probability_binary": {
+          "pearson_r": -0.5333849930098427,
+          "kendall_tau": -0.3653985181611591
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "raw": {
+      "uniform_target_mean": 0.5366981339774466,
+      "compound_weighted_target_mean": 0.5847146339071067
+    },
+    "mw_corrected": {
+      "uniform_target_mean": 0.5953760229772762,
+      "compound_weighted_target_mean": 0.6410222018383349
+    },
+    "mw_only": {
+      "uniform_target_mean": 0.44496326609079534,
+      "compound_weighted_target_mean": 0.5596000402915935
+    },
+    "model1": {
+      "uniform_target_mean": 0.48585974020863615,
+      "compound_weighted_target_mean": 0.5196702485424891
+    },
+    "model2": {
+      "uniform_target_mean": 0.531200894341571,
+      "compound_weighted_target_mean": 0.5722539787615807
+    },
+    "probability_binary": {
+      "uniform_target_mean": -0.4776684210608458,
+      "compound_weighted_target_mean": -0.5198538255365148
+    }
+  },
+  "correction_parameters_source": "Official pinned source; no coefficients fitted to CASP16",
+  "bootstrapping": {
+    "replicates": 2500,
+    "seed": 20261103,
+    "method": "Target-stratified paired resampling; percentile intervals",
+    "ci95": {
+      "raw/uniform": [
+        0.25656170392836014,
+        0.6855146076652008
+      ],
+      "raw/compound_weighted": [
+        0.46680137781052367,
+        0.6827756816355762
+      ],
+      "mw_corrected/uniform": [
+        0.33097803526253516,
+        0.731462399378152
+      ],
+      "mw_corrected/compound_weighted": [
+        0.5323411148414906,
+        0.7314650209418682
+      ]
+    },
+    "mw_effect_weighted_ci95": [
+      0.03533294246571434,
+      0.08105255361623039
+    ]
+  },
+  "l3000_subsets_diagnostic": {
+    "PA": {
+      "n": 93,
+      "raw": 0.574514477318832,
+      "mw_corrected": 0.6236859023485184
+    },
+    "A": {
+      "n": 30,
+      "raw": 0.3029656790114796,
+      "mw_corrected": 0.49121191457039376
+    }
+  }
+}

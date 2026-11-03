@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L1000.SMILES.tar.gz",
+    "file": "research/casp16/raw/L1000.SMILES.tar.gz",
+    "bytes": 846,
+    "sha256": "57899eee0c1b30651c2236112f3832cfa4c900a9b4240fd1134b757e4ef230ce"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L1000_exper_affinity.csv",
+    "file": "research/casp16/raw/L1000_exper_affinity.csv",
+    "bytes": 2045,
+    "sha256": "7e1bc9a39d05155884eaa1231bc24756f20bc5e52d85f34ab14277d1a334bfd3"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L1000_chymase_README.txt",
+    "file": "research/casp16/raw/L1000_chymase_README.txt",
+    "bytes": 379,
+    "sha256": "41068dadddf57bc4a3a9efa989d81c620cb2b4411320d423aeb9bd6c63688357"
+  },
+  {
+    "url": "https://predictioncenter.org/casp16/target.cgi?target=L1000&view=sequence",
+    "file": "research/casp16/raw/L1000.fasta",
+    "bytes": 280,
+    "sha256": "f1ff396296ad98009896b872e474cc4fedf45319a61d4dbbaf5236c7e77e50ba"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "file": "research/casp16/raw/L3000.SMILES.tar.gz",
+    "bytes": 8902,
+    "sha256": "4bce62918b4edfa7e9f836d58979b0516be91037e50032efb58fe11b3b68fb62"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000_exper_affinity.csv",
+    "file": "research/casp16/raw/L3000_exper_affinity.csv",
+    "bytes": 16433,
+    "sha256": "b9b5aec9342c127a5bbb27940aa86ae6cdbaf5d6bf1405600247514fd8ca5695"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000_autotaxin_README.txt",
+    "file": "research/casp16/raw/L3000_autotaxin_README.txt",
+    "bytes": 1718,
+    "sha256": "12ab8a1bac2795a243ee85c1c74e500e99e3cf92029989a249987b94c08005a2"
+  },
+  {
+    "url": "https://predictioncenter.org/casp16/target.cgi?target=L3000&view=sequence",
+    "file": "research/casp16/raw/L3000.fasta",
+    "bytes": 881,
+    "sha256": "55c1182853ee206ebe4515dda4b2b3eb08cff29a0ef6f2a2705bac8f1f98dbc4"
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L1000_exper_affinity_obsolete.csv",
+    "file": "research/casp16/raw/L1000_exper_affinity_obsolete.csv",
+    "bytes": 2490,
+    "sha256": "f6dca5990df3950bfe51e12c24c73f49f95f5475bc6c2f831da52793c0a67e22"
+  },
+  {
+    "url": "https://jeremywohlwend.com/assets/boltz2.pdf",
+    "file": "research/casp16/raw/boltz2.pdf",
+    "bytes": 7603616,
+    "sha256": "abe2b7fc0c3976bc1c8e39369c9d3ab7c7d49595d7b2523d56bf16470617194e"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "label": "b1-l3001-final-control",
+  "command": [
+    "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+    "-m",
+    "boltz.main",
+    "predict",
+    "/mnt/data/arman-projects/boltz-h200/data/inputs/L3001.yaml",
+    "--model",
+    "boltz2",
+    "--accelerator",
+    "gpu",
+    "--devices",
+    "1",
+    "--recycling_steps",
+    "3",
+    "--sampling_steps",
+    "200",
+    "--diffusion_samples",
+    "1",
+    "--sampling_steps_affinity",
+    "200",
+    "--diffusion_samples_affinity",
+    "5",
+    "--seed",
+    "0",
+    "--num_workers",
+    "2",
+    "--preprocessing-threads",
+    "4",
+    "--cache",
+    "/mnt/data/arman-projects/boltz-h200/cache",
+    "--out_dir",
+    "/mnt/data/arman-projects/boltz-h200/runs/b1-l3001-final-control/output"
+  ],
+  "gpu_uuid": "GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11",
+  "runner_sha256": "e765efbe24291d80dbb21179bfd00e7b23ee5c4b9bae328b78e0687b6f6a13ee",
+  "launcher_sha256": null,
+  "source_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "source_status": "",
+  "input_sha256": "3e371f8e871b22e0aa3396fb1883ed5445eb090f2805cc693dc394bf5921ff9c",
+  "input_files": {
+    "L3001.yaml": "3e371f8e871b22e0aa3396fb1883ed5445eb090f2805cc693dc394bf5921ff9c"
+  },
+  "input_directory_order": [
+    "L3001.yaml"
+  ],
+  "msa_sha256": {
+    "/mnt/data/arman-projects/boltz-h200/data/msa/L3000.a3m": "468f207bb760a39eece990301aa27b9456cda14e861c4668756457882ff8c578"
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11",
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "NUMBA_NUM_THREADS": "8",
+    "CUEQ_DEFAULT_CONFIG": "1",
+    "CUEQ_DISABLE_AOT_TUNING": "1",
+    "PYTORCH_CUDA_ALLOC_CONF": null,
+    "PYTORCH_ALLOC_CONF": null,
+    "NVIDIA_TF32_OVERRIDE": null,
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": null,
+    "TRITON_CACHE_DIR": null,
+    "TORCHINDUCTOR_CACHE_DIR": null
+  },
+  "monitoring_interval_s": 0.1,
+  "cache_state": "Checkpoints, CCD and MSA predownloaded; fresh output/preprocessing directory; ordinary persistent kernel caches.",
+  "task": {
+    "structure_recycles": 3,
+    "structure_steps": 200,
+    "structure_samples": 1,
+    "affinity_recycles_internal": 5,
+    "affinity_steps": 200,
+    "affinity_samples": 5,
+    "affinity_mw_correction": false,
+    "structure_kernels": true,
+    "affinity_kernels": false,
+    "cli_msa_subsampling": false,
+    "max_msa_seqs": 8192
+  }
+}

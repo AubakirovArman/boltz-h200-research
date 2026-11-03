@@ -1,0 +1,12 @@
+{
+  "target": "L1000",
+  "label": "issue-settings-csv-seed0",
+  "returncode": 0,
+  "elapsed_s": 746.2787714609876,
+  "gpu_peak_sampled_mib": 17488.0,
+  "counts": {
+    "affinity": 17,
+    "structure": 85
+  },
+  "expected": 17
+}

@@ -1,0 +1,6 @@
+{
+  "official_preparation_function": "boltz.data.msa.mmseqs2.run_mmseqs2",
+  "same_cached_server_response": true,
+  "msa_bit_equal": true,
+  "sha256": "468f207bb760a39eece990301aa27b9456cda14e861c4668756457882ff8c578"
+}

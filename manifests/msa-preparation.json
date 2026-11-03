@@ -1,0 +1,17 @@
+{
+  "host": "https://api.colabfold.com",
+  "mode": "env",
+  "sequence_sha256": "11461ab56925c5be75acc5505ddf01b15f671c0eeceef36cd96bfe44880b6668",
+  "status_history": [
+    {
+      "id": "e6dec9290b67d88675c4c81ba791d7f9acec6d0fa5887c4d65bfe8f3741039a7",
+      "status": "COMPLETE"
+    }
+  ],
+  "started_unix": 1793638611.2937937,
+  "historical_msa": false,
+  "completed_s": 3.739260856062174,
+  "msa_sha256": "468f207bb760a39eece990301aa27b9456cda14e861c4668756457882ff8c578",
+  "archive_sha256": "25952c2845251b1a5d6bf5bf2143dff5f5f62883abb19f8d937e86c6b4a8b28a",
+  "rows": 12781
+}

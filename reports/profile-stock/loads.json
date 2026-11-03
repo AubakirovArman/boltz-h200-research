@@ -1,0 +1,1142 @@
+[
+  {
+    "checkpoint": "/mnt/data/arman-projects/boltz-h200/cache/boltz2_conf.ckpt",
+    "elapsed_s": 25.72451156564057,
+    "rng_after_load": {
+      "numpy": "3d2cca0295e88cb3368564ca53454698f56622f05f95300ae96c01447f0433fc",
+      "torch_cpu": "9727c563c6f89c39809fd65223e2a37d8be0d8a3497501bf58c64f63ad9a56c1"
+    },
+    "functions": [
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/core/saving.py",
+        "line": 53,
+        "name": "_load_from_checkpoint",
+        "calls": 1,
+        "own_s": 0.00021209900000000002,
+        "cumulative_s": 22.498005514000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/core/saving.py",
+        "line": 117,
+        "name": "_load_state",
+        "calls": 1,
+        "own_s": 0.00040652600000000004,
+        "cumulative_s": 22.418275901
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/models/boltz2.py",
+        "line": 44,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 0.003544703,
+        "cumulative_s": 21.63569609
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 24,
+        "name": "__init__",
+        "calls": 72,
+        "own_s": 0.003180566,
+        "cumulative_s": 18.481590084
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/initialize.py",
+        "line": 61,
+        "name": "lecun_normal_init_",
+        "calls": 472,
+        "own_s": 0.0012759800000000001,
+        "cumulative_s": 18.218432676000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/initialize.py",
+        "line": 47,
+        "name": "trunc_normal_init_",
+        "calls": 472,
+        "own_s": 0.012874784,
+        "cumulative_s": 18.215880888
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/transition.py",
+        "line": 11,
+        "name": "__init__",
+        "calls": 158,
+        "own_s": 0.004857188,
+        "cumulative_s": 18.071607759000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1017,
+        "name": "rvs",
+        "calls": 472,
+        "own_s": 0.140592288,
+        "cumulative_s": 17.534242657
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 987,
+        "name": "_rvs",
+        "calls": 472,
+        "own_s": 0.071415991,
+        "cumulative_s": 17.359512308
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9798,
+        "name": "_ppf",
+        "calls": 472,
+        "own_s": 1.407062942,
+        "cumulative_s": 16.415569265000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9804,
+        "name": "ppf_left",
+        "calls": 472,
+        "own_s": 3.097193335,
+        "cumulative_s": 14.983066215000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 119,
+        "name": "__init__",
+        "calls": 2,
+        "own_s": 0.00040039100000000005,
+        "cumulative_s": 14.180691532
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9639,
+        "name": "_log_gauss_mass",
+        "calls": 944,
+        "own_s": 1.495120156,
+        "cumulative_s": 7.271264336000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9655,
+        "name": "mass_case_central",
+        "calls": 944,
+        "own_s": 1.138489689,
+        "cumulative_s": 5.470880232000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 308,
+        "name": "_norm_cdf",
+        "calls": 1888,
+        "own_s": 4.332390543000001,
+        "cumulative_s": 4.332390543000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/diffusionv2.py",
+        "line": 180,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 4.5832000000000004e-05,
+        "cumulative_s": 3.057929264
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/diffusionv2.py",
+        "line": 41,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 8.8676e-05,
+        "cumulative_s": 3.0576827150000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py",
+        "line": 96,
+        "name": "__init__",
+        "calls": 3052,
+        "own_s": 0.020172222,
+        "cumulative_s": 3.042924767
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py",
+        "line": 117,
+        "name": "reset_parameters",
+        "calls": 3052,
+        "own_s": 0.007915679,
+        "cumulative_s": 2.8530550210000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/init.py",
+        "line": 513,
+        "name": "kaiming_uniform_",
+        "calls": 3052,
+        "own_s": 0.021995203,
+        "cumulative_s": 2.835137724
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'uniform_' of 'torch._C.TensorBase' objects>",
+        "calls": 3771,
+        "own_s": 2.7939085610000003,
+        "cumulative_s": 2.7939085610000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9630,
+        "name": "_log_sum",
+        "calls": 472,
+        "own_s": 0.0017281190000000002,
+        "cumulative_s": 2.4651376750000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/special/_logsumexp.py",
+        "line": 7,
+        "name": "logsumexp",
+        "calls": 472,
+        "own_s": 1.7544332660000002,
+        "cumulative_s": 2.4634095560000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 312,
+        "name": "_norm_logcdf",
+        "calls": 472,
+        "own_s": 2.186523051,
+        "cumulative_s": 2.186523051
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/serialization.py",
+        "line": 2132,
+        "name": "persistent_load",
+        "calls": 6490,
+        "own_s": 0.007362658,
+        "cumulative_s": 2.173267699
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/serialization.py",
+        "line": 2062,
+        "name": "load_tensor",
+        "calls": 6490,
+        "own_s": 1.988926036,
+        "cumulative_s": 2.164266297
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 71,
+        "name": "__init__",
+        "calls": 4,
+        "own_s": 0.000239088,
+        "cumulative_s": 2.1084914500000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 143,
+        "name": "__init__",
+        "calls": 33,
+        "own_s": 0.001090395,
+        "cumulative_s": 2.1075778560000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 37,
+        "name": "__init__",
+        "calls": 33,
+        "own_s": 0.001028169,
+        "cumulative_s": 1.305894182
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/confidencev2.py",
+        "line": 22,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 0.00012322,
+        "cumulative_s": 1.216866397
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/encodersv2.py",
+        "line": 126,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 6.4884e-05,
+        "cumulative_s": 0.955951702
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'uniform' of 'numpy.random.mtrand.RandomState' objects>",
+        "calls": 472,
+        "own_s": 0.8471785460000001,
+        "cumulative_s": 0.8471785460000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/attentionv2.py",
+        "line": 13,
+        "name": "__init__",
+        "calls": 105,
+        "own_s": 0.003008587,
+        "cumulative_s": 0.801510543
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_mult.py",
+        "line": 42,
+        "name": "__init__",
+        "calls": 78,
+        "own_s": 0.0022531450000000002,
+        "cumulative_s": 0.549006583
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1389,
+        "name": "std",
+        "calls": 472,
+        "own_s": 0.0035617070000000003,
+        "cumulative_s": 0.542871393
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 71,
+        "name": "_wrapreduction",
+        "calls": 7552,
+        "own_s": 0.01977759,
+        "cumulative_s": 0.5424581460000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1086,
+        "name": "stats",
+        "calls": 472,
+        "own_s": 0.02196917,
+        "cumulative_s": 0.5393096860000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_mult.py",
+        "line": 130,
+        "name": "__init__",
+        "calls": 78,
+        "own_s": 0.0023928400000000002,
+        "cumulative_s": 0.537439144
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'reduce' of 'numpy.ufunc' objects>",
+        "calls": 7552,
+        "own_s": 0.512708402,
+        "cumulative_s": 0.512708402
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2531,
+        "name": "load_state_dict",
+        "calls": 1,
+        "own_s": 0.0011519470000000002,
+        "cumulative_s": 0.475279528
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2585,
+        "name": "load",
+        "calls": 5910,
+        "own_s": 0.062036814,
+        "cumulative_s": 0.47411258700000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9879,
+        "name": "_stats",
+        "calls": 472,
+        "own_s": 0.0066024410000000006,
+        "cumulative_s": 0.440405563
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 20,
+        "name": "__init__",
+        "calls": 66,
+        "own_s": 0.000934783,
+        "cumulative_s": 0.39397016500000004
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2346,
+        "name": "_load_from_state_dict",
+        "calls": 5910,
+        "own_s": 0.056224142000000005,
+        "cumulative_s": 0.363034458
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 483,
+        "name": "__init__",
+        "calls": 5877,
+        "own_s": 0.337392217,
+        "cumulative_s": 0.343412555
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 2814,
+        "name": "amax",
+        "calls": 472,
+        "own_s": 0.0015794740000000002,
+        "cumulative_s": 0.30492687900000004
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2367,
+        "name": "__call__",
+        "calls": 472,
+        "own_s": 0.001659148,
+        "cumulative_s": 0.29955681700000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2337,
+        "name": "_call_as_normal",
+        "calls": 472,
+        "own_s": 0.004638828,
+        "cumulative_s": 0.29789766900000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/numeric.py",
+        "line": 341,
+        "name": "full_like",
+        "calls": 944,
+        "own_s": 0.294985426,
+        "cumulative_s": 0.295371804
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2443,
+        "name": "_vectorize_call",
+        "calls": 472,
+        "own_s": 0.009466047,
+        "cumulative_s": 0.29293764
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'copy_' of 'torch._C.TensorBase' objects>",
+        "calls": 5574,
+        "own_s": 0.288196746,
+        "cumulative_s": 0.288196746
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2356,
+        "name": "func",
+        "calls": 944,
+        "own_s": 0.005717413,
+        "cumulative_s": 0.261874308
+      },
+      {
+        "file": "/usr/lib/python3.12/inspect.py",
+        "line": 1768,
+        "name": "stack",
+        "calls": 1,
+        "own_s": 5.191e-06,
+        "cumulative_s": 0.260335354
+      },
+      {
+        "file": "/usr/lib/python3.12/inspect.py",
+        "line": 1738,
+        "name": "getouterframes",
+        "calls": 1,
+        "own_s": 3.8718000000000004e-05,
+        "cumulative_s": 0.260329552
+      },
+      {
+        "file": "/usr/lib/python3.12/inspect.py",
+        "line": 1677,
+        "name": "getframeinfo",
+        "calls": 9,
+        "own_s": 0.00013519900000000002,
+        "cumulative_s": 0.260266584
+      },
+      {
+        "file": "/usr/lib/python3.12/inspect.py",
+        "line": 1063,
+        "name": "findsource",
+        "calls": 10,
+        "own_s": 0.00010007100000000001,
+        "cumulative_s": 0.259574843
+      },
+      {
+        "file": "/usr/lib/python3.12/inspect.py",
+        "line": 981,
+        "name": "getmodule",
+        "calls": 10,
+        "own_s": 0.008646893000000001,
+        "cumulative_s": 0.258984579
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9882,
+        "name": "_truncnorm_stats_scalar",
+        "calls": 944,
+        "own_s": 0.022675645,
+        "cumulative_s": 0.255146716
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/attention.py",
+        "line": 36,
+        "name": "__init__",
+        "calls": 156,
+        "own_s": 0.0019912930000000003,
+        "cumulative_s": 0.237712739
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/_guards.py",
+        "line": 1276,
+        "name": "detect_fake_mode",
+        "calls": 19470,
+        "own_s": 0.08726953200000001,
+        "cumulative_s": 0.225084326
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 2177,
+        "name": "sum",
+        "calls": 4248,
+        "own_s": 0.0073977290000000005,
+        "cumulative_s": 0.22101066400000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/trunkv2.py",
+        "line": 515,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 5.2174000000000006e-05,
+        "cumulative_s": 0.2197588
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/trunkv2.py",
+        "line": 675,
+        "name": "__init__",
+        "calls": 4,
+        "own_s": 0.000125329,
+        "cumulative_s": 0.219191133
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 207,
+        "name": "__init__",
+        "calls": 6,
+        "own_s": 0.000208254,
+        "cumulative_s": 0.217588159
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py",
+        "line": 88,
+        "name": "_lazywhere",
+        "calls": 3776,
+        "own_s": 0.052133043000000004,
+        "cumulative_s": 0.20428870300000002
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<built-in method numpy.asarray>",
+        "calls": 13216,
+        "own_s": 0.19873047600000002,
+        "cumulative_s": 0.19873047600000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py",
+        "line": 275,
+        "name": "_asarray_validated",
+        "calls": 472,
+        "own_s": 0.005913254000000001,
+        "cumulative_s": 0.19574760800000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/primitives.py",
+        "line": 39,
+        "name": "__init__",
+        "calls": 936,
+        "own_s": 0.0049426010000000005,
+        "cumulative_s": 0.192353033
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 1972,
+        "name": "__setattr__",
+        "calls": 23901,
+        "own_s": 0.070622535,
+        "cumulative_s": 0.19082896000000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/primitives.py",
+        "line": 211,
+        "name": "__init__",
+        "calls": 156,
+        "own_s": 0.0026153350000000003,
+        "cumulative_s": 0.18948299500000002
+      }
+    ]
+  },
+  {
+    "checkpoint": "/mnt/data/arman-projects/boltz-h200/cache/boltz2_aff.ckpt",
+    "elapsed_s": 26.19774104701355,
+    "rng_after_load": {
+      "numpy": "da90173f5445f6e74bd423c43739ac2809259bdf3033ee17882511ea78fb5913",
+      "torch_cpu": "e499f0e0fdd4eafb10992e2d3d6203a9aa4f1b3d4267e8662442140953d63998"
+    },
+    "functions": [
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/core/saving.py",
+        "line": 117,
+        "name": "_load_state",
+        "calls": 1,
+        "own_s": 0.000272197,
+        "cumulative_s": 23.577162142000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/models/boltz2.py",
+        "line": 44,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 0.0061728930000000005,
+        "cumulative_s": 22.814236456
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 119,
+        "name": "__init__",
+        "calls": 2,
+        "own_s": 0.00048410200000000003,
+        "cumulative_s": 19.125930719000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 24,
+        "name": "__init__",
+        "calls": 72,
+        "own_s": 0.00354565,
+        "cumulative_s": 19.123779778000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/initialize.py",
+        "line": 61,
+        "name": "lecun_normal_init_",
+        "calls": 520,
+        "own_s": 0.0015103990000000002,
+        "cumulative_s": 18.043654896
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/initialize.py",
+        "line": 47,
+        "name": "trunc_normal_init_",
+        "calls": 520,
+        "own_s": 0.014794964,
+        "cumulative_s": 18.042144497000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/transition.py",
+        "line": 11,
+        "name": "__init__",
+        "calls": 172,
+        "own_s": 0.0055083680000000005,
+        "cumulative_s": 17.735841275000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1017,
+        "name": "rvs",
+        "calls": 520,
+        "own_s": 0.150985047,
+        "cumulative_s": 17.24504333
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 987,
+        "name": "_rvs",
+        "calls": 520,
+        "own_s": 0.0058800070000000005,
+        "cumulative_s": 17.059365399
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9798,
+        "name": "_ppf",
+        "calls": 520,
+        "own_s": 1.137251189,
+        "cumulative_s": 16.214378265
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9804,
+        "name": "ppf_left",
+        "calls": 520,
+        "own_s": 3.251211124,
+        "cumulative_s": 15.048581939000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9639,
+        "name": "_log_gauss_mass",
+        "calls": 1040,
+        "own_s": 1.520501711,
+        "cumulative_s": 7.691234531
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9655,
+        "name": "mass_case_central",
+        "calls": 1040,
+        "own_s": 1.199037294,
+        "cumulative_s": 5.844739345000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 308,
+        "name": "_norm_cdf",
+        "calls": 2080,
+        "own_s": 4.645702051000001,
+        "cumulative_s": 4.645702051000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py",
+        "line": 96,
+        "name": "__init__",
+        "calls": 3316,
+        "own_s": 0.023279137000000002,
+        "cumulative_s": 4.283332013
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py",
+        "line": 117,
+        "name": "reset_parameters",
+        "calls": 3316,
+        "own_s": 0.009075612,
+        "cumulative_s": 2.8862816490000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/init.py",
+        "line": 513,
+        "name": "kaiming_uniform_",
+        "calls": 3316,
+        "own_s": 0.025353318000000003,
+        "cumulative_s": 2.866002635
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'uniform_' of 'torch._C.TensorBase' objects>",
+        "calls": 4112,
+        "own_s": 2.821374343,
+        "cumulative_s": 2.821374343
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/diffusionv2.py",
+        "line": 180,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 3.1981000000000004e-05,
+        "cumulative_s": 2.758333929
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/diffusionv2.py",
+        "line": 41,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 6.667000000000001e-05,
+        "cumulative_s": 2.758098227
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 312,
+        "name": "_norm_logcdf",
+        "calls": 520,
+        "own_s": 2.2857158600000003,
+        "cumulative_s": 2.2857158600000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/confidencev2.py",
+        "line": 22,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 0.00012896900000000002,
+        "cumulative_s": 2.0463107650000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/attentionv2.py",
+        "line": 13,
+        "name": "__init__",
+        "calls": 105,
+        "own_s": 0.0031068380000000002,
+        "cumulative_s": 1.9773590820000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9630,
+        "name": "_log_sum",
+        "calls": 520,
+        "own_s": 0.001905257,
+        "cumulative_s": 1.849505219
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/special/_logsumexp.py",
+        "line": 7,
+        "name": "logsumexp",
+        "calls": 520,
+        "own_s": 1.2273544440000002,
+        "cumulative_s": 1.847599962
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/serialization.py",
+        "line": 2132,
+        "name": "persistent_load",
+        "calls": 5539,
+        "own_s": 0.00665666,
+        "cumulative_s": 1.831010089
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/serialization.py",
+        "line": 2062,
+        "name": "load_tensor",
+        "calls": 5473,
+        "own_s": 1.669530543,
+        "cumulative_s": 1.822892914
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 71,
+        "name": "__init__",
+        "calls": 4,
+        "own_s": 0.000216641,
+        "cumulative_s": 1.812390245
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 143,
+        "name": "__init__",
+        "calls": 33,
+        "own_s": 0.0010143930000000002,
+        "cumulative_s": 1.811504073
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 483,
+        "name": "__init__",
+        "calls": 6357,
+        "own_s": 1.2771968740000001,
+        "cumulative_s": 1.284438949
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 37,
+        "name": "__init__",
+        "calls": 33,
+        "own_s": 0.00097741,
+        "cumulative_s": 1.033419651
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/encodersv2.py",
+        "line": 126,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 4.1934e-05,
+        "cumulative_s": 0.9513423950000001
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'uniform' of 'numpy.random.mtrand.RandomState' objects>",
+        "calls": 520,
+        "own_s": 0.839107127,
+        "cumulative_s": 0.839107127
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2531,
+        "name": "load_state_dict",
+        "calls": 1,
+        "own_s": 0.001704919,
+        "cumulative_s": 0.760418816
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2585,
+        "name": "load",
+        "calls": 6390,
+        "own_s": 0.12425364300000001,
+        "cumulative_s": 0.758709321
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 207,
+        "name": "__init__",
+        "calls": 16,
+        "own_s": 0.000465943,
+        "cumulative_s": 0.693292737
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_mult.py",
+        "line": 130,
+        "name": "__init__",
+        "calls": 88,
+        "own_s": 0.0028536860000000002,
+        "cumulative_s": 0.649444385
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_mult.py",
+        "line": 42,
+        "name": "__init__",
+        "calls": 88,
+        "own_s": 0.0027264330000000003,
+        "cumulative_s": 0.648784178
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1389,
+        "name": "std",
+        "calls": 520,
+        "own_s": 0.004128822,
+        "cumulative_s": 0.638407232
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_distn_infrastructure.py",
+        "line": 1086,
+        "name": "stats",
+        "calls": 520,
+        "own_s": 0.024952500000000002,
+        "cumulative_s": 0.6342784100000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/affinity.py",
+        "line": 37,
+        "name": "__init__",
+        "calls": 2,
+        "own_s": 0.00011267200000000001,
+        "cumulative_s": 0.5871958700000001
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 2346,
+        "name": "_load_from_state_dict",
+        "calls": 6390,
+        "own_s": 0.10608225900000001,
+        "cumulative_s": 0.538187445
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/pairformer.py",
+        "line": 275,
+        "name": "__init__",
+        "calls": 2,
+        "own_s": 8.761700000000001e-05,
+        "cumulative_s": 0.523504379
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9879,
+        "name": "_stats",
+        "calls": 520,
+        "own_s": 0.007853905000000001,
+        "cumulative_s": 0.520270034
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 71,
+        "name": "_wrapreduction",
+        "calls": 8320,
+        "own_s": 0.022963579,
+        "cumulative_s": 0.45442034000000003
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'reduce' of 'numpy.ufunc' objects>",
+        "calls": 8320,
+        "own_s": 0.42014890400000005,
+        "cumulative_s": 0.42014890400000005
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/transformersv2.py",
+        "line": 20,
+        "name": "__init__",
+        "calls": 66,
+        "own_s": 0.001023609,
+        "cumulative_s": 0.39157789800000004
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<method 'copy_' of 'torch._C.TensorBase' objects>",
+        "calls": 6059,
+        "own_s": 0.37616549600000004,
+        "cumulative_s": 0.37616549600000004
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2367,
+        "name": "__call__",
+        "calls": 520,
+        "own_s": 0.001886538,
+        "cumulative_s": 0.352977976
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2337,
+        "name": "_call_as_normal",
+        "calls": 520,
+        "own_s": 0.005338333000000001,
+        "cumulative_s": 0.35109143800000003
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2443,
+        "name": "_vectorize_call",
+        "calls": 520,
+        "own_s": 0.011694106000000001,
+        "cumulative_s": 0.34537832
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/numeric.py",
+        "line": 341,
+        "name": "full_like",
+        "calls": 1040,
+        "own_s": 0.311597987,
+        "cumulative_s": 0.312059187
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2356,
+        "name": "func",
+        "calls": 1040,
+        "own_s": 0.006633848,
+        "cumulative_s": 0.308491748
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/stats/_continuous_distns.py",
+        "line": 9882,
+        "name": "_truncnorm_stats_scalar",
+        "calls": 1040,
+        "own_s": 0.026705629,
+        "cumulative_s": 0.300698915
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/attention.py",
+        "line": 36,
+        "name": "__init__",
+        "calls": 176,
+        "own_s": 0.0023374620000000002,
+        "cumulative_s": 0.292142144
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py",
+        "line": 88,
+        "name": "_lazywhere",
+        "calls": 4160,
+        "own_s": 0.060942104000000004,
+        "cumulative_s": 0.244144046
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 2177,
+        "name": "sum",
+        "calls": 4680,
+        "own_s": 0.008645223,
+        "cumulative_s": 0.23711620400000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/primitives.py",
+        "line": 39,
+        "name": "__init__",
+        "calls": 1056,
+        "own_s": 0.006136217,
+        "cumulative_s": 0.23695242100000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/layers/triangular_attention/primitives.py",
+        "line": 211,
+        "name": "__init__",
+        "calls": 176,
+        "own_s": 0.0031760490000000002,
+        "cumulative_s": 0.233383841
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+        "line": 1972,
+        "name": "__setattr__",
+        "calls": 25787,
+        "own_s": 0.082051524,
+        "cumulative_s": 0.21499542400000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/trunkv2.py",
+        "line": 515,
+        "name": "__init__",
+        "calls": 1,
+        "own_s": 4.3725000000000006e-05,
+        "cumulative_s": 0.21440382800000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/model/modules/trunkv2.py",
+        "line": 675,
+        "name": "__init__",
+        "calls": 4,
+        "own_s": 9.0912e-05,
+        "cumulative_s": 0.213861617
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<built-in method numpy.asarray>",
+        "calls": 14560,
+        "own_s": 0.205148516,
+        "cumulative_s": 0.205148516
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py",
+        "line": 275,
+        "name": "_asarray_validated",
+        "calls": 520,
+        "own_s": 0.006175559000000001,
+        "cumulative_s": 0.20048390400000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/core/fromnumeric.py",
+        "line": 2814,
+        "name": "amax",
+        "calls": 520,
+        "own_s": 0.0018678260000000002,
+        "cumulative_s": 0.19788598200000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/_guards.py",
+        "line": 1276,
+        "name": "detect_fake_mode",
+        "calls": 16485,
+        "own_s": 0.071975536,
+        "cumulative_s": 0.19284503900000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/function_base.py",
+        "line": 2374,
+        "name": "_get_ufunc_and_otypes",
+        "calls": 520,
+        "own_s": 0.009911889,
+        "cumulative_s": 0.182132032
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/numpy/lib/stride_tricks.py",
+        "line": 480,
+        "name": "broadcast_arrays",
+        "calls": 7280,
+        "own_s": 0.034120290000000005,
+        "cumulative_s": 0.17479348900000002
+      },
+      {
+        "file": "/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/lightning_fabric/utilities/device_dtype_mixin.py",
+        "line": 49,
+        "name": "to",
+        "calls": 1,
+        "own_s": 2.3224e-05,
+        "cumulative_s": 0.161929641
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "name": "<built-in method builtins.isinstance>",
+        "calls": 470871,
+        "own_s": 0.10614936300000001,
+        "cumulative_s": 0.15272311900000002
+      }
+    ]
+  }
+]

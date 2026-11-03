@@ -1,0 +1,47 @@
+{
+  "single_example": {
+    "id": "L3001",
+    "stock_repeat_runs": [
+      "b1-l3001-repeat1",
+      "b1-l3001-repeat2",
+      "b1-l3001-control",
+      "b1-l3001-final-control"
+    ],
+    "stock_repeat_times_s": [
+      106.43642792711034,
+      91.13656269107014,
+      89.04922321485355,
+      92.47892959881574
+    ],
+    "stock_median_s": 91.80774614494294,
+    "optimized_runs": [
+      "combined-l3001-first",
+      "combined-l3001-repeat1",
+      "combined-l3001-repeat2"
+    ],
+    "optimized_times_s": [
+      67.69587437575683,
+      65.51332002878189,
+      65.82433038763702
+    ],
+    "optimized_median_s": 65.82433038763702,
+    "speedup": 1.3947387782646714,
+    "time_reduction_percent": 28.30198632290154,
+    "stock_process_peak_mib": 20484.0,
+    "optimized_process_peak_mib": 20484.0
+  },
+  "directory_batch": {
+    "examples": 5,
+    "paired_runs": 1,
+    "stock_s": 204.36006088322029,
+    "optimized_s": 175.9226959538646,
+    "speedup": 1.1616469368842173,
+    "stock_process_peak_mib": 29730.0,
+    "optimized_process_peak_mib": 29730.0,
+    "all_scalar_numbers_bit_equal": true,
+    "all_numeric_prediction_arrays_bit_equal": true,
+    "scalar_fields": 105,
+    "compared_array_fields": 205
+  },
+  "scope": "Performance and exact output equivalence on five fixed public examples; not the full CASP16 scientific benchmark."
+}

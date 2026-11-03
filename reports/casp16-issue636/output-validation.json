@@ -1,0 +1,14 @@
+{
+  "L1000": {
+    "complete_pairs": 17,
+    "confidence_files": 85,
+    "affinity_files": 17,
+    "source_config": "research/casp16/runs/issue-settings-csv-seed0/L1000/config.json"
+  },
+  "L3000": {
+    "complete_pairs": 123,
+    "confidence_files": 615,
+    "affinity_files": 123,
+    "source_config": "research/casp16/runs/issue-settings-csv-seed0/L3000/config.json"
+  }
+}

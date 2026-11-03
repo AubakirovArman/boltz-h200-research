@@ -1,0 +1,46 @@
+[
+  {
+    "id": "L3001",
+    "source_sequence": "https://predictioncenter.org/casp16/target.cgi?target=L3000&view=sequence",
+    "source_ligand": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "protein_residues": 846,
+    "ligand_rows": 1,
+    "yaml_sha256": "3e371f8e871b22e0aa3396fb1883ed5445eb090f2805cc693dc394bf5921ff9c",
+    "tsv_sha256": "4936f1ae6e1f2fbfe23c2ad529856a09d67c4276f021f77f03fb77ee98aa9374",
+    "historical_msa_available": false,
+    "scope": "Fresh full-sequence CASP16 input; historical issue MSA/config unavailable."
+  },
+  {
+    "id": "L3003",
+    "source_sequence": "https://predictioncenter.org/casp16/target.cgi?target=L3000&view=sequence",
+    "source_ligand": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "protein_residues": 846,
+    "ligand_rows": 1,
+    "yaml_sha256": "0560577e3c40c3e52d1a550ea2ab300a96ec2bae30550dd542c3594bc410d638",
+    "tsv_sha256": "adce160d16168ac7be69adb20943581447ee062b190cc79e1c18ae6c783db833",
+    "historical_msa_available": false,
+    "scope": "Fresh full-sequence CASP16 input; historical issue MSA/config unavailable."
+  },
+  {
+    "id": "L3009",
+    "source_sequence": "https://predictioncenter.org/casp16/target.cgi?target=L3000&view=sequence",
+    "source_ligand": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "protein_residues": 846,
+    "ligand_rows": 1,
+    "yaml_sha256": "6ea6531452c8de88045f4545b0d5558e3d979af244a5e4d8b80fd33c5c566dbb",
+    "tsv_sha256": "96e125fd5b21c9ac5da9acfa938fe5fa7a69bf26da8171ca416d221a4ca70152",
+    "historical_msa_available": false,
+    "scope": "Fresh full-sequence CASP16 input; historical issue MSA/config unavailable."
+  },
+  {
+    "id": "L3021",
+    "source_sequence": "https://predictioncenter.org/casp16/target.cgi?target=L3000&view=sequence",
+    "source_ligand": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "protein_residues": 846,
+    "ligand_rows": 1,
+    "yaml_sha256": "962c6355961370c902f43727d08a2a63e1863e7be6a0e11a6ee7ce5559b2251e",
+    "tsv_sha256": "ca76e4d6ee24ec9cfee57dd96d53dabbb1b133331a5506842afc5a83b37ab785",
+    "historical_msa_available": false,
+    "scope": "Fresh full-sequence CASP16 input; historical issue MSA/config unavailable."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000.SMILES.tar.gz",
+    "file": "data/raw/L3000.SMILES.tar.gz",
+    "sha256": "4bce62918b4edfa7e9f836d58979b0516be91037e50032efb58fe11b3b68fb62",
+    "bytes": 8902
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000_autotaxin_README.txt",
+    "file": "data/raw/L3000_autotaxin_README.txt",
+    "sha256": "12ab8a1bac2795a243ee85c1c74e500e99e3cf92029989a249987b94c08005a2",
+    "bytes": 1718
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/pharma_ligands/L3000_exper_affinity.csv",
+    "file": "data/raw/L3000_exper_affinity.csv",
+    "sha256": "b9b5aec9342c127a5bbb27940aa86ae6cdbaf5d6bf1405600247514fd8ca5695",
+    "bytes": 16433
+  },
+  {
+    "url": "https://predictioncenter.org/download_area/CASP16/targets/casp16.targets_hybrid.tgz",
+    "file": "data/raw/casp16.targets_hybrid.tgz",
+    "sha256": "365f42061ff5bad56e14700d12cf72c507b7a48a44751a2b6c170afa285f4136",
+    "bytes": 4145054
+  }
+]

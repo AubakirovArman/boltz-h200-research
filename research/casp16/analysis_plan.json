@@ -1,0 +1,35 @@
+{
+  "question": "Why does Boltz issue #636 report approximately 0.52 whereas Table 14 reports 0.65?",
+  "frozen_before_full_predictions": true,
+  "dataset": "17 L1000 + 123 L3000 rows in the current official CASP16 affinity CSVs, joined by Target ID",
+  "inputs": "Single full target sequence; ligand SMILES from each affinity CSV; fixed full ColabFold env-mode MSAs",
+  "primary_output": "affinity_pred_value",
+  "primary_comparisons": [
+    "CLI raw output, uniform mean of the two target Pearson correlations (issue method)",
+    "CLI raw output, compound-count-weighted mean of the two target Pearson correlations (paper D.2.2)",
+    "Official fixed molecular-weight correction, uniform mean",
+    "Official fixed molecular-weight correction, compound-count-weighted mean"
+  ],
+  "molecular_weight_correction": {
+    "model_coefficient": 1.03525938,
+    "mw_power": 0.3,
+    "mw_coefficient": -0.59992683,
+    "intercept": 2.83288489,
+    "coefficients_source": "Pinned official Boltz source, not fitted on CASP16"
+  },
+  "secondary_checks": [
+    "Correct ID joins, finite numbers, exact 140-example coverage",
+    "Individual heads as diagnostic only; do not pick the best head as the primary result",
+    "L3000 PA versus A-only subsets, reported separately without dropping either from primary scoring",
+    "MW-only correlation to quantify the contribution of ligand-size information",
+    "Bootstrap stratified by target with a fixed seed, resampling the same indices across variants",
+    "Audit structural and stereochemical differences between the official challenge TSVs and affinity CSVs"
+  ],
+  "prohibited_shortcuts": [
+    "No training on benchmark labels",
+    "No fitting the molecular-weight coefficients to CASP16",
+    "No selecting seeds, molecules, subsets or outputs to force a score of 0.65",
+    "No claiming exact reproduction of unavailable original issue or paper inputs"
+  ],
+  "limits": "Original issue predictions, exact input files and historical MSA are not published. This is an independent reconstruction, not a byte-exact replication."
+}

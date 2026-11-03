@@ -1,0 +1,116 @@
+{
+  "label": "smoke",
+  "started_utc": "2026-11-02T17:06:58.804162+00:00",
+  "end_to_end_s": 44.33652620809153,
+  "gpu_memory_sampled_peak_mib": 3302.0,
+  "device_memory_sampled_peak_mib": 10699.3125,
+  "other_processes_sampled_peak_mib": 6768.0,
+  "host_process_tree_rss_peak_mib": 11001.83984375,
+  "returncode": 0,
+  "completion_status": "success",
+  "output_checks": {
+    "exit_zero": true,
+    "not_timed_out": true,
+    "one_structure": true,
+    "one_confidence": true,
+    "affinity_present_if_requested": true,
+    "numeric_json_finite": true,
+    "own_cuda_process_seen": true
+  },
+  "outputs": {
+    "confidence_official_smoke_model_0.json": {
+      "confidence_score": 0.654986560344696,
+      "ptm": 0.6056897640228271,
+      "iptm": 0.0,
+      "ligand_iptm": 0.0,
+      "protein_iptm": 0.0,
+      "complex_plddt": 0.6673107147216797,
+      "complex_iplddt": 0.6673107147216797,
+      "complex_pde": 1.351675033569336,
+      "complex_ipde": 0.0,
+      "chains_ptm": {
+        "0": 0.6056897640228271
+      },
+      "pair_chains_iptm": {
+        "0": {
+          "0": 0.6056897640228271
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "output/boltz_results_official_smoke/lightning_logs/version_0/hparams.yaml",
+      "bytes": 4149,
+      "sha256": "aa3d2e88c0335a622bd000e439e5bddc0795c33ee918e1b937b65013ecc8d3d7"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/predictions/official_smoke/confidence_official_smoke_model_0.json",
+      "bytes": 441,
+      "sha256": "b39aca0e499622f1ec331d8b3abf4b4d3d83cd05d375d2d7c1ed91c886733b47"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/predictions/official_smoke/official_smoke_model_0.cif",
+      "bytes": 79399,
+      "sha256": "7b6bebb2795f19de9851fab162e5fd02cd44b3abf4fc25ed962ed765aeca1d4a"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/predictions/official_smoke/pae_official_smoke_model_0.npz",
+      "bytes": 48875,
+      "sha256": "c44c757b4f6a7f414539d60caaed867b40f19fefc1a8c1584287fb516267d211"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/predictions/official_smoke/pde_official_smoke_model_0.npz",
+      "bytes": 41711,
+      "sha256": "cbfad66167455d05fa7af91c34b56b7ba71255f6f8e3bf5d2a175664a1994417"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/predictions/official_smoke/plddt_official_smoke_model_0.npz",
+      "bytes": 674,
+      "sha256": "ed60038975f51ed24a4252c9113557f381bf2c17233074e32dba43e27a4642fe"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/constraints/official_smoke.npz",
+      "bytes": 1555,
+      "sha256": "90f1b164c19548180d50476833736feb96766273dc45e5db7ea28f8570138834"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/manifest.json",
+      "bytes": 522,
+      "sha256": "feb40e4f617431a1923b6054bb413ed8cf32f1b0c21878fa650b4836db0900d3"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/mols/official_smoke.pkl",
+      "bytes": 5,
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/msa/official_smoke_0.npz",
+      "bytes": 4120,
+      "sha256": "913a013a610c12bc36876b75126ae5796ed2a9cf8ad1d33d27595682cc2c3384"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/records/official_smoke.json",
+      "bytes": 507,
+      "sha256": "7ee16e036d79890d2545f1848893d8e9cec41513dc864f2a9b98f3276e6b5ea4"
+    },
+    {
+      "path": "output/boltz_results_official_smoke/processed/structures/official_smoke.npz",
+      "bytes": 4227,
+      "sha256": "9f2f61e7743168927863d8efccd054b37eb653d94798913e104ac51738e79d02"
+    }
+  ],
+  "stage_log_events": [
+    {
+      "name": "structure_announced",
+      "elapsed_s": 4.276891224086285
+    }
+  ],
+  "background_processes_before": [
+    {
+      "pid": 3519486,
+      "used_gpu_memory_bytes": 7096762368
+    }
+  ],
+  "stage_timing_note": "Log arrival markers only; not exact GPU stage timings."
+}

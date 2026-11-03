@@ -1,0 +1,14 @@
+[
+  {
+    "file": "cache/boltz2_conf.ckpt",
+    "sha256_unchanged": true
+  },
+  {
+    "file": "cache/boltz2_aff.ckpt",
+    "sha256_unchanged": true
+  },
+  {
+    "file": "cache/mols.tar",
+    "sha256_unchanged": true
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "study": "performance_benchmark",
+    "run": "b0-l3001-first",
+    "status": "completed",
+    "elapsed_s": 126.28143844893202,
+    "own_sampled_peak_mib": 20704.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-fixed-set",
+    "status": "completed",
+    "elapsed_s": 204.36006088322029,
+    "own_sampled_peak_mib": 29730.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-l3001-control",
+    "status": "completed",
+    "elapsed_s": 89.04922321485355,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-l3001-final-control",
+    "status": "completed",
+    "elapsed_s": 92.47892959881574,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-l3001-first",
+    "status": "completed",
+    "elapsed_s": 112.25963454321027,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-l3001-repeat1",
+    "status": "completed",
+    "elapsed_s": 106.43642792711034,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "b1-l3001-repeat2",
+    "status": "completed",
+    "elapsed_s": 91.13656269107014,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "combined-fixed-set",
+    "status": "completed",
+    "elapsed_s": 175.9226959538646,
+    "own_sampled_peak_mib": 29730.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "combined-l3001-first",
+    "status": "completed",
+    "elapsed_s": 67.69587437575683,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "combined-l3001-repeat1",
+    "status": "completed",
+    "elapsed_s": 65.51332002878189,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "combined-l3001-repeat2",
+    "status": "completed",
+    "elapsed_s": 65.82433038763702,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "excluded_profile",
+    "run": "diagnostic-stock-l3001",
+    "status": "completed",
+    "elapsed_s": 116.47337826807052,
+    "own_sampled_peak_mib": 20496.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "o1-l3001-first",
+    "status": "completed",
+    "elapsed_s": 71.4113672808744,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "o1-l3001-repeat1",
+    "status": "completed",
+    "elapsed_s": 73.38345974171534,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "o1-l3001-repeat2",
+    "status": "completed",
+    "elapsed_s": 72.95001041982323,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "o2-l3001-first",
+    "status": "completed",
+    "elapsed_s": 70.45976176997647,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "performance_benchmark",
+    "run": "o3-l3001-first",
+    "status": "completed",
+    "elapsed_s": 67.9358681649901,
+    "own_sampled_peak_mib": 20484.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "excluded_smoke",
+    "run": "smoke",
+    "status": "completed",
+    "elapsed_s": 44.33652620809153,
+    "own_sampled_peak_mib": 3302.0,
+    "measurement_interval_s": 0.1,
+    "note": "Separate CLI process; see original config/result."
+  },
+  {
+    "study": "casp16_quality",
+    "run": "L1000 attempt 1",
+    "status": "completed",
+    "elapsed_s": 746.2787714609876,
+    "own_sampled_peak_mib": 17488.0,
+    "measurement_interval_s": 0.5,
+    "note": "17 pairs; 85 confidence reports. Concurrent with initial L3000 attempt; not a speed benchmark."
+  },
+  {
+    "study": "casp16_quality",
+    "run": "L3000 attempt 1",
+    "status": "interrupted",
+    "elapsed_s": null,
+    "own_sampled_peak_mib": null,
+    "measurement_interval_s": 0.5,
+    "note": "10 structures retained, no affinity outputs. No final resource summary; resume restarted seed 0."
+  },
+  {
+    "study": "casp16_quality",
+    "run": "L3000 attempt 2 (resume)",
+    "status": "completed",
+    "elapsed_s": 8710.644647628069,
+    "own_sampled_peak_mib": 31470.0,
+    "measurement_interval_s": 0.5,
+    "note": "113 new structures; all 123 affinities; 10 structures reused from interrupted attempt."
+  }
+]

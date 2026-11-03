@@ -1,0 +1,32 @@
+[
+  {
+    "checkpoint": "/mnt/data/arman-projects/boltz-h200/cache/boltz2_conf.ckpt",
+    "truncated_initializers_skipped": 472,
+    "uniform_draws_preserved": 104955904,
+    "rng_before_load": {
+      "numpy": "0e3bf16f3d8b2bbc70b027e3defc1d83c65354b95815f6fb6fc1b2e821dce389",
+      "torch_cpu": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f"
+    },
+    "strict_checkpoint_covers_all_skipped_parameters": true,
+    "elapsed_s": 7.358440523035824,
+    "rng_after_load": {
+      "numpy": "3d2cca0295e88cb3368564ca53454698f56622f05f95300ae96c01447f0433fc",
+      "torch_cpu": "9727c563c6f89c39809fd65223e2a37d8be0d8a3497501bf58c64f63ad9a56c1"
+    }
+  },
+  {
+    "checkpoint": "/mnt/data/arman-projects/boltz-h200/cache/boltz2_aff.ckpt",
+    "truncated_initializers_skipped": 520,
+    "uniform_draws_preserved": 107479040,
+    "rng_before_load": {
+      "numpy": "3d2cca0295e88cb3368564ca53454698f56622f05f95300ae96c01447f0433fc",
+      "torch_cpu": "0de31cbd49d3def71f4e328b619844c11447033b8280da8a78be51c2bf1e168f"
+    },
+    "strict_checkpoint_covers_all_skipped_parameters": true,
+    "elapsed_s": 6.966312361881137,
+    "rng_after_load": {
+      "numpy": "da90173f5445f6e74bd423c43739ac2809259bdf3033ee17882511ea78fb5913",
+      "torch_cpu": "e499f0e0fdd4eafb10992e2d3d6203a9aa4f1b3d4267e8662442140953d63998"
+    }
+  }
+]

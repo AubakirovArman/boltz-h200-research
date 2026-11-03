@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "complete_id_join": 140,
+  "finite_json_files": 840,
+  "source_constants_verified": {
+    "model_coef": 1.03525938,
+    "mw_coef": -0.59992683,
+    "bias": 2.83288489
+  },
+  "independent_numpy_correlations": {
+    "L1000": {
+      "n": 17,
+      "raw": 0.47328011520242375,
+      "mw_corrected": 0.5350886169343683,
+      "mw_corrected_fp32": 0.5350885729158353,
+      "max_fp32_vs_float64_prediction_difference": 5.331931633989484e-07
+    },
+    "L3000": {
+      "n": 123,
+      "raw": 0.6001161527524693,
+      "mw_corrected": 0.6556634290201837,
+      "mw_corrected_fp32": 0.6556634312357537,
+      "max_fp32_vs_float64_prediction_difference": 7.545384752560835e-07
+    }
+  },
+  "max_fp32_vs_float64_prediction_difference": 7.545384752560835e-07
+}

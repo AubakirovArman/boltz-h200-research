@@ -1,0 +1,3894 @@
+[
+  {
+    "Target ID": "L1001",
+    "STRUCID": "1aatm",
+    "ligand_smiles": "Fc4cc1c(n(c(c1CN(C)C(=O)OCC)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "Compound ID": "1",
+    "CHYMASE_IC50_COLI_NH": "0.000997259",
+    "Task": "PA",
+    "binding_affinity": "-12.35477492",
+    "rank": "1",
+    "binding_affinity_ratio": "0",
+    "Structure": "Fc4cc1c(n(c(c1CN(C)C(=O)OCC)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "IC50": "0.000997259",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 434.4670000000001,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "201",
+        "SMILES": "CCOC(=O)N(C)Cc1c(C(=O)O)n(Cc2cccc3ccccc23)c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1001.yaml",
+    "input_sha256": "f1248c3c74bd1ec6e8fd6101c9228a05c0fa444c0de107ed1b1ec64fe78c1d4f"
+  },
+  {
+    "Target ID": "L1002",
+    "STRUCID": "1fdqh",
+    "ligand_smiles": "[nH]1c5c(c(c1C(c2ccccc2)C3=C(C(CC3=O)c4ccccc4)O)CCNC(=O)C)ccc(c5)CC",
+    "Compound ID": "2",
+    "CHYMASE_IC50_COLI_NH": "0.0197015",
+    "Task": "PA",
+    "binding_affinity": "-10.57634661",
+    "rank": "9",
+    "binding_affinity_ratio": "1.778428309",
+    "Structure": "[nH]1c5c(c(c1C(c2ccccc2)C3=C(C(CC3=O)c4ccccc4)O)CCNC(=O)C)ccc(c5)CC",
+    "IC50": "0.0197015",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 492.6190000000002,
+    "heavy_atoms": 37,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "293",
+        "SMILES": "CCc1ccc2c(CCNC(C)=O)c([C@@H](C3=C(O)[C@@H](c4ccccc4)CC3=O)c3ccccc3)[nH]c2c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1002.yaml",
+    "input_sha256": "05933b5f3e15879fb9e713762c79f118b85dedf285ee59f5b6d76da70ec5fea8"
+  },
+  {
+    "Target ID": "L1003",
+    "STRUCID": "1hcbf",
+    "ligand_smiles": "FC(F)(F)c1c(ccc(c1)-c2ccncc2)NS(=O)(=O)c3sc4c(c3C)cc(cc4)F",
+    "Compound ID": "3",
+    "CHYMASE_IC50_COLI_NH": "0.027248853",
+    "Task": "PA",
+    "binding_affinity": "-10.38302145",
+    "rank": "12",
+    "binding_affinity_ratio": "1.971753466",
+    "Structure": "FC(F)(F)c1c(ccc(c1)-c2ccncc2)NS(=O)(=O)c3sc4c(c3C)cc(cc4)F",
+    "IC50": "0.027248853",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 466.4810000000002,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "843",
+        "SMILES": "Cc1c(S(=O)(=O)Nc2ccc(-c3ccncc3)cc2C(F)(F)F)sc2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1003.yaml",
+    "input_sha256": "44561b836bec27f1dbd29ec5904c755008a83caaa53ba688aeb22b5ad854f718"
+  },
+  {
+    "Target ID": "L1004",
+    "STRUCID": "1hnhq",
+    "ligand_smiles": "Fc4cc1c([nH]c(c1C(C)C)C(c2ccccc2)C3=C(C(NC3=O)C(C)C)O)cc4",
+    "Compound ID": "4",
+    "CHYMASE_IC50_COLI_NH": "0.01560769",
+    "Task": "PA",
+    "binding_affinity": "-10.7151968",
+    "rank": "7",
+    "binding_affinity_ratio": "1.63957812",
+    "Structure": "Fc4cc1c([nH]c(c1C(C)C)C(c2ccccc2)C3=C(C(NC3=O)C(C)C)O)cc4",
+    "IC50": "0.01560769",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 406.50100000000015,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "124",
+        "SMILES": "CC(C)c1c([C@@H](C2=C(O)[C@@H](C(C)C)NC2=O)c2ccccc2)[nH]c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1004.yaml",
+    "input_sha256": "62d19fe30f0116f1bf7df9f4d6d749d6d5f8bf16a1ee555ac44ae440b395b61f"
+  },
+  {
+    "Target ID": "L1005",
+    "STRUCID": "1kpum",
+    "ligand_smiles": "Fc4cc1c(n(c(c1CNC(=O)OC)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "Compound ID": "5",
+    "CHYMASE_IC50_COLI_NH": "0.02440082",
+    "Task": "PA",
+    "binding_affinity": "-10.44882773",
+    "rank": "11",
+    "binding_affinity_ratio": "1.905947191",
+    "Structure": "Fc4cc1c(n(c(c1CNC(=O)OC)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "IC50": "0.02440082",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 406.41300000000007,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "868",
+        "SMILES": "COC(=O)NCc1c(C(=O)O)n(Cc2cccc3ccccc23)c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1005.yaml",
+    "input_sha256": "2009adb1b5ae823715d93973600a4bb9d4ca0054112de18e72256feebf739509"
+  },
+  {
+    "Target ID": "L1006",
+    "STRUCID": "1lirr",
+    "ligand_smiles": "[nH]1c5c(c(c1C(c2ccccc2)C3=C(C(C3=O)(C)c4ccc(cc4)C)O)CC(NC(=O)C)(C)C)ccc(c5)C",
+    "Compound ID": "6",
+    "CHYMASE_IC50_COLI_NH": "0.008732411",
+    "Task": "PA",
+    "binding_affinity": "-11.06136532",
+    "rank": "4",
+    "binding_affinity_ratio": "1.293409595",
+    "Structure": "[nH]1c5c(c(c1C(c2ccccc2)C3=C(C(C3=O)(C)c4ccc(cc4)C)O)CC(NC(=O)C)(C)C)ccc(c5)C",
+    "IC50": "0.008732411",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 520.6730000000002,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "646",
+        "SMILES": "CC(=O)NC(C)(C)Cc1c([C@@H](C2=C(O)[C@](C)(c3ccc(C)cc3)C2=O)c2ccccc2)[nH]c2cc(C)ccc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1006.yaml",
+    "input_sha256": "71116a77dab10f570f80d3e823ae104c056941171b13e0e63f3db44438c759a7"
+  },
+  {
+    "Target ID": "L1007",
+    "STRUCID": "1lwzp",
+    "ligand_smiles": "OC1=C(C(=O)C1(C)c2ccccc2)C(c3cc4c(cc3)cccc4)c5ccccc5",
+    "Compound ID": "7",
+    "CHYMASE_IC50_COLI_NH": "0.228407531",
+    "Task": "PA",
+    "binding_affinity": "-9.115641308",
+    "rank": "16",
+    "binding_affinity_ratio": "3.239133611",
+    "Structure": "OC1=C(C(=O)C1(C)c2ccccc2)C(c3cc4c(cc3)cccc4)c5ccccc5",
+    "IC50": "0.228407531",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 390.4820000000001,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "092",
+        "SMILES": "C[C@]1(c2ccccc2)C(=O)C([C@@H](c2ccccc2)c2ccc3ccccc3c2)=C1O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1007.yaml",
+    "input_sha256": "0405df43ffbbea138a9a0c2c6cabff591e2978e1e5c5fcac343cd5a8eef2dfd6"
+  },
+  {
+    "Target ID": "L1008",
+    "STRUCID": "1lymk",
+    "ligand_smiles": "s1c5c(c(c1C(c2ccccc2)C3=C(C(C3=O)(C)c4ccccc4)O)C)cc(cc5)C",
+    "Compound ID": "8",
+    "CHYMASE_IC50_COLI_NH": "0.400032499",
+    "Task": "PA",
+    "binding_affinity": "-8.781578319",
+    "rank": "17",
+    "binding_affinity_ratio": "3.5731966",
+    "Structure": "s1c5c(c(c1C(c2ccccc2)C3=C(C(C3=O)(C)c4ccccc4)O)C)cc(cc5)C",
+    "IC50": "0.400032499",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 424.5650000000001,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "994",
+        "SMILES": "Cc1ccc2sc([C@@H](C3=C(O)[C@](C)(c4ccccc4)C3=O)c3ccccc3)c(C)c2c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1008.yaml",
+    "input_sha256": "2bdbf22227d09fcd5bc09dd43aa5262463709b9f0569ff71c6448a04d6750e99"
+  },
+  {
+    "Target ID": "L1009",
+    "STRUCID": "1oojw",
+    "ligand_smiles": "Fc5cc1c([nH]c(c1C)[C@H](c2ccccc2)C3=C([C@H](OC3=O)Cc4ccccc4)O)cc5",
+    "Compound ID": "120",
+    "CHYMASE_IC50_COLI_NH": "0.005292825",
+    "Task": "PA",
+    "binding_affinity": "-11.35982626",
+    "rank": "3",
+    "binding_affinity_ratio": "0.994948658",
+    "Structure": "Fc5cc1c([nH]c(c1C)[C@H](c2ccccc2)C3=C([C@H](OC3=O)Cc4ccccc4)O)cc5",
+    "IC50": "0.005292825",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 427.4750000000002,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "LIG",
+        "SMILES": "Cc1c([C@@H](C2=C(O)[C@@H](Cc3ccccc3)OC2=O)c2ccccc2)[nH]c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1009.yaml",
+    "input_sha256": "482e04b78a1d6765c3741bcfce4fe955a9e4744ced23ab7786a667297f9db16b"
+  },
+  {
+    "Target ID": "L1010",
+    "STRUCID": "1otkb",
+    "ligand_smiles": "Fc1cc2c(cc1)cccc2Cn3c4c(cc3C(=O)O)cccc4",
+    "Compound ID": "9",
+    "CHYMASE_IC50_COLI_NH": "0.01965706",
+    "Task": "PA",
+    "binding_affinity": "-10.57769273",
+    "rank": "8",
+    "binding_affinity_ratio": "1.777082188",
+    "Structure": "Fc1cc2c(cc1)cccc2Cn3c4c(cc3C(=O)O)cccc4",
+    "IC50": "0.01965706",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 319.335,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "362",
+        "SMILES": "O=C(O)c1cc2ccccc2n1Cc1cccc2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1010.yaml",
+    "input_sha256": "755c97e8a128e81b790038a330e990a0131f46b838beaf428b8c241daf16c5c1"
+  },
+  {
+    "Target ID": "L1011",
+    "STRUCID": "1ozal",
+    "ligand_smiles": "Fc4cc1c(n(c(c1CC(=O)N(C)C)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "Compound ID": "10",
+    "CHYMASE_IC50_COLI_NH": "0.040855989",
+    "Task": "PA",
+    "binding_affinity": "-10.14157592",
+    "rank": "15",
+    "binding_affinity_ratio": "2.213198997",
+    "Structure": "Fc4cc1c(n(c(c1CC(=O)N(C)C)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "IC50": "0.040855989",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 404.4410000000001,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "852",
+        "SMILES": "CN(C)C(=O)Cc1c(C(=O)O)n(Cc2cccc3ccccc23)c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1011.yaml",
+    "input_sha256": "47f7486af7875cf377e37444a5f814cae8abb8b8faa68452c0f592f2ea74a34f"
+  },
+  {
+    "Target ID": "L1012",
+    "STRUCID": "1prtm",
+    "ligand_smiles": "Fc3cc1c(sc(c1C)S(=O)(=O)Nc2c(cc(cc2)C(=O)OC)S(=O)(=O)C)cc3",
+    "Compound ID": "11",
+    "CHYMASE_IC50_COLI_NH": "0.02424037",
+    "Task": "PA",
+    "binding_affinity": "-10.45276039",
+    "rank": "10",
+    "binding_affinity_ratio": "1.902014533",
+    "Structure": "Fc3cc1c(sc(c1C)S(=O)(=O)Nc2c(cc(cc2)C(=O)OC)S(=O)(=O)C)cc3",
+    "IC50": "0.02424037",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 457.5260000000002,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "LIG",
+        "SMILES": "COC(=O)c1ccc(NS(=O)(=O)c2sc3ccc(F)cc3c2C)c(S(C)(=O)=O)c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1012.yaml",
+    "input_sha256": "1cd422bc5a9db79c3501bc7eca0ccb88cf04e76fdcb32252dd5526c3ff4de03e"
+  },
+  {
+    "Target ID": "L1013",
+    "STRUCID": "1pugb",
+    "ligand_smiles": "n1(c4c(c(c1C(=O)O)Cc2c3c(ccc2)cccc3)cccc4)CCOC",
+    "Compound ID": "12",
+    "CHYMASE_IC50_COLI_NH": "0.032404589",
+    "Task": "PA",
+    "binding_affinity": "-10.27972411",
+    "rank": "13",
+    "binding_affinity_ratio": "2.075050812",
+    "Structure": "n1(c4c(c(c1C(=O)O)Cc2c3c(ccc2)cccc3)cccc4)CCOC",
+    "IC50": "0.032404589",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 359.4250000000001,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "075",
+        "SMILES": "COCCn1c(C(=O)O)c(Cc2cccc3ccccc23)c2ccccc21",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1013.yaml",
+    "input_sha256": "db2e9db9295924ee77e9d6153fa1f3a44b2582045f182af08bbc6db18ac143eb"
+  },
+  {
+    "Target ID": "L1014",
+    "STRUCID": "1slnm",
+    "ligand_smiles": "n1(c2c(cc1C(=O)O)cccc2)Cc3c4c(ccc3)cccc4C",
+    "Compound ID": "13",
+    "CHYMASE_IC50_COLI_NH": "0.038705814",
+    "Task": "PA",
+    "binding_affinity": "-10.17380323",
+    "rank": "14",
+    "binding_affinity_ratio": "2.180971686",
+    "Structure": "n1(c2c(cc1C(=O)O)cccc2)Cc3c4c(ccc3)cccc4C",
+    "IC50": "0.038705814",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 315.372,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "592",
+        "SMILES": "Cc1cccc2cccc(Cn3c(C(=O)O)cc4ccccc43)c12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1014.yaml",
+    "input_sha256": "94e5d0caf025f8bd79840bee6008fe466dc7f19d718b0401e93600f7f9e2b96a"
+  },
+  {
+    "Target ID": "L1015",
+    "STRUCID": "1thzr",
+    "ligand_smiles": "Fc4cc1c(sc(c1C)S(=O)(=O)Nc2c(cc(cc2)-c3ccncc3)S(=O)(=O)C)cc4",
+    "Compound ID": "14",
+    "CHYMASE_IC50_COLI_NH": "0.004563792",
+    "Task": "PA",
+    "binding_affinity": "-11.44816725",
+    "rank": "2",
+    "binding_affinity_ratio": "0.906607668",
+    "Structure": "Fc4cc1c(sc(c1C)S(=O)(=O)Nc2c(cc(cc2)-c3ccncc3)S(=O)(=O)C)cc4",
+    "IC50": "0.004563792",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 476.57600000000014,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "125",
+        "SMILES": "Cc1c(S(=O)(=O)Nc2ccc(-c3ccncc3)cc2S(C)(=O)=O)sc2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1015.yaml",
+    "input_sha256": "4ccfae73196b6c5d9c1a068c33d62077e30d01f6c9dff8f856c0a9720de75428"
+  },
+  {
+    "Target ID": "L1016",
+    "STRUCID": "1tnlr",
+    "ligand_smiles": "Fc4cc1c(scc1Cn2c3c(c(c2C(=O)O)CC(=O)N(C)C)cccc3)cc4",
+    "Compound ID": "15",
+    "CHYMASE_IC50_COLI_NH": "0.014306864",
+    "Task": "PA",
+    "binding_affinity": "-10.767072",
+    "rank": "6",
+    "binding_affinity_ratio": "1.587702923",
+    "Structure": "Fc4cc1c(scc1Cn2c3c(c(c2C(=O)O)CC(=O)N(C)C)cccc3)cc4",
+    "IC50": "0.014306864",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 410.47000000000014,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "979",
+        "SMILES": "CN(C)C(=O)Cc1c(C(=O)O)n(Cc2csc3ccc(F)cc23)c2ccccc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1016.yaml",
+    "input_sha256": "ce2404c2022af9a8dd9c8c71d53041bd65c397d053d839fb0fa6b0370f9f9d01"
+  },
+  {
+    "Target ID": "L1017",
+    "STRUCID": "1ufwk",
+    "ligand_smiles": "Fc4cc1c(n(c(c1CNS(=O)(=O)C)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "Compound ID": "18",
+    "CHYMASE_IC50_COLI_NH": "0.012144958",
+    "Task": "PA",
+    "binding_affinity": "-10.86472827",
+    "rank": "5",
+    "binding_affinity_ratio": "1.490046651",
+    "Structure": "Fc4cc1c(n(c(c1CNS(=O)(=O)C)C(=O)O)Cc2c3c(ccc2)cccc3)cc4",
+    "IC50": "0.012144958",
+    "target": "L1000",
+    "protein_residues": 247,
+    "molecular_weight": 426.46900000000016,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "043",
+        "SMILES": "CS(=O)(=O)NCc1c(C(=O)O)n(Cc2cccc3ccccc23)c2ccc(F)cc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L1000/L1017.yaml",
+    "input_sha256": "4607782a9b460a476825e2b70728cfa352df6a4fb8bfaebef88837c3e49a8407"
+  },
+  {
+    "Target ID": "L3001",
+    "Proasis ID": "0atx0",
+    "Structure": "Fc1ccc(cc1)Cc2ncnc3c2CN(CC3)C(=O)Cc4cc(c(cc4)Cl)Cl",
+    "Compound ID": "41.0",
+    "IC50": "0.763858932",
+    "Task": "PA",
+    "binding_affinity": "-8.395998582720297",
+    "rank": "88",
+    "binding_affinity_ratio": "0.0",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 430.31000000000006,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(Cc1ccc(Cl)c(Cl)c1)N1CCc2ncnc(Cc3ccc(F)cc3)c2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3001.yaml",
+    "input_sha256": "bb18141e2d97c2046f463a06d2da905ec671745f00161bfaf055a6cfcc524b03"
+  },
+  {
+    "Target ID": "L3003",
+    "Proasis ID": "0atx2",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CCN(CC2)Cc3c(cc(cc3)S(=O)(=O)N)F)Cn4nnc(n4)C",
+    "Compound ID": "43.0",
+    "IC50": "0.018613433",
+    "Task": "PA",
+    "binding_affinity": "-10.610211796535024",
+    "rank": "37",
+    "binding_affinity_ratio": "-2.2142132138147277",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 569.585,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2CCC(=O)N2CCN(Cc3ccc(S(N)(=O)=O)cc3F)CC2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3003.yaml",
+    "input_sha256": "75c1b9409ebc26a0dbbcc7f145e18bd6a5699bb9de5a1dbe8187638c707c24f5"
+  },
+  {
+    "Target ID": "L3009",
+    "Proasis ID": "0atx8",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4ncc(cc4F)S(=O)(=O)N)Cn5nnc(n5)C",
+    "Compound ID": "3.0",
+    "IC50": "0.001630097",
+    "Task": "PA",
+    "binding_affinity": "-12.061860746190218",
+    "rank": "3",
+    "binding_affinity_ratio": "-3.6658621634699213",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 608.578,
+    "heavy_atoms": 42,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2CCC(=O)N2CC3=C(C2)CN(C(=O)c2ncc(S(N)(=O)=O)cc2F)C3)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3009.yaml",
+    "input_sha256": "b6c13cf45a21f7f50250c56d31e00626d3fca3fc28a2f01a280bf77044aca0f6"
+  },
+  {
+    "Target ID": "L3019",
+    "Proasis ID": "0atxj",
+    "Structure": "Clc1c(cc(c(c1)C(C)(C)C)COc2n[nH]c3c2CCN(CC3)C(=O)c4ccc(cc4)S(=O)(=O)N)C",
+    "Compound ID": "57.0",
+    "IC50": "0.015032797",
+    "Task": "PA",
+    "binding_affinity": "-10.73756811054188",
+    "rank": "33",
+    "binding_affinity_ratio": "-2.3415695278215827",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 531.0780000000002,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(COc2n[nH]c3c2CCN(C(=O)c2ccc(S(N)(=O)=O)cc2)CC3)c(C(C)(C)C)cc1Cl",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(COc2n[nH]c3c2CCN(C(=O)c2ccc(S(N)(=O)=O)cc2)CC3)c(C(C)(C)C)cc1Cl",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3019.yaml",
+    "input_sha256": "676dfb75b7494573f689f0d158aa4a85359fff8e4158617c2637608a36ced370"
+  },
+  {
+    "Target ID": "L3021",
+    "Proasis ID": "0atxl",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CCC(CC2)CC[S@@](=O)c3sc(cn3)S(=O)(=O)N)Cn4nnc(n4)C",
+    "Compound ID": "59.0",
+    "IC50": "0.002309868",
+    "Task": "PA",
+    "binding_affinity": "-11.85408957985962",
+    "rank": "8",
+    "binding_affinity_ratio": "-3.4580909971393226",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 619.7169999999999,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2CCC(=O)N2CCC(CC[S@@](=O)c3ncc(S(N)(=O)=O)s3)CC2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3021.yaml",
+    "input_sha256": "5e8e6682c0d390333cad68a43092bd7b497de21c139baf64382c272e775778b0"
+  },
+  {
+    "Target ID": "L3024",
+    "Proasis ID": "1atx2",
+    "Structure": "Brc1cc(ccc1)[C@@H](NC(=O)COc2c(cccc2CN3CC(C3)(F)F)OC)CC(=O)NC",
+    "Compound ID": "62.0",
+    "IC50": "0.2769834",
+    "Task": "PA",
+    "binding_affinity": "-9.000697653996212",
+    "rank": "77",
+    "binding_affinity_ratio": "-0.6046990712759164",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 526.3780000000003,
+    "heavy_atoms": 33,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "DRG",
+        "SMILES": "CNC(=O)C[C@H](NC(=O)COc1c(CN2CC(F)(F)C2)cccc1OC)c1cccc(Br)c1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "BR",
+        "SMILES": "[Br-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3024.yaml",
+    "input_sha256": "cdb1d977a8f68ac180a9279a83f15971d6507710e00e11bfa1f6634ad46ee3a0"
+  },
+  {
+    "Target ID": "L3026",
+    "Proasis ID": "1atx4",
+    "Structure": "Clc1cc(cc(c1)COC(=O)N5CC2(OCC(C2)NC(=O)c4cc3[nH]nnc3cc4)C5)Cl",
+    "Compound ID": "64.0",
+    "IC50": "0.007541006",
+    "Task": "PA",
+    "binding_affinity": "-11.148804795301368",
+    "rank": "22",
+    "binding_affinity_ratio": "-2.7528062125810706",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 476.32000000000016,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(N[C@@H]1COC2(C1)CN(C(=O)OCc1cc(Cl)cc(Cl)c1)C2)c1ccc2nn[nH]c2c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3026.yaml",
+    "input_sha256": "fc3c58e3b19091dc7d56c60f40bd8e360320f17ebb6a324b03de04bf5025701d"
+  },
+  {
+    "Target ID": "L3027",
+    "Proasis ID": "1atx5",
+    "Structure": "Clc1ccc(cc1)CN2C(=O)NC(C2=O)(C)c3ccc(cc3)C",
+    "Compound ID": "65.0",
+    "IC50": "0.956439359",
+    "Task": "PA",
+    "binding_affinity": "-8.261974880404711",
+    "rank": "95",
+    "binding_affinity_ratio": "0.13402370231558683",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 328.79900000000004,
+    "heavy_atoms": 23,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1ccc([C@]2(C)NC(=O)N(Cc3ccc(Cl)c(CC4CCC(Cl)CC4)c3)C2=O)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3027.yaml",
+    "input_sha256": "dfc4ed64a69ed39a19a28dee372fecd273f159e8c65c1f005da35dd745eaae4e"
+  },
+  {
+    "Target ID": "L3028",
+    "Proasis ID": "1atx6",
+    "Structure": "Clc1c(ccc(c1)Cl)CCC(=O)N[C@H]3Cc2c(cccc2)CN(C3=O)CC(=O)NC",
+    "Compound ID": "66.0",
+    "IC50": "0.76298425",
+    "Task": "PA",
+    "binding_affinity": "-8.396681557898605",
+    "rank": "87",
+    "binding_affinity_ratio": "-0.0006829751783079272",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 448.3500000000002,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)CN1Cc2ccccc2C[C@H](NC(=O)CCc2ccc(Cl)cc2Cl)C1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3028.yaml",
+    "input_sha256": "fe44b0479c54821534cf10918e9a6c52f582647cdc2b7a9a96a2990591b59e1b"
+  },
+  {
+    "Target ID": "L3031",
+    "Proasis ID": "1atx9",
+    "Structure": "Brc1ccc(cc1)CNCc2cn(c3c2cccc3)CCC(=O)NC",
+    "Compound ID": "69.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "116",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 400.32000000000016,
+    "heavy_atoms": 25,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)CCn1cc(CNCc2ccc(Br)cc2)c2ccccc21",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3031.yaml",
+    "input_sha256": "cc44b12b3905566e67ab581a2da915ef8fdd9f61f56a9f1177479cc7767bb343"
+  },
+  {
+    "Target ID": "L3035",
+    "Proasis ID": "1atxd",
+    "Structure": "Fc1ccc(cc1)Cc2c3c(ccc2)CCN(C3)C(=O)Cc4cc(c(cc4)Cl)Cl",
+    "Compound ID": "73.0",
+    "IC50": "0.769073102",
+    "Task": "PA",
+    "binding_affinity": "-8.391943375241993",
+    "rank": "89",
+    "binding_affinity_ratio": "0.004055207478303287",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 428.33400000000006,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(Cc1ccc(Cl)c(Cl)c1)N1CCc2cccc(Cc3ccc(F)cc3)c2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3035.yaml",
+    "input_sha256": "a59b045885ba0d9feec37a467d963ac25ad4c662d2d1226853897e5ebb5ba49a"
+  },
+  {
+    "Target ID": "L3037",
+    "Proasis ID": "1atxf",
+    "Structure": "[nH]1nc(cc1COc2c(cc(c(c2)C)C#N)C(C)(C)C)C(=O)N4CC3(COCC3)CC4",
+    "Compound ID": "75.0",
+    "IC50": "0.008244959",
+    "Task": "PA",
+    "binding_affinity": "-11.0956050231655",
+    "rank": "25",
+    "binding_affinity_ratio": "-2.6996064404452045",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 422.52900000000034,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCc2cc(C(=O)N3CC[C@]4(CCOC4)C3)n[nH]2)c(C(C)(C)C)cc1C#N",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3037.yaml",
+    "input_sha256": "faea58bb7b361c6c25bc1a911f84b9c07b52e475c02c093569edcda0c48b3ef6"
+  },
+  {
+    "Target ID": "L3038",
+    "Proasis ID": "1atxg",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C#N)C)C(C)(C)C)C#N",
+    "Compound ID": "32.0",
+    "IC50": "0.049465548",
+    "Task": "PA",
+    "binding_affinity": "-10.027587887117527",
+    "rank": "53",
+    "binding_affinity_ratio": "-1.6315893043972285",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 328.80300000000005,
+    "heavy_atoms": 23,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(C#N)cnc1COc1cc(Cl)c(C#N)cc1C(C)(C)C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3038.yaml",
+    "input_sha256": "f19721117d92ce9867ccdb1ce291ed1741c5e9b3f1f5795b9cd5085894a2fdd8"
+  },
+  {
+    "Target ID": "L3039",
+    "Proasis ID": "1atxh",
+    "Structure": "N1C=CC=C(C1=O)COc2c(cc(c(c2)C)C#N)C(C)(C)C",
+    "Compound ID": "76.0",
+    "IC50": "0.0895237",
+    "Task": "PA",
+    "binding_affinity": "-9.673965291825727",
+    "rank": "63",
+    "binding_affinity_ratio": "-1.2779667091054299",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 296.37000000000006,
+    "heavy_atoms": 22,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCc2ccc[nH]c2=O)c(C(C)(C)C)cc1C#N",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3039.yaml",
+    "input_sha256": "ea2ba7c08a02da7be249325e5ce1fe0b7713fcebc0d418265e9fb3a55dbf21b7"
+  },
+  {
+    "Target ID": "L3042",
+    "Proasis ID": "1atxk",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)N4C3(COC3)CC4)C)C(C)(C)C)C#N",
+    "Compound ID": "35.0",
+    "IC50": "0.124297378",
+    "Task": "PA",
+    "binding_affinity": "-9.478341062829765",
+    "rank": "64",
+    "binding_affinity_ratio": "-1.0823424801094679",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 428.9200000000003,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(C(=O)N2CCC23COC3)cnc1COc1cc(Cl)c(C#N)cc1C(C)(C)C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3042.yaml",
+    "input_sha256": "7e8d8c58f99d4b864ea1fcb7b806541a7362b636b0fe11f36155b1c9bf358a87"
+  },
+  {
+    "Target ID": "L3043",
+    "Proasis ID": "1atxl",
+    "Structure": "Clc1c(cc(c(c1)OCc2n3c(cn2)C(=O)N(CC3)C)C(C)(C)C)C#N",
+    "Compound ID": "37.0",
+    "IC50": "0.416171893",
+    "Task": "PA",
+    "binding_affinity": "-8.75800102153713",
+    "rank": "80",
+    "binding_affinity_ratio": "-0.36200243881683225",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 372.85600000000017,
+    "heavy_atoms": 26,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CN1CCn2c(cnc2COc2cc(Cl)c(C#N)cc2C(C)(C)C)C1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3043.yaml",
+    "input_sha256": "fc73fc786a24075190936ca96e58f51349d5e47543b3035d380927e7c7b3459b"
+  },
+  {
+    "Target ID": "L3044",
+    "Proasis ID": "1atxm",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC)C)C(C)(C)C)C#N",
+    "Compound ID": "34.0",
+    "IC50": "0.085354073",
+    "Task": "PA",
+    "binding_affinity": "-9.702396415713803",
+    "rank": "61",
+    "binding_affinity_ratio": "-1.3063978329935062",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 360.84500000000014,
+    "heavy_atoms": 25,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)c1cnc(COc2cc(Cl)c(C#N)cc2C(C)(C)C)n1C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3044.yaml",
+    "input_sha256": "bbc19b9428625772504778dab76dda53215a201d38d17c070b1d06736824420e"
+  },
+  {
+    "Target ID": "L3045",
+    "Proasis ID": "1atxn",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3COC3)C)C(C)(C)C)C#N",
+    "Compound ID": "25.0",
+    "IC50": "0.015741051",
+    "Task": "PA",
+    "binding_affinity": "-10.710125018267236",
+    "rank": "34",
+    "binding_affinity_ratio": "-2.3141264355469398",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 402.88200000000023,
+    "heavy_atoms": 28,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(C(=O)NC2COC2)cnc1COc1cc(Cl)c(C#N)cc1C(C)(C)C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3045.yaml",
+    "input_sha256": "9be40a84b67d5a3fc3cf57683d6f26836ab0ed6624f6c8a8d59ccada0f3b0d3d"
+  },
+  {
+    "Target ID": "L3047",
+    "Proasis ID": "1atxp",
+    "Structure": "[nH]1nncc1CCOCC(=O)N3Cc2nc(ncc2C3)NC5Cc4c(cccc4)C5",
+    "Compound ID": "80.0",
+    "IC50": "0.001737604",
+    "Task": "PA",
+    "binding_affinity": "-12.023789251631234",
+    "rank": "4",
+    "binding_affinity_ratio": "-3.627790668910935",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 405.4620000000002,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(COCCc1cnn[nH]1)N1Cc2cnc(NC3Cc4ccccc4C3)nc2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3047.yaml",
+    "input_sha256": "9dfb55c39f552f822232dd3adc4af782990c038205472475938d312bd6110df1"
+  },
+  {
+    "Target ID": "L3049",
+    "Proasis ID": "1atxr",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3CS(=O)(=O)C3)C)C(C)(C)C)C#N",
+    "Compound ID": "21.0",
+    "IC50": "0.004969038",
+    "Task": "PA",
+    "binding_affinity": "-11.397455591814827",
+    "rank": "15",
+    "binding_affinity_ratio": "-3.0014570090945316",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 450.94800000000026,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(C(=O)NC2CS(=O)(=O)C2)cnc1COc1cc(Cl)c(C#N)cc1C(C)(C)C",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "CL",
+        "SMILES": "[Cl-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3049.yaml",
+    "input_sha256": "c274399a03682431b02985d5b6ceb02f5d076d18d6eaa04720e5e0be9562bf4a"
+  },
+  {
+    "Target ID": "L3050",
+    "Proasis ID": "1atxs",
+    "Structure": "N1N=C(CCC1=O)COc2c(cc(c(c2)C)C#N)C(C)(C)C",
+    "Compound ID": "82.0",
+    "IC50": "0.024384981",
+    "Task": "PA",
+    "binding_affinity": "-10.449214792306218",
+    "rank": "41",
+    "binding_affinity_ratio": "-2.0532162095859205",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 299.374,
+    "heavy_atoms": 22,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCC2=NNC(=O)CC2)c(C(C)(C)C)cc1C#N",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3050.yaml",
+    "input_sha256": "d943a8acb0d1b0e51ab7a583acf4e39143a55beb6fd8001c26f2050e11cb44e5"
+  },
+  {
+    "Target ID": "L3053",
+    "Proasis ID": "1atxv",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3noc(c3)C4COC4)C)C(C)(C)C)C#N",
+    "Compound ID": "26.0",
+    "IC50": "0.01677575",
+    "Task": "PA",
+    "binding_affinity": "-10.672175874781251",
+    "rank": "35",
+    "binding_affinity_ratio": "-2.276177292060953",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 426.9040000000002,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(-c2cc(C3COC3)on2)cnc1COc1cc(Cl)c(C#N)cc1C(C)(C)C",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "CL",
+        "SMILES": "[Cl-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3053.yaml",
+    "input_sha256": "f2220b2772a569e3884bffcbff63c826a1d69c14484e38291f6d5ccd5fd1c192"
+  },
+  {
+    "Target ID": "L3054",
+    "Proasis ID": "1atxw",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3ncnc(c3)OC)C)C(C)(C)C)C#N",
+    "Compound ID": "31.0",
+    "IC50": "0.041649421",
+    "Task": "PA",
+    "binding_affinity": "-10.13011050635152",
+    "rank": "46",
+    "binding_affinity_ratio": "-1.734111923631225",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 411.8930000000002,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "COc1cc(-c2cnc(COc3cc(Cl)c(C#N)cc3C(C)(C)C)n2C)ncn1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3054.yaml",
+    "input_sha256": "879c7acdd8eba789bb77da97b40e20c09b74f8bb326a9a71ef80f94b7e3d6f6b"
+  },
+  {
+    "Target ID": "L3056",
+    "Proasis ID": "1atxy",
+    "Structure": "s1nc2c(n1)cccc2OCC(=O)N3[C@@H](CC3)C(=O)N",
+    "Compound ID": "86.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "115",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 292.32,
+    "heavy_atoms": 20,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "NC(=O)[C@@H]1CCN1C(=O)COc1cccc2nsnc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3056.yaml",
+    "input_sha256": "3865b4f82a1f2cb2133d1fe7db1256b8ddb4436b841300afcdf04d17e85267f3"
+  },
+  {
+    "Target ID": "L3057",
+    "Proasis ID": "1atxz",
+    "Structure": "Clc1cc2c(cc1)CC(C2)Nc3nc4c(cn3)CN(C4)S(=O)(=O)C5COC5",
+    "Compound ID": "87.0",
+    "IC50": "0.021433681",
+    "Task": "PA",
+    "binding_affinity": "-10.52611398533033",
+    "rank": "40",
+    "binding_affinity_ratio": "-2.130115402610032",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 406.8950000000002,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=S(=O)(C1COC1)N1Cc2cnc(N[C@H]3Cc4ccc(Cl)cc4C3)nc2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3057.yaml",
+    "input_sha256": "9ca23450f14cf0495d2b532c30835aafc08a8634e1231d6102a405854c74feee"
+  },
+  {
+    "Target ID": "L3058",
+    "Proasis ID": "1bltr",
+    "Structure": "Fc1c(ccc(c1)C)-c2cc(cc(c2)C(=O)NCc3ncc(nc3)C)-n4nnnc4CCC",
+    "Compound ID": "88.0",
+    "IC50": "0.771863201",
+    "Task": "PA",
+    "binding_affinity": "-8.389784713877187",
+    "rank": "90",
+    "binding_affinity_ratio": "0.006213868843110836",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 445.5020000000002,
+    "heavy_atoms": 33,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CCCc1nnnn1-c1cc(C(=O)NCc2cnc(C)cn2)cc(-c2ccc(C)cc2F)c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3058.yaml",
+    "input_sha256": "3a5de4c021cbce3885b8432dfeefb6b4e1ac83c7ea4c6920f3fa98d365422e7a"
+  },
+  {
+    "Target ID": "L3060",
+    "Proasis ID": "1bzwa",
+    "Structure": "Clc1cc(cc(c1)COC(=O)N3CCC2(CN(C2)C(=O)C)CC3)Cl",
+    "Compound ID": "90.0",
+    "IC50": "0.716797858",
+    "Task": "PA",
+    "binding_affinity": "-8.433904137484914",
+    "rank": "86",
+    "binding_affinity_ratio": "-0.03790555476461711",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 371.2640000000001,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CC2(CCN(C(=O)OCc3cc(Cl)cc(Cl)c3)CC2)C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3060.yaml",
+    "input_sha256": "2faacbcc567beff3faf38fa31113ecd855f8be4eaf8de8675bd9ad71e4770bbe"
+  },
+  {
+    "Target ID": "L3061",
+    "Proasis ID": "1cuvw",
+    "Structure": "Clc5cc1c(n(c2c1CCN(C2)C(=O)CCc3[nH]cnc3)Cc4ccc(cc4)C#N)cc5",
+    "Compound ID": "91.0",
+    "IC50": "1.379984022",
+    "Task": "PA",
+    "binding_affinity": "-8.043438771589056",
+    "rank": "100",
+    "binding_affinity_ratio": "0.35255981113124213",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 443.93800000000005,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "N#Cc1ccc(Cn2c3c(c4cc(Cl)ccc42)CCN(C(=O)CCc2cnc[nH]2)C3)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3061.yaml",
+    "input_sha256": "0ac1be146499630d8857b47a79a5417158926b44cbf3f90c93348382285ac57a"
+  },
+  {
+    "Target ID": "L3064",
+    "Proasis ID": "1dsht",
+    "Structure": "Clc1c(cc(c(c1)C(C)C)C2=NNC(=O)N2C)C",
+    "Compound ID": "94.0",
+    "IC50": "0.8435814648171239",
+    "Task": "PA",
+    "binding_affinity": "-8.336821739563579",
+    "rank": "93",
+    "binding_affinity_ratio": "0.05917684315671872",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 265.74399999999997,
+    "heavy_atoms": 18,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(-c2n[nH]c(=O)n2C)c(C(C)C)cc1Cl",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(-c2n[nH]c(=O)n2C)c(C(C)C)cc1Cl",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3064.yaml",
+    "input_sha256": "9d77b18caba86d37026c5f0cbaa1bb7328f89e81720916285588ab2a19ea4626"
+  },
+  {
+    "Target ID": "L3066",
+    "Proasis ID": "1fnkr",
+    "Structure": "N1N=C(N(C1=O)C)c2cc4c(c(c2)OCC3CC3)cccc4",
+    "Compound ID": "96.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "117",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 295.3419999999999,
+    "heavy_atoms": 22,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "UNL",
+        "SMILES": "Cn1c(-c2cc(OCC3CC3)c3ccccc3c2)n[nH]c1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3066.yaml",
+    "input_sha256": "4479e48288601303f2464ab747e3721d89829cf8acaf50c05b688225dde5a919"
+  },
+  {
+    "Target ID": "L3068",
+    "Proasis ID": "1gizv",
+    "Structure": "Fc1c(cccc1)-c2cc3c(cc2)N=C(CC(=O)N3)c4cc(ccc4)-c5nnc(o5)C",
+    "Compound ID": "98.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "122",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 412.42400000000015,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnc(-c2cccc(C3=Nc4ccc(-c5ccccc5F)cc4NC(=O)C3)c2)o1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3068.yaml",
+    "input_sha256": "008585b8a667d35917d7d3734622dd73fd1c203c8b4f7820a5ec2c51837b155f"
+  },
+  {
+    "Target ID": "L3073",
+    "Proasis ID": "1jgoe",
+    "Structure": "S2\\C(=C\\c1ccc(cc1)C(C)(C)C)\\C(=O)N=C2N3CCCC3",
+    "Compound ID": "103.0",
+    "IC50": "0.210793024",
+    "Task": "PA",
+    "binding_affinity": "-9.163481150739706",
+    "rank": "70",
+    "binding_affinity_ratio": "-0.7674825680194086",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 314.4540000000001,
+    "heavy_atoms": 22,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(C)(C)c1ccc(/C=C2\\SC(N3CCCC3)=NC2=O)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3073.yaml",
+    "input_sha256": "20fdf20db2f3a52a876509a6ab6d55a25f22ecd4c9ad01ba09475a024d7cb5d8"
+  },
+  {
+    "Target ID": "L3075",
+    "Proasis ID": "1jllp",
+    "Structure": "O3c1c(ccc(c1CCC)OCC(O)COc2c(c(c(cc2)C(=O)C)O)CCC)C(=O)C=C3C(=O)O",
+    "Compound ID": "105.0",
+    "IC50": "0.214266814",
+    "Task": "PA",
+    "binding_affinity": "-9.153737711644707",
+    "rank": "71",
+    "binding_affinity_ratio": "-0.7577391289244105",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 498.5280000000003,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CCCc1c(OC[C@@H](O)COc2ccc3c(=O)cc(C(=O)O)oc3c2CCC)ccc(C(C)=O)c1O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3075.yaml",
+    "input_sha256": "88141e13b5b0ec1741c8f7733bcdaf8babaa9cf6caf17879709d43bf418eb27a"
+  },
+  {
+    "Target ID": "L3076",
+    "Proasis ID": "1juoa",
+    "Structure": "FC(F)(F)Oc1cc(c(cc1)COC(=O)N3CCn2nc(cc2C3)C(=O)N5CCc4[nH]nnc4C5)C",
+    "Compound ID": "106.0",
+    "IC50": "0.268338597",
+    "Task": "PA",
+    "binding_affinity": "-9.019598776037835",
+    "rank": "75",
+    "binding_affinity_ratio": "-0.623600193317539",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 505.45700000000033,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OC(F)(F)F)ccc1COC(=O)N1CCn2nc(C(=O)N3CCc4[nH]nnc4C3)cc2C1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "ACT",
+        "SMILES": "CC(=O)[O-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3076.yaml",
+    "input_sha256": "d12f7b6722a7e8c69d6c304bccfbce5123a516f3fa6a08f2907566b594a81c0f"
+  },
+  {
+    "Target ID": "L3077",
+    "Proasis ID": "1jxwo",
+    "Structure": "Clc1cc(cc(c1)CCS(=O)(=O)[C@@H]5C[C@@H]2[C@@H](CN(C2)C(=O)c4cc3nn[nH]c3cc4)C5)Cl",
+    "Compound ID": "107.0",
+    "IC50": "0.129443784",
+    "Task": "PA",
+    "binding_affinity": "-9.454157415578338",
+    "rank": "66",
+    "binding_affinity_ratio": "-1.0581588328580405",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 493.4160000000003,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(c1ccc2[nH]nnc2c1)N1C[C@H]2C[C@H](S(=O)(=O)CCc3cc(Cl)cc(Cl)c3)C[C@H]2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3077.yaml",
+    "input_sha256": "d4375a3b2181fa3676069b53090514623a4989c096995aa79a6a73c3795e4aa6"
+  },
+  {
+    "Target ID": "L3079",
+    "Proasis ID": "1kfkv",
+    "Structure": "Clc1ccc(cc1)-c2sc(nc2C(=O)NC)-n3cnc4c3cc(c(c4)OC)OC",
+    "Compound ID": "109.0",
+    "IC50": "0.01086159",
+    "Task": "PA",
+    "binding_affinity": "-10.931301545405704",
+    "rank": "29",
+    "binding_affinity_ratio": "-2.5353029626854062",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 428.9010000000002,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)c1nc(-n2cnc3cc(OC)c(OC)cc32)sc1-c1ccc(Cl)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3079.yaml",
+    "input_sha256": "593ec3e557a0b3f69b4e99aabcd023177a3690dafe4ca7df665425b60f4e09dd"
+  },
+  {
+    "Target ID": "L3080",
+    "Proasis ID": "1klyn",
+    "Structure": "FC(F)(F)c1ccc(cc1)CCC(=O)c2cc(c(cc2)NC(=O)C)N",
+    "Compound ID": "110.0",
+    "IC50": "0.498467407",
+    "Task": "PA",
+    "binding_affinity": "-8.650440841332946",
+    "rank": "82",
+    "binding_affinity_ratio": "-0.25444225861264924",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 350.34000000000003,
+    "heavy_atoms": 25,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)Nc1ccc(C(=O)CCc2ccc(C(F)(F)F)cc2)cc1N",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3080.yaml",
+    "input_sha256": "7f1d114ab2dacb34519619ba5b4aac10fa1fb1a3abc49b50dc1493161057715c"
+  },
+  {
+    "Target ID": "L3081",
+    "Proasis ID": "1knxt",
+    "Structure": "N1N=C(N(C1=O)C)CC(=O)N(Cc2ccccc2)c3ccccc3",
+    "Compound ID": "111.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "119",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 322.36800000000005,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "UNL",
+        "SMILES": "Cn1c(CC(=O)N(Cc2ccccc2)c2ccccc2)n[nH]c1=O",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "UNL",
+        "SMILES": "Cn1c(CC(=O)N(Cc2ccccc2)c2ccccc2)n[nH]c1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3081.yaml",
+    "input_sha256": "d9735100b1cb8a50e1ea98df74b546fb0c4bc23b19372b09c2326490c3a4d38c"
+  },
+  {
+    "Target ID": "L3083",
+    "Proasis ID": "1kvft",
+    "Structure": "O(CCC(C)(C)c1c(cc(cc1C)C)O)C(=O)C(C)(C)C",
+    "Compound ID": "113.0",
+    "IC50": "1.131757102",
+    "Task": "PA",
+    "binding_affinity": "-8.161645722463431",
+    "rank": "98",
+    "binding_affinity_ratio": "0.2343528602568656",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 292.41900000000004,
+    "heavy_atoms": 21,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(C)c(C(C)(C)CCOC(=O)C(C)(C)C)c(O)c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3083.yaml",
+    "input_sha256": "1845635dc227d78023908f94113d8d9ff61bad6a024c9874451f57deeaadaa1c"
+  },
+  {
+    "Target ID": "L3087",
+    "Proasis ID": "1mgai",
+    "Structure": "Clc1ccc(cc1)-c2c3n(nc2)c(cc(n3)C)NCC4OCCC4",
+    "Compound ID": "117.0",
+    "IC50": "0.95454977",
+    "Task": "PA",
+    "binding_affinity": "-8.26315372998884",
+    "rank": "94",
+    "binding_affinity_ratio": "0.1328448527314567",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 342.83000000000015,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(NC[C@H]2CCCO2)n2ncc(-c3ccc(Cl)cc3)c2n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3087.yaml",
+    "input_sha256": "a0d6ed73b63e85c028cb43ce56520accf4e7374497cb3dba22fdf40b5db8b8be"
+  },
+  {
+    "Target ID": "L3090",
+    "Proasis ID": "1nhvn",
+    "Structure": "n1(cncc1)CCCCN(Cc2cnc(cc2)Nc3ccc(cc3)C(C)C)C(=O)C",
+    "Compound ID": "120.0",
+    "IC50": "0.046870584",
+    "Task": "PA",
+    "binding_affinity": "-10.059709424352349",
+    "rank": "51",
+    "binding_affinity_ratio": "-1.66371084163205",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 405.54600000000016,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N(CCCCn1ccnc1)Cc1ccc(Nc2ccc(C(C)C)cc2)nc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3090.yaml",
+    "input_sha256": "291d0d4ca7b98f669af9cf9ca8822d03dda134518e4b6852a2bf005612e2245f"
+  },
+  {
+    "Target ID": "L3095",
+    "Proasis ID": "1rerr",
+    "Structure": "Clc1c(c(cc(c1)Cl)Cl)C(=O)c2cc(c(cc2)SC)CC3=NNC(=O)C=C3",
+    "Compound ID": "124.0",
+    "IC50": "1.023684663",
+    "Task": "PA",
+    "binding_affinity": "-8.22147201713899",
+    "rank": "96",
+    "binding_affinity_ratio": "0.17452656558130705",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 439.75100000000015,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CSc1ccc(C(=O)c2c(Cl)cc(Cl)cc2Cl)cc1Cc1ccc(=O)[nH]n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3095.yaml",
+    "input_sha256": "7b4a15f69c6a936a29b1a4cc7464b23bac8f060b14449980b007b501a19ae4ce"
+  },
+  {
+    "Target ID": "L3096",
+    "Proasis ID": "1reyd",
+    "Structure": "S3/C(=C\\c1ccc(cc1)Oc2ccccc2)/C(=O)N=C3N4CCCC4",
+    "Compound ID": "125.0",
+    "IC50": "0.135694636",
+    "Task": "PA",
+    "binding_affinity": "-9.42604513023785",
+    "rank": "67",
+    "binding_affinity_ratio": "-1.0300465475175522",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 350.4430000000002,
+    "heavy_atoms": 25,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C1N=C(N2CCCC2)S/C1=C\\c1ccc(Oc2ccccc2)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3096.yaml",
+    "input_sha256": "b6bf329ea3c28df9d3623ad11c132eeae8597dcf487bdb90944cd42066393b10"
+  },
+  {
+    "Target ID": "L3099",
+    "Proasis ID": "1svwq",
+    "Structure": "Fc1c(ccc(c1)Cl)-c2cc4c(cc2)NC(=O)[C@@H]3N(CCN(C3)C(=O)OC(C)(C)C)C4=O",
+    "Compound ID": "128.0",
+    "IC50": "0.506838889",
+    "Task": "PA",
+    "binding_affinity": "-8.640512810856396",
+    "rank": "83",
+    "binding_affinity_ratio": "-0.24451422813609885",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 459.90500000000037,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(C)(C)OC(=O)N1CCN2C(=O)c3cc(-c4ccc(Cl)cc4F)ccc3NC(=O)[C@H]2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3099.yaml",
+    "input_sha256": "0ebbd85f0c55e778d7b0651d7979bedd7612a134fbd0340c25fea4e37b086598"
+  },
+  {
+    "Target ID": "L3101",
+    "Proasis ID": "1twlv",
+    "Structure": "N21[C@H](C[C@@H]([C@H](C1)C#C)CC2)COC(=O)NC3CCCCC3",
+    "Compound ID": "130.0",
+    "IC50": "4.478746269",
+    "Task": "PA",
+    "binding_affinity": "-7.3416673879581635",
+    "rank": "110",
+    "binding_affinity_ratio": "1.0543311947621332",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 290.40700000000004,
+    "heavy_atoms": 21,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(NC1CCCCC1)OC[C@@H]1C[C@@H]2CCN1C[C@@H]2C#CCC[C@@H]1CN2CC[C@@H]1C[C@@H]2COC(O)NC1CCCCC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3101.yaml",
+    "input_sha256": "74706edea837781706691d7455191095e2584ececf685eccff1554b0c3b9734a"
+  },
+  {
+    "Target ID": "L3105",
+    "Proasis ID": "1vjdf",
+    "Structure": "Clc1ccc(cc1)-c2nc(cc(c2)S(=O)(=O)C)C(C)(C)C",
+    "Compound ID": "134.0",
+    "IC50": "2.518664137",
+    "Task": "PA",
+    "binding_affinity": "-7.684791191401301",
+    "rank": "105",
+    "binding_affinity_ratio": "0.7112073913189965",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 323.8450000000001,
+    "heavy_atoms": 21,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(C)(C)c1cc(S(C)(=O)=O)cc(-c2ccc(Cl)cc2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3105.yaml",
+    "input_sha256": "e56a88dd479bdcfe63ad0552d2cc7b907ceb24c1f6d051088ba2bb4cba129099"
+  },
+  {
+    "Target ID": "L3106",
+    "Proasis ID": "1vjke",
+    "Structure": "Fc1ccc(cc1)C#Cc2cnc(cc2)NC(=O)C",
+    "Compound ID": "135.0",
+    "IC50": "1.566777419",
+    "Task": "PA",
+    "binding_affinity": "-7.967764478836765",
+    "rank": "101",
+    "binding_affinity_ratio": "0.4282341038835321",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 254.264,
+    "heavy_atoms": 19,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)Nc1ccc(C#Cc2ccc(F)cc2)cn1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3106.yaml",
+    "input_sha256": "d279eab03b3e37738aca8bdfd89c4890407ff1b1b12a981852ae36fb9046f999"
+  },
+  {
+    "Target ID": "L3109",
+    "Proasis ID": "1wgfk",
+    "Structure": "O[C@H]1[C@H]([C@H]4C5([C@H](C1)O)C3([C@H]([C@]2([C@@]([C@H](CC2)[C@@H](CC(=O)C(=C)C(C)C)C)(CC3)C)C)CC4)C5)C(=O)O",
+    "Compound ID": "138.0",
+    "IC50": "0.060379608",
+    "Task": "PA",
+    "binding_affinity": "-9.908740446763726",
+    "rank": "54",
+    "binding_affinity_ratio": "-1.5127418640434287",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 486.69300000000044,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "C=C(C(=O)C[C@@H](C)[C@H]1CC[C@@]2(C)[C@@H]3CC[C@H]4[C@H](C(=O)O)[C@H](O)C[C@H](O)[C@@]45C[C@@]35CC[C@]12C)C(C)C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3109.yaml",
+    "input_sha256": "955704a75621c9fc4850ab667d4d2c181db79651d120ce15b55dfb4e079ad71e"
+  },
+  {
+    "Target ID": "L3111",
+    "Proasis ID": "1xazx",
+    "Structure": "N1(CCC(CC1)C(=O)NCc2nonc2C)c3c4c(ccc3)C(=O)N(C4=O)CC5CCCCC5",
+    "Compound ID": "140.0",
+    "IC50": "0.043574353",
+    "Task": "PA",
+    "binding_affinity": "-10.10317794750321",
+    "rank": "47",
+    "binding_affinity_ratio": "-1.7071793647829125",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 465.55400000000037,
+    "heavy_atoms": 34,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nonc1CNC(=O)C1CCN(c2cccc3c2C(=O)N(CC2CCCCC2)C3=O)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3111.yaml",
+    "input_sha256": "bef2505def2835114266471aaffdf182770e76338cbfeddac7ef0f0601341b53"
+  },
+  {
+    "Target ID": "L3114",
+    "Proasis ID": "1ydsh",
+    "Structure": "Brc1ccc(cc1)/C=C/4\\c2c(cccc2)CN5c3c(cccc3)C(=O)N=C54",
+    "Compound ID": "143.0",
+    "IC50": "0.173306174",
+    "Task": "PA",
+    "binding_affinity": "-9.28020760540887",
+    "rank": "69",
+    "binding_affinity_ratio": "-0.8842090226885735",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 415.2900000000002,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "RO4",
+        "SMILES": "O=c1nc2n(c3ccccc13)Cc1ccccc1/C2=C\\c1ccc(Br)cc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3114.yaml",
+    "input_sha256": "68647069f951be447ae090fc23d829aca2cd691a50f902d0c18e2cdfd1482483"
+  },
+  {
+    "Target ID": "L3115",
+    "Proasis ID": "1yevx",
+    "Structure": "Clc1c(c(ccc1)Cl)N4Cc2c(nc(nc2)NCC(O)c3ccccc3)N(C4=O)C",
+    "Compound ID": "144.0",
+    "IC50": "0.04874025",
+    "Task": "PA",
+    "binding_affinity": "-10.036393029131062",
+    "rank": "52",
+    "binding_affinity_ratio": "-1.6403944464107652",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 444.3220000000001,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CN1C(=O)N(c2c(Cl)cccc2Cl)Cc2cnc(NC[C@H](O)c3ccccc3)nc21",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3115.yaml",
+    "input_sha256": "f53c5984cd94e2ebc7937ee90d3dabc42b47c19658bef4d88d0ebef4c19b3e9d"
+  },
+  {
+    "Target ID": "L3120",
+    "Proasis ID": "2atx0",
+    "Structure": "FC(F)(F)c1c(ccc(c1)C(=O)N[C@H]2C[C@H](CC2)C(=O)N3[C@H](C(=O)N(CC3)CC(=O)NC)Cc4ccccc4)Cl",
+    "Compound ID": "149.0",
+    "IC50": "0.169093379",
+    "Task": "PA",
+    "binding_affinity": "-9.294876864221976",
+    "rank": "68",
+    "binding_affinity_ratio": "-0.898878281501679",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 579.0190000000003,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)CN1CCN(C(=O)[C@H]2CC[C@@H](NC(=O)c3ccc(Cl)c(C(F)(F)F)c3)C2)[C@@H](Cc2ccccc2)C1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3120.yaml",
+    "input_sha256": "a91d6730f956608cc672d40bda46b0aa5ff1d1b06ca6752821f21d49a70f1f7c"
+  },
+  {
+    "Target ID": "L3121",
+    "Proasis ID": "2atx1",
+    "Structure": "FC(F)(F)c1cc(ccc1)[C@@H](NC(=O)COc2c(cccc2CN(Cc3scc(n3)C)C)OC)CC(=O)NC",
+    "Compound ID": "150.0",
+    "IC50": "0.81483285",
+    "Task": "PA",
+    "binding_affinity": "-8.35749059899522",
+    "rank": "92",
+    "binding_affinity_ratio": "0.0385079837250784",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 564.6300000000003,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)C[C@H](NC(=O)COc1c(CN(C)Cc2nc(C)cs2)cccc1OC)c1cccc(C(F)(F)F)c1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "DMS",
+        "SMILES": "CS(C)=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3121.yaml",
+    "input_sha256": "0e523f174212302fa6609517550071408478cb5db8d5c5bf89b0147a6496d104"
+  },
+  {
+    "Target ID": "L3126",
+    "Proasis ID": "2atx6",
+    "Structure": "FC(F)(F)Oc1c(cc(cc1)COC(=O)N2CCC(CC2)(O)CNC(=O)c4cc3nn[nH]c3cc4)F",
+    "Compound ID": "155.0",
+    "IC50": "0.00632449",
+    "Task": "PA",
+    "binding_affinity": "-11.253674400688737",
+    "rank": "21",
+    "binding_affinity_ratio": "-2.857675817968439",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 511.43200000000024,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(NCC1(O)CCN(C(=O)OCc2ccc(OC(F)(F)F)c(F)c2)CC1)c1ccc2[nH]nnc2c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3126.yaml",
+    "input_sha256": "5a7638b7bb5f5224cbf962b8ca1667ba93e6894f9a985732c3fd90f2826e39f9"
+  },
+  {
+    "Target ID": "L3127",
+    "Proasis ID": "2atx7",
+    "Structure": "FC(F)(F)Oc1ccc(cc1)COC(=O)N2CCC(CC2)(O)CNC(=O)c4cc3nn[nH]c3cc4",
+    "Compound ID": "156.0",
+    "IC50": "0.011748215",
+    "Task": "PA",
+    "binding_affinity": "-10.884526412035177",
+    "rank": "30",
+    "binding_affinity_ratio": "-2.4885278293148785",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 493.4420000000003,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(NCC1(O)CCN(C(=O)OCc2ccc(OC(F)(F)F)cc2)CC1)c1ccc2[nH]nnc2c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3127.yaml",
+    "input_sha256": "5c088931558b03289159973654de5da8f85555964fb52c16b7750d14e0176205"
+  },
+  {
+    "Target ID": "L3130",
+    "Proasis ID": "2atxa",
+    "Structure": "Clc1cc2c(cc1)CC(C2)Nc3nc4c(cn3)CN(C4)c5ncc(cn5)C",
+    "Compound ID": "159.0",
+    "IC50": "0.06938252",
+    "Task": "PA",
+    "binding_affinity": "-9.825892364204734",
+    "rank": "59",
+    "binding_affinity_ratio": "-1.429893781484435",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 378.86700000000013,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cnc(N2Cc3cnc(N[C@@H]4Cc5ccc(Cl)cc5C4)nc3C2)nc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3130.yaml",
+    "input_sha256": "c0db8fdc8dcdb6870bd2a4409b2d20c59db48e45d492cef3be6ba5cfbb7e8712"
+  },
+  {
+    "Target ID": "L3131",
+    "Proasis ID": "2atxb",
+    "Structure": "Clc1cc2c(c(c1)C#N)C[C@H](C2)Nc3nc4c(cn3)CN(C4)S(=O)(=O)C",
+    "Compound ID": "160.0",
+    "IC50": "0.002145292",
+    "Task": "PA",
+    "binding_affinity": "-11.89815013634028",
+    "rank": "7",
+    "binding_affinity_ratio": "-3.502151553619983",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 389.8680000000001,
+    "heavy_atoms": 26,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CS(=O)(=O)N1Cc2cnc(N[C@H]3Cc4cc(Cl)cc(C#N)c4C3)nc2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3131.yaml",
+    "input_sha256": "9da398982856b7007bde5227a0c75703fba1b633e4b3a07fb20fef9eab05e532"
+  },
+  {
+    "Target ID": "L3132",
+    "Proasis ID": "2atxc",
+    "Structure": "Clc1cc2c(c(c1)C#N)C[C@H](C2)Nc3nc4c(cn3)CN(C4)S(=O)(=O)C5COC5",
+    "Compound ID": "161.0",
+    "IC50": "0.004661062",
+    "Task": "PA",
+    "binding_affinity": "-11.4355958228473",
+    "rank": "14",
+    "binding_affinity_ratio": "-3.0395972401270033",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 431.9050000000002,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "N#Cc1cc(Cl)cc2c1C[C@@H](Nc1ncc3c(n1)CN(S(=O)(=O)C1COC1)C3)C2",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "ACT",
+        "SMILES": "CC(=O)[O-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3132.yaml",
+    "input_sha256": "d953f0ec4c23924cb9d54bef37cfc6d46a90aa4b3803a8c648ff95ed2970f9f4"
+  },
+  {
+    "Target ID": "L3134",
+    "Proasis ID": "3atx1",
+    "Structure": "[nH]1nnc2c1ccc(c2)C(=O)N5C[C@@H]3[C@H](CN(C3)C(=O)OCc4c(cc(cc4)C#N)NC(=O)C(C)(C)C)C5",
+    "Compound ID": "163.0",
+    "IC50": "0.013147097",
+    "Task": "PA",
+    "binding_affinity": "-10.817465364923768",
+    "rank": "32",
+    "binding_affinity_ratio": "-2.4214667822034697",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 515.5740000000002,
+    "heavy_atoms": 38,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(C)(C)C(=O)Nc1cc(C#N)ccc1COC(=O)N1C[C@@H]2CN(C(=O)c3ccc4[nH]nnc4c3)C[C@H]2C1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "L0R",
+        "SMILES": "CC(C)(C)C(=O)Nc1cc(C#N)ccc1COC(=O)N1C[C@@H]2CN(C(=O)c3ccc4[nH]nnc4c3)C[C@H]2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3134.yaml",
+    "input_sha256": "fffe29fe7a539fa11275dffa44076528feb6ecf2c4e0de2011029f958164ef95"
+  },
+  {
+    "Target ID": "L3137",
+    "Proasis ID": "3atx4",
+    "Structure": "Clc2cc1n(cc(c1cc2)C(=O)N3CCN(CC3)c4ncccc4C)CC(=O)N(C)C",
+    "Compound ID": "166.0",
+    "IC50": "8.376881855",
+    "Task": "PA",
+    "binding_affinity": "-6.9684297480889175",
+    "rank": "113",
+    "binding_affinity_ratio": "1.4275688346313802",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 439.94700000000023,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cccnc1N1CCN(C(=O)c2cn(CC(=O)N(C)C)c3cc(Cl)ccc23)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3137.yaml",
+    "input_sha256": "d68acd9ae369fa34096142be6a9d9b950fefd17469fa1e094a319391ac0c2e86"
+  },
+  {
+    "Target ID": "L3138",
+    "Proasis ID": "3atx5",
+    "Structure": "Clc1ccc(cc1)/N=N/C2C(=NNC2=O)C3CCN(CC3)C(=O)C",
+    "Compound ID": "167.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "123",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 347.80600000000015,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCC(C2=NNC(=O)[C@H]2/N=N/c2ccc(Cl)cc2)CC1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCC(C2=NNC(=O)[C@H]2/N=N/c2ccc(Cl)cc2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3138.yaml",
+    "input_sha256": "f12e9a88f41a4d545af55c7b77bc4b0ed4470671b84da94aeff447b9480ecdba"
+  },
+  {
+    "Target ID": "L3139",
+    "Proasis ID": "3atx6",
+    "Structure": "Clc4c(cc1c(n(cc1C(=O)N2CCC(CC2)c3c(cccc3)OC)CC(=O)N(C)C)c4)C",
+    "Compound ID": "168.0",
+    "IC50": "1.081092821",
+    "Task": "PA",
+    "binding_affinity": "-8.188946495464315",
+    "rank": "97",
+    "binding_affinity_ratio": "0.20705208725598365",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 467.9970000000002,
+    "heavy_atoms": 33,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "COc1ccccc1C1CCN(C(=O)c2cn(CC(=O)N(C)C)c3cc(Cl)c(C)cc23)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3139.yaml",
+    "input_sha256": "a3b2ade3d787823050173669beaa3d8844185c82e21a61806599e762bbc82b27"
+  },
+  {
+    "Target ID": "L3140",
+    "Proasis ID": "3atx7",
+    "Structure": "n21c(nnc1)c(nc3c2cccc3)Nc4cc(cc(c4)OC)OC",
+    "Compound ID": "169.0",
+    "IC50": "2.481024975",
+    "Task": "PA",
+    "binding_affinity": "-7.693766600811382",
+    "rank": "104",
+    "binding_affinity_ratio": "0.7022319819089154",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 321.3400000000001,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "COc1cc(Nc2nc3ccccc3n3cnnc23)cc(OC)c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3140.yaml",
+    "input_sha256": "b563a0ff11a58e8953dd49b0ec3aaa49fe2e89861cea2d665fd8bc3f4f5e40cc"
+  },
+  {
+    "Target ID": "L3141",
+    "Proasis ID": "3atx8",
+    "Structure": "FC(F)(F)c1cc(cc(c1)C(F)(F)F)/N=N/C2C(=NNC2=O)C3CCN(CC3)C(=O)C",
+    "Compound ID": "170.0",
+    "IC50": "2.95032477",
+    "Task": "PA",
+    "binding_affinity": "-7.590496159609677",
+    "rank": "107",
+    "binding_affinity_ratio": "0.8055024231106204",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 449.3550000000003,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCC(C2=NNC(=O)C2/N=N/c2cc(C(F)(F)F)cc(C(F)(F)F)c2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3141.yaml",
+    "input_sha256": "270fb92c101b465d515f3363a1d4acc6349fe132f4e4db45e03e8b23d4a592be"
+  },
+  {
+    "Target ID": "L3142",
+    "Proasis ID": "3atx9",
+    "Structure": "Clc4cc1c(n(c2c1CCNC2=O)CCOC3OCCCC3)cc4",
+    "Compound ID": "171.0",
+    "IC50": "4.256626778673182",
+    "Task": "PA",
+    "binding_affinity": "-7.371988697571114",
+    "rank": "109",
+    "binding_affinity_ratio": "1.024009885149184",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 348.83000000000015,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C1NCCc2c1n(CCO[C@@H]1CCCCO1)c1ccc(Cl)cc21",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3142.yaml",
+    "input_sha256": "c0824b4d9d6dbc3e020ee39ecf297f51db988684fc64d6af8ee38876fb331709"
+  },
+  {
+    "Target ID": "L3143",
+    "Proasis ID": "4atx0",
+    "Structure": "N1(CCCC1)c2oc(nc2C#N)COc3c(cc(c(c3)C)C#N)C(C)(C)C",
+    "Compound ID": "172.0",
+    "IC50": "0.046778793",
+    "Task": "PA",
+    "binding_affinity": "-10.060877966725505",
+    "rank": "50",
+    "binding_affinity_ratio": "-1.6648793840052085",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 364.4490000000001,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCc2nc(C#N)c(N3CCCC3)o2)c(C(C)(C)C)cc1C#N",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3143.yaml",
+    "input_sha256": "9bdca0d278950f58b2611eb3c87c22d854441596891993f10ec44ed64372e91d"
+  },
+  {
+    "Target ID": "L3144",
+    "Proasis ID": "4atx1",
+    "Structure": "FC(F)(F)Oc1cc(ccc1)Cn2c4c(c3c2CN(CCC3)C(=O)N)cccc4",
+    "Compound ID": "173.0",
+    "IC50": "0.353260307",
+    "Task": "PA",
+    "binding_affinity": "-8.85569774641385",
+    "rank": "79",
+    "binding_affinity_ratio": "-0.4596991636935537",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 403.40400000000017,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "NC(=O)N1CCCc2c(n(Cc3cccc(OC(F)(F)F)c3)c3ccccc23)C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3144.yaml",
+    "input_sha256": "d226174d959989fb9a9e6d16e829bb6ed4adc37a1fd30d66d005afd51558e1f1"
+  },
+  {
+    "Target ID": "L3145",
+    "Proasis ID": "4atx2",
+    "Structure": "N1(CCC(CC1)NC(=O)c2ccc(cc2)Nc3nc4c(cn3)N(C(=O)N4C)Cc5ccccc5)C",
+    "Compound ID": "174.0",
+    "IC50": "0.061158503",
+    "Task": "PA",
+    "binding_affinity": "-9.90109995174182",
+    "rank": "55",
+    "binding_affinity_ratio": "-1.5051013690215227",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 471.5650000000003,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CN1CCC(NC(=O)c2ccc(Nc3ncc4c(n3)n(C)c(=O)n4Cc3ccccc3)cc2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3145.yaml",
+    "input_sha256": "7c3fb28d464076ffa63588d56833ca110fce08b35315c06d5dc1a661082bf13d"
+  },
+  {
+    "Target ID": "L3149",
+    "Proasis ID": "4atx6",
+    "Structure": "Clc1c(cc(c(c1)C(C)(C)C)OCc2ncncc2)C",
+    "Compound ID": "178.0",
+    "IC50": "0.475245865",
+    "Task": "PA",
+    "binding_affinity": "-8.678878342910176",
+    "rank": "81",
+    "binding_affinity_ratio": "-0.28287976018987865",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 290.794,
+    "heavy_atoms": 20,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCc2ccncn2)c(C(C)(C)C)cc1Cl",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3149.yaml",
+    "input_sha256": "fce779ff327f95d478fe9d5887108cf1a779397d4ec3f3f36f0c2b6a196cc9fd"
+  },
+  {
+    "Target ID": "L3150",
+    "Proasis ID": "4atx7",
+    "Structure": "Clc1c(cc(c(c1)C(C)(C)C)OCc2ncccc2)C",
+    "Compound ID": "179.0",
+    "IC50": "1.986878602",
+    "Task": "PA",
+    "binding_affinity": "-7.826164527231205",
+    "rank": "103",
+    "binding_affinity_ratio": "0.5698340554890926",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 289.806,
+    "heavy_atoms": 20,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1cc(OCc2ccccn2)c(C(C)(C)C)cc1Cl",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3150.yaml",
+    "input_sha256": "cf4d5fc1421bfc29e6b7b64bfeafbef9b3c7b90482629745c018fb11ce7a246f"
+  },
+  {
+    "Target ID": "L3151",
+    "Proasis ID": "4atx8",
+    "Structure": "FC(F)(F)Oc1ccc(cc1)COC(=O)N2C[C@H]3[C@H](C2)CN(C3)C(=O)c4nc5c(cc4)NC(=O)O5",
+    "Compound ID": "180.0",
+    "IC50": "0.009084531",
+    "Task": "PA",
+    "binding_affinity": "-11.037800554227731",
+    "rank": "26",
+    "binding_affinity_ratio": "-2.6418019715074337",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 492.4100000000003,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(OCc1ccc(OC(F)(F)F)cc1)N1C[C@@H]2CN(C(=O)c3ccc4[nH]c(=O)oc4n3)C[C@H]2C1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3151.yaml",
+    "input_sha256": "7db0d084ca01c6f83a873303e214f831f557fc69909adac5c8f975b3525c214b"
+  },
+  {
+    "Target ID": "L3154",
+    "Proasis ID": "5atx1",
+    "Structure": "N1N=C(N(C1=O)C)c2cnc(c(c2)C3CC3)OC4CCOCC4",
+    "Compound ID": "183.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "120",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 316.36100000000016,
+    "heavy_atoms": 23,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(-c2cnc(OC3CCOCC3)c(C3CC3)c2)n[nH]c1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3154.yaml",
+    "input_sha256": "660194d79915846ccddf3b6363bc6737f44534cab76c6644fd0bac59cdca2508"
+  },
+  {
+    "Target ID": "L3156",
+    "Proasis ID": "5atx3",
+    "Structure": "N1N=C(N(C1=O)C)COc2c(cc(cc2)C#N)NC(=O)C(C)(C)C",
+    "Compound ID": "185.0",
+    "IC50": "5.600066045",
+    "Task": "PA",
+    "binding_affinity": "-7.208477644476114",
+    "rank": "111",
+    "binding_affinity_ratio": "1.1875209382441845",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 329.3600000000001,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(COc2ccc(C#N)cc2NC(=O)C(C)(C)C)n[nH]c1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3156.yaml",
+    "input_sha256": "eb7c24ad39d90fff24775c5fe2bbf5f3d3a2de168add6f937726df3f1e40b018"
+  },
+  {
+    "Target ID": "L3157",
+    "Proasis ID": "5atx4",
+    "Structure": "[N+](=O)([O-])c1c(ccc(c1)C(=O)Nc2ccccc2)-c3cn(c4ncccc43)Cc5ccccc5",
+    "Compound ID": "186.0",
+    "IC50": "0.030999568",
+    "Task": "PA",
+    "binding_affinity": "-10.306147299809975",
+    "rank": "45",
+    "binding_affinity_ratio": "-1.910148717089679",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 448.48200000000014,
+    "heavy_atoms": 34,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(Nc1ccccc1)c1ccc(-c2cn(Cc3ccccc3)c3ncccc23)c([N+](=O)[O-])c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3157.yaml",
+    "input_sha256": "0b47f2d8a6276379127e42b955405d31b17adbfbe8e3eb2a850ccfec9367c6a6"
+  },
+  {
+    "Target ID": "L3158",
+    "Proasis ID": "5atx5",
+    "Structure": "[N+](=O)([O-])c1c(ccc(c1)C(=O)NC)-c2cn(c3ncccc32)Cc4ccccc4",
+    "Compound ID": "187.0",
+    "IC50": "0.046685988",
+    "Task": "PA",
+    "binding_affinity": "-10.062061751207512",
+    "rank": "49",
+    "binding_affinity_ratio": "-1.6660631684872145",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 386.4110000000001,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CNC(=O)c1ccc(-c2cn(Cc3ccccc3)c3ncccc23)c([N+](=O)[O-])c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3158.yaml",
+    "input_sha256": "6c954aaa86ddf0beb0f8dc54c6f5c0397df309bc52e8e0d617ca10e071c10821"
+  },
+  {
+    "Target ID": "L3159",
+    "Proasis ID": "5atx6",
+    "Structure": "Clc2nc1[nH]nc(c1cc2)-c3cnc(c(c3)C4CC4)OC5CCOCC5",
+    "Compound ID": "188.0",
+    "IC50": "1.826664486",
+    "Task": "PA",
+    "binding_affinity": "-7.8762805898173465",
+    "rank": "102",
+    "binding_affinity_ratio": "0.5197179929029503",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 370.84000000000026,
+    "heavy_atoms": 26,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1ccc2c(-c3cnc(OC4CCOCC4)c(C4CC4)c3)n[nH]c2n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3159.yaml",
+    "input_sha256": "efb3acf8a0143c64a3f31916b27364462d5874c89ccab238510f214a8c35ae39"
+  },
+  {
+    "Target ID": "L3160",
+    "Proasis ID": "5atx7",
+    "Structure": "Clc1c(cc(c(c1)Cl)C(=O)Nc2ccccc2)S(=O)(=O)N3CCCCC3",
+    "Compound ID": "189.0",
+    "IC50": "3.494236975",
+    "Task": "PA",
+    "binding_affinity": "-7.4896361725364",
+    "rank": "108",
+    "binding_affinity_ratio": "0.9063624101838965",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 413.32600000000025,
+    "heavy_atoms": 26,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "O=C(Nc1ccccc1)c1cc(S(=O)(=O)N2CCCCC2)c(Cl)cc1Cl",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3160.yaml",
+    "input_sha256": "b1cf90ffccbd0d403a73d53f5f3b92aa55b5715124348583d082b7d80c60b4d0"
+  },
+  {
+    "Target ID": "L3162",
+    "Proasis ID": "5atx9",
+    "Structure": "[N+](=O)([O-])c1c(ccc(c1)C(=O)NC)-c2cnc(c(c2)C)OCCC",
+    "Compound ID": "191.0",
+    "IC50": "2.804638881",
+    "Task": "PA",
+    "binding_affinity": "-7.620682941575394",
+    "rank": "106",
+    "binding_affinity_ratio": "0.775315641144903",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 329.3560000000001,
+    "heavy_atoms": 24,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CCCOc1ncc(-c2ccc(C(=O)NC)cc2[N+](=O)[O-])cc1C",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3162.yaml",
+    "input_sha256": "abf22897f751eec4b658405604e979e5e859ab9f37dcc9fceba913b921d86992"
+  },
+  {
+    "Target ID": "L3165",
+    "Proasis ID": "6atx2",
+    "Structure": "Fc1c(ccc(c1)CN5c2c(nc(nc2)Nc3ccc(cc3)C(=O)N4CCC(CC4)S(=O)(=O)N)N(C5=O)C)F",
+    "Compound ID": "194.0",
+    "IC50": "0.00233021",
+    "Task": "PA",
+    "binding_affinity": "-11.848862967770641",
+    "rank": "9",
+    "binding_affinity_ratio": "-3.4528643850503444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 557.5830000000004,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cn1c(=O)n(Cc2ccc(F)c(F)c2)c2cnc(Nc3ccc(C(=O)N4CCC(S(N)(=O)=O)CC4)cc3)nc21",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3165.yaml",
+    "input_sha256": "d130cdd0b42164a6e3d273f09178eb3916fa9a591d1427cef3cd1f6400f03aef"
+  },
+  {
+    "Target ID": "L3170",
+    "Proasis ID": "6atx7",
+    "Structure": "Clc1c(ccc(c1)Cn2nnc(c2)CN5C=Nc3c(cc(cc3)N4CCN(CC4)C(=O)C)C5=O)Cl",
+    "Compound ID": "199.0",
+    "IC50": "0.030941354",
+    "Task": "PA",
+    "binding_affinity": "-10.307267766683784",
+    "rank": "44",
+    "binding_affinity_ratio": "-1.911269183963486",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 512.4010000000004,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCN(c2ccc3ncn(Cc4cn(Cc5ccc(Cl)c(Cl)c5)nn4)c(=O)c3c2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3170.yaml",
+    "input_sha256": "42bc905da834fcb58d5be34f8eefdc648c04e9fdd0eab371b4f878efe0bcc8d5"
+  },
+  {
+    "Target ID": "L3171",
+    "Proasis ID": "6atx8",
+    "Structure": "Fc1c(ccc(c1)Cn2nnc(c2)CN5C=Nc3c(cc(cc3)N4CCN(CC4)C(=O)C)C5=O)C#N",
+    "Compound ID": "200.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "121",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 486.51100000000037,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCN(c2ccc3ncn(Cc4cn(Cc5ccc(C#N)c(F)c5)nn4)c(=O)c3c2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3171.yaml",
+    "input_sha256": "ac09dbda3a0cb5126c7c5aa18b44bc9fa96c5de47bc0c59e8a5472bcca461923"
+  },
+  {
+    "Target ID": "L3177",
+    "Proasis ID": "7atx4",
+    "Structure": "Clc1ccc(cc1)-c2nc3n(c2)C(=O)C=C(N3CCCCC)C",
+    "Compound ID": "206.0",
+    "IC50": "0.065824167",
+    "Task": "PA",
+    "binding_affinity": "-9.85727578457932",
+    "rank": "58",
+    "binding_affinity_ratio": "-1.461277201859023",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 329.83100000000013,
+    "heavy_atoms": 23,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CCCCCn1c(C)cc(=O)n2cc(-c3ccc(Cl)cc3)nc12",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3177.yaml",
+    "input_sha256": "21de07eb658b5c0c4cc6f3cbd02bb3cf0146742db10603c67243f623241ac93d"
+  },
+  {
+    "Target ID": "L3183",
+    "Proasis ID": "8atx0",
+    "Structure": "Clc1c(ccc(c1)CN(C)C(=O)CC4=CN=C2N(C=C(C=C2)C3CCN(CC3)C(=O)C)C4=O)Cl",
+    "Compound ID": "212.0",
+    "IC50": "0.798930775",
+    "Task": "PA",
+    "binding_affinity": "-8.369238953705313",
+    "rank": "91",
+    "binding_affinity_ratio": "0.026759629014983848",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 501.4140000000003,
+    "heavy_atoms": 34,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC(=O)N1CCC(c2ccc3ncc(CC(=O)N(C)Cc4ccc(Cl)c(Cl)c4)c(=O)n3c2)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3183.yaml",
+    "input_sha256": "94e83870202d602a56cb6b920ba904b88fda5b13a80390c42e64a44fe382582f"
+  },
+  {
+    "Target ID": "L3184",
+    "Proasis ID": "8atx1",
+    "Structure": "FC(F)(F)c1cc(c(cc1)/C=C/C(=O)N(CCOc2ccccc2)C)Cn3nnc(n3)C",
+    "Compound ID": "213.0",
+    "IC50": "0.008162606",
+    "Task": "PA",
+    "binding_affinity": "-11.101588974537213",
+    "rank": "24",
+    "binding_affinity_ratio": "-2.705590391816915",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 445.44500000000016,
+    "heavy_atoms": 32,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2/C=C/C(=O)N(C)CCOc2ccccc2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3184.yaml",
+    "input_sha256": "34402111dbcf62d218bf6ebf3e911316887d8993b5ac62e95fe54ca03a891cbb"
+  },
+  {
+    "Target ID": "L3186",
+    "Proasis ID": "8atx3",
+    "Structure": "FC(F)(F)c1cc(c(cc1)\\C=C\\C(=O)N4C[C@H]2[C@@H](CN(C2)C(=O)c3c(cc(cc3)S(=O)(=O)N)F)C4)Cn5nnc(n5)C",
+    "Compound ID": "215.0",
+    "IC50": "0.001946492",
+    "Task": "PA",
+    "binding_affinity": "-11.956119010767015",
+    "rank": "6",
+    "binding_affinity_ratio": "-3.560120428046717",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 607.59,
+    "heavy_atoms": 42,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2/C=C/C(=O)N2C[C@@H]3CN(C(=O)c4ccc(S(N)(=O)=O)cc4F)C[C@H]3C2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3186.yaml",
+    "input_sha256": "2b62b2f57f2ec3f38c030cbebff64ec6c905da8fe8d8eecfd3e821d388e44207"
+  },
+  {
+    "Target ID": "L3188",
+    "Proasis ID": "8atx5",
+    "Structure": "Clc1c(ccc(c1)CN(C)C(=O)CN4CCc2c(cc(cc2)C3CCN(CC3)C(=O)COC)C4=O)C#N",
+    "Compound ID": "217.0",
+    "IC50": "0.271592643",
+    "Task": "PA",
+    "binding_affinity": "-9.012413563690462",
+    "rank": "76",
+    "binding_affinity_ratio": "-0.6164149809701651",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 523.0330000000004,
+    "heavy_atoms": 37,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "COCC(=O)N1CCC(c2ccc3c(c2)C(=O)N(CC(=O)N(C)Cc2ccc(C#N)c(Cl)c2)CC3)CC1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3188.yaml",
+    "input_sha256": "98dae6f5f3f04cb9676c94c7f62bb33c85490c07822c1e2a55032b94ecbcfe61"
+  },
+  {
+    "Target ID": "L3189",
+    "Proasis ID": "8atx6",
+    "Structure": "Clc1c(ccc(c1)CN(C)C(=O)CN5C=Nc2c(cc(cc2)N3CCN(CC3)c4sccn4)C5=O)Cl",
+    "Compound ID": "218.0",
+    "IC50": "0.076434234",
+    "Task": "PA",
+    "binding_affinity": "-9.768192434185051",
+    "rank": "60",
+    "binding_affinity_ratio": "-1.3721938514647527",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 543.4800000000002,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CN(Cc1ccc(Cl)c(Cl)c1)C(=O)Cn1cnc2ccc(N3CCN(c4nccs4)CC3)cc2c1=O",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3189.yaml",
+    "input_sha256": "6029a469a6173ba46a2fa44c160a7ad2e231ad560bb33db0f688231ef9b83773"
+  },
+  {
+    "Target ID": "L3190",
+    "Proasis ID": "8atx7",
+    "Structure": "Brc1cc(ccc1)-c2[nH]nc(c2)C(=O)OCC",
+    "Compound ID": "219.0",
+    "IC50": "9.481569353",
+    "Task": "PA",
+    "binding_affinity": "-6.894588400323512",
+    "rank": "114",
+    "binding_affinity_ratio": "1.5014101823967854",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 295.1360000000001,
+    "heavy_atoms": 17,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CCOC(=O)c1cc(-c2cccc(Br)c2)[nH]n1",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "BR",
+        "SMILES": "[Br-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3190.yaml",
+    "input_sha256": "0a8b8d28d2fdb56bb59c55ffb7e76ec445da61017cd8f3f324c3fd5640c33c1a"
+  },
+  {
+    "Target ID": "L3192",
+    "Proasis ID": "8atx9",
+    "Structure": "Brc1nc(cnc1N)-c2ccc(cc2)C(F)(F)F",
+    "Compound ID": "221.0",
+    "IC50": "10.0",
+    "Task": "PA",
+    "binding_affinity": "-6.862854869668753",
+    "rank": "118",
+    "binding_affinity_ratio": "1.5331437130515444",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 318.096,
+    "heavy_atoms": 18,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Nc1ncc(-c2ccc(C(F)(F)F)cc2)nc1Br",
+        "Task": "PA"
+      },
+      {
+        "ID": "1",
+        "Name": "BR",
+        "SMILES": "[Br-]",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3192.yaml",
+    "input_sha256": "45026764d226f967a078290b86059873af3ba4841b5bfbfcb62a5186afd62c25"
+  },
+  {
+    "Target ID": "L3194",
+    "Proasis ID": "9atx1",
+    "Structure": "Clc1c(ccc(c1)Cl)/C=C(\\OC(CC)C)/c2cnccc2",
+    "Compound ID": "223.0",
+    "IC50": "0.314573845",
+    "Task": "PA",
+    "binding_affinity": "-8.924837209007663",
+    "rank": "78",
+    "binding_affinity_ratio": "-0.5288386262873658",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 322.235,
+    "heavy_atoms": 21,
+    "csv_smiles_matches_affinity_tsv": false,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "CC[C@@H](C)O/C(=C\\c1ccc(Cl)cc1Cl)c1cccnc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3194.yaml",
+    "input_sha256": "baef4c4412c0619264dea0cb6b39080de1a8bf4f3fdae6735a431d602735118d"
+  },
+  {
+    "Target ID": "L3196",
+    "Proasis ID": "9atx3",
+    "Structure": "S(=O)(=O)(N)c1cnc(cc1)C(=O)N2C[C@@H]3[C@@H](C2)CN(C3)C(=O)c4cc(nc(c4)C5CC5)OCC6CCOCC6",
+    "Compound ID": "225.0",
+    "IC50": "0.004166302",
+    "Task": "PA",
+    "binding_affinity": "-11.502486878761786",
+    "rank": "13",
+    "binding_affinity_ratio": "-3.106488296041489",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 555.6570000000003,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "NS(=O)(=O)c1ccc(C(=O)N2C[C@H]3CN(C(=O)c4cc(OCC5CCOCC5)nc(C5CC5)c4)C[C@@H]3C2)nc1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3196.yaml",
+    "input_sha256": "5df0d8382d855a52a4f54f0bd07190f31abcfa698271c9923fe25f423a830cf6"
+  },
+  {
+    "Target ID": "L3197",
+    "Proasis ID": "9atx5",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N2C[C@@H]3[C@@H](C2)CN(C3)C(=O)c4cc(nc(c4)C5CC5)OCC6CCOCC6",
+    "Compound ID": "226.0",
+    "IC50": "0.004993155",
+    "Task": "PA",
+    "binding_affinity": "-11.394569445805809",
+    "rank": "16",
+    "binding_affinity_ratio": "-2.9985708630855106",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 572.6590000000001,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "NS(=O)(=O)c1ccc(C(=O)N2C[C@H]3CN(C(=O)c4cc(OCC5CCOCC5)nc(C5CC5)c4)C[C@@H]3C2)c(F)c1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3197.yaml",
+    "input_sha256": "e96597c835cf6ec9af2c21cd6629b8f744716bc504066ca5a440b942549b6648"
+  },
+  {
+    "Target ID": "L3200",
+    "Proasis ID": "9atx8",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N(CCOc2ccc(cc2)S(=O)(=O)N)C)Cn3nnc(n3)C",
+    "Compound ID": "229.0",
+    "IC50": "0.25904507",
+    "Task": "PA",
+    "binding_affinity": "-9.040609836242801",
+    "rank": "74",
+    "binding_affinity_ratio": "-0.6446112535225029",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 526.5410000000002,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Cc1nnn(Cc2cc(C(F)(F)F)ccc2CCC(=O)N(C)CCOc2ccc(S(N)(=O)=O)cc2)n1",
+        "Task": "PA"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3200.yaml",
+    "input_sha256": "5ea62c01fe78ad2e71d2f4be61fd4b2eb4608ec23d450c0178d2d96b613c2a79"
+  },
+  {
+    "Target ID": "L3202",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3nnc(o3)C)C)C(C)(C)C)C#N",
+    "Compound ID": "33.0",
+    "IC50": "0.065112585",
+    "Task": "A",
+    "binding_affinity": "-9.8637549159109",
+    "rank": "57",
+    "binding_affinity_ratio": "-1.4677563331906036",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 385.8550000000002,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3nnc(o3)C)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3202.yaml",
+    "input_sha256": "50d0ffdba2902919aeca478e44d9d2b3e0fbed0cbc03a6463b99ee23ad8422fb"
+  },
+  {
+    "Target ID": "L3203",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3noc(c3)CCO)C)C(C)(C)C)C#N",
+    "Compound ID": "27.0",
+    "IC50": "0.018009745",
+    "Task": "A",
+    "binding_affinity": "-10.629865525932697",
+    "rank": "36",
+    "binding_affinity_ratio": "-2.2338669432124",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 414.8930000000002,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)-c3noc(c3)CCO)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3203.yaml",
+    "input_sha256": "41f4dccd72e542f19ddb276f1acc5a28ea2dfca1a9a7a3e0021cbbdd67a9cafb"
+  },
+  {
+    "Target ID": "L3204",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)N3CC(C3)(C)C)C)C(C)(C)C)C#N",
+    "Compound ID": "38.0",
+    "IC50": "0.542701107",
+    "Task": "A",
+    "binding_affinity": "-8.599760111894177",
+    "rank": "84",
+    "binding_affinity_ratio": "-0.20376152917388007",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 414.93700000000024,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)N3CC(C3)(C)C)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3204.yaml",
+    "input_sha256": "933e2de72a9b1c1e5a017020748bb77a872933cfb220aa9d1273a1e8d1cd0aa4"
+  },
+  {
+    "Target ID": "L3205",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)N3CC4(C3)COC4)C)C(C)(C)C)C#N",
+    "Compound ID": "39.0",
+    "IC50": "1.258347813",
+    "Task": "A",
+    "binding_affinity": "-8.098442301454426",
+    "rank": "99",
+    "binding_affinity_ratio": "0.29755628126587075",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 428.9200000000003,
+    "heavy_atoms": 30,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)N3CC4(C3)COC4)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3205.yaml",
+    "input_sha256": "63f52132cdb0b663ff9d2fa69f9b1cfd603cc86171587f88c0a669047193ca51"
+  },
+  {
+    "Target ID": "L3206",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3C(C(C3)O)(C)C)C)C(C)(C)C)C#N",
+    "Compound ID": "23.0",
+    "IC50": "0.01055737",
+    "Task": "A",
+    "binding_affinity": "-10.948235863223873",
+    "rank": "28",
+    "binding_affinity_ratio": "-2.552237280503577",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 444.96300000000025,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3C(C(C3)O)(C)C)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3206.yaml",
+    "input_sha256": "60ceed9da3ac66d917189b21fc6808a4266ff5816cf72b6a17a2cb61a9e53bfa"
+  },
+  {
+    "Target ID": "L3207",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3CC3)C)C(C)(C)C)C#N",
+    "Compound ID": "29.0",
+    "IC50": "0.026607714",
+    "Task": "A",
+    "binding_affinity": "-10.397214745733894",
+    "rank": "42",
+    "binding_affinity_ratio": "-2.0012161630135976",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 386.8830000000002,
+    "heavy_atoms": 27,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NC3CC3)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3207.yaml",
+    "input_sha256": "cfe1b09f0eaf6a891a8e06443b9e42d4da0627d1b257764398c5552118338b79"
+  },
+  {
+    "Target ID": "L3208",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NCC)C)C(C)(C)C)C#N",
+    "Compound ID": "30.0",
+    "IC50": "0.030324222",
+    "Task": "A",
+    "binding_affinity": "-10.319277278459545",
+    "rank": "43",
+    "binding_affinity_ratio": "-1.9232786957392487",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 374.8720000000002,
+    "heavy_atoms": 26,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)C(=O)NCC)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3208.yaml",
+    "input_sha256": "0fbd989cb4304b3d7c5e66b525cedafc37ff2507640a304b87554d365c721a37"
+  },
+  {
+    "Target ID": "L3209",
+    "Proasis ID": "",
+    "Structure": "Clc1c(cc(c(c1)OCc2n(c(cn2)CO)C)C(C)(C)C)C#N",
+    "Compound ID": "36.0",
+    "IC50": "0.232669708",
+    "Task": "A",
+    "binding_affinity": "-9.10462035157252",
+    "rank": "72",
+    "binding_affinity_ratio": "-0.7086217688522216",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 333.8190000000001,
+    "heavy_atoms": 23,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Clc1c(cc(c(c1)OCc2n(c(cn2)CO)C)C(C)(C)C)C#N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3209.yaml",
+    "input_sha256": "cde2cedf44213098dc7cf274cd961d44c7d31e3eb80e44151a25f1c26a0e9f86"
+  },
+  {
+    "Target ID": "L3210",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)CNC(=O)c1n(c(nc1)COc2c(cc(c(c2)Cl)C#N)C(C)(C)C)C",
+    "Compound ID": "22.0",
+    "IC50": "0.005749142",
+    "Task": "A",
+    "binding_affinity": "-11.310529687075903",
+    "rank": "20",
+    "binding_affinity_ratio": "-2.9145311043556057",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 428.84200000000016,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)CNC(=O)c1n(c(nc1)COc2c(cc(c(c2)Cl)C#N)C(C)(C)C)C",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3210.yaml",
+    "input_sha256": "9525d8a33fb84ef08e2a7036eb2b967b4764cccff3b0e699412fa1badf5da32e"
+  },
+  {
+    "Target ID": "L3211",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)Oc1ccc(cc1)OCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4)S(=O)(=O)N)F",
+    "Compound ID": "13.0",
+    "IC50": "0.009234601",
+    "Task": "A",
+    "binding_affinity": "-11.028033854780956",
+    "rank": "27",
+    "binding_affinity_ratio": "-2.632035272060658",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 529.4680000000004,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)Oc1ccc(cc1)OCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4)S(=O)(=O)N)F",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3211.yaml",
+    "input_sha256": "0997c049c128e4f094d1a246405f44259a2932098da75eb6c226e7532591c9c1"
+  },
+  {
+    "Target ID": "L3212",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)Oc1ccc(cc1)OCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4ncc(cc4)S(=O)(=O)N",
+    "Compound ID": "12.0",
+    "IC50": "0.007731891",
+    "Task": "A",
+    "binding_affinity": "-11.13390356552017",
+    "rank": "23",
+    "binding_affinity_ratio": "-2.7379049827998716",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 512.4660000000003,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)Oc1ccc(cc1)OCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4ncc(cc4)S(=O)(=O)N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3212.yaml",
+    "input_sha256": "154ca7803fd21b4cecd548e5157262225d30a3963f2a95e20c49378f4b8e45ee"
+  },
+  {
+    "Target ID": "L3213",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4)S(=O)(=O)N)F)Cn5nnc(n5)C",
+    "Compound ID": "1.0",
+    "IC50": "0.001149672",
+    "Task": "A",
+    "binding_affinity": "-12.269996713891548",
+    "rank": "1",
+    "binding_affinity_ratio": "-3.8739981311712515",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 607.5899999999999,
+    "heavy_atoms": 42,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4)S(=O)(=O)N)F)Cn5nnc(n5)C",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3213.yaml",
+    "input_sha256": "e6375db85359881a93a50eae1eea73aed40f342146dfbbb5655a1d74d3a00d97"
+  },
+  {
+    "Target ID": "L3214",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CN(C3)C(=O)c5cc4nn[nH]c4cc5)Cn6nnc(n6)C",
+    "Compound ID": "2.0",
+    "IC50": "0.001222552",
+    "Task": "A",
+    "binding_affinity": "-12.233358146915275",
+    "rank": "2",
+    "binding_affinity_ratio": "-3.8373595641949767",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 551.5330000000001,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CN(C3)C(=O)c5cc4nn[nH]c4cc5)Cn6nnc(n6)C",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3214.yaml",
+    "input_sha256": "919fbfc1d1ce911f42dd8aa1b1b1d5b6a0b05671e847d731fedfbc7d1d4b89f9"
+  },
+  {
+    "Target ID": "L3215",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CNC3)Cn4nnc(n4)C",
+    "Compound ID": "20.0",
+    "IC50": "0.578455518",
+    "Task": "A",
+    "binding_affinity": "-8.561727184816192",
+    "rank": "85",
+    "binding_affinity_ratio": "-0.16572860209589493",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 406.41200000000015,
+    "heavy_atoms": 29,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cc(c(cc1)CCC(=O)N2CC3=C(C2)CNC3)Cn4nnc(n4)C",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3215.yaml",
+    "input_sha256": "a6ee10319c28f7f9e0ab18d938a1fb643310b85f70f72d7e5824a5a69818ecfd"
+  },
+  {
+    "Target ID": "L3216",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)[C@@H]5CCc4[nH]nnc4C5",
+    "Compound ID": "5.0",
+    "IC50": "0.003018516",
+    "Task": "A",
+    "binding_affinity": "-11.694588158219524",
+    "rank": "10",
+    "binding_affinity_ratio": "-3.298589575499227",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 561.5650000000003,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)[C@@H]5CCc4[nH]nnc4C5",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3216.yaml",
+    "input_sha256": "d8495393dbe262b157fcb30c7596cbe696e67831d9ba9102a76d9dd87e5b3270"
+  },
+  {
+    "Target ID": "L3217",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(c(c4)F)S(=O)(=O)N)F",
+    "Compound ID": "6.0",
+    "IC50": "0.003444691",
+    "Task": "A",
+    "binding_affinity": "-11.615861895664771",
+    "rank": "11",
+    "binding_affinity_ratio": "-3.2198633129444745",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 631.5800000000006,
+    "heavy_atoms": 43,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(c(c4)F)S(=O)(=O)N)F",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3217.yaml",
+    "input_sha256": "684e1c2ed599226992b8cfdf23ac8748789d95d980148d3790b98e427cb0546d"
+  },
+  {
+    "Target ID": "L3218",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4F)S(=O)(=O)N)F",
+    "Compound ID": "4.0",
+    "IC50": "0.001850598",
+    "Task": "A",
+    "binding_affinity": "-11.98623395178017",
+    "rank": "5",
+    "binding_affinity_ratio": "-3.590235369059873",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 631.5800000000005,
+    "heavy_atoms": 43,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4c(cc(cc4F)S(=O)(=O)N)F",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3218.yaml",
+    "input_sha256": "3f346e1a3823b8f0b4c63599392b2658feda5ae9170eb7123b3da3ddeab37a86"
+  },
+  {
+    "Target ID": "L3219",
+    "Proasis ID": "",
+    "Structure": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N5CC2=C(CN(C2)C(=O)N4CCc3[nH]nnc3C4)C5",
+    "Compound ID": "11.0",
+    "IC50": "0.005725733",
+    "Task": "A",
+    "binding_affinity": "-11.312961804943436",
+    "rank": "19",
+    "binding_affinity_ratio": "-2.916963222223139",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 562.5530000000002,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)(F)c1cnc(c(c1)NC(=O)C(C)(C)C)COC(=O)N5CC2=C(CN(C2)C(=O)N4CCc3[nH]nnc3C4)C5",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3219.yaml",
+    "input_sha256": "e9f03bda38dffde1a2c37e0cbafb720e14828949f6ffe770ff92bdd554a79e56"
+  },
+  {
+    "Target ID": "L3220",
+    "Proasis ID": "",
+    "Structure": "FC(F)Oc1c(cc(c(c1)C(C)(C)C)OCc2n(c(cn2)C(=O)NC3CN(C3)C(=O)C)C)F",
+    "Compound ID": "28.0",
+    "IC50": "0.021258077",
+    "Task": "A",
+    "binding_affinity": "-10.531017889018749",
+    "rank": "39",
+    "binding_affinity_ratio": "-2.1350193062984517",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 468.47600000000017,
+    "heavy_atoms": 33,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC(F)Oc1c(cc(c(c1)C(C)(C)C)OCc2n(c(cn2)C(=O)NC3CN(C3)C(=O)C)C)F",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3220.yaml",
+    "input_sha256": "1c5728847639e75f67fae1e45268d306995bacfe352014cca8229e07dbbb303c"
+  },
+  {
+    "Target ID": "L3221",
+    "Proasis ID": "",
+    "Structure": "FC1(CC(C1)(NC(=O)c2n(c(nc2)COc3c(cc(c(c3)Cl)C#N)C(C)(C)C)C)C)F",
+    "Compound ID": "24.0",
+    "IC50": "0.012762736",
+    "Task": "A",
+    "binding_affinity": "-10.835152426139446",
+    "rank": "31",
+    "binding_affinity_ratio": "-2.439153843419151",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 450.9170000000002,
+    "heavy_atoms": 31,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "FC1(CC(C1)(NC(=O)c2n(c(nc2)COc3c(cc(c(c3)Cl)C#N)C(C)(C)C)C)C)F",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3221.yaml",
+    "input_sha256": "9948f86e8f18f7c727bd011961957059573ab631b3aafe3ff285e3f792cfc573"
+  },
+  {
+    "Target ID": "L3222",
+    "Proasis ID": "",
+    "Structure": "Fc1c(cc(c(c1)C(=O)N4CC2=C(CN(C2)C(=O)OCc3nc(ccc3NC(=O)C(C)(C)C)Cl)C4)F)S(=O)(=O)N",
+    "Compound ID": "19.0",
+    "IC50": "0.248287598",
+    "Task": "A",
+    "binding_affinity": "-9.065893011430253",
+    "rank": "73",
+    "binding_affinity_ratio": "-0.6698944287099566",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 598.0280000000002,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(cc(c(c1)C(=O)N4CC2=C(CN(C2)C(=O)OCc3nc(ccc3NC(=O)C(C)(C)C)Cl)C4)F)S(=O)(=O)N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3222.yaml",
+    "input_sha256": "ac1dac2e602f070cda93a81e2ad4d37c9a3cda6e2d52f64ee579e15736333197"
+  },
+  {
+    "Target ID": "L3223",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncc(cc3NC(=O)C(C)(C)C)Cl)C4)S(=O)(=O)N",
+    "Compound ID": "9.0",
+    "IC50": "0.005260713",
+    "Task": "A",
+    "binding_affinity": "-11.363453863685942",
+    "rank": "17",
+    "binding_affinity_ratio": "-2.967455280965646",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 580.0380000000002,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncc(cc3NC(=O)C(C)(C)C)Cl)C4)S(=O)(=O)N",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3223.yaml",
+    "input_sha256": "8d1222d0cb65381f9ec5b7712181342c6c425ec927406d1d106eaa8b588c0407"
+  },
+  {
+    "Target ID": "L3224",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3nc(ccc3NC(=O)C(C)(C)C)C)C4",
+    "Compound ID": "18.0",
+    "IC50": "0.124771539",
+    "Task": "A",
+    "binding_affinity": "-9.476071428248602",
+    "rank": "65",
+    "binding_affinity_ratio": "-1.0800728455283053",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 559.6200000000001,
+    "heavy_atoms": 39,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3nc(ccc3NC(=O)C(C)(C)C)C)C4",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3224.yaml",
+    "input_sha256": "2c921b955d171a1b43cc89497b6fa45bb87f8a2f19ebb8c9b75aab8a68e03eee"
+  },
+  {
+    "Target ID": "L3225",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncc(cc3NC(=O)C(C)(C)C)C#N)C4",
+    "Compound ID": "10.0",
+    "IC50": "0.005589907",
+    "Task": "A",
+    "binding_affinity": "-11.327272929633189",
+    "rank": "18",
+    "binding_affinity_ratio": "-2.931274346912893",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 570.6030000000001,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncc(cc3NC(=O)C(C)(C)C)C#N)C4",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3225.yaml",
+    "input_sha256": "25dd8c1047bc425807c21ae61687fb5f920536b4b9c1bc7bc2cdbaa508106195"
+  },
+  {
+    "Target ID": "L3226",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncccc3NC(=O)C(C)(C)C)C4",
+    "Compound ID": "17.0",
+    "IC50": "0.089242062",
+    "Task": "A",
+    "binding_affinity": "-9.675843554741647",
+    "rank": "62",
+    "binding_affinity_ratio": "-1.2798449720213503",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 545.5930000000002,
+    "heavy_atoms": 38,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)C(=O)OCc3ncccc3NC(=O)C(C)(C)C)C4",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3226.yaml",
+    "input_sha256": "e803da642fd5523dc9e25d8b4b815b51fc319ea765ec0aed32dcacb7cd4128b9"
+  },
+  {
+    "Target ID": "L3227",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)Cc3nc(ccc3NCC(C)(C)C)Cl)C4",
+    "Compound ID": "16.0",
+    "IC50": "0.064332592",
+    "Task": "A",
+    "binding_affinity": "-9.870938798160896",
+    "rank": "56",
+    "binding_affinity_ratio": "-1.474940215440598",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 522.0460000000002,
+    "heavy_atoms": 35,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N4CC2=C(CN(C2)Cc3nc(ccc3NCC(C)(C)C)Cl)C4",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3227.yaml",
+    "input_sha256": "6097726710b31a454c41cfc25346ab632ec5dec078441bd65ab15bfa41ea4c86"
+  },
+  {
+    "Target ID": "L3228",
+    "Proasis ID": "",
+    "Structure": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N5CC2=C(CN(C2)C(=O)CCc3c(cc(cc3)C#N)Cn4nnc(n4)C)C5",
+    "Compound ID": "15.0",
+    "IC50": "0.045390499",
+    "Task": "A",
+    "binding_affinity": "-10.078836760351505",
+    "rank": "48",
+    "binding_affinity_ratio": "-1.682838177631208",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 564.6030000000002,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "Fc1c(ccc(c1)S(=O)(=O)N)C(=O)N5CC2=C(CN(C2)C(=O)CCc3c(cc(cc3)C#N)Cn4nnc(n4)C)C5",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3228.yaml",
+    "input_sha256": "7c3e00a3bb31e5d24236459182d2a217852b0a06dabf8e4a1c85b83c19f90a94"
+  },
+  {
+    "Target ID": "L3229",
+    "Proasis ID": "",
+    "Structure": "N1(CC2=C(C1)CN(C2)C(=O)c3cc4c(cc3)NC(=O)N4C)C(=O)c5cc(nc(c5)C6CC6)OCC7CCOCC7",
+    "Compound ID": "7.0",
+    "IC50": "0.003575653",
+    "Task": "A",
+    "binding_affinity": "-11.593619251804025",
+    "rank": "12",
+    "binding_affinity_ratio": "-3.197620669083728",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 543.6240000000003,
+    "heavy_atoms": 40,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "N1(CC2=C(C1)CN(C2)C(=O)c3cc4c(cc3)NC(=O)N4C)C(=O)c5cc(nc(c5)C6CC6)OCC7CCOCC7",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3229.yaml",
+    "input_sha256": "9647287712f727d1f40ca607e77ff62a46f1ab7ae91dbed353ccea4d33099efb"
+  },
+  {
+    "Target ID": "L3230",
+    "Proasis ID": "",
+    "Structure": "[nH]1nncc1COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4cc(nc(c4)C5CC5)OCC6CCOCC6",
+    "Compound ID": "14.0",
+    "IC50": "0.018818375",
+    "Task": "A",
+    "binding_affinity": "-10.603684345500728",
+    "rank": "38",
+    "binding_affinity_ratio": "-2.207685762780432",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 494.55200000000036,
+    "heavy_atoms": 36,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "[nH]1nncc1COC(=O)N2CC3=C(C2)CN(C3)C(=O)c4cc(nc(c4)C5CC5)OCC6CCOCC6",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3230.yaml",
+    "input_sha256": "ccfe6334d3f6c84675c340368e6bb3fe2b6f420cf70461e5f84fb6929657075c"
+  },
+  {
+    "Target ID": "L3231",
+    "Proasis ID": "",
+    "Structure": "n1(c(ncc1C(=O)OC)COc3c(cc2ocnc2c3)C4CCC4)C",
+    "Compound ID": "40.0",
+    "IC50": "7.793521143",
+    "Task": "A",
+    "binding_affinity": "-7.01145802588226",
+    "rank": "112",
+    "binding_affinity_ratio": "1.3845405568380373",
+    "target": "L3000",
+    "protein_residues": 846,
+    "molecular_weight": 341.36700000000013,
+    "heavy_atoms": 25,
+    "csv_smiles_matches_affinity_tsv": true,
+    "official_tsv_rows": [
+      {
+        "ID": "0",
+        "Name": "L0R",
+        "SMILES": "n1(c(ncc1C(=O)OC)COc3c(cc2ocnc2c3)C4CCC4)C",
+        "Task": "A"
+      }
+    ],
+    "input_scope": "Single full-length protein plus the CSV affinity compound, as in issue #636; no extra cofactors.",
+    "input": "research/casp16/inputs/L3000/L3231.yaml",
+    "input_sha256": "a5a34db5782d5b204beba361cb0687191b074fdb31ebbd55f455c6bcbd1b021e"
+  }
+]

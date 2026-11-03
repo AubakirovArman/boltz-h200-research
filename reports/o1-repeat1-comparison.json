@@ -1,0 +1,473 @@
+{
+  "baseline": "b1-l3001-first",
+  "candidate": "o1-l3001-repeat1",
+  "both_complete": true,
+  "speedup": 1.529767538057292,
+  "end_to_end_s": {
+    "baseline": 112.25963454321027,
+    "candidate": 73.38345974171534
+  },
+  "sampled_peak_mib": {
+    "baseline": 20484.0,
+    "candidate": 20484.0
+  },
+  "same_json_metric_keys": true,
+  "all_json_metrics_equal": true,
+  "all_prediction_arrays_equal": true,
+  "json_metrics": {
+    "/affinity_L3001.json/affinity_pred_value": {
+      "baseline": -0.29546448588371277,
+      "candidate": -0.29546448588371277,
+      "abs_difference": 0.0
+    },
+    "/affinity_L3001.json/affinity_pred_value1": {
+      "baseline": -0.4104130268096924,
+      "candidate": -0.4104130268096924,
+      "abs_difference": 0.0
+    },
+    "/affinity_L3001.json/affinity_pred_value2": {
+      "baseline": -0.18051595985889435,
+      "candidate": -0.18051595985889435,
+      "abs_difference": 0.0
+    },
+    "/affinity_L3001.json/affinity_probability_binary": {
+      "baseline": 0.4894337058067322,
+      "candidate": 0.4894337058067322,
+      "abs_difference": 0.0
+    },
+    "/affinity_L3001.json/affinity_probability_binary1": {
+      "baseline": 0.6818256378173828,
+      "candidate": 0.6818256378173828,
+      "abs_difference": 0.0
+    },
+    "/affinity_L3001.json/affinity_probability_binary2": {
+      "baseline": 0.29704180359840393,
+      "candidate": 0.29704180359840393,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/chains_ptm/0": {
+      "baseline": 0.9435817003250122,
+      "candidate": 0.9435817003250122,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/chains_ptm/1": {
+      "baseline": 0.892163097858429,
+      "candidate": 0.892163097858429,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/complex_ipde": {
+      "baseline": 2.380107879638672,
+      "candidate": 2.380107879638672,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/complex_iplddt": {
+      "baseline": 0.7889720797538757,
+      "candidate": 0.7889720797538757,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/complex_pde": {
+      "baseline": 0.6089252829551697,
+      "candidate": 0.6089252829551697,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/complex_plddt": {
+      "baseline": 0.9102879166603088,
+      "candidate": 0.9102879166603088,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/confidence_score": {
+      "baseline": 0.906649112701416,
+      "candidate": 0.906649112701416,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/iptm": {
+      "baseline": 0.8920937180519104,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/ligand_iptm": {
+      "baseline": 0.8920937180519104,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/0/0": {
+      "baseline": 0.9435817003250122,
+      "candidate": 0.9435817003250122,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/0/1": {
+      "baseline": 0.338031530380249,
+      "candidate": 0.338031530380249,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/1/0": {
+      "baseline": 0.8920937180519104,
+      "candidate": 0.8920937180519104,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/pair_chains_iptm/1/1": {
+      "baseline": 0.892163097858429,
+      "candidate": 0.892163097858429,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/protein_iptm": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "abs_difference": 0.0
+    },
+    "/confidence_L3001_model_0.json/ptm": {
+      "baseline": 0.9411309957504272,
+      "candidate": 0.9411309957504272,
+      "abs_difference": 0.0
+    }
+  },
+  "array_comparisons": {
+    "L3001/pae_L3001_model_0.npz/pae": {
+      "equal": true,
+      "shape": [
+        875,
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pde_L3001_model_0.npz/pde": {
+      "equal": true,
+      "shape": [
+        875,
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/plddt_L3001_model_0.npz/plddt": {
+      "equal": true,
+      "shape": [
+        875
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/name": {
+      "equal": true,
+      "shape": [
+        6866
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/coords": {
+      "equal": true,
+      "shape": [
+        6866,
+        3
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/is_present": {
+      "equal": true,
+      "shape": [
+        6866
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/bfactor": {
+      "equal": true,
+      "shape": [
+        6866
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/atoms/plddt": {
+      "equal": true,
+      "shape": [
+        6866
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/chain_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/chain_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/res_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/res_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/atom_1": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/atom_2": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/bonds/type": {
+      "equal": true,
+      "shape": [
+        32
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/name": {
+      "equal": true,
+      "shape": [
+        2
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/chains/mol_type": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/entity_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/sym_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/asym_id": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/atom_idx": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/atom_num": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/res_idx": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/res_num": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/chains/cyclic_period": {
+      "equal": true,
+      "shape": [
+        2
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/coords/coords": {
+      "equal": true,
+      "shape": [
+        6866,
+        3
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/ensemble/atom_coord_idx": {
+      "equal": true,
+      "shape": [
+        1
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/ensemble/atom_num": {
+      "equal": true,
+      "shape": [
+        1
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/interfaces/chain_1": {
+      "equal": true,
+      "shape": [
+        0
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0
+    },
+    "L3001/pre_affinity_L3001.npz/interfaces/chain_2": {
+      "equal": true,
+      "shape": [
+        0
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0,
+      "mean_abs_difference": 0
+    },
+    "L3001/pre_affinity_L3001.npz/mask": {
+      "equal": true,
+      "shape": [
+        2
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/pocket": {
+      "equal": true,
+      "shape": []
+    },
+    "L3001/pre_affinity_L3001.npz/residues/name": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/residues/res_type": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/res_idx": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_idx": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_num": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_center": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/atom_disto": {
+      "equal": true,
+      "shape": [
+        847
+      ],
+      "all_finite": true,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0
+    },
+    "L3001/pre_affinity_L3001.npz/residues/is_standard": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    },
+    "L3001/pre_affinity_L3001.npz/residues/is_present": {
+      "equal": true,
+      "shape": [
+        847
+      ]
+    }
+  }
+}

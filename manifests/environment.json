@@ -1,0 +1,44 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "packages": {
+    "boltz": "2.2.1",
+    "torch": "2.11.0+cu128",
+    "triton": "3.6.0",
+    "pytorch-lightning": "2.5.0",
+    "numpy": "1.26.4",
+    "rdkit": "2026.9.1",
+    "scipy": "1.13.1",
+    "cuequivariance": "0.13.0",
+    "cuequivariance-torch": "0.13.0",
+    "cuequivariance-ops-torch-cu12": "0.13.0",
+    "cuequivariance-ops-cu12": "0.13.0"
+  },
+  "torch_cuda_runtime": "12.8",
+  "torch_threads": 8,
+  "visible_device_count": 1,
+  "gpu_name": "NVIDIA H200",
+  "gpu_memory_total_bytes": 150110011392,
+  "compute_capability": [
+    9,
+    0
+  ],
+  "native_bf16": true,
+  "environment_allowlist": {
+    "CUDA_VISIBLE_DEVICES": "GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11",
+    "CUDA_DEVICE_ORDER": null,
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": null,
+    "NUMBA_NUM_THREADS": null,
+    "PYTORCH_CUDA_ALLOC_CONF": null,
+    "PYTORCH_ALLOC_CONF": null,
+    "NVIDIA_TF32_OVERRIDE": null,
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": null,
+    "CUEQ_DEFAULT_CONFIG": null,
+    "CUEQ_DISABLE_AOT_TUNING": null,
+    "TRITON_CACHE_DIR": null,
+    "TORCHINDUCTOR_CACHE_DIR": "/tmp/torchinductor_arman"
+  },
+  "source_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "source_status": ""
+}

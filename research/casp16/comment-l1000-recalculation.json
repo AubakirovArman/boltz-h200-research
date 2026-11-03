@@ -1,0 +1,132 @@
+{
+  "n": 17,
+  "raw_r": 0.4434791852981671,
+  "corrected_r": 0.5030510399493923,
+  "source": "https://github.com/jwohlwend/boltz/issues/636#issuecomment-6127069488",
+  "scope": "Recalculation of rounded public comment predictions, not a new model experiment",
+  "rows": [
+    {
+      "id": "L1001",
+      "ic50_um": 0.000997259,
+      "prediction_raw_rounded": -1.536,
+      "mw": 434.4670000000001,
+      "mw_corrected": -2.468225402855391
+    },
+    {
+      "id": "L1002",
+      "ic50_um": 0.0197015,
+      "prediction_raw_rounded": -0.073,
+      "mw": 492.6190000000002,
+      "mw_corrected": -1.0961559406156622
+    },
+    {
+      "id": "L1003",
+      "ic50_um": 0.027248853,
+      "prediction_raw_rounded": -0.294,
+      "mw": 466.4810000000002,
+      "mw_corrected": -1.2624350019929453
+    },
+    {
+      "id": "L1004",
+      "ic50_um": 0.01560769,
+      "prediction_raw_rounded": -0.267,
+      "mw": 406.50100000000015,
+      "mw_corrected": -1.0811446859604197
+    },
+    {
+      "id": "L1005",
+      "ic50_um": 0.02440082,
+      "prediction_raw_rounded": -2.059,
+      "mw": 406.41300000000007,
+      "mw_corrected": -2.9360932339477115
+    },
+    {
+      "id": "L1006",
+      "ic50_um": 0.008732411,
+      "prediction_raw_rounded": -1.142,
+      "mw": 520.6730000000002,
+      "mw_corrected": -2.2674117294415064
+    },
+    {
+      "id": "L1007",
+      "ic50_um": 0.228407531,
+      "prediction_raw_rounded": 0.328,
+      "mw": 390.4820000000001,
+      "mw_corrected": -0.4215543191221749
+    },
+    {
+      "id": "L1008",
+      "ic50_um": 0.400032499,
+      "prediction_raw_rounded": 0.172,
+      "mw": 424.5650000000001,
+      "mw_corrected": -0.6744242768941562
+    },
+    {
+      "id": "L1009",
+      "ic50_um": 0.005292825,
+      "prediction_raw_rounded": -0.59,
+      "mw": 427.4750000000002,
+      "mw_corrected": -1.4708517633707805
+    },
+    {
+      "id": "L1010",
+      "ic50_um": 0.01965706,
+      "prediction_raw_rounded": -0.576,
+      "mw": 319.335,
+      "mw_corrected": -1.1469717287883672
+    },
+    {
+      "id": "L1011",
+      "ic50_um": 0.040855989,
+      "prediction_raw_rounded": -1.488,
+      "mw": 404.4410000000001,
+      "mw_corrected": -2.339656316325625
+    },
+    {
+      "id": "L1012",
+      "ic50_um": 0.02424037,
+      "prediction_raw_rounded": -0.138,
+      "mw": 457.5260000000002,
+      "mw_corrected": -1.0789538379275259
+    },
+    {
+      "id": "L1013",
+      "ic50_um": 0.032404589,
+      "prediction_raw_rounded": -1.473,
+      "mw": 359.4250000000001,
+      "mw_corrected": -2.197800777474426
+    },
+    {
+      "id": "L1014",
+      "ic50_um": 0.038705814,
+      "prediction_raw_rounded": -0.973,
+      "mw": 315.372,
+      "mw_corrected": -1.5453174846744284
+    },
+    {
+      "id": "L1015",
+      "ic50_um": 0.004563792,
+      "prediction_raw_rounded": -0.63,
+      "mw": 476.57600000000014,
+      "mw_corrected": -1.634709718258768
+    },
+    {
+      "id": "L1016",
+      "ic50_um": 0.014306864,
+      "prediction_raw_rounded": -2.007,
+      "mw": 410.47000000000014,
+      "mw_corrected": -2.8931148946673
+    },
+    {
+      "id": "L1017",
+      "ic50_um": 0.012144958,
+      "prediction_raw_rounded": -1.735,
+      "mw": 426.46900000000016,
+      "mw_corrected": -2.6536143690634137
+    }
+  ],
+  "issue_rounded_values_aggregation": {
+    "uniform": 0.515,
+    "weighted": 0.5717857142857142
+  }
+}

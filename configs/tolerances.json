@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-11-02T17:16:45.470767+00:00",
+  "policy": "Strict engineering equivalence, fixed before optimization candidates. Two independent stock B1 processes currently have equal metrics and prediction arrays. No scientific tolerance is inferred from correlation.",
+  "reference": "B1 stock H200, same input, seed, weights and MSA",
+  "json_numeric_fields": {
+    "absolute_tolerance": 0,
+    "relative_tolerance": 0
+  },
+  "prediction_arrays": {
+    "require_dtype_shape_and_values_equal": true
+  },
+  "structure_coordinates": {
+    "absolute_tolerance_angstrom": 0
+  },
+  "outputs": {
+    "same_examples_and_counts": true,
+    "all_numeric_arrays_finite": true
+  },
+  "initialization_rng": {
+    "numpy_state_equal": true,
+    "torch_cpu_state_equal": true
+  },
+  "failure_policy": "A candidate missing these strict checks is not accepted as equivalent; do not widen after seeing its results."
+}

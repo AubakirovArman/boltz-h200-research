@@ -1,0 +1,148 @@
+{
+  "label": "b0-l3001-first",
+  "started_utc": "2026-11-02T17:09:04.830833+00:00",
+  "end_to_end_s": 126.28143844893202,
+  "gpu_memory_sampled_peak_mib": 20704.0,
+  "device_memory_sampled_peak_mib": 28103.3125,
+  "other_processes_sampled_peak_mib": 6768.0,
+  "host_process_tree_rss_peak_mib": 24326.0390625,
+  "returncode": 0,
+  "completion_status": "success",
+  "output_checks": {
+    "exit_zero": true,
+    "not_timed_out": true,
+    "one_structure": true,
+    "one_confidence": true,
+    "affinity_present_if_requested": true,
+    "numeric_json_finite": true,
+    "own_cuda_process_seen": true
+  },
+  "outputs": {
+    "affinity_L3001.json": {
+      "affinity_pred_value": -0.16481629014015198,
+      "affinity_probability_binary": 0.44930797815322876,
+      "affinity_pred_value1": -0.2832964062690735,
+      "affinity_probability_binary1": 0.6020298600196838,
+      "affinity_pred_value2": -0.04633616283535957,
+      "affinity_probability_binary2": 0.29658612608909607
+    },
+    "confidence_L3001_model_0.json": {
+      "confidence_score": 0.9060452580451965,
+      "ptm": 0.9385561943054199,
+      "iptm": 0.8896374106407166,
+      "ligand_iptm": 0.8896374106407166,
+      "protein_iptm": 0.0,
+      "complex_plddt": 0.9101471900939941,
+      "complex_iplddt": 0.7919560670852661,
+      "complex_pde": 0.6277970671653748,
+      "complex_ipde": 2.445645332336426,
+      "chains_ptm": {
+        "0": 0.9410632848739624,
+        "1": 0.8894354701042175
+      },
+      "pair_chains_iptm": {
+        "0": {
+          "0": 0.9410632848739624,
+          "1": 0.3331655263900757
+        },
+        "1": {
+          "0": 0.8896374106407166,
+          "1": 0.8894354701042175
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "output/boltz_results_L3001/lightning_logs/version_0/hparams.yaml",
+      "bytes": 4834,
+      "sha256": "9bbfa84d02d8390af4403202846747ef73217cfb372a50dca531c1ffc1a5d535"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/L3001_model_0.cif",
+      "bytes": 608101,
+      "sha256": "ea670e8f3a5fee5fc4e93c2e8316dddf27ed129f7f9044cb491a6c4d430c74a7"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/affinity_L3001.json",
+      "bytes": 319,
+      "sha256": "d7ad25bf6653898e5373a4445843eca91ceff1a62ddcabe13c4532208cc6db7d"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/confidence_L3001_model_0.json",
+      "bytes": 656,
+      "sha256": "fe37d3494f8649ea2dc20ac37283caefa6eed1b0d6e9a5b4003dc8530d055e06"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/pae_L3001_model_0.npz",
+      "bytes": 2698657,
+      "sha256": "9b0d82111a881121a73a83e2c86d281405949a1ab713b685cfea9f25f6ae1a68"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/pde_L3001_model_0.npz",
+      "bytes": 2705127,
+      "sha256": "056748c98c75c320da39855f3303c63f9712a09c444c5882a9bbf9e9cc277645"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/plddt_L3001_model_0.npz",
+      "bytes": 3150,
+      "sha256": "68ff217e9b01ca1dd958b2da0d642429e03f26a3f9d8c5d4d2dceafd04c9f079"
+    },
+    {
+      "path": "output/boltz_results_L3001/predictions/L3001/pre_affinity_L3001.npz",
+      "bytes": 179190,
+      "sha256": "5b43d0d3615766ebdd8ec2f516775e54d57827c402fb3a06f133c97637c34de3"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/constraints/L3001.npz",
+      "bytes": 4274,
+      "sha256": "ab39c6a639bcff23ac6629a265c6a62312f06b4fbbb3c31cf6cc10ab2b71b714"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/manifest.json",
+      "bytes": 673,
+      "sha256": "8be990436852a643a4b5d214e75f9adf5669279d77cfa1e9fa0e87a9a7c4db2e"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/mols/L3001.pkl",
+      "bytes": 2266,
+      "sha256": "e5a7c11db6f776cf06c80f656073e16ed933e21061e5ecf3b613623a21b08c05"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/msa/L3001_0.npz",
+      "bytes": 1540849,
+      "sha256": "b450f7002ba50fb9861be8c68b7ef96fbe05af4620b8e3415349d8b73f0ae4b5"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/records/L3001.json",
+      "bytes": 658,
+      "sha256": "8a06e12007f712293738dc3b132fff83da25f6914a3c1dd4968bf455e40548f7"
+    },
+    {
+      "path": "output/boltz_results_L3001/processed/structures/L3001.npz",
+      "bytes": 15719,
+      "sha256": "3afaa0b413fedc14a51de71f93666765f8487a5a3ed6a5a51b5356b867a15e4e"
+    }
+  ],
+  "stage_log_events": [
+    {
+      "name": "structure_announced",
+      "elapsed_s": 6.417501914780587
+    },
+    {
+      "name": "affinity_announced",
+      "elapsed_s": 86.66322937607765
+    },
+    {
+      "name": "affinity_inputs_announced",
+      "elapsed_s": 86.66323973797262
+    }
+  ],
+  "background_processes_before": [
+    {
+      "pid": 3519486,
+      "used_gpu_memory_bytes": 7096762368
+    }
+  ],
+  "stage_timing_note": "Log arrival markers only; not exact GPU stage timings."
+}

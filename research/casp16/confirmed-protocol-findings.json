@@ -1,0 +1,56 @@
+{
+  "reported_issue_correlations": {
+    "L1000": 0.44,
+    "L3000": 0.59,
+    "counts": {
+      "L1000": 17,
+      "L3000": 123
+    },
+    "uniform_mean": 0.515,
+    "compound_weighted_mean": 0.5717857142857142
+  },
+  "public_L1000_predictions": {
+    "n": 17,
+    "raw_r": 0.4434791852981671,
+    "corrected_r": 0.5030510399493923,
+    "source": "https://github.com/jwohlwend/boltz/issues/636#issuecomment-6127069488",
+    "scope": "Recalculation of rounded public comment predictions, not a new model experiment",
+    "issue_rounded_values_aggregation": {
+      "uniform": 0.515,
+      "weighted": 0.5717857142857142
+    }
+  },
+  "input_differences": {
+    "total": 19,
+    "stereochemistry": 17,
+    "different_molecular_graph": 2
+  },
+  "unit_conversion_checks": {
+    "L1000": {
+      "correlation_log10_um_vs_official_energy": 0.9999999999999998
+    },
+    "L3000": {
+      "correlation_log10_um_vs_official_energy": 1.0
+    }
+  },
+  "mw_only_baseline": {
+    "L1000": {
+      "n": 17,
+      "pearson_r": 0.2935562058255903
+    },
+    "L3000": {
+      "n": 123,
+      "pearson_r": 0.5963703263560004
+    }
+  },
+  "obsolete_label_diagnostic": {
+    "CHYMASE_IC50_COLI_NH": {
+      "prediction_raw_rounded": 0.4434791852981671,
+      "mw_corrected": 0.5030510399493923
+    },
+    "CHYMASE_IC50_CATHEP": {
+      "prediction_raw_rounded": 0.5572950333902931,
+      "mw_corrected": 0.5645592160442611
+    }
+  }
+}

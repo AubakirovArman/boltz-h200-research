@@ -1,0 +1,22 @@
+study,run,status,elapsed_s,own_sampled_peak_mib,measurement_interval_s,note
+performance_benchmark,b0-l3001-first,completed,126.28143844893202,20704.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-fixed-set,completed,204.36006088322029,29730.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-l3001-control,completed,89.04922321485355,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-l3001-final-control,completed,92.47892959881574,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-l3001-first,completed,112.25963454321027,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-l3001-repeat1,completed,106.43642792711034,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,b1-l3001-repeat2,completed,91.13656269107014,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,combined-fixed-set,completed,175.9226959538646,29730.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,combined-l3001-first,completed,67.69587437575683,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,combined-l3001-repeat1,completed,65.51332002878189,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,combined-l3001-repeat2,completed,65.82433038763702,20484.0,0.1,Separate CLI process; see original config/result.
+excluded_profile,diagnostic-stock-l3001,completed,116.47337826807052,20496.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,o1-l3001-first,completed,71.4113672808744,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,o1-l3001-repeat1,completed,73.38345974171534,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,o1-l3001-repeat2,completed,72.95001041982323,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,o2-l3001-first,completed,70.45976176997647,20484.0,0.1,Separate CLI process; see original config/result.
+performance_benchmark,o3-l3001-first,completed,67.9358681649901,20484.0,0.1,Separate CLI process; see original config/result.
+excluded_smoke,smoke,completed,44.33652620809153,3302.0,0.1,Separate CLI process; see original config/result.
+casp16_quality,L1000 attempt 1,completed,746.2787714609876,17488.0,0.5,17 pairs; 85 confidence reports. Concurrent with initial L3000 attempt; not a speed benchmark.
+casp16_quality,L3000 attempt 1,interrupted,,,0.5,"10 structures retained, no affinity outputs. No final resource summary; resume restarted seed 0."
+casp16_quality,L3000 attempt 2 (resume),completed,8710.644647628069,31470.0,0.5,113 new structures; all 123 affinities; 10 structures reused from interrupted attempt.

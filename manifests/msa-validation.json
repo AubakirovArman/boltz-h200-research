@@ -1,0 +1,10 @@
+{
+  "records": 12781,
+  "alignment_column_lengths": {
+    "846": 12781
+  },
+  "query_length": 846,
+  "msa_sha256": "468f207bb760a39eece990301aa27b9456cda14e861c4668756457882ff8c578",
+  "stock_cli_max_msa_seqs": 8192,
+  "note": "Full received MSA is retained; stock CLI applies its unchanged max_msa_seqs=8192 default."
+}

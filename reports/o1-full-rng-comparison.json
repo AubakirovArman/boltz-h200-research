@@ -1,0 +1,16 @@
+[
+  {
+    "checkpoint": "boltz2_conf.ckpt",
+    "rng_equal": true,
+    "baseline_profiled_load_s": 25.72451156564057,
+    "optimized_load_s": 7.1682100566104054,
+    "all_skipped_parameters_strictly_loaded": true
+  },
+  {
+    "checkpoint": "boltz2_aff.ckpt",
+    "rng_equal": true,
+    "baseline_profiled_load_s": 26.19774104701355,
+    "optimized_load_s": 6.592040658928454,
+    "all_skipped_parameters_strictly_loaded": true
+  }
+]

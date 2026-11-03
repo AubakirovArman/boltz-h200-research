@@ -1,0 +1,86 @@
+[
+  {
+    "phase": "structure",
+    "trainer_predict_wall_s": 40.98869674606249,
+    "use_kernels": true,
+    "modules": {
+      "input_embedder": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.39932101440429685,
+        "cpu_wall_s": 0.3993218461982906
+      },
+      "msa_module": {
+        "calls": 4,
+        "cuda_elapsed_s": 4.012236694335938,
+        "cpu_wall_s": 3.518588760867715
+      },
+      "pairformer_module": {
+        "calls": 4,
+        "cuda_elapsed_s": 7.5598605957031255,
+        "cpu_wall_s": 7.492912030778825
+      },
+      "diffusion_conditioning": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.06257542419433594,
+        "cpu_wall_s": 0.026676025241613388
+      },
+      "score_model": {
+        "calls": 200,
+        "cuda_elapsed_s": 8.25532838439942,
+        "cpu_wall_s": 6.697679779026657
+      },
+      "confidence_module": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.4420846252441406,
+        "cpu_wall_s": 0.44208495831117034
+      }
+    }
+  },
+  {
+    "phase": "affinity",
+    "trainer_predict_wall_s": 15.024591958615929,
+    "use_kernels": false,
+    "modules": {
+      "input_embedder": {
+        "calls": 2,
+        "cuda_elapsed_s": 0.04678652858734131,
+        "cpu_wall_s": 0.046786507591605186
+      },
+      "msa_module": {
+        "calls": 6,
+        "cuda_elapsed_s": 0.6328935317993164,
+        "cpu_wall_s": 0.16345247952267528
+      },
+      "pairformer_module": {
+        "calls": 6,
+        "cuda_elapsed_s": 1.437802169799805,
+        "cpu_wall_s": 1.9067950141616166
+      },
+      "diffusion_conditioning": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.010982239723205566,
+        "cpu_wall_s": 0.01095517072826624
+      },
+      "score_model": {
+        "calls": 200,
+        "cuda_elapsed_s": 6.637211132049561,
+        "cpu_wall_s": 6.521108347456902
+      },
+      "confidence_module": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.20203599548339843,
+        "cpu_wall_s": 0.20203586388379335
+      },
+      "affinity_module1": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.04203318405151367,
+        "cpu_wall_s": 0.02348699001595378
+      },
+      "affinity_module2": {
+        "calls": 1,
+        "cuda_elapsed_s": 0.021554624557495117,
+        "cpu_wall_s": 0.012574344873428345
+      }
+    }
+  }
+]

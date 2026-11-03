@@ -1,0 +1,13 @@
+{
+  "target": "L3000",
+  "label": "issue-settings-csv-seed0",
+  "returncode": 0,
+  "elapsed_s": 8710.644647628069,
+  "gpu_peak_sampled_mib": 31470.0,
+  "counts": {
+    "affinity": 123,
+    "structure": 123,
+    "confidence_files": 615
+  },
+  "expected": 123
+}
