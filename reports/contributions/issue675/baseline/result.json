@@ -1,0 +1,176 @@
+{
+  "settings": {
+    "recycles": 3,
+    "diffusion_steps": 200,
+    "samples": 3,
+    "max_parallel_samples": 1,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "unsteered_control_seeds": [
+      0
+    ],
+    "all_samples_included": true,
+    "msa": "empty",
+    "templates": false,
+    "guidance": "Native CLI --use_potentials: FK steering and physical guidance enabled; default contact guidance retained.",
+    "rng": "Set torch seed separately before feature construction and before each forward; model loaded once.",
+    "scope": "Direct released model/feature pipeline, not a CLI runtime benchmark."
+  },
+  "structures": 12,
+  "rows": [
+    {
+      "seed": 0,
+      "guided": true,
+      "sample": 0,
+      "closure_distance_A": 5.480642318725586,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8164432048797607,
+      "coordinates_sha256": "2c31691a9400df76e4ddc8705a707af4529610b9f8fbd3d460985c02d46cb926",
+      "file": "seed0_guided_sample0.cif"
+    },
+    {
+      "seed": 0,
+      "guided": true,
+      "sample": 1,
+      "closure_distance_A": 5.215490341186523,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8191291689872742,
+      "coordinates_sha256": "3d0cb660b723f0cc2852847af046326aeebbb1c7d59be2ea831df963f741f084",
+      "file": "seed0_guided_sample1.cif"
+    },
+    {
+      "seed": 0,
+      "guided": true,
+      "sample": 2,
+      "closure_distance_A": 5.504146575927734,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.7832951545715332,
+      "coordinates_sha256": "e3fafce4839ade85394fe02153169c2218be405c93edf481fd6514c7aad2d7fa",
+      "file": "seed0_guided_sample2.cif"
+    },
+    {
+      "seed": 0,
+      "guided": false,
+      "sample": 0,
+      "closure_distance_A": 6.001333713531494,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 2,
+      "modified_bond_count": 8,
+      "plddt": 0.8384296894073486,
+      "coordinates_sha256": "b5e204652d6c6be008c0c092e1332569efedf49c8225ec3df1dcee357e14a282",
+      "file": "seed0_unsteered_sample0.cif"
+    },
+    {
+      "seed": 0,
+      "guided": false,
+      "sample": 1,
+      "closure_distance_A": 5.482302665710449,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 2,
+      "modified_bond_count": 8,
+      "plddt": 0.8237756490707397,
+      "coordinates_sha256": "5bb3f606f16216494171633a19b4fc10d7a98b9c7b51e811967c504750567f59",
+      "file": "seed0_unsteered_sample1.cif"
+    },
+    {
+      "seed": 0,
+      "guided": false,
+      "sample": 2,
+      "closure_distance_A": 7.24031400680542,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 2,
+      "modified_bond_count": 8,
+      "plddt": 0.8193565607070923,
+      "coordinates_sha256": "83523c9dafdb646a03ca24017a52a8456e0ca99f4cfe6cd8ff42629e48aee542",
+      "file": "seed0_unsteered_sample2.cif"
+    },
+    {
+      "seed": 1,
+      "guided": true,
+      "sample": 0,
+      "closure_distance_A": 4.688686370849609,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8137853145599365,
+      "coordinates_sha256": "d43d6da4d353411b96621fd25218a2d7d82f17d651cd5bcbe4b333e110752f28",
+      "file": "seed1_guided_sample0.cif"
+    },
+    {
+      "seed": 1,
+      "guided": true,
+      "sample": 1,
+      "closure_distance_A": 5.525261878967285,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.828142523765564,
+      "coordinates_sha256": "8ff4a79a846a00868a81089d570a88c1934c1c455681fe018cb1d2b2051b306e",
+      "file": "seed1_guided_sample1.cif"
+    },
+    {
+      "seed": 1,
+      "guided": true,
+      "sample": 2,
+      "closure_distance_A": 6.809430122375488,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8172469735145569,
+      "coordinates_sha256": "ff2438e1dc552f037113e1b6a21f0796c1e511eca9ad0e84c4123e19b6559f2a",
+      "file": "seed1_guided_sample2.cif"
+    },
+    {
+      "seed": 2,
+      "guided": true,
+      "sample": 0,
+      "closure_distance_A": 6.710635185241699,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8367050886154175,
+      "coordinates_sha256": "56c133d544c19b129d9b54b7ee38db978b56dcc9b33717d6c368675e3dcbef68",
+      "file": "seed2_guided_sample0.cif"
+    },
+    {
+      "seed": 2,
+      "guided": true,
+      "sample": 1,
+      "closure_distance_A": 4.439685344696045,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8086381554603577,
+      "coordinates_sha256": "b75c6ae330d77e55d714f85b90a8c9eaef24fba306dec2cbeda683feb4b3ff79",
+      "file": "seed2_guided_sample1.cif"
+    },
+    {
+      "seed": 2,
+      "guided": true,
+      "sample": 2,
+      "closure_distance_A": 5.434437274932861,
+      "within_existing_connection_upper_bound_2A": false,
+      "modified_bonds_outside_rdkit_bounds_with_12_5_percent_buffer": 0,
+      "modified_bond_count": 8,
+      "plddt": 0.8217382431030273,
+      "coordinates_sha256": "84292cc4b79a269d53ee69174e7925ca7ad8bfa2624cd49cd34aeb742dd0de3c",
+      "file": "seed2_guided_sample2.cif"
+    }
+  ],
+  "elapsed_including_load_s": 102.99603246105835,
+  "peak_torch_allocated_mib": 2006.0478515625,
+  "limitations": [
+    "One supplied peptide construct, single-sequence mode, no binding pose/affinity accuracy claim.",
+    "Guidance can improve a declared connection without fixing all internal modified-residue geometry.",
+    "All samples retained; no seed/pose selection."
+  ]
+}

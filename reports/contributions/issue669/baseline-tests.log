@@ -1,0 +1,1649 @@
+FFFFFFFFFFFF..F                                                          [100%]
+=================================== FAILURES ===================================
+________ test_missing_sequence_uses_observed_residues[numbering0-1-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs0')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e340>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e3b0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e570>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e420>}
+file_format = 'pdb', models = 1, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [1(ALA) 2(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e340>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e3b0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e570>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e420>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs0')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e340>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e3b0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e570>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e420>}
+file_format = 'pdb', models = 1, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering0-1-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs1')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275eff0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ef80>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e500>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ed50>}
+file_format = 'cif', models = 1, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [1(ALA) 2(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275eff0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ef80>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e500>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ed50>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs1')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275eff0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ef80>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e500>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ed50>}
+file_format = 'cif', models = 1, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering0-2-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs2')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f760>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f680>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f8b0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ea40>}
+file_format = 'pdb', models = 2, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [1(ALA) 2(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f760>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f680>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f8b0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ea40>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs2')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f760>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f680>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f8b0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275ea40>}
+file_format = 'pdb', models = 2, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering0-2-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs3')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f840>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275dd90>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f610>}
+file_format = 'cif', models = 2, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [1(ALA) 2(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f840>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275dd90>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f610>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs3')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f840>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa6275dd90>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa6275f610>}
+file_format = 'cif', models = 2, numbering = ((1, ' '), (2, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering1-1-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs4')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e110>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d69d0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4970>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d49e0>}
+file_format = 'pdb', models = 1, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [42(ALA) 47(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e110>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d69d0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4970>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d49e0>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs4')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275e110>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d69d0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4970>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d49e0>}
+file_format = 'pdb', models = 1, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering1-1-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs5')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d73e0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4d60>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4890>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4c10>}
+file_format = 'cif', models = 1, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [42(ALA) 47(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d73e0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4d60>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4890>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4c10>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs5')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d73e0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4d60>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4890>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4c10>}
+file_format = 'cif', models = 1, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering1-2-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs6')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d52a0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4dd0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4ba0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>}
+file_format = 'pdb', models = 2, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [42(ALA) 47(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d52a0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4dd0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4ba0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs6')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d52a0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4dd0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4ba0>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>}
+file_format = 'pdb', models = 2, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering1-2-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs7')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5850>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d53f0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6420>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7680>}
+file_format = 'cif', models = 2, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [42(ALA) 47(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5850>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d53f0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6420>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7680>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs7')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5850>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d53f0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6420>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7680>}
+file_format = 'cif', models = 2, numbering = ((42, ' '), (47, ' '))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering2-1-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs8')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fd10>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6180>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7f40>}
+file_format = 'pdb', models = 1, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [42A(ALA) 42B(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fd10>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6180>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7f40>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs8')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fbc0>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa6275fd10>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6180>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7f40>}
+file_format = 'pdb', models = 1, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering2-1-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs9')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5e70>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6810>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7840>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7920>}
+file_format = 'cif', models = 1, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [42A(ALA) 42B(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5e70>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6810>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7840>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7920>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs9')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d5e70>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6810>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7840>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7920>}
+file_format = 'cif', models = 1, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering2-2-pdb] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs10')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4900>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7760>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6b20>}
+file_format = 'pdb', models = 2, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/pdb.py:33: in parse_pdb
+    return parse_mmcif(
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: A1 [42A(ALA) 42B(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'A1'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4900>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7760>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6b20>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs10')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d4900>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d50e0>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7760>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6b20>}
+file_format = 'pdb', models = 2, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+________ test_missing_sequence_uses_observed_residues[numbering2-2-cif] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs11')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d80>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7290>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6e30>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d10>}
+file_format = 'cif', models = 2, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parser(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Axp [42A(ALA) 42B(GLY)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Axp'
+entity = 'A'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d80>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7290>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6e30>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d10>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_missing_sequence_uses_obs11')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d80>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7290>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627d6e30>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627d7d10>}
+file_format = 'cif', models = 2, numbering = ((42, 'A'), (42, 'B'))
+
+    @pytest.mark.parametrize("file_format", ["pdb", "cif"])
+    @pytest.mark.parametrize("models", [1, 2])
+    @pytest.mark.parametrize("numbering", [((1, " "), (2, " ")), ((42, " "), (47, " ")),
+                                          ((42, "A"), (42, "B"))])
+    def test_missing_sequence_uses_observed_residues(tmp_path, molecules, file_format, models, numbering):
+        entries = [(name, n, ins) for name, (n, ins) in zip(["ALA", "GLY"], numbering)]
+        source = structure({"A": entries, "B": [("SER", 8, " "), ("ALA", 9, " ")]}, models=models)
+        path = tmp_path / ("template." + file_format)
+        if file_format == "pdb":
+            path.write_text(source.make_pdb_string())
+            parser = parse_pdb
+        else:
+            source.make_mmcif_document().write_file(str(path))
+            parser = parse_mmcif
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:69: Failed
+_________________ test_only_missing_chain_sequence_is_inferred _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_only_missing_chain_sequen0')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627a9b60>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627a8970>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627aa960>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627a86d0>}
+
+    def test_only_missing_chain_sequence_is_inferred(tmp_path, molecules):
+        source = structure({"A": [("ALA", 1, " "), ("GLY", 3, " ")],
+                            "B": [("SER", 1, " "), ("ALA", 2, " ")]},
+                           full_sequences={"A": ["ALA", "SER", "GLY"]})
+        path = tmp_path / "mixed.cif"
+        source.make_mmcif_document().write_file(str(path))
+        with pytest.warns(UserWarning, match="observed residues"):
+>           parsed = parse_mmcif(str(path), mols=molecules, use_assembly=False, compute_interfaces=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/parse/test_missing_polymer_sequence.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/boltz/data/parse/mmcif.py:901: in parse_mmcif
+    parsed_polymer = parse_polymer(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+polymer = <gemmi.ResidueSpan of 2: Bxp [1(SER) 2(ALA)]>
+polymer_type = <PolymerType.PeptideL: 1>, sequence = [], chain_id = 'Bxp'
+entity = 'B'
+mols = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627a9b60>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627a8970>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627aa960>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627a86d0>}
+moldir = None
+
+    def parse_polymer(  # noqa: C901, PLR0915, PLR0912
+        polymer: gemmi.ResidueSpan,
+        polymer_type: gemmi.PolymerType,
+        sequence: list[str],
+        chain_id: str,
+        entity: str,
+        mols: dict[str, Mol],
+        moldir: str,
+    ) -> Optional[ParsedChain]:
+        """Process a gemmi Polymer into a chain object.
+    
+        Performs alignment of the full sequence to the polymer
+        residues. Loads coordinates and masks for the atoms in
+        the polymer, following the ordering in const.atom_order.
+    
+        Parameters
+        ----------
+        polymer : gemmi.ResidueSpan
+            The polymer to process.
+        polymer_type : gemmi.PolymerType
+            The polymer type.
+        sequence : str
+            The full sequence of the polymer.
+        chain_id : str
+            The chain identifier.
+        entity : str
+            The entity name.
+        components : dict[str, Mol]
+            The preprocessed PDB components dictionary.
+    
+        Returns
+        -------
+        ParsedChain, optional
+            The output chain, if successful.
+    
+        Raises
+        ------
+        ValueError
+            If the alignment fails.
+    
+        """
+        # Ignore microheterogeneities (pick first)
+        sequence = [gemmi.Entity.first_mon(item) for item in sequence]
+    
+        # Align full sequence to polymer residues
+        # This is a simple way to handle all the different numbering schemes
+        result = gemmi.align_sequence_to_polymer(
+            sequence,
+            polymer,
+            polymer_type,
+            gemmi.AlignmentScoring(),
+        )
+    
+        # Get coordinates and masks
+        i = 0
+        ref_res = set(const.tokens)
+        parsed = []
+        for j, match in enumerate(result.match_string):
+            # Get residue name from sequence
+>           res_name = sequence[j]
+                       ^^^^^^^^^^^
+E           IndexError: list index out of range
+
+src/boltz/data/parse/mmcif.py:588: IndexError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-arman/pytest-2588/test_only_missing_chain_sequen0')
+molecules = {'ALA': <rdkit.Chem.rdchem.Mol object at 0x72aa627a9b60>, 'GLY': <rdkit.Chem.rdchem.Mol object at 0x72aa627a8970>, 'MET': <rdkit.Chem.rdchem.Mol object at 0x72aa627aa960>, 'SER': <rdkit.Chem.rdchem.Mol object at 0x72aa627a86d0>}
+
+    def test_only_missing_chain_sequence_is_inferred(tmp_path, molecules):
+        source = structure({"A": [("ALA", 1, " "), ("GLY", 3, " ")],
+                            "B": [("SER", 1, " "), ("ALA", 2, " ")]},
+                           full_sequences={"A": ["ALA", "SER", "GLY"]})
+        path = tmp_path / "mixed.cif"
+        source.make_mmcif_document().write_file(str(path))
+>       with pytest.warns(UserWarning, match="observed residues"):
+E       Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.
+E        Emitted warnings: [].
+
+tests/data/parse/test_missing_polymer_sequence.py:105: Failed
+=========================== short test summary info ============================
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering0-1-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering0-1-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering0-2-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering0-2-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering1-1-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering1-1-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering1-2-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering1-2-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering2-1-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering2-1-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering2-2-pdb]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_missing_sequence_uses_observed_residues[numbering2-2-cif]
+FAILED tests/data/parse/test_missing_polymer_sequence.py::test_only_missing_chain_sequence_is_inferred
+13 failed, 2 passed in 2.98s

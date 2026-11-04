@@ -1,0 +1,70 @@
+{
+  "inputs": {
+    "t1.yaml": {
+      "url": "https://github.com/user-attachments/files/26494950/t1.yaml",
+      "sha256": "6e2af667b012d32e7ae74dd0bf13ce9a44d8f456664413dc59b839dd401e2083"
+    },
+    "vav1_pymol2.pdb": {
+      "url": "https://github.com/user-attachments/files/26494953/vav1_pymol2.pdb",
+      "sha256": "fe42bbb3257ea82e758c73884311e6cbc75e4dd24d78501a104d862343640da6"
+    }
+  },
+  "runtime_sources_sha256": {
+    "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/data/parse/mmcif.py": "cd6b3ac6f5de2c857a62c3353f95b9028f1fdbd45ed19ec86807c226d5cd060f",
+    "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/data/parse/pdb.py": "385ae35cc10958a69eea198645c5e719aa560b4e4d47ae7321b1650d696d58c0"
+  },
+  "template_chains": [
+    {
+      "name": "B1",
+      "residues": 360,
+      "atoms": 2903
+    },
+    {
+      "name": "C1",
+      "residues": 55,
+      "atoms": 453
+    }
+  ],
+  "template_sequence_lengths": {
+    "B1": 360,
+    "C1": 55
+  },
+  "max_parsed_to_source_atom_distance_A": 3.6804455462449443e-06,
+  "full_author_yaml_completed": false,
+  "unrelated_affinity_error": "module 'rdkit.Chem.AllChem' has no attribute 'Descriptors'",
+  "template_isolation_change": "Disable affinity property only; retain original protein and ligand sequences and template settings.",
+  "query_chains": [
+    "E",
+    "F",
+    "L"
+  ],
+  "template_records": [
+    {
+      "name": "vav1_pymol2",
+      "query_chain": "E",
+      "query_st": 0,
+      "query_en": 360,
+      "template_chain": "B1",
+      "template_st": 0,
+      "template_en": 360,
+      "force": false,
+      "threshold": "unbounded"
+    },
+    {
+      "name": "vav1_pymol2",
+      "query_chain": "F",
+      "query_st": 0,
+      "query_en": 55,
+      "template_chain": "C1",
+      "template_st": 0,
+      "template_en": 55,
+      "force": false,
+      "threshold": "unbounded"
+    }
+  ],
+  "warnings": [
+    "No polymer sequence is available for chain B1; using observed residues only. Missing residues cannot be inferred from this template.",
+    "No polymer sequence is available for chain C1; using observed residues only. Missing residues cannot be inferred from this template."
+  ],
+  "completed": true
+}

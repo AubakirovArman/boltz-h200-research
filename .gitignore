@@ -9,3 +9,5 @@ local-ion-pilot*/
 /contributions/
 local-known-structure*/
 local-known-structure*.json
+/local-*.json
+/local-675-*/

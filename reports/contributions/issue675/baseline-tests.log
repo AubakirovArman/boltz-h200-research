@@ -1,0 +1,253 @@
+..FF..FFFFFFFF..                                                         [100%]
+=================================== FAILURES ===================================
+_ test_explicit_atom_and_chain_connectivity_are_separate[rows2-expected_atoms2-expected_chains2] _
+
+rows = [(0, 0, 0, 1, 2, 8, ...)], expected_atoms = [[2, 8]]
+expected_chains = []
+
+    @pytest.mark.parametrize('rows,expected_atoms,expected_chains', [
+        ([], [], []),
+        ([(0, 0, 0, 0, 0, 1, SINGLE)], [], []),
+        ([(0, 0, 0, 1, 2, 8, COVALENT)], [[2, 8]], []),
+        ([(0, 0, 0, 0, 0, 2, COVALENT)], [[0, 2]], []),
+        ([(0, 1, 0, 1, 2, 8, COVALENT)], [[2, 8]], [[0, 1]]),
+        ([(0, 1, 0, 1, 2, 8, SINGLE)], [[2, 8]], [[0, 1]]),
+        ([(0, 0, 0, 0, 0, 1, SINGLE), (0, 0, 0, 1, 2, 8, COVALENT),
+          (0, 1, 1, 2, 8, 9, COVALENT)], [[2, 8], [8, 9]], [[0, 1]]),
+    ])
+    def test_explicit_atom_and_chain_connectivity_are_separate(rows, expected_atoms, expected_chains):
+        chains = np.zeros(2, dtype=Chain)
+        chains['entity_id'] = [0, 1]
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array(rows, dtype=BondV2)))
+        feats = process_chain_feature_constraints(data)
+>       assert feats['connected_atom_index'].T.tolist() == expected_atoms
+E       assert [] == [[2, 8]]
+E         
+E         Right contains one more item: [2, 8]
+E         Use -v to get more diff
+
+tests/data/test_explicit_covalent_connections.py:35: AssertionError
+_ test_explicit_atom_and_chain_connectivity_are_separate[rows3-expected_atoms3-expected_chains3] _
+
+rows = [(0, 0, 0, 0, 0, 2, ...)], expected_atoms = [[0, 2]]
+expected_chains = []
+
+    @pytest.mark.parametrize('rows,expected_atoms,expected_chains', [
+        ([], [], []),
+        ([(0, 0, 0, 0, 0, 1, SINGLE)], [], []),
+        ([(0, 0, 0, 1, 2, 8, COVALENT)], [[2, 8]], []),
+        ([(0, 0, 0, 0, 0, 2, COVALENT)], [[0, 2]], []),
+        ([(0, 1, 0, 1, 2, 8, COVALENT)], [[2, 8]], [[0, 1]]),
+        ([(0, 1, 0, 1, 2, 8, SINGLE)], [[2, 8]], [[0, 1]]),
+        ([(0, 0, 0, 0, 0, 1, SINGLE), (0, 0, 0, 1, 2, 8, COVALENT),
+          (0, 1, 1, 2, 8, 9, COVALENT)], [[2, 8], [8, 9]], [[0, 1]]),
+    ])
+    def test_explicit_atom_and_chain_connectivity_are_separate(rows, expected_atoms, expected_chains):
+        chains = np.zeros(2, dtype=Chain)
+        chains['entity_id'] = [0, 1]
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array(rows, dtype=BondV2)))
+        feats = process_chain_feature_constraints(data)
+>       assert feats['connected_atom_index'].T.tolist() == expected_atoms
+E       assert [] == [[0, 2]]
+E         
+E         Right contains one more item: [0, 2]
+E         Use -v to get more diff
+
+tests/data/test_explicit_covalent_connections.py:35: AssertionError
+_ test_explicit_atom_and_chain_connectivity_are_separate[rows6-expected_atoms6-expected_chains6] _
+
+rows = [(0, 0, 0, 0, 0, 1, ...), (0, 0, 0, 1, 2, 8, ...), (0, 1, 1, 2, 8, 9, ...)]
+expected_atoms = [[2, 8], [8, 9]], expected_chains = [[0, 1]]
+
+    @pytest.mark.parametrize('rows,expected_atoms,expected_chains', [
+        ([], [], []),
+        ([(0, 0, 0, 0, 0, 1, SINGLE)], [], []),
+        ([(0, 0, 0, 1, 2, 8, COVALENT)], [[2, 8]], []),
+        ([(0, 0, 0, 0, 0, 2, COVALENT)], [[0, 2]], []),
+        ([(0, 1, 0, 1, 2, 8, COVALENT)], [[2, 8]], [[0, 1]]),
+        ([(0, 1, 0, 1, 2, 8, SINGLE)], [[2, 8]], [[0, 1]]),
+        ([(0, 0, 0, 0, 0, 1, SINGLE), (0, 0, 0, 1, 2, 8, COVALENT),
+          (0, 1, 1, 2, 8, 9, COVALENT)], [[2, 8], [8, 9]], [[0, 1]]),
+    ])
+    def test_explicit_atom_and_chain_connectivity_are_separate(rows, expected_atoms, expected_chains):
+        chains = np.zeros(2, dtype=Chain)
+        chains['entity_id'] = [0, 1]
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array(rows, dtype=BondV2)))
+        feats = process_chain_feature_constraints(data)
+>       assert feats['connected_atom_index'].T.tolist() == expected_atoms
+E       assert [[8, 9]] == [[2, 8], [8, 9]]
+E         
+E         At index 0 diff: [8, 9] != [2, 8]
+E         Right contains one more item: [8, 9]
+E         Use -v to get more diff
+
+tests/data/test_explicit_covalent_connections.py:35: AssertionError
+_____________ test_same_chain_connection_energy_and_gradient[1.8] ______________
+
+distance = 1.8
+
+    @pytest.mark.parametrize('distance', [1.8, 3., 8.])
+    def test_same_chain_connection_energy_and_gradient(distance):
+        chains = np.zeros(1, dtype=Chain)
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array([(0, 0, 0, 1, 0, 1, COVALENT)], dtype=BondV2)))
+        feats = {k: v[None] for k, v in process_chain_feature_constraints(data).items()}
+        xyz = torch.tensor([[[0., 0., 0.], [distance, 0., 0.]]], requires_grad=True)
+        potential = ConnectionsPotential()
+        parameters = {'buffer': 2.}
+        energy = potential.compute(xyz, feats, parameters)
+        assert float(energy.item()) == pytest.approx(max(distance - 2., 0.))
+>       expected = torch.autograd.grad(energy.sum(), xyz)[0]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/data/test_explicit_covalent_connections.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../.venv/lib/python3.12/site-packages/torch/autograd/__init__.py:532: in grad
+    result = _engine_run_backward(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+t_outputs = (tensor(0.),)
+args = ((None,), False, False, (tensor([[[0.0000, 0.0000, 0.0000],
+         [1.8000, 0.0000, 0.0000]]], requires_grad=True),), False)
+kwargs = {'accumulate_grad': False}, attach_logging_hooks = False
+
+    def _engine_run_backward(
+        t_outputs: Sequence[Union[torch.Tensor, GradientEdge]],
+        *args: Any,
+        **kwargs: Any,
+    ) -> tuple[torch.Tensor, ...]:
+        attach_logging_hooks = log.getEffectiveLevel() <= logging.DEBUG
+        if attach_logging_hooks:
+            unregister_hooks = _register_logging_hooks_on_whole_graph(t_outputs)
+        try:
+>           return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+                t_outputs, *args, **kwargs
+            )  # Calls into the C++ engine to run the backward pass
+E           RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+
+../../.venv/lib/python3.12/site-packages/torch/autograd/graph.py:869: RuntimeError
+_____________ test_same_chain_connection_energy_and_gradient[3.0] ______________
+
+distance = 3.0
+
+    @pytest.mark.parametrize('distance', [1.8, 3., 8.])
+    def test_same_chain_connection_energy_and_gradient(distance):
+        chains = np.zeros(1, dtype=Chain)
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array([(0, 0, 0, 1, 0, 1, COVALENT)], dtype=BondV2)))
+        feats = {k: v[None] for k, v in process_chain_feature_constraints(data).items()}
+        xyz = torch.tensor([[[0., 0., 0.], [distance, 0., 0.]]], requires_grad=True)
+        potential = ConnectionsPotential()
+        parameters = {'buffer': 2.}
+        energy = potential.compute(xyz, feats, parameters)
+>       assert float(energy.item()) == pytest.approx(max(distance - 2., 0.))
+E       assert 0.0 == 1.0 ± 1.0e-06
+E         
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 1.0 ± 1.0e-06
+
+tests/data/test_explicit_covalent_connections.py:50: AssertionError
+_____________ test_same_chain_connection_energy_and_gradient[8.0] ______________
+
+distance = 8.0
+
+    @pytest.mark.parametrize('distance', [1.8, 3., 8.])
+    def test_same_chain_connection_energy_and_gradient(distance):
+        chains = np.zeros(1, dtype=Chain)
+        data = SimpleNamespace(structure=SimpleNamespace(chains=chains, bonds=np.array([(0, 0, 0, 1, 0, 1, COVALENT)], dtype=BondV2)))
+        feats = {k: v[None] for k, v in process_chain_feature_constraints(data).items()}
+        xyz = torch.tensor([[[0., 0., 0.], [distance, 0., 0.]]], requires_grad=True)
+        potential = ConnectionsPotential()
+        parameters = {'buffer': 2.}
+        energy = potential.compute(xyz, feats, parameters)
+>       assert float(energy.item()) == pytest.approx(max(distance - 2., 0.))
+E       assert 0.0 == 6.0 ± 6.0e-06
+E         
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 6.0 ± 6.0e-06
+
+tests/data/test_explicit_covalent_connections.py:50: AssertionError
+______ test_mmcif_has_explicit_atoms_and_measured_connection[False-False] ______
+
+interchain = False, duplicate = False
+
+    @pytest.mark.parametrize('interchain', [False, True])
+    @pytest.mark.parametrize('duplicate', [False, True])
+    def test_mmcif_has_explicit_atoms_and_measured_connection(interchain, duplicate):
+        structure = linked_structure(interchain, duplicate)
+        plddt = None if interchain else torch.tensor([.8, .7])
+        text = to_mmcif(structure, boltz2=True, plddts=plddt)
+        block = gemmi.cif.read_string(text).sole_block()
+        parsed = gemmi.make_structure_from_block(block)
+>       assert len(parsed.connections) == 1
+E       assert 0 == 1
+E        +  where 0 = len(<gemmi.ConnectionList object at 0x75942499de70>)
+E        +    where <gemmi.ConnectionList object at 0x75942499de70> = <gemmi.Structure model with 1 model(s)>.connections
+
+tests/data/test_explicit_covalent_connections.py:99: AssertionError
+______ test_mmcif_has_explicit_atoms_and_measured_connection[False-True] _______
+
+interchain = True, duplicate = False
+
+    @pytest.mark.parametrize('interchain', [False, True])
+    @pytest.mark.parametrize('duplicate', [False, True])
+    def test_mmcif_has_explicit_atoms_and_measured_connection(interchain, duplicate):
+        structure = linked_structure(interchain, duplicate)
+        plddt = None if interchain else torch.tensor([.8, .7])
+        text = to_mmcif(structure, boltz2=True, plddts=plddt)
+        block = gemmi.cif.read_string(text).sole_block()
+        parsed = gemmi.make_structure_from_block(block)
+>       assert len(parsed.connections) == 1
+E       assert 0 == 1
+E        +  where 0 = len(<gemmi.ConnectionList object at 0x7593b8d0ff70>)
+E        +    where <gemmi.ConnectionList object at 0x7593b8d0ff70> = <gemmi.Structure model with 1 model(s)>.connections
+
+tests/data/test_explicit_covalent_connections.py:99: AssertionError
+______ test_mmcif_has_explicit_atoms_and_measured_connection[True-False] _______
+
+interchain = False, duplicate = True
+
+    @pytest.mark.parametrize('interchain', [False, True])
+    @pytest.mark.parametrize('duplicate', [False, True])
+    def test_mmcif_has_explicit_atoms_and_measured_connection(interchain, duplicate):
+        structure = linked_structure(interchain, duplicate)
+        plddt = None if interchain else torch.tensor([.8, .7])
+        text = to_mmcif(structure, boltz2=True, plddts=plddt)
+        block = gemmi.cif.read_string(text).sole_block()
+        parsed = gemmi.make_structure_from_block(block)
+>       assert len(parsed.connections) == 1
+E       assert 0 == 1
+E        +  where 0 = len(<gemmi.ConnectionList object at 0x7593b8d156b0>)
+E        +    where <gemmi.ConnectionList object at 0x7593b8d156b0> = <gemmi.Structure model with 1 model(s)>.connections
+
+tests/data/test_explicit_covalent_connections.py:99: AssertionError
+_______ test_mmcif_has_explicit_atoms_and_measured_connection[True-True] _______
+
+interchain = True, duplicate = True
+
+    @pytest.mark.parametrize('interchain', [False, True])
+    @pytest.mark.parametrize('duplicate', [False, True])
+    def test_mmcif_has_explicit_atoms_and_measured_connection(interchain, duplicate):
+        structure = linked_structure(interchain, duplicate)
+        plddt = None if interchain else torch.tensor([.8, .7])
+        text = to_mmcif(structure, boltz2=True, plddts=plddt)
+        block = gemmi.cif.read_string(text).sole_block()
+        parsed = gemmi.make_structure_from_block(block)
+>       assert len(parsed.connections) == 1
+E       assert 0 == 1
+E        +  where 0 = len(<gemmi.ConnectionList object at 0x7593b8d20f70>)
+E        +    where <gemmi.ConnectionList object at 0x7593b8d20f70> = <gemmi.Structure model with 1 model(s)>.connections
+
+tests/data/test_explicit_covalent_connections.py:99: AssertionError
+=========================== short test summary info ============================
+FAILED tests/data/test_explicit_covalent_connections.py::test_explicit_atom_and_chain_connectivity_are_separate[rows2-expected_atoms2-expected_chains2]
+FAILED tests/data/test_explicit_covalent_connections.py::test_explicit_atom_and_chain_connectivity_are_separate[rows3-expected_atoms3-expected_chains3]
+FAILED tests/data/test_explicit_covalent_connections.py::test_explicit_atom_and_chain_connectivity_are_separate[rows6-expected_atoms6-expected_chains6]
+FAILED tests/data/test_explicit_covalent_connections.py::test_same_chain_connection_energy_and_gradient[1.8]
+FAILED tests/data/test_explicit_covalent_connections.py::test_same_chain_connection_energy_and_gradient[3.0]
+FAILED tests/data/test_explicit_covalent_connections.py::test_same_chain_connection_energy_and_gradient[8.0]
+FAILED tests/data/test_explicit_covalent_connections.py::test_mmcif_has_explicit_atoms_and_measured_connection[False-False]
+FAILED tests/data/test_explicit_covalent_connections.py::test_mmcif_has_explicit_atoms_and_measured_connection[False-True]
+FAILED tests/data/test_explicit_covalent_connections.py::test_mmcif_has_explicit_atoms_and_measured_connection[True-False]
+FAILED tests/data/test_explicit_covalent_connections.py::test_mmcif_has_explicit_atoms_and_measured_connection[True-True]
+10 failed, 6 passed in 3.54s

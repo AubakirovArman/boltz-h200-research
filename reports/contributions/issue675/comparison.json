@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "guided_samples": 9,
+    "closure_mean_A": 5.534268379211426,
+    "closure_min_A": 4.439685344696045,
+    "closure_max_A": 6.809430122375488,
+    "within_2A": 0,
+    "mean_internal_modified_bond_violations": 0.0,
+    "internal_modified_bond_count": 8
+  },
+  "solution": {
+    "guided_samples": 9,
+    "closure_mean_A": 1.9525487422943115,
+    "closure_min_A": 1.9193717241287231,
+    "closure_max_A": 1.97828209400177,
+    "within_2A": 9,
+    "mean_internal_modified_bond_violations": 0.5555555555555556,
+    "internal_modified_bond_count": 8
+  },
+  "checks": {
+    "unchanged_input_features_except_explicit_atom_connection": true,
+    "unsteered_seed0_all_3_coordinate_arrays_bit_identical": true,
+    "all_24_cif_annotations_checked": true,
+    "no_sample_selection": true
+  }
+}

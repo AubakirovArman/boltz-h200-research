@@ -1,0 +1,344 @@
+..FFFFFFFFFFFFFFFFFF                                                     [100%]
+=================================== FAILURES ===================================
+_____________ test_chain_roundtrip_and_fixed_columns[names1-False] _____________
+
+names = ['pro1', 'lig1'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+        assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+        for original in names:
+            if len(original) == 1 and original in string.ascii_letters + string.digits:
+                assert original in ids
+        for line in text.splitlines():
+            if line.startswith(('ATOM  ', 'HETATM', 'TER   ')):
+>               assert len(line) == 80
+E               AssertionError: assert 83 == 80
+E                +  where 83 = len('ATOM      1  N   ALA pro1   1     -12.346 -12.332 -12.319  1.00100.00           N  ')
+
+tests/data/write/test_pdb_chain_ids.py:62: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names1-True] ______________
+
+names = ['pro1', 'lig1'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+        assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+        for original in names:
+            if len(original) == 1 and original in string.ascii_letters + string.digits:
+                assert original in ids
+        for line in text.splitlines():
+            if line.startswith(('ATOM  ', 'HETATM', 'TER   ')):
+>               assert len(line) == 80
+E               AssertionError: assert 83 == 80
+E                +  where 83 = len('ATOM      1  N   ALA pro1   1     -12.346 -12.332 -12.319  1.00100.00           N  ')
+
+tests/data/write/test_pdb_chain_ids.py:62: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names2-False] _____________
+
+names = ['A1', 'A2'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+>       assert len(parsed[0]) == len(names)
+E       AssertionError: assert 1 == 2
+E        +  where 1 = len(<gemmi.Model 1 with 1 chain(s)>)
+E        +  and   2 = len(['A1', 'A2'])
+
+tests/data/write/test_pdb_chain_ids.py:53: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names2-True] ______________
+
+names = ['A1', 'A2'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+>       assert len(parsed[0]) == len(names)
+E       AssertionError: assert 1 == 2
+E        +  where 1 = len(<gemmi.Model 1 with 1 chain(s)>)
+E        +  and   2 = len(['A1', 'A2'])
+
+tests/data/write/test_pdb_chain_ids.py:53: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names3-False] _____________
+
+names = ['AA', 'A', 'B'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+>       assert len(parsed[0]) == len(names)
+E       AssertionError: assert 2 == 3
+E        +  where 2 = len(<gemmi.Model 1 with 2 chain(s)>)
+E        +  and   3 = len(['AA', 'A', 'B'])
+
+tests/data/write/test_pdb_chain_ids.py:53: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names3-True] ______________
+
+names = ['AA', 'A', 'B'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+>       assert len(parsed[0]) == len(names)
+E       AssertionError: assert 2 == 3
+E        +  where 2 = len(<gemmi.Model 1 with 2 chain(s)>)
+E        +  and   3 = len(['AA', 'A', 'B'])
+
+tests/data/write/test_pdb_chain_ids.py:53: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names4-False] _____________
+
+names = ['_', 'a', '0'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+>       assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+E       assert False
+E        +  where False = all(<generator object test_chain_roundtrip_and_fixed_columns.<locals>.<genexpr> at 0x74264ff62330>)
+
+tests/data/write/test_pdb_chain_ids.py:56: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names4-True] ______________
+
+names = ['_', 'a', '0'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+>       assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+E       assert False
+E        +  where False = all(<generator object test_chain_roundtrip_and_fixed_columns.<locals>.<genexpr> at 0x74264ffc8040>)
+
+tests/data/write/test_pdb_chain_ids.py:56: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names5-False] _____________
+
+names = ['', 'X'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+>       assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+E       assert False
+E        +  where False = all(<generator object test_chain_roundtrip_and_fixed_columns.<locals>.<genexpr> at 0x74264ffcb2a0>)
+
+tests/data/write/test_pdb_chain_ids.py:56: AssertionError
+_____________ test_chain_roundtrip_and_fixed_columns[names5-True] ______________
+
+names = ['', 'X'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['A', 'B'], ['pro1', 'lig1'], ['A1', 'A2'],
+                                      ['AA', 'A', 'B'], ['_', 'a', '0'], ['', 'X']])
+    def test_chain_roundtrip_and_fixed_columns(names, boltz2):
+        structure = make_structure(names, boltz2)
+        before = structure.chains.copy()
+        text = to_pdb(structure, boltz2=boltz2)
+        parsed = gemmi.read_pdb_string(text)
+        assert len(parsed[0]) == len(names)
+        ids = [c.name for c in parsed[0]]
+        assert len(set(ids)) == len(names)
+>       assert all(len(c) == 1 and c in string.ascii_letters + string.digits for c in ids)
+E       assert False
+E        +  where False = all(<generator object test_chain_roundtrip_and_fixed_columns.<locals>.<genexpr> at 0x74264fff0520>)
+
+tests/data/write/test_pdb_chain_ids.py:56: AssertionError
+____________________ test_full_alphanumeric_capacity[False] ____________________
+
+boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    def test_full_alphanumeric_capacity(boltz2):
+        names = ['p' + str(i) for i in range(62)]
+        text = to_pdb(make_structure(names, boltz2), boltz2=boltz2)
+>       assert len(gemmi.read_pdb_string(text)[0]) == 62
+E       assert 1 == 62
+E        +  where 1 = len(<gemmi.Model 1 with 1 chain(s)>)
+
+tests/data/write/test_pdb_chain_ids.py:76: AssertionError
+____________________ test_full_alphanumeric_capacity[True] _____________________
+
+boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    def test_full_alphanumeric_capacity(boltz2):
+        names = ['p' + str(i) for i in range(62)]
+        text = to_pdb(make_structure(names, boltz2), boltz2=boltz2)
+>       assert len(gemmi.read_pdb_string(text)[0]) == 62
+E       assert 1 == 62
+E        +  where 1 = len(<gemmi.Model 1 with 1 chain(s)>)
+
+tests/data/write/test_pdb_chain_ids.py:76: AssertionError
+__________ test_unrepresentable_chain_set_fails_clearly[names0-False] __________
+
+names = ['same', 'same'], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['same', 'same'], ['p' + str(i) for i in range(63)]])
+    def test_unrepresentable_chain_set_fails_clearly(names, boltz2):
+>       with pytest.raises(ValueError, match='mmCIF'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/data/write/test_pdb_chain_ids.py:82: Failed
+__________ test_unrepresentable_chain_set_fails_clearly[names0-True] ___________
+
+names = ['same', 'same'], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['same', 'same'], ['p' + str(i) for i in range(63)]])
+    def test_unrepresentable_chain_set_fails_clearly(names, boltz2):
+>       with pytest.raises(ValueError, match='mmCIF'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/data/write/test_pdb_chain_ids.py:82: Failed
+__________ test_unrepresentable_chain_set_fails_clearly[names1-False] __________
+
+names = ['p0', 'p1', 'p2', 'p3', 'p4', 'p5', ...], boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['same', 'same'], ['p' + str(i) for i in range(63)]])
+    def test_unrepresentable_chain_set_fails_clearly(names, boltz2):
+>       with pytest.raises(ValueError, match='mmCIF'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/data/write/test_pdb_chain_ids.py:82: Failed
+__________ test_unrepresentable_chain_set_fails_clearly[names1-True] ___________
+
+names = ['p0', 'p1', 'p2', 'p3', 'p4', 'p5', ...], boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    @pytest.mark.parametrize('names', [['same', 'same'], ['p' + str(i) for i in range(63)]])
+    def test_unrepresentable_chain_set_fails_clearly(names, boltz2):
+>       with pytest.raises(ValueError, match='mmCIF'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/data/write/test_pdb_chain_ids.py:82: Failed
+_______ test_cross_chain_conect_serials_and_ter_use_same_aliases[False] ________
+
+boltz2 = False
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    def test_cross_chain_conect_serials_and_ter_use_same_aliases(boltz2):
+        structure = make_structure(['A1', 'A2'], boltz2)
+        if boltz2:
+            structure = replace(structure, bonds=np.array([(0, 1, 0, 1, 0, 5, 1)], dtype=BondV2))
+        else:
+            structure = replace(structure, connections=np.array([(0, 1, 0, 1, 0, 5)], dtype=Connection))
+        text = to_pdb(structure, boltz2=boltz2)
+        atoms = [l for l in text.splitlines() if l.startswith('ATOM  ')]
+        conect = [l for l in text.splitlines() if l.startswith('CONECT')]
+        assert len(conect) == 1
+        assert int(conect[0][6:11]) == int(atoms[0][6:11])
+        assert int(conect[0][11:16]) == int(atoms[5][6:11])
+        ter = next(l for l in text.splitlines() if l.startswith('TER'))
+>       assert ter[21] == atoms[0][21] and ter[21] != atoms[5][21]
+E       AssertionError: assert ('A' == 'A'
+E         
+E           A and 'A' != 'A')
+
+tests/data/write/test_pdb_chain_ids.py:100: AssertionError
+________ test_cross_chain_conect_serials_and_ter_use_same_aliases[True] ________
+
+boltz2 = True
+
+    @pytest.mark.parametrize('boltz2', [False, True])
+    def test_cross_chain_conect_serials_and_ter_use_same_aliases(boltz2):
+        structure = make_structure(['A1', 'A2'], boltz2)
+        if boltz2:
+            structure = replace(structure, bonds=np.array([(0, 1, 0, 1, 0, 5, 1)], dtype=BondV2))
+        else:
+            structure = replace(structure, connections=np.array([(0, 1, 0, 1, 0, 5)], dtype=Connection))
+        text = to_pdb(structure, boltz2=boltz2)
+        atoms = [l for l in text.splitlines() if l.startswith('ATOM  ')]
+        conect = [l for l in text.splitlines() if l.startswith('CONECT')]
+        assert len(conect) == 1
+        assert int(conect[0][6:11]) == int(atoms[0][6:11])
+        assert int(conect[0][11:16]) == int(atoms[5][6:11])
+        ter = next(l for l in text.splitlines() if l.startswith('TER'))
+>       assert ter[21] == atoms[0][21] and ter[21] != atoms[5][21]
+E       AssertionError: assert ('A' == 'A'
+E         
+E           A and 'A' != 'A')
+
+tests/data/write/test_pdb_chain_ids.py:100: AssertionError
+=========================== short test summary info ============================
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names1-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names1-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names2-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names2-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names3-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names3-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names4-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names4-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names5-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_chain_roundtrip_and_fixed_columns[names5-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_full_alphanumeric_capacity[False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_full_alphanumeric_capacity[True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_unrepresentable_chain_set_fails_clearly[names0-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_unrepresentable_chain_set_fails_clearly[names0-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_unrepresentable_chain_set_fails_clearly[names1-False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_unrepresentable_chain_set_fails_clearly[names1-True]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_cross_chain_conect_serials_and_ter_use_same_aliases[False]
+FAILED tests/data/write/test_pdb_chain_ids.py::test_cross_chain_conect_serials_and_ter_use_same_aliases[True]
+18 failed, 2 passed in 2.07s

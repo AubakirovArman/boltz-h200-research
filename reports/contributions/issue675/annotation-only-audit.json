@@ -1,0 +1,128 @@
+{
+  "structures_reexported": 24,
+  "annotation_only_branch": "6594d2dfe7042d8740e5ac6d3edf73182a643f10",
+  "coordinate_arrays_unmodified": true,
+  "all_endpoints_correct": true,
+  "rows": [
+    {
+      "source": "baseline/seed0_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.9841308595866e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed0_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.998931884436786e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed0_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.971027374289783e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed0_unsteered_sample0.npz",
+      "max_coordinate_rounding_A": 4.992065429476611e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed0_unsteered_sample1.npz",
+      "max_coordinate_rounding_A": 4.978485107276498e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed0_unsteered_sample2.npz",
+      "max_coordinate_rounding_A": 4.9618530275630235e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed1_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.994964599713825e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed1_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.998779297160638e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed1_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.993591308455336e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed2_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.998779297160638e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed2_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.998664856037394e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "baseline/seed2_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.9445343017762156e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.991683959953974e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.963378906319704e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.992675781245737e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_unsteered_sample0.npz",
+      "max_coordinate_rounding_A": 4.992065429476611e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_unsteered_sample1.npz",
+      "max_coordinate_rounding_A": 4.978485107276498e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed0_unsteered_sample2.npz",
+      "max_coordinate_rounding_A": 4.9618530275630235e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed1_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.998474120831986e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed1_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.999999999810711e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed1_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.989624023288286e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed2_guided_sample0.npz",
+      "max_coordinate_rounding_A": 4.9854373931901286e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed2_guided_sample1.npz",
+      "max_coordinate_rounding_A": 4.979400634930187e-06,
+      "connection_count": 1
+    },
+    {
+      "source": "solution/seed2_guided_sample2.npz",
+      "max_coordinate_rounding_A": 4.98901367151916e-06,
+      "connection_count": 1
+    }
+  ]
+}

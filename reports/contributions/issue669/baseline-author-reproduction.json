@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "t1.yaml": {
+      "url": "https://github.com/user-attachments/files/26494950/t1.yaml",
+      "sha256": "6e2af667b012d32e7ae74dd0bf13ce9a44d8f456664413dc59b839dd401e2083"
+    },
+    "vav1_pymol2.pdb": {
+      "url": "https://github.com/user-attachments/files/26494953/vav1_pymol2.pdb",
+      "sha256": "fe42bbb3257ea82e758c73884311e6cbc75e4dd24d78501a104d862343640da6"
+    }
+  },
+  "runtime_sources_sha256": {
+    "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/data/parse/mmcif.py": "db99045c2931f8eb9a6b002cedc773d1fc5d46ee7f0823b4015d34bbce0fae34",
+    "/mnt/data/arman-projects/boltz-h200/upstream/src/boltz/data/parse/pdb.py": "7aa50724cd70fdbd8a4acaeba8ceca0bd76ba9cc95099592a1ddcd1e53081a69"
+  },
+  "completed": false,
+  "failed_stage": "parse_pdb",
+  "error_type": "IndexError",
+  "error": "list index out of range"
+}

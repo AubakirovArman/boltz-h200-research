@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "native_cli": true,
+  "samples": 1,
+  "seed": 0,
+  "recycles": 3,
+  "diffusion_steps": 200,
+  "use_potentials": true,
+  "closure_distance_A": 1.9711784694948347,
+  "reported_connection_distance_A": 1.9712,
+  "connection_count": 1,
+  "confidence_file": "reports/contributions/issue675/cli-smoke/boltz_results_cli-input/predictions/ace_cy3/confidence_ace_cy3_model_0.json",
+  "no_failed_examples": true
+}

@@ -1,3 +1,5 @@
+[New: template/PDB fixes and covalent-link pilot, including geometry limitations](NEXT_ISSUES_20261104.md)
+
 [Ion/no-ion cofolding pilot: 36 structures, protocol and results](ION_PILOT.md)
 
 [Contact-union gradient fix: PR #712 and tests](CONTACT_UNION_GRADIENT.md) · [Affinity on supplied coordinates: implementation and H200 audit](KNOWN_STRUCTURE_AFFINITY.md)
