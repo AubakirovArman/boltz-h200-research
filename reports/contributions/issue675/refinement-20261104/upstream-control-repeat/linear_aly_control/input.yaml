@@ -1,0 +1,14 @@
+version: 1
+sequences:
+- protein:
+    id: B
+    sequence: GYYPRVARLIFVAIYC
+    msa: empty
+    cyclic: false
+    modifications:
+    - position: 1
+      ccd: ACE
+    - position: 16
+      ccd: CY3
+    - position: 8
+      ccd: ALY

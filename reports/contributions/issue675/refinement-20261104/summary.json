@@ -1,0 +1,374 @@
+{
+  "tables": {
+    "original_upstream_seeds_0_1_2": {
+      "structures": 9,
+      "closure_mean_A": 5.534268379211426,
+      "closure_min_A": 4.439685344696045,
+      "closure_max_A": 6.809430122375488,
+      "closure_within_radii_buffer": 0,
+      "closure_at_most_2_A": 0,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 1,
+      "peptide_bond_violations": 8,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 4.809430122375488,
+        "ContactPotentital": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0005564689636230469,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "original_initial_draft_seeds_0_1_2": {
+      "structures": 9,
+      "closure_mean_A": 1.9525487422943115,
+      "closure_min_A": 1.9193717241287231,
+      "closure_max_A": 1.97828209400177,
+      "closure_within_radii_buffer": 9,
+      "closure_at_most_2_A": 9,
+      "modified_bond_violations": 5,
+      "modified_angle_distance_violations": 7,
+      "peptide_bond_violations": 11,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 2.3832924365997314,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "original_final_seeds_0_1_2": {
+      "structures": 9,
+      "closure_mean_A": 1.9023187160491943,
+      "closure_min_A": 1.861933708190918,
+      "closure_max_A": 1.944239854812622,
+      "closure_within_radii_buffer": 9,
+      "closure_at_most_2_A": 9,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "original_final_all_seeds": {
+      "structures": 21,
+      "closure_mean_A": 1.908689782733009,
+      "closure_min_A": 1.8551169633865356,
+      "closure_max_A": 1.9982448816299438,
+      "closure_within_radii_buffer": 21,
+      "closure_at_most_2_A": 21,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "ace_cys_final_all_seeds": {
+      "structures": 12,
+      "closure_mean_A": 1.951499621073405,
+      "closure_min_A": 1.8864535093307495,
+      "closure_max_A": 1.9949734210968018,
+      "closure_within_radii_buffer": 12,
+      "closure_at_most_2_A": 12,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "ace_cy3_aly_final_all_seeds": {
+      "structures": 12,
+      "closure_mean_A": 1.9060759941736858,
+      "closure_min_A": 1.827769160270691,
+      "closure_max_A": 1.9959436655044556,
+      "closure_within_radii_buffer": 12,
+      "closure_at_most_2_A": 12,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "final_all_intra_chain_cases": {
+      "structures": 45,
+      "closure_mean_A": 1.9194087293412951,
+      "closure_min_A": 1.827769160270691,
+      "closure_max_A": 1.9982448816299438,
+      "closure_within_radii_buffer": 45,
+      "closure_at_most_2_A": 45,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    },
+    "final_prespecified_seed_2026": {
+      "structures": 9,
+      "closure_mean_A": 1.9276450210147433,
+      "closure_min_A": 1.8551169633865356,
+      "closure_max_A": 1.9847348928451538,
+      "closure_within_radii_buffer": 9,
+      "closure_at_most_2_A": 9,
+      "modified_bond_violations": 0,
+      "modified_angle_distance_violations": 0,
+      "peptide_bond_violations": 0,
+      "max_physical_energy": {
+        "ChiralAtomPotential": 0.0,
+        "ConnectionsPotential": 0.0,
+        "ContactPotentital": 0.0,
+        "IntraChainGeometryPotential": 0.0,
+        "PlanarBondPotential": 0.0,
+        "PoseBustersPotential": 0.0,
+        "StereoBondPotential": 0.0,
+        "SymmetricChainCOMPotential": 0.0,
+        "TemplateReferencePotential": 0.0,
+        "VDWOverlapPotential": 0.0
+      }
+    }
+  },
+  "controls": [
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 0,
+      "bit_equal": false,
+      "max_atom_displacement_A": 0.0022832490503787994,
+      "unaligned_atom_rmsd_A": 0.00027269075508229434
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 1,
+      "bit_equal": false,
+      "max_atom_displacement_A": 0.0012166004162281752,
+      "unaligned_atom_rmsd_A": 0.0004881514178123325
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 2,
+      "bit_equal": false,
+      "max_atom_displacement_A": 0.000185302400495857,
+      "unaligned_atom_rmsd_A": 0.00010536958870943636
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 4,
+      "sample": 0,
+      "bit_equal": false,
+      "max_atom_displacement_A": 4.192982305539772e-05,
+      "unaligned_atom_rmsd_A": 2.025901630986482e-05
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 4,
+      "sample": 1,
+      "bit_equal": false,
+      "max_atom_displacement_A": 9.35759671847336e-05,
+      "unaligned_atom_rmsd_A": 4.02844489144627e-05
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 4,
+      "sample": 2,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 5,
+      "sample": 0,
+      "bit_equal": false,
+      "max_atom_displacement_A": 4.5984510506968945e-05,
+      "unaligned_atom_rmsd_A": 1.9580047592171468e-05
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 5,
+      "sample": 1,
+      "bit_equal": false,
+      "max_atom_displacement_A": 0.0002716468879953027,
+      "unaligned_atom_rmsd_A": 0.00015699214418418705
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 5,
+      "sample": 2,
+      "bit_equal": false,
+      "max_atom_displacement_A": 7.040415948722512e-05,
+      "unaligned_atom_rmsd_A": 3.224254760425538e-05
+    },
+    {
+      "case": "interchain_control",
+      "seed": 3,
+      "sample": 0,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 3,
+      "sample": 1,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 3,
+      "sample": 2,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 4,
+      "sample": 0,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 4,
+      "sample": 1,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 4,
+      "sample": 2,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 5,
+      "sample": 0,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 5,
+      "sample": 1,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    },
+    {
+      "case": "interchain_control",
+      "seed": 5,
+      "sample": 2,
+      "bit_equal": true,
+      "max_atom_displacement_A": 0.0,
+      "unaligned_atom_rmsd_A": 0.0
+    }
+  ],
+  "baseline_repeat": [
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 0,
+      "bit_equal": false,
+      "max_atom_displacement_A": 0.002267045434564352,
+      "unaligned_atom_rmsd_A": 0.0002721949713304639
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 1,
+      "bit_equal": false,
+      "max_atom_displacement_A": 4.799266025656834e-05,
+      "unaligned_atom_rmsd_A": 1.8370790712651797e-05
+    },
+    {
+      "case": "linear_aly_control",
+      "seed": 3,
+      "sample": 2,
+      "bit_equal": false,
+      "max_atom_displacement_A": 1.6563228200539015e-05,
+      "unaligned_atom_rmsd_A": 8.141566468111705e-06
+    }
+  ],
+  "unsteered_bit_equal": true,
+  "completed_gpu_structures_by_stage": {
+    "force-sweep": 18,
+    "candidate-v1": 12,
+    "candidate-panel": 6,
+    "candidate-v2": 12,
+    "candidate-v2-panel": 3,
+    "upstream-panel": 36,
+    "candidate-v3": 12,
+    "candidate-v3-panel": 45,
+    "final-holdout": 9,
+    "upstream-control-repeat": 3,
+    "native_cli": 2
+  },
+  "total_new_gpu_structures": 158,
+  "scope": "Focused geometry checks; all samples included. No experimental fold/affinity accuracy or universal chemistry claim."
+}

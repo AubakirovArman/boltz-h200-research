@@ -1,0 +1,20 @@
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+{"model_loaded_s": 18.919319768901914}
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/cuequivariance_ops_torch/utils.py:158: UserWarning: 
+==========================================================================
+cuequivariance triangle_attention: FALLING BACK to the slow PyTorch
+reference path instead of the fast SM100f kernel.
+  Why: GPU compute capability 9.0 is not the supported SM100f family (10.0 / 10.3 / 10.7).
+  Fix: run on a B200 (sm_100), B300 (sm_103), or Rubin (sm_107) GPU.
+  (Short sequences also fall back by design; tune the cutoff with the
+   CUEQ_TRIATTN_FALLBACK_THRESHOLD environment variable.)
+==========================================================================
+  return func(*args, **kwargs)
+{"seed": 0, "guided": true, "closure_distances_A": [1.8575822114944458, 1.8959490060806274, 1.8473997116088867], "forward_s": 22.052348176017404}
+{"seed": 0, "guided": false, "closure_distances_A": [6.001333713531494, 5.482302665710449, 7.24031400680542], "forward_s": 4.609616704285145}
+{"seed": 1, "guided": true, "closure_distances_A": [1.9546699523925781, 1.9008877277374268, 1.86580228805542], "forward_s": 21.490478803869337}
+{"seed": 2, "guided": true, "closure_distances_A": [1.9049863815307617, 1.8777952194213867, 1.8855047225952148], "forward_s": 31.37434731796384}
+{"completed": true, "structures": 12, "elapsed_s": 98.55189690785483}

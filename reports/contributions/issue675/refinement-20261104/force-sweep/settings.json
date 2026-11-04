@@ -1,0 +1,28 @@
+{
+  "variants": [
+    [
+      "connection_0.03",
+      0.03,
+      0.01
+    ],
+    [
+      "balanced_0.03",
+      0.03,
+      0.03
+    ],
+    [
+      "geometry_0.15",
+      0.15,
+      0.15
+    ]
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "samples": 3,
+  "recycles": 3,
+  "steps": 200,
+  "all_samples_retained": true,
+  "purpose": "Diagnostic weight sweep; not final production settings."
+}

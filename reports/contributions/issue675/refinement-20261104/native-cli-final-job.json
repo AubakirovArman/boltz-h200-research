@@ -1,0 +1,31 @@
+{
+  "pid": 1611790,
+  "cmd": [
+    "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+    "-m",
+    "boltz.main",
+    "predict",
+    "/mnt/data/arman-projects/boltz-h200/reports/contributions/issue675/refinement-20261104/cli-final-input",
+    "--model",
+    "boltz2",
+    "--cache",
+    "/mnt/data/arman-projects/boltz-h200/cache",
+    "--out_dir",
+    "/mnt/data/arman-projects/boltz-h200/reports/contributions/issue675/refinement-20261104/native-cli-final",
+    "--use_potentials",
+    "--recycling_steps",
+    "3",
+    "--sampling_steps",
+    "200",
+    "--diffusion_samples",
+    "1",
+    "--max_parallel_samples",
+    "1",
+    "--seed",
+    "0",
+    "--num_workers",
+    "0",
+    "--preprocessing-threads",
+    "1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pid": 1573683,
+  "cmd": [
+    "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+    "/mnt/data/arman-projects/boltz-h200/research/contributions/covalent_refinement_validation.py",
+    "--output",
+    "/mnt/data/arman-projects/boltz-h200/reports/contributions/issue675/refinement-20261104/final-holdout",
+    "--label",
+    "final-holdout",
+    "--cases",
+    "original",
+    "ace_cys",
+    "ace_cy3_aly",
+    "--seeds",
+    "2026"
+  ]
+}

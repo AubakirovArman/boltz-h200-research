@@ -1,0 +1,6 @@
+{
+  "reason": "Broader audit found that adjacent peptide C--N links are not represented in the existing CCD geometry bounds. Add these protections before continuing the panel.",
+  "pid": 700540,
+  "initial_pilot_complete": true,
+  "completed_panel_structures": 3
+}

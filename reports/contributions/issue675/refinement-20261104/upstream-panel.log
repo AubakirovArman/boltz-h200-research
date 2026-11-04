@@ -1,0 +1,31 @@
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/cuequivariance_ops_torch/utils.py:158: UserWarning: 
+==========================================================================
+cuequivariance triangle_attention: FALLING BACK to the slow PyTorch
+reference path instead of the fast SM100f kernel.
+  Why: GPU compute capability 9.0 is not the supported SM100f family (10.0 / 10.3 / 10.7).
+  Fix: run on a B200 (sm_100), B300 (sm_103), or Rubin (sm_107) GPU.
+  (Short sequences also fall back by design; tune the cutoff with the
+   CUEQ_TRIATTN_FALLBACK_THRESHOLD environment variable.)
+==========================================================================
+  return func(*args, **kwargs)
+{"case": "ace_cys", "seed": 3, "forward_s": 46.29094146937132, "closures": [[3.9683141708374023], [5.435084819793701], [5.1882405281066895]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cys", "seed": 4, "forward_s": 45.88330914825201, "closures": [[6.35921573638916], [5.151708602905273], [5.668534278869629]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cys", "seed": 5, "forward_s": 48.81019035028294, "closures": [[5.088790416717529], [4.941896915435791], [6.180500030517578]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "ace_cy3_aly", "seed": 3, "forward_s": 60.34518684679642, "closures": [[5.280132293701172], [5.6105780601501465], [5.393673419952393]], "bond_violations": [0, 0, 1], "angle_violations": [1, 0, 0]}
+{"case": "ace_cy3_aly", "seed": 4, "forward_s": 61.884449020028114, "closures": [[5.870461463928223], [6.162134647369385], [5.227137565612793]], "bond_violations": [0, 2, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cy3_aly", "seed": 5, "forward_s": 41.92362618818879, "closures": [[5.571202754974365], [5.865137100219727], [5.972498416900635]], "bond_violations": [2, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "linear_aly_control", "seed": 3, "forward_s": 23.218923463020474, "closures": [[], [], []], "bond_violations": [1, 0, 0], "angle_violations": [3, 0, 1]}
+{"case": "linear_aly_control", "seed": 4, "forward_s": 23.020727774128318, "closures": [[], [], []], "bond_violations": [1, 1, 0], "angle_violations": [0, 0, 0]}
+{"case": "linear_aly_control", "seed": 5, "forward_s": 23.109647826757282, "closures": [[], [], []], "bond_violations": [0, 0, 1], "angle_violations": [0, 0, 3]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "interchain_control", "seed": 3, "forward_s": 16.58864013198763, "closures": [[1.7137373685836792], [1.6787694692611694], [1.668930172920227]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "interchain_control", "seed": 4, "forward_s": 16.64146814867854, "closures": [[1.6242382526397705], [1.6921403408050537], [1.714584469795227]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "interchain_control", "seed": 5, "forward_s": 16.79735760577023, "closures": [[1.7095643281936646], [1.7162108421325684], [1.747482180595398]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"completed": true, "structures": 36}

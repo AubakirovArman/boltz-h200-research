@@ -1,3 +1,5 @@
+[Intra-chain covalent guidance: 45-sample geometry validation and PR #717 refinement](COVALENT_GUIDANCE_REFINEMENT.md)
+
 [New: template/PDB fixes and covalent-link pilot, including geometry limitations](NEXT_ISSUES_20261104.md)
 
 [Ion/no-ion cofolding pilot: 36 structures, protocol and results](ION_PILOT.md)

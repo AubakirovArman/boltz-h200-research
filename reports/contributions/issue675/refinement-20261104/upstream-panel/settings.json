@@ -1,0 +1,23 @@
+{
+  "label": "upstream-panel",
+  "cases": [
+    "ace_cys",
+    "ace_cy3_aly",
+    "linear_aly_control",
+    "interchain_control"
+  ],
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "recycles": 3,
+  "steps": 200,
+  "samples": 3,
+  "max_parallel_samples": 1,
+  "guidance": "native --use_potentials flags",
+  "all_samples_included": true,
+  "scope": "Single-sequence geometry study, not a speed or structural-accuracy benchmark.",
+  "original": "Exact issue #675 sequence and atom references, with msa: empty.",
+  "others": "Explicitly synthetic generalization/control cases; not the unprovided ALY reporter input."
+}

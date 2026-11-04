@@ -1,0 +1,20 @@
+{
+  "recycles": 3,
+  "diffusion_steps": 200,
+  "samples": 3,
+  "max_parallel_samples": 1,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unsteered_control_seeds": [
+    0
+  ],
+  "all_samples_included": true,
+  "msa": "empty",
+  "templates": false,
+  "guidance": "Native CLI --use_potentials: FK steering and physical guidance enabled; default contact guidance retained.",
+  "rng": "Set torch seed separately before feature construction and before each forward; model loaded once.",
+  "scope": "Direct released model/feature pipeline, not a CLI runtime benchmark."
+}

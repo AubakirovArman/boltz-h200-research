@@ -1,0 +1,2695 @@
+[
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed0_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 2.100764274597168,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3313542604446411,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3264724016189575,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3336718082427979,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3276234865188599,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.340714693069458,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3646599054336548,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3448363542556763,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3394590616226196,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3237996101379395,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.328654408454895,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3381823301315308,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3373122215270996,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.347232699394226,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.2373285293579102,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed0_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.8541744947433472,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3211590051651,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3202269077301025,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3114099502563477,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3033339977264404,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3264082670211792,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3254071474075317,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3455811738967896,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3310415744781494,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3134901523590088,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3112350702285767,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.339684009552002,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3231112957000732,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3206868171691895,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.5543113946914673,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed0_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.6427831649780273,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3520070314407349,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.347863793373108,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3397560119628906,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3387373685836792,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3580102920532227,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3327348232269287,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3402574062347412,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3334472179412842,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3455849885940552,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3420357704162598,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3283171653747559,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3327457904815674,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3550901412963867,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.5131539106369019,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed1_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 2.3269968032836914,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.33364999294281,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3181153535842896,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3417611122131348,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3193204402923584,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3241379261016846,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.336007833480835,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3192945718765259,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3165335655212402,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.323386788368225,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.317002773284912,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3270995616912842,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3185434341430664,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.334375262260437,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.1418980360031128,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed1_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.9172649383544922,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3351541757583618,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3194518089294434,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3446170091629028,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3260241746902466,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3170104026794434,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3557201623916626,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3543204069137573,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3277478218078613,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3173422813415527,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3343474864959717,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3408551216125488,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3324682712554932,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.2958365678787231,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.0645231008529663,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/balanced_0.03/seed1_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.424580693244934,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3356760740280151,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3058487176895142,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3462146520614624,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.2953605651855469,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3237272500991821,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3225024938583374,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.308998703956604,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3201156854629517,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.2889536619186401,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3144046068191528,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.320479154586792,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3049142360687256,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3314402103424072,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.3328388929367065,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed0_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.06611430644989014,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [
+      {
+        "indices": [
+          0,
+          2
+        ],
+        "atoms": [
+          "C",
+          "CH3"
+        ],
+        "distance_A": 1.7228078842163086,
+        "lo_A": 1.294124960899353,
+        "hi_A": 1.6863749027252197
+      }
+    ],
+    "angle_violations": [
+      {
+        "indices": [
+          1,
+          2
+        ],
+        "atoms": [
+          "O",
+          "CH3"
+        ],
+        "distance_A": 2.7184276580810547,
+        "lo_A": 2.01999831199646,
+        "hi_A": 2.688746452331543
+      }
+    ],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 2.1681394577026367,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3331749439239502,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3229988813400269,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3326280117034912,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.327483057975769,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3413201570510864,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.363356113433838,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3465486764907837,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.342023253440857,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3241899013519287,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3289917707443237,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3391362428665161,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3386434316635132,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3503795862197876,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.247189998626709,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed0_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 2.0163960456848145,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [
+      {
+        "indices": [
+          128,
+          129
+        ],
+        "atoms": [
+          "CA",
+          "C"
+        ],
+        "distance_A": 1.2903612852096558,
+        "lo_A": 1.2914999723434448,
+        "hi_A": 1.683000087738037
+      },
+      {
+        "indices": [
+          129,
+          133
+        ],
+        "atoms": [
+          "C",
+          "N1"
+        ],
+        "distance_A": 2.6861677169799805,
+        "lo_A": 1.2356716394424438,
+        "hi_A": 1.6112205982208252
+      }
+    ],
+    "angle_violations": [
+      {
+        "indices": [
+          128,
+          130
+        ],
+        "atoms": [
+          "CA",
+          "O"
+        ],
+        "distance_A": 2.0444393157958984,
+        "lo_A": 2.045546293258667,
+        "hi_A": 2.722491979598999
+      },
+      {
+        "indices": [
+          128,
+          133
+        ],
+        "atoms": [
+          "CA",
+          "N1"
+        ],
+        "distance_A": 1.564468264579773,
+        "lo_A": 2.1663389205932617,
+        "hi_A": 2.8814749717712402
+      },
+      {
+        "indices": [
+          130,
+          133
+        ],
+        "atoms": [
+          "O",
+          "N1"
+        ],
+        "distance_A": 2.989480972290039,
+        "lo_A": 1.9964821338653564,
+        "hi_A": 2.6583781242370605
+      }
+    ],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.7701423168182373,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3380982875823975,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.324169635772705,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3288064002990723,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3202691078186035,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3359835147857666,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3569945096969604,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3312374353408813,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3260375261306763,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3329001665115356,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3209704160690308,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3423092365264893,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.339378833770752,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3353921175003052,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.2930216789245605,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed0_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0002180337905883789,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [
+      {
+        "indices": [
+          129,
+          133
+        ],
+        "atoms": [
+          "C",
+          "N1"
+        ],
+        "distance_A": 1.6114386320114136,
+        "lo_A": 1.2356716394424438,
+        "hi_A": 1.6112205982208252
+      }
+    ],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.53016197681427,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3117741346359253,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3479633331298828,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3298778533935547,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3182162046432495,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3236769437789917,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3037700653076172,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.319795846939087,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3274139165878296,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3027994632720947,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3106541633605957,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3200993537902832,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3203486204147339,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3035541772842407,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.0891107320785522,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed1_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.9240635633468628,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3455734252929688,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3260996341705322,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3391190767288208,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3036738634109497,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3151723146438599,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.322556972503662,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3133769035339355,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3207348585128784,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3209943771362305,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3291234970092773,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3210184574127197,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3123705387115479,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3294987678527832,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.6099284887313843,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed1_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.563204288482666,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3262441158294678,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3095757961273193,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.31234872341156,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3180978298187256,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3085155487060547,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3448811769485474,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3446464538574219,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3177273273468018,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3217830657958984,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3226712942123413,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3261812925338745,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.334625482559204,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3348854780197144,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.1827917098999023,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/connection_0.03/seed1_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.07378816604614258,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [
+      {
+        "indices": [
+          0,
+          2
+        ],
+        "atoms": [
+          "C",
+          "CH3"
+        ],
+        "distance_A": 1.7061903476715088,
+        "lo_A": 1.294124960899353,
+        "hi_A": 1.6863749027252197
+      }
+    ],
+    "angle_violations": [
+      {
+        "indices": [
+          1,
+          2
+        ],
+        "atoms": [
+          "O",
+          "CH3"
+        ],
+        "distance_A": 2.7427191734313965,
+        "lo_A": 2.01999831199646,
+        "hi_A": 2.688746452331543
+      }
+    ],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.81936776638031,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3217276334762573,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3178136348724365,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3472058773040771,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.2981313467025757,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.336441159248352,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3336495161056519,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3245645761489868,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.331931710243225,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3140767812728882,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3333443403244019,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3437038660049438,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3249320983886719,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3275666236877441,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.3397568464279175,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed0_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.8166089057922363,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.273717999458313,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3291029930114746,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3145287036895752,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3127140998840332,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3328169584274292,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.312957763671875,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.335849642753601,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.337599754333496,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3273460865020752,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3239883184432983,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.352240800857544,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3273167610168457,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3164105415344238,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.2288979291915894,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed0_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.5202720165252686,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3195416927337646,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3249657154083252,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3027058839797974,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.296104073524475,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3228474855422974,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3214269876480103,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3244210481643677,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3203953504562378,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3134359121322632,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.317265272140503,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3432058095932007,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3102718591690063,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3218294382095337,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.2964458465576172,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed0_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.6122732162475586,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.324134111404419,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3285256624221802,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.2886719703674316,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3235583305358887,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.324350118637085,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3214914798736572,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3191522359848022,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3132842779159546,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3206579685211182,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.321777105331421,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3347715139389038,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.2968530654907227,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3406476974487305,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.4831677675247192,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed1_sample0.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.7345032691955566,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3504210710525513,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.3220775127410889,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3378499746322632,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3241783380508423,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3485232591629028,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3393856287002563,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3139795064926147,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3245702981948853,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.322489619255066,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.318006992340088,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.320792317390442,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3142082691192627,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3345130681991577,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.33877694606781,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed1_sample1.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.7704715728759766,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.3344066143035889,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.322835087776184,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3456308841705322,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3272587060928345,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3183282613754272,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3596032857894897,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.3551177978515625,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3312026262283325,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.3182789087295532,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3348482847213745,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3426047563552856,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3371816873550415,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3194316625595093,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.1910556554794312,
+        "outside_buffered_amide_reference": true
+      }
+    ]
+  },
+  {
+    "file": "reports/contributions/issue675/refinement-20261104/force-sweep/geometry_0.15/seed1_sample2.npz",
+    "energies": {
+      "SymmetricChainCOMPotential": 0.0,
+      "VDWOverlapPotential": 0.0,
+      "ConnectionsPotential": 0.0,
+      "PoseBustersPotential": 0.0,
+      "ChiralAtomPotential": 0.0,
+      "StereoBondPotential": 0.0,
+      "PlanarBondPotential": 0.0,
+      "ContactPotentital": 0.0,
+      "TemplateReferencePotential": 0.0
+    },
+    "bond_violations": [],
+    "angle_violations": [],
+    "backbone_amide_reference_A": [
+      1.2356716226759186,
+      1.6112206577261812
+    ],
+    "backbone": [
+      {
+        "residues": [
+          1,
+          2
+        ],
+        "distance_A": 1.814882516860962,
+        "outside_buffered_amide_reference": true
+      },
+      {
+        "residues": [
+          2,
+          3
+        ],
+        "distance_A": 1.343782901763916,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          3,
+          4
+        ],
+        "distance_A": 1.313767910003662,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          4,
+          5
+        ],
+        "distance_A": 1.3600687980651855,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          5,
+          6
+        ],
+        "distance_A": 1.3026509284973145,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          6,
+          7
+        ],
+        "distance_A": 1.3455158472061157,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          7,
+          8
+        ],
+        "distance_A": 1.3344788551330566,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          8,
+          9
+        ],
+        "distance_A": 1.317146897315979,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          9,
+          10
+        ],
+        "distance_A": 1.3356537818908691,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          10,
+          11
+        ],
+        "distance_A": 1.326475977897644,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          11,
+          12
+        ],
+        "distance_A": 1.3192787170410156,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          12,
+          13
+        ],
+        "distance_A": 1.3382846117019653,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          13,
+          14
+        ],
+        "distance_A": 1.3252155780792236,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          14,
+          15
+        ],
+        "distance_A": 1.3343491554260254,
+        "outside_buffered_amide_reference": false
+      },
+      {
+        "residues": [
+          15,
+          16
+        ],
+        "distance_A": 1.2858449220657349,
+        "outside_buffered_amide_reference": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,312 @@
+{
+  "rows": [
+    {
+      "case": "original",
+      "cif": "reports/contributions/issue675/refinement-20261104/native-cli-final/boltz_results_cli-final-input/predictions/original/original_model_0.cif",
+      "atoms": 134,
+      "closure_A": 1.887223482131958,
+      "lower_A": 1.5837500095367432,
+      "upper_A": 2.036250114440918,
+      "closure_in_range": true,
+      "geometry": {
+        "energies": {
+          "SymmetricChainCOMPotential": 0.0,
+          "VDWOverlapPotential": 0.0,
+          "ConnectionsPotential": 0.0,
+          "PoseBustersPotential": 0.0,
+          "ChiralAtomPotential": 0.0,
+          "StereoBondPotential": 0.0,
+          "PlanarBondPotential": 0.0,
+          "IntraChainGeometryPotential": 0.0,
+          "ContactPotentital": 0.0,
+          "TemplateReferencePotential": 0.0
+        },
+        "bond_violations": [],
+        "angle_violations": [],
+        "backbone_amide_reference_A": [
+          1.2356716226759186,
+          1.6112206577261812
+        ],
+        "backbone": [
+          {
+            "residues": [
+              1,
+              2
+            ],
+            "distance_A": 1.60405695438385,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              2,
+              3
+            ],
+            "distance_A": 1.3332754373550415,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              3,
+              4
+            ],
+            "distance_A": 1.307813286781311,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              4,
+              5
+            ],
+            "distance_A": 1.3316758871078491,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              5,
+              6
+            ],
+            "distance_A": 1.3205041885375977,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              6,
+              7
+            ],
+            "distance_A": 1.3322079181671143,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              7,
+              8
+            ],
+            "distance_A": 1.3510428667068481,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              8,
+              9
+            ],
+            "distance_A": 1.3327666521072388,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              9,
+              10
+            ],
+            "distance_A": 1.3152183294296265,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              10,
+              11
+            ],
+            "distance_A": 1.3180309534072876,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              11,
+              12
+            ],
+            "distance_A": 1.3300096988677979,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              12,
+              13
+            ],
+            "distance_A": 1.3360674381256104,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              13,
+              14
+            ],
+            "distance_A": 1.3312551975250244,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              14,
+              15
+            ],
+            "distance_A": 1.3336114883422852,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              15,
+              16
+            ],
+            "distance_A": 1.4427250623703003,
+            "outside_buffered_amide_reference": false
+          }
+        ]
+      },
+      "confidence_finite": true
+    },
+    {
+      "case": "ace_cy3_aly",
+      "cif": "reports/contributions/issue675/refinement-20261104/native-cli-final/boltz_results_cli-final-input/predictions/ace_cy3_aly/ace_cy3_aly_model_0.cif",
+      "atoms": 135,
+      "closure_A": 1.9054031372070312,
+      "lower_A": 1.5837500095367432,
+      "upper_A": 2.036250114440918,
+      "closure_in_range": true,
+      "geometry": {
+        "energies": {
+          "SymmetricChainCOMPotential": 0.0,
+          "VDWOverlapPotential": 0.0,
+          "ConnectionsPotential": 0.0,
+          "PoseBustersPotential": 0.0,
+          "ChiralAtomPotential": 0.0,
+          "StereoBondPotential": 0.0,
+          "PlanarBondPotential": 0.0,
+          "IntraChainGeometryPotential": 0.0,
+          "ContactPotentital": 0.0,
+          "TemplateReferencePotential": 0.0
+        },
+        "bond_violations": [],
+        "angle_violations": [],
+        "backbone_amide_reference_A": [
+          1.2356716226759186,
+          1.6112206577261812
+        ],
+        "backbone": [
+          {
+            "residues": [
+              1,
+              2
+            ],
+            "distance_A": 1.5318201780319214,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              2,
+              3
+            ],
+            "distance_A": 1.3317471742630005,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              3,
+              4
+            ],
+            "distance_A": 1.3384158611297607,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              4,
+              5
+            ],
+            "distance_A": 1.3365756273269653,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              5,
+              6
+            ],
+            "distance_A": 1.3163312673568726,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              6,
+              7
+            ],
+            "distance_A": 1.3101489543914795,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              7,
+              8
+            ],
+            "distance_A": 1.2505244016647339,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              8,
+              9
+            ],
+            "distance_A": 1.3828160762786865,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              9,
+              10
+            ],
+            "distance_A": 1.328721046447754,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              10,
+              11
+            ],
+            "distance_A": 1.3166595697402954,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              11,
+              12
+            ],
+            "distance_A": 1.3229776620864868,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              12,
+              13
+            ],
+            "distance_A": 1.3416146039962769,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              13,
+              14
+            ],
+            "distance_A": 1.3469531536102295,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              14,
+              15
+            ],
+            "distance_A": 1.317061424255371,
+            "outside_buffered_amide_reference": false
+          },
+          {
+            "residues": [
+              15,
+              16
+            ],
+            "distance_A": 1.31013023853302,
+            "outside_buffered_amide_reference": false
+          }
+        ]
+      },
+      "confidence_finite": true
+    }
+  ],
+  "all_closures_in_range": true,
+  "modified_bond_violations": 0,
+  "modified_angle_distance_violations": 0,
+  "peptide_bond_violations": 0
+}

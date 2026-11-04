@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/mnt/data/arman-projects/boltz-h200/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/data/feature/test_covalent_connection_features.py",
+    "tests/model/potentials/test_intrachain_geometry.py"
+  ],
+  "exit_code": 0,
+  "commit": "0d41317911426090c5ac8d663a0866d025f76d5b"
+}

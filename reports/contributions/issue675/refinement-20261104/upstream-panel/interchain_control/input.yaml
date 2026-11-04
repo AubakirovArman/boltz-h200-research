@@ -1,0 +1,20 @@
+version: 1
+sequences:
+- protein:
+    id: A
+    sequence: GACGYYPR
+    msa: empty
+- protein:
+    id: B
+    sequence: GAVACGYY
+    msa: empty
+constraints:
+- bond:
+    atom1:
+    - A
+    - 3
+    - SG
+    atom2:
+    - B
+    - 5
+    - SG

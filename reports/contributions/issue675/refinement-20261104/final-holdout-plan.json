@@ -1,0 +1,13 @@
+{
+  "source_commit": "0d41317911426090c5ac8d663a0866d025f76d5b",
+  "cases": [
+    "original",
+    "ace_cys",
+    "ace_cy3_aly"
+  ],
+  "seeds": [
+    2026
+  ],
+  "samples_per_case": 3,
+  "reason": "One prespecified additional seed after force and bound development; keep all outcomes and do not select samples."
+}

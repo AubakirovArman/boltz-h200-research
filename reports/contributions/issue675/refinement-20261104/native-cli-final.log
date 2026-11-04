@@ -1,0 +1,31 @@
+Seed set to 0
+Checking input data.
+Processing 2 inputs with 1 threads.
+  0%|          | 0/2 [00:00<?, ?it/s]Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+100%|██████████| 2/2 [00:00<00:00, 89.87it/s]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+Running structure prediction for 2 inputs.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+You are using a CUDA device ('NVIDIA H200') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [GPU-6b984734-8ed6-11dd-3b9a-0b6c36ba5e11]
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:425: The 'predict_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=191` in the `DataLoader` to improve performance.
+Predicting: |          | 0/? [00:00<?, ?it/s]Predicting:   0%|          | 0/2 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/cuequivariance_ops_torch/utils.py:158: UserWarning: 
+==========================================================================
+cuequivariance triangle_attention: FALLING BACK to the slow PyTorch
+reference path instead of the fast SM100f kernel.
+  Why: GPU compute capability 9.0 is not the supported SM100f family (10.0 / 10.3 / 10.7).
+  Fix: run on a B200 (sm_100), B300 (sm_103), or Rubin (sm_107) GPU.
+  (Short sequences also fall back by design; tune the cutoff with the
+   CUEQ_TRIATTN_FALLBACK_THRESHOLD environment variable.)
+==========================================================================
+  return func(*args, **kwargs)
+Predicting DataLoader 0:  50%|█████     | 1/2 [00:34<00:34,  0.03it/s]Predicting DataLoader 0: 100%|██████████| 2/2 [01:06<00:00,  0.03it/s]Number of failed examples: 0
+Predicting DataLoader 0: 100%|██████████| 2/2 [01:06<00:00,  0.03it/s]

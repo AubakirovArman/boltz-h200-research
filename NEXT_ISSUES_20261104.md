@@ -1,3 +1,5 @@
+> **Follow-up:** PR #717 has been refined and the geometry regression below is resolved on the expanded validation panel. See [the new report](COVALENT_GUIDANCE_REFINEMENT.md). This page retains the original pilot and its limitations as historical evidence.
+
 # Boltz follow-up: template parsing, coordinate export and covalent links
 
 Three issue investigations, based on upstream `b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc`. Each PR has an independent branch. No maintainer approval or merge is implied.

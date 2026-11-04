@@ -1,0 +1,20 @@
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/cuequivariance_ops_torch/utils.py:158: UserWarning: 
+==========================================================================
+cuequivariance triangle_attention: FALLING BACK to the slow PyTorch
+reference path instead of the fast SM100f kernel.
+  Why: GPU compute capability 9.0 is not the supported SM100f family (10.0 / 10.3 / 10.7).
+  Fix: run on a B200 (sm_100), B300 (sm_103), or Rubin (sm_107) GPU.
+  (Short sequences also fall back by design; tune the cutoff with the
+   CUEQ_TRIATTN_FALLBACK_THRESHOLD environment variable.)
+==========================================================================
+  return func(*args, **kwargs)
+{"case": "original", "seed": 2026, "forward_s": 31.331415911205113, "closures": [[1.8551169633865356], [1.9481741189956665], [1.9698506593704224]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "ace_cys", "seed": 2026, "forward_s": 17.354684992227703, "closures": [[1.9847348928451538], [1.945070505142212], [1.9403818845748901]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "ace_cy3_aly", "seed": 2026, "forward_s": 20.466981190256774, "closures": [[1.905395269393921], [1.8859782218933105], [1.9141026735305786]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"completed": true, "structures": 9}

@@ -1,0 +1,10 @@
+{
+  "/mnt/data/arman-projects/boltz-h200/research/contributions/covalent_refinement_validation.py": "e4ee21450399458792a13d1b0187bd55ab8a9a073d01a8e92f9a4989bbce38f4",
+  "/mnt/data/arman-projects/boltz-h200/research/contributions/covalent_geometry_audit.py": "0307bd3bf453ac8157086227795e6f1463e5143721a84dc37baf3b7d502edf7d",
+  "/mnt/data/arman-projects/boltz-h200/research/contributions/covalent_guidance_pilot.py": "1af1f4751ed460da7209d7eb297e7c4f48167759ab2004027ff8855531ec5f1a",
+  "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/data/feature/featurizerv2.py": "2d0566575c31e3353e8bd11ef761c975e37aa9bf75bd18fe558268ab5f34885c",
+  "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/data/parse/schema.py": "c0dae4c89c4c4a22175a433b5a0c68860329d2a292c76224328bdde19b73b743",
+  "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/model/modules/diffusionv2.py": "e68643da577decddaef25e97313fa0d014d5653752d0a97282ec1a78665d697a",
+  "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/model/potentials/potentials.py": "7eb8d563b8de1f476120995cdc2e56da937dd864de4218b53a4927f7e9b1c151",
+  "/mnt/data/arman-projects/boltz-h200/contributions/boltz/src/boltz/data/write/mmcif.py": "ebf4c5773903bb4f5dbe8121ece2def65855c7f5947157586cca74d26ec3337c"
+}

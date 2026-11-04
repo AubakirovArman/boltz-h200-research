@@ -1,0 +1,35 @@
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/mnt/data/arman-projects/boltz-h200/.venv/lib/python3.12/site-packages/cuequivariance_ops_torch/utils.py:158: UserWarning: 
+==========================================================================
+cuequivariance triangle_attention: FALLING BACK to the slow PyTorch
+reference path instead of the fast SM100f kernel.
+  Why: GPU compute capability 9.0 is not the supported SM100f family (10.0 / 10.3 / 10.7).
+  Fix: run on a B200 (sm_100), B300 (sm_103), or Rubin (sm_107) GPU.
+  (Short sequences also fall back by design; tune the cutoff with the
+   CUEQ_TRIATTN_FALLBACK_THRESHOLD environment variable.)
+==========================================================================
+  return func(*args, **kwargs)
+{"case": "original", "seed": 3, "forward_s": 22.12210056465119, "closures": [[1.9982448816299438], [1.9235973358154297], [1.905400276184082]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "original", "seed": 4, "forward_s": 20.633442362304777, "closures": [[1.8805612325668335], [1.904505729675293], [1.8973253965377808]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "original", "seed": 5, "forward_s": 20.551850415300578, "closures": [[1.9012000560760498], [1.8551383018493652], [1.922502040863037]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "ace_cys", "seed": 3, "forward_s": 17.5613292590715, "closures": [[1.978934645652771], [1.8864535093307495], [1.9744807481765747]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cys", "seed": 4, "forward_s": 17.56577625218779, "closures": [[1.9563254117965698], [1.9949734210968018], [1.8931385278701782]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cys", "seed": 5, "forward_s": 17.588223177939653, "closures": [[1.9607118368148804], [1.9213942289352417], [1.9813958406448364]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "ace_cy3_aly", "seed": 3, "forward_s": 20.554188741836697, "closures": [[1.827769160270691], [1.9959436655044556], [1.9522526264190674]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cy3_aly", "seed": 4, "forward_s": 20.76969782123342, "closures": [[1.9092448949813843], [1.8970835208892822], [1.873104453086853]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "ace_cy3_aly", "seed": 5, "forward_s": 20.891509845852852, "closures": [[1.9338446855545044], [1.8954490423202515], [1.8827437162399292]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "linear_aly_control", "seed": 3, "forward_s": 13.936587277334183, "closures": [[], [], []], "bond_violations": [1, 0, 0], "angle_violations": [3, 0, 1]}
+{"case": "linear_aly_control", "seed": 4, "forward_s": 13.994624787010252, "closures": [[], [], []], "bond_violations": [1, 1, 0], "angle_violations": [0, 0, 0]}
+{"case": "linear_aly_control", "seed": 5, "forward_s": 13.986715755891055, "closures": [[], [], []], "bond_violations": [0, 0, 1], "angle_violations": [0, 0, 3]}
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+{"case": "interchain_control", "seed": 3, "forward_s": 10.136262012645602, "closures": [[1.7137373685836792], [1.6787694692611694], [1.668930172920227]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "interchain_control", "seed": 4, "forward_s": 10.020274109207094, "closures": [[1.6242382526397705], [1.6921403408050537], [1.714584469795227]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"case": "interchain_control", "seed": 5, "forward_s": 10.053828631993383, "closures": [[1.7095643281936646], [1.7162108421325684], [1.747482180595398]], "bond_violations": [0, 0, 0], "angle_violations": [0, 0, 0]}
+{"completed": true, "structures": 45}

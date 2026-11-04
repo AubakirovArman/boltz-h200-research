@@ -1,0 +1,25 @@
+[
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "/mnt/data/arman-projects/boltz-h200/.venv/bin/ruff",
+      "check",
+      "--select",
+      "E9,F63,F7,F82",
+      "src/boltz/data/feature/featurizerv2.py",
+      "src/boltz/model/potentials/potentials.py",
+      "tests/data/feature/test_covalent_connection_features.py",
+      "tests/model/potentials/test_intrachain_geometry.py"
+    ],
+    "exit_code": 0,
+    "output": "warning: The following rules have been removed and ignoring them has no effect:\n    - ANN101\n    - PT004\n    - PT005\n\nAll checks passed!\n"
+  }
+]

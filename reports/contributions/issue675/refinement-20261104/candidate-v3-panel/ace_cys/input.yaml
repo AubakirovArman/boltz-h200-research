@@ -1,0 +1,20 @@
+version: 1
+sequences:
+- protein:
+    id: B
+    sequence: GYYPRVARLIFVAIYC
+    msa: empty
+    cyclic: false
+    modifications:
+    - position: 1
+      ccd: ACE
+constraints:
+- bond:
+    atom1:
+    - B
+    - 1
+    - CH3
+    atom2:
+    - B
+    - 16
+    - SG

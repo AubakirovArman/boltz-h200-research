@@ -1,0 +1,6 @@
+{
+  "reason": "Held-out seed 3 sample 2 closes to 1.565 A, below the 1.584 A diagnostic lower bound from covalent radii. Add a lower bound before further validation.",
+  "pid": 498399,
+  "completed_structures": 6,
+  "all_completed_samples_retained": true
+}

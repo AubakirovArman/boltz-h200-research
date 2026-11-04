@@ -1,0 +1,312 @@
+data_model
+_entry.id model
+_struct.entry_id model
+_struct.pdbx_model_details .
+_struct.pdbx_structure_determination_methodology computational
+_struct.title .
+_audit_conform.dict_location https://raw.githubusercontent.com/ihmwg/ModelCIF/d18ba38/base/mmcif_ma-core.dic
+_audit_conform.dict_name mmcif_ma.dic
+_audit_conform.dict_version 1.4.6
+#
+loop_
+_chem_comp.id
+_chem_comp.type
+_chem_comp.name
+_chem_comp.formula
+_chem_comp.formula_weight
+_chem_comp.ma_provenance
+ACE 'L-peptide linking' . . . 'CCD Core'
+ALA 'L-peptide linking' . . . 'CCD Core'
+ARG 'L-peptide linking' . . . 'CCD Core'
+CY3 'L-peptide linking' . . . 'CCD Core'
+ILE 'L-peptide linking' . . . 'CCD Core'
+LEU 'L-peptide linking' . . . 'CCD Core'
+PHE 'L-peptide linking' . . . 'CCD Core'
+PRO 'L-peptide linking' . . . 'CCD Core'
+TYR 'L-peptide linking' . . . 'CCD Core'
+VAL 'L-peptide linking' . . . 'CCD Core'
+#
+#
+loop_
+_entity.id
+_entity.type
+_entity.src_method
+_entity.pdbx_description
+_entity.formula_weight
+_entity.pdbx_number_of_molecules
+_entity.details
+1 polymer man . . 1 .
+#
+#
+loop_
+_entity_poly.entity_id
+_entity_poly.type
+_entity_poly.nstd_linkage
+_entity_poly.nstd_monomer
+_entity_poly.pdbx_strand_id
+_entity_poly.pdbx_seq_one_letter_code
+_entity_poly.pdbx_seq_one_letter_code_can
+1 polypeptide(L) no no B
+;(ACE)(TYR)(TYR)(PRO)(ARG)(VAL)(ALA)(ARG)(LEU)(ILE)(PHE)(VAL)(ALA)(ILE)
+(TYR)(CY3)
+;
+XXXXXXXXXXXXXXXX
+#
+#
+loop_
+_entity_poly_seq.entity_id
+_entity_poly_seq.num
+_entity_poly_seq.mon_id
+_entity_poly_seq.hetero
+1 1 ACE .
+1 2 TYR .
+1 3 TYR .
+1 4 PRO .
+1 5 ARG .
+1 6 VAL .
+1 7 ALA .
+1 8 ARG .
+1 9 LEU .
+1 10 ILE .
+1 11 PHE .
+1 12 VAL .
+1 13 ALA .
+1 14 ILE .
+1 15 TYR .
+1 16 CY3 .
+#
+#
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+_struct_asym.details
+B 1 'Model subunit B'
+#
+#
+loop_
+_pdbx_poly_seq_scheme.asym_id
+_pdbx_poly_seq_scheme.entity_id
+_pdbx_poly_seq_scheme.seq_id
+_pdbx_poly_seq_scheme.mon_id
+_pdbx_poly_seq_scheme.pdb_seq_num
+_pdbx_poly_seq_scheme.auth_seq_num
+_pdbx_poly_seq_scheme.pdb_mon_id
+_pdbx_poly_seq_scheme.auth_mon_id
+_pdbx_poly_seq_scheme.pdb_strand_id
+_pdbx_poly_seq_scheme.pdb_ins_code
+B 1 1 ACE 1 1 ACE ACE B .
+B 1 2 TYR 2 2 TYR TYR B .
+B 1 3 TYR 3 3 TYR TYR B .
+B 1 4 PRO 4 4 PRO PRO B .
+B 1 5 ARG 5 5 ARG ARG B .
+B 1 6 VAL 6 6 VAL VAL B .
+B 1 7 ALA 7 7 ALA ALA B .
+B 1 8 ARG 8 8 ARG ARG B .
+B 1 9 LEU 9 9 LEU LEU B .
+B 1 10 ILE 10 10 ILE ILE B .
+B 1 11 PHE 11 11 PHE PHE B .
+B 1 12 VAL 12 12 VAL VAL B .
+B 1 13 ALA 13 13 ALA ALA B .
+B 1 14 ILE 14 14 ILE ILE B .
+B 1 15 TYR 15 15 TYR TYR B .
+B 1 16 CY3 16 16 CY3 CY3 B .
+#
+#
+loop_
+_ma_data.id
+_ma_data.name
+_ma_data.content_type
+_ma_data.content_type_other_details
+1 . target .
+2 Model 'model coordinates' .
+#
+#
+loop_
+_ma_target_entity.entity_id
+_ma_target_entity.data_id
+_ma_target_entity.origin
+1 1 designed
+#
+#
+loop_
+_ma_target_entity_instance.asym_id
+_ma_target_entity_instance.entity_id
+_ma_target_entity_instance.details
+B 1 'Model subunit B'
+#
+#
+loop_
+_ma_model_list.ordinal_id
+_ma_model_list.model_id
+_ma_model_list.model_group_id
+_ma_model_list.model_name
+_ma_model_list.model_group_name
+_ma_model_list.data_id
+_ma_model_list.model_type
+_ma_model_list.model_type_other_details
+1 1 1 Model 'All models' 2 'Ab initio model' .
+#
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_seq_id
+_atom_site.auth_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.label_asym_id
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.label_entity_id
+_atom_site.auth_asym_id
+_atom_site.auth_comp_id
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C C . ACE 1 1 ? B -4.74060 -5.47178 8.20962 1 1 B ACE 100.000 1
+ATOM 2 O O . ACE 1 1 ? B -5.92140 -5.13744 8.42128 1 1 B ACE 100.000 1
+ATOM 3 C CH3 . ACE 1 1 ? B -3.69883 -6.52620 8.71557 1 1 B ACE 100.000 1
+ATOM 4 N N . TYR 2 2 ? B -4.42609 -4.09798 7.32145 1 1 B TYR 100.000 1
+ATOM 5 C CA . TYR 2 2 ? B -4.81223 -2.78178 6.85077 1 1 B TYR 100.000 1
+ATOM 6 C C . TYR 2 2 ? B -4.97783 -2.78351 5.34197 1 1 B TYR 100.000 1
+ATOM 7 O O . TYR 2 2 ? B -4.43379 -3.63884 4.64746 1 1 B TYR 100.000 1
+ATOM 8 C CB . TYR 2 2 ? B -3.74970 -1.74808 7.24540 1 1 B TYR 100.000 1
+ATOM 9 C CG . TYR 2 2 ? B -3.46478 -1.70704 8.71893 1 1 B TYR 100.000 1
+ATOM 10 C CD1 . TYR 2 2 ? B -4.28975 -1.00515 9.58034 1 1 B TYR 100.000 1
+ATOM 11 C CD2 . TYR 2 2 ? B -2.36948 -2.38758 9.24560 1 1 B TYR 100.000 1
+ATOM 12 C CE1 . TYR 2 2 ? B -4.03361 -0.97633 10.94646 1 1 B TYR 100.000 1
+ATOM 13 C CE2 . TYR 2 2 ? B -2.10672 -2.36510 10.60831 1 1 B TYR 100.000 1
+ATOM 14 C CZ . TYR 2 2 ? B -2.93998 -1.65899 11.46086 1 1 B TYR 100.000 1
+ATOM 15 O OH . TYR 2 2 ? B -2.68119 -1.63194 12.80090 1 1 B TYR 100.000 1
+ATOM 16 N N . TYR 3 3 ? B -5.72780 -1.84584 4.84207 1 1 B TYR 100.000 1
+ATOM 17 C CA . TYR 3 3 ? B -5.95410 -1.72751 3.41028 1 1 B TYR 100.000 1
+ATOM 18 C C . TYR 3 3 ? B -4.79642 -1.00446 2.73043 1 1 B TYR 100.000 1
+ATOM 19 O O . TYR 3 3 ? B -4.13619 -0.16032 3.33927 1 1 B TYR 100.000 1
+ATOM 20 C CB . TYR 3 3 ? B -7.27877 -1.00397 3.13127 1 1 B TYR 100.000 1
+ATOM 21 C CG . TYR 3 3 ? B -7.36049 0.36635 3.74035 1 1 B TYR 100.000 1
+ATOM 22 C CD1 . TYR 3 3 ? B -6.82425 1.46391 3.07432 1 1 B TYR 100.000 1
+ATOM 23 C CD2 . TYR 3 3 ? B -7.97080 0.56366 4.96874 1 1 B TYR 100.000 1
+ATOM 24 C CE1 . TYR 3 3 ? B -6.89928 2.73377 3.62845 1 1 B TYR 100.000 1
+ATOM 25 C CE2 . TYR 3 3 ? B -8.04923 1.83060 5.52745 1 1 B TYR 100.000 1
+ATOM 26 C CZ . TYR 3 3 ? B -7.51159 2.91331 4.85546 1 1 B TYR 100.000 1
+ATOM 27 O OH . TYR 3 3 ? B -7.58384 4.16158 5.40158 1 1 B TYR 100.000 1
+ATOM 28 N N . PRO 4 4 ? B -4.50993 -1.36543 1.47726 1 1 B PRO 100.000 1
+ATOM 29 C CA . PRO 4 4 ? B -3.40677 -0.73744 0.75331 1 1 B PRO 100.000 1
+ATOM 30 C C . PRO 4 4 ? B -3.66891 0.73388 0.44346 1 1 B PRO 100.000 1
+ATOM 31 O O . PRO 4 4 ? B -4.80905 1.17839 0.40486 1 1 B PRO 100.000 1
+ATOM 32 C CB . PRO 4 4 ? B -3.30173 -1.57724 -0.52268 1 1 B PRO 100.000 1
+ATOM 33 C CG . PRO 4 4 ? B -4.68202 -2.10946 -0.71508 1 1 B PRO 100.000 1
+ATOM 34 C CD . PRO 4 4 ? B -5.16001 -2.40694 0.67794 1 1 B PRO 100.000 1
+ATOM 35 N N . ARG 5 5 ? B -2.60959 1.46662 0.24613 1 1 B ARG 100.000 1
+ATOM 36 C CA . ARG 5 5 ? B -2.71457 2.87757 -0.07129 1 1 B ARG 100.000 1
+ATOM 37 C C . ARG 5 5 ? B -1.50749 3.31032 -0.90073 1 1 B ARG 100.000 1
+ATOM 38 O O . ARG 5 5 ? B -0.49559 2.61869 -0.96742 1 1 B ARG 100.000 1
+ATOM 39 C CB . ARG 5 5 ? B -2.80045 3.72749 1.20785 1 1 B ARG 100.000 1
+ATOM 40 C CG . ARG 5 5 ? B -1.57874 3.61508 2.11178 1 1 B ARG 100.000 1
+ATOM 41 C CD . ARG 5 5 ? B -1.65238 4.62203 3.24655 1 1 B ARG 100.000 1
+ATOM 42 N NE . ARG 5 5 ? B -0.49980 4.52488 4.14217 1 1 B ARG 100.000 1
+ATOM 43 C CZ . ARG 5 5 ? B -0.48261 3.83657 5.26928 1 1 B ARG 100.000 1
+ATOM 44 N NH1 . ARG 5 5 ? B -1.56299 3.18364 5.66149 1 1 B ARG 100.000 1
+ATOM 45 N NH2 . ARG 5 5 ? B 0.61811 3.81687 6.01284 1 1 B ARG 100.000 1
+ATOM 46 N N . VAL 6 6 ? B -1.62995 4.45066 -1.53613 1 1 B VAL 100.000 1
+ATOM 47 C CA . VAL 6 6 ? B -0.54371 4.97068 -2.34849 1 1 B VAL 100.000 1
+ATOM 48 C C . VAL 6 6 ? B 0.09155 6.14270 -1.61402 1 1 B VAL 100.000 1
+ATOM 49 O O . VAL 6 6 ? B -0.58825 7.09106 -1.23748 1 1 B VAL 100.000 1
+ATOM 50 C CB . VAL 6 6 ? B -1.03441 5.43912 -3.72977 1 1 B VAL 100.000 1
+ATOM 51 C CG1 . VAL 6 6 ? B 0.12144 6.03135 -4.51714 1 1 B VAL 100.000 1
+ATOM 52 C CG2 . VAL 6 6 ? B -1.63766 4.26611 -4.48614 1 1 B VAL 100.000 1
+ATOM 53 N N . ALA 7 7 ? B 1.38508 6.05948 -1.38945 1 1 B ALA 100.000 1
+ATOM 54 C CA . ALA 7 7 ? B 2.10956 7.10366 -0.68859 1 1 B ALA 100.000 1
+ATOM 55 C C . ALA 7 7 ? B 3.37156 7.43872 -1.46415 1 1 B ALA 100.000 1
+ATOM 56 O O . ALA 7 7 ? B 4.20831 6.57220 -1.69734 1 1 B ALA 100.000 1
+ATOM 57 C CB . ALA 7 7 ? B 2.47560 6.66436 0.72054 1 1 B ALA 100.000 1
+ATOM 58 N N . ARG 8 8 ? B 3.49059 8.71352 -1.87114 1 1 B ARG 100.000 1
+ATOM 59 C CA . ARG 8 8 ? B 4.65057 9.16330 -2.63094 1 1 B ARG 100.000 1
+ATOM 60 C C . ARG 8 8 ? B 4.88432 8.28431 -3.86225 1 1 B ARG 100.000 1
+ATOM 61 O O . ARG 8 8 ? B 6.00803 7.89596 -4.16260 1 1 B ARG 100.000 1
+ATOM 62 C CB . ARG 8 8 ? B 5.90307 9.18274 -1.75067 1 1 B ARG 100.000 1
+ATOM 63 C CG . ARG 8 8 ? B 5.78410 10.12889 -0.56491 1 1 B ARG 100.000 1
+ATOM 64 C CD . ARG 8 8 ? B 7.06874 10.15816 0.24225 1 1 B ARG 100.000 1
+ATOM 65 N NE . ARG 8 8 ? B 7.36544 8.85768 0.85065 1 1 B ARG 100.000 1
+ATOM 66 C CZ . ARG 8 8 ? B 6.83480 8.41653 1.98307 1 1 B ARG 100.000 1
+ATOM 67 N NH1 . ARG 8 8 ? B 5.96845 9.17512 2.65734 1 1 B ARG 100.000 1
+ATOM 68 N NH2 . ARG 8 8 ? B 7.17074 7.23175 2.44717 1 1 B ARG 100.000 1
+ATOM 69 N N . LEU 9 9 ? B 3.79064 7.98805 -4.56383 1 1 B LEU 100.000 1
+ATOM 70 C CA . LEU 9 9 ? B 3.83276 7.17267 -5.76958 1 1 B LEU 100.000 1
+ATOM 71 C C . LEU 9 9 ? B 4.27865 5.73417 -5.50327 1 1 B LEU 100.000 1
+ATOM 72 O O . LEU 9 9 ? B 4.69880 5.02900 -6.41696 1 1 B LEU 100.000 1
+ATOM 73 C CB . LEU 9 9 ? B 4.74018 7.80298 -6.83379 1 1 B LEU 100.000 1
+ATOM 74 C CG . LEU 9 9 ? B 4.31984 9.17624 -7.33789 1 1 B LEU 100.000 1
+ATOM 75 C CD1 . LEU 9 9 ? B 5.33235 9.69210 -8.34531 1 1 B LEU 100.000 1
+ATOM 76 C CD2 . LEU 9 9 ? B 2.92578 9.10358 -7.95523 1 1 B LEU 100.000 1
+ATOM 77 N N . ILE 10 10 ? B 4.18244 5.29179 -4.27855 1 1 B ILE 100.000 1
+ATOM 78 C CA . ILE 10 10 ? B 4.55582 3.93759 -3.90554 1 1 B ILE 100.000 1
+ATOM 79 C C . ILE 10 10 ? B 3.31831 3.22207 -3.38734 1 1 B ILE 100.000 1
+ATOM 80 O O . ILE 10 10 ? B 2.60029 3.74226 -2.53778 1 1 B ILE 100.000 1
+ATOM 81 C CB . ILE 10 10 ? B 5.64882 3.92577 -2.81584 1 1 B ILE 100.000 1
+ATOM 82 C CG1 . ILE 10 10 ? B 6.90733 4.63963 -3.31177 1 1 B ILE 100.000 1
+ATOM 83 C CG2 . ILE 10 10 ? B 5.96270 2.48697 -2.41308 1 1 B ILE 100.000 1
+ATOM 84 C CD1 . ILE 10 10 ? B 7.96508 4.80519 -2.23062 1 1 B ILE 100.000 1
+ATOM 85 N N . PHE 11 11 ? B 3.07902 2.05424 -3.93559 1 1 B PHE 100.000 1
+ATOM 86 C CA . PHE 11 11 ? B 1.93307 1.27788 -3.50478 1 1 B PHE 100.000 1
+ATOM 87 C C . PHE 11 11 ? B 2.29699 0.56599 -2.20938 1 1 B PHE 100.000 1
+ATOM 88 O O . PHE 11 11 ? B 3.18110 -0.28670 -2.18344 1 1 B PHE 100.000 1
+ATOM 89 C CB . PHE 11 11 ? B 1.53310 0.26118 -4.57519 1 1 B PHE 100.000 1
+ATOM 90 C CG . PHE 11 11 ? B 0.33986 -0.56629 -4.17601 1 1 B PHE 100.000 1
+ATOM 91 C CD1 . PHE 11 11 ? B -0.93795 -0.01662 -4.19934 1 1 B PHE 100.000 1
+ATOM 92 C CD2 . PHE 11 11 ? B 0.49245 -1.88545 -3.77289 1 1 B PHE 100.000 1
+ATOM 93 C CE1 . PHE 11 11 ? B -2.04787 -0.77207 -3.82712 1 1 B PHE 100.000 1
+ATOM 94 C CE2 . PHE 11 11 ? B -0.61145 -2.64953 -3.40184 1 1 B PHE 100.000 1
+ATOM 95 C CZ . PHE 11 11 ? B -1.87848 -2.09314 -3.42786 1 1 B PHE 100.000 1
+ATOM 96 N N . VAL 12 12 ? B 1.63322 0.95925 -1.13934 1 1 B VAL 100.000 1
+ATOM 97 C CA . VAL 12 12 ? B 1.90695 0.38278 0.16262 1 1 B VAL 100.000 1
+ATOM 98 C C . VAL 12 12 ? B 0.85427 -0.66518 0.49585 1 1 B VAL 100.000 1
+ATOM 99 O O . VAL 12 12 ? B -0.27204 -0.33962 0.84893 1 1 B VAL 100.000 1
+ATOM 100 C CB . VAL 12 12 ? B 1.92780 1.46274 1.25646 1 1 B VAL 100.000 1
+ATOM 101 C CG1 . VAL 12 12 ? B 2.25839 0.83848 2.60673 1 1 B VAL 100.000 1
+ATOM 102 C CG2 . VAL 12 12 ? B 2.94415 2.54042 0.90451 1 1 B VAL 100.000 1
+ATOM 103 N N . ALA 13 13 ? B 1.25010 -1.92531 0.35250 1 1 B ALA 100.000 1
+ATOM 104 C CA . ALA 13 13 ? B 0.36056 -3.03084 0.66351 1 1 B ALA 100.000 1
+ATOM 105 C C . ALA 13 13 ? B 0.67433 -3.47280 2.08822 1 1 B ALA 100.000 1
+ATOM 106 O O . ALA 13 13 ? B 1.52243 -4.33670 2.31286 1 1 B ALA 100.000 1
+ATOM 107 C CB . ALA 13 13 ? B 0.57354 -4.17801 -0.31412 1 1 B ALA 100.000 1
+ATOM 108 N N . ILE 14 14 ? B -0.00866 -2.84121 3.01959 1 1 B ILE 100.000 1
+ATOM 109 C CA . ILE 14 14 ? B 0.21544 -3.14648 4.42065 1 1 B ILE 100.000 1
+ATOM 110 C C . ILE 14 14 ? B -0.22248 -4.57257 4.71099 1 1 B ILE 100.000 1
+ATOM 111 O O . ILE 14 14 ? B -1.37568 -4.93497 4.49399 1 1 B ILE 100.000 1
+ATOM 112 C CB . ILE 14 14 ? B -0.54384 -2.17146 5.32842 1 1 B ILE 100.000 1
+ATOM 113 C CG1 . ILE 14 14 ? B -0.08943 -0.73604 5.04973 1 1 B ILE 100.000 1
+ATOM 114 C CG2 . ILE 14 14 ? B -0.28961 -2.52890 6.78461 1 1 B ILE 100.000 1
+ATOM 115 C CD1 . ILE 14 14 ? B -0.89229 0.31602 5.78991 1 1 B ILE 100.000 1
+ATOM 116 N N . TYR 15 15 ? B 0.69474 -5.36612 5.19703 1 1 B TYR 100.000 1
+ATOM 117 C CA . TYR 15 15 ? B 0.42872 -6.76596 5.46788 1 1 B TYR 100.000 1
+ATOM 118 C C . TYR 15 15 ? B -0.59280 -6.92138 6.58808 1 1 B TYR 100.000 1
+ATOM 119 O O . TYR 15 15 ? B -0.43329 -6.34237 7.65954 1 1 B TYR 100.000 1
+ATOM 120 C CB . TYR 15 15 ? B 1.72277 -7.49739 5.83104 1 1 B TYR 100.000 1
+ATOM 121 C CG . TYR 15 15 ? B 1.56227 -8.99472 5.87487 1 1 B TYR 100.000 1
+ATOM 122 C CD1 . TYR 15 15 ? B 1.53411 -9.73820 4.69635 1 1 B TYR 100.000 1
+ATOM 123 C CD2 . TYR 15 15 ? B 1.42079 -9.66059 7.08643 1 1 B TYR 100.000 1
+ATOM 124 C CE1 . TYR 15 15 ? B 1.37233 -11.11848 4.72494 1 1 B TYR 100.000 1
+ATOM 125 C CE2 . TYR 15 15 ? B 1.25767 -11.04546 7.12476 1 1 B TYR 100.000 1
+ATOM 126 C CZ . TYR 15 15 ? B 1.23453 -11.77103 5.94442 1 1 B TYR 100.000 1
+ATOM 127 O OH . TYR 15 15 ? B 1.07514 -13.13223 5.98144 1 1 B TYR 100.000 1
+ATOM 128 N N . CY3 16 16 ? B -1.50700 -7.97331 6.27173 1 1 B CY3 100.000 1
+ATOM 129 C CA . CY3 16 16 ? B -2.74517 -8.25470 6.95216 1 1 B CY3 100.000 1
+ATOM 130 C C . CY3 16 16 ? B -3.52739 -7.01382 7.06879 1 1 B CY3 100.000 1
+ATOM 131 O O . CY3 16 16 ? B -4.28197 -6.78804 6.08464 1 1 B CY3 100.000 1
+ATOM 132 C CB . CY3 16 16 ? B -2.59677 -8.90293 8.29831 1 1 B CY3 100.000 1
+ATOM 133 S SG . CY3 16 16 ? B -2.39816 -7.60603 9.42885 1 1 B CY3 100.000 1
+ATOM 134 N N1 . CY3 16 16 ? B -2.39629 -5.98828 7.26248 1 1 B CY3 100.000 1
+#
+#
+loop_
+_atom_type.symbol
+C
+N
+O
+S
+#
